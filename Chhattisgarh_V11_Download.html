@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Chhattisgarh Opposition Terminal V11</title>
+<style>
+:root{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color-scheme:dark;background:#080a0b;color:#f1f2ed}
+*{box-sizing:border-box}
+body{min-height:100vh;margin:0;display:grid;place-items:center;padding:26px;background:radial-gradient(ellipse at 65% 10%,#263120 0%,#090c0c 55%)}
+main{width:min(670px,100%);border:1px solid #5e6047;border-radius:18px;padding:clamp(24px,5vw,48px);background:#101413;box-shadow:0 20px 75px #0009}
+.eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:#d2b772;font-weight:700}
+h1{font-size:clamp(26px,5vw,42px);line-height:1.12;margin:16px 0;font-weight:730;letter-spacing:-.035em}
+p{font-size:15px;line-height:1.6;color:#c2c8c3;margin:18px 0}
+button{font:inherit;font-weight:730;cursor:pointer;border:0;border-radius:11px;padding:18px 22px;width:100%;background:#e3c469;color:#10140e;transition:filter .2s}
+button:hover{filter:brightness(1.08)}button:disabled{opacity:.65;cursor:wait}
+#status{min-height:42px;margin-top:18px;font-size:14px;color:#d7e1d0;line-height:1.5;white-space:pre-wrap}
+small{font-size:12px;line-height:1.65;color:#9ca79f;display:block;margin-top:18px}
+code{background:#242c28;padding:2px 5px;border-radius:4px;font-size:.92em}
+a{color:#ebcc7a}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Chhattisgarh · Political Intelligence</div>
+<h1>Download the complete V11 terminal</h1>
+<p>Press the button to fetch the <strong>original V11 index.html</strong> from the Chhattisgarh Opposition Monitoring System repository. It will save to your Mac as a standard HTML file, ready to upload to GitHub Pages.</p>
+<button id="download" type="button">Download Full V11 Website (.html)</button>
+<div role="status" aria-live="polite" id="status">Original source: Praddyspinoza/opposition-monitoring-system- · main/index.html</div>
+<small>The downloaded HTML contains the site's main interface and embedded content. For live-feed automation and external data, also retain the repository's <code>data/</code> files and GitHub Actions workflows. This downloader itself is not the website; the file it saves is the original V11 website.</small>
+</main>
+<script>
+const SOURCE='https://raw.githubusercontent.com/Praddyspinoza/opposition-monitoring-system-/main/index.html';
+const API='https://api.github.com/repos/Praddyspinoza/opposition-monitoring-system-/contents/index.html?ref=main';
+const btn=document.getElementById('download'),status=document.getElementById('status');
+function update(s){status.textContent=s}
+async function getHtml(){
+ try{
+  const r=await fetch(SOURCE,{cache:'no-store'});
+  if(!r.ok)throw new Error('Raw URL returned '+r.status);
+  return await r.text();
+ }catch(e){
+  update('Trying the GitHub API download route…');
+  const r=await fetch(API,{cache:'no-store',headers:{Accept:'application/vnd.github+json'}});
+  if(!r.ok)throw new Error('Both download routes failed: '+r.status);
+  const json=await r.json();
+  if(!json.content)throw new Error('GitHub did not return file content');
+  const binary=atob(json.content.replace(/\s/g,''));
+  const bytes=Uint8Array.from(binary,c=>c.charCodeAt(0));
+  return new TextDecoder('utf-8').decode(bytes);
+ }
+}
+btn.addEventListener('click',async()=>{
+ btn.disabled=true;update('Downloading the current V11 terminal from GitHub…');
+ try{
+  const html=await getHtml();
+  if(!html.startsWith('<!DOCTYPE html>')&&!html.startsWith('<!doctype html>'))throw new Error('The file received does not look like HTML.');
+  if(!html.includes('V11 evidence-first social intelligence'))throw new Error('The returned source does not contain the expected V11 version marker.');
+  const blob=new Blob([html],{type:'text/html;charset=utf-8'});
+  const url=URL.createObjectURL(blob);const link=document.createElement('a');
+  link.href=url;link.download='index.html';document.body.appendChild(link);link.click();link.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),15000);
+  update('V11 verified. Your Mac should now have index.html in Downloads ('+Math.round(blob.size/1024)+' KB). Upload that file to your GitHub repository.');
+ }catch(err){
+  update('Download could not complete: '+err.message+'\nOn a Mac with Git installed, you can instead clone the original GitHub repository.');
+ }finally{btn.disabled=false}
+});
+</script>
+</body>
+</html>
