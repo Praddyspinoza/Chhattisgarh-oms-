@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "coverageStart": "2026-08-05",
   "coverageEnd": "2026-11-05",
   "methodology": "First-party X post permalinks recovered from independently published articles, not an API feed. Date derived from X snowflake ID UTC timestamp. Content and account ownership not directly verified from X API. Condolences, courtesy visits and organisational events are not policy speeches; they remain unclassified unless a source establishes an explicit policy position.",
@@ -88,6 +88,30 @@
       "platform": "X",
       "url": "https://x.com/KedarKashyapBJP",
       "verification": "Published original X posts corroborate handle; platform API verification pending"
+    },
+    {
+      "person": "BJP Chhattisgarh",
+      "platform": "X",
+      "url": "https://x.com/BJP4CGState",
+      "verification": "Reported as BJP Chhattisgarh's state account by published media and public profile"
+    },
+    {
+      "person": "Bharatiya Janata Party (national)",
+      "platform": "X",
+      "url": "https://x.com/BJP4India",
+      "verification": "BJP national official public X profile"
+    },
+    {
+      "person": "Bharatiya Janata Party (national)",
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/bjp4india/",
+      "verification": "Linked from BJP's published YouTube account"
+    },
+    {
+      "person": "Bharatiya Janata Party (national)",
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/BJP4India",
+      "verification": "Linked from BJP's published YouTube account"
     }
   ],
   "accountDirectorySource": "https://linktr.ee/chhattisgarhcmo1",
@@ -433,5 +457,95 @@
   "fallbackSearch": {
     "cmX": "https://x.com/search?q=from%3Avishnudsai%20since%3A2026-08-05%20until%3A2026-11-06&src=typed_query"
   },
-  "accountNote": "Named politician X links are public profile references, not a guarantee of authenticity or authenticated archive access. Bhavna Bohra X account remains unassigned pending reliable corroboration."
+  "accountNote": "Named politician X links are public profile references, not a guarantee of authenticity or authenticated archive access. Bhavna Bohra X account remains unassigned pending reliable corroboration. Added national and Chhattisgarh state party account links backed by public publisher references. Person-specific Meta discovery searches are not official profiles and must not count as posts.",
+  "searchLinks": [
+    {
+      "person": "Vishnu Deo Sai",
+      "xProfile": "https://x.com/vishnudsai",
+      "xWindowSearch": "https://x.com/search?q=from%3Avishnudsai%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Vishnu%20Deo%20Sai%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Vishnu%20Deo%20Sai%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Kiran Singh Deo",
+      "xProfile": "https://x.com/KiranDeoBJP",
+      "xWindowSearch": "https://x.com/search?q=from%3AKiranDeoBJP%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Kiran%20Singh%20Deo%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Kiran%20Singh%20Deo%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Arun Sao",
+      "xProfile": "https://x.com/ArunSao3",
+      "xWindowSearch": "https://x.com/search?q=from%3AArunSao3%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Arun%20Sao%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Arun%20Sao%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Vijay Sharma",
+      "xProfile": "https://x.com/vijaysharmacg",
+      "xWindowSearch": "https://x.com/search?q=from%3Avijaysharmacg%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Vijay%20Sharma%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Vijay%20Sharma%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "O. P. Choudhary",
+      "xProfile": "https://x.com/OPChoudhary_Ind",
+      "xWindowSearch": "https://x.com/search?q=from%3AOPChoudhary_Ind%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22O.%20P.%20Choudhary%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22O.%20P.%20Choudhary%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Deepak Mhaskey",
+      "xProfile": "https://x.com/deepakmhaskey",
+      "xWindowSearch": "https://x.com/search?q=from%3Adeepakmhaskey%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Deepak%20Mhaskey%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Deepak%20Mhaskey%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Dr. Raman Singh",
+      "xProfile": "https://x.com/drramansingh",
+      "xWindowSearch": "https://x.com/search?q=from%3Adrramansingh%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Dr.%20Raman%20Singh%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Dr.%20Raman%20Singh%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Brijmohan Agrawal",
+      "xProfile": "https://x.com/brijmohan_ag",
+      "xWindowSearch": "https://x.com/search?q=from%3Abrijmohan_ag%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Brijmohan%20Agrawal%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Brijmohan%20Agrawal%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Bhavna Bohra",
+      "xProfile": null,
+      "xWindowSearch": "https://x.com/search?q=Bhavna%20Bohra%20Chhattisgarh%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Bhavna%20Bohra%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Bhavna%20Bohra%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    },
+    {
+      "person": "Kedar Kashyap",
+      "xProfile": "https://x.com/KedarKashyapBJP",
+      "xWindowSearch": "https://x.com/search?q=from%3AKedarKashyapBJP%20since%3A2026-08-05%20until%3A2026-11-06&f=live",
+      "facebookDiscovery": "https://www.google.com/search?q=site%3Afacebook.com%20%22Kedar%20Kashyap%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "instagramDiscovery": "https://www.google.com/search?q=site%3Ainstagram.com%20%22Kedar%20Kashyap%22%20Chhattisgarh%20after%3A2026-08-04%20before%3A2026-11-06",
+      "discoveryNote": "X date-window query and indexed Meta searches; not verified post permalinks or API collection"
+    }
+  ],
+  "socialEvidenceStatus": {
+    "xPostsRecovered": 24,
+    "originalMetaPosts": 0,
+    "accountReferences": 18,
+    "xApiBackfill": "not connected",
+    "metaApiBackfill": "not connected",
+    "note": "No automated scraping or unauthenticated post collection claimed."
+  }
 }
