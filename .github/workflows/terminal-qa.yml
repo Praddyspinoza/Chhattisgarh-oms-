@@ -1,0 +1,19 @@
+name: Chhattisgarh terminal integrity
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-terminal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out deployed website
+        uses: actions/checkout@v4
+      - name: Use Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify BJP archive, social links, map and JavaScript syntax
+        run: node scripts/qa-terminal.cjs
