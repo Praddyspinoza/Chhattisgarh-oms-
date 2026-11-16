@@ -1,0 +1,79 @@
+"use strict";
+const fs=require("node:fs");
+const path="comparative.html";
+const d=JSON.parse(fs.readFileSync("comparative_states_2026.json","utf8"));
+let html=fs.readFileSync(path,"utf8");
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const link=r=>/^https:\/\//.test(r)?esc(r):"#";
+function classify(r){
+ if(r.sourceType==="video"||r.type==="News-channel video")return "Video reports";
+ if(r.sourceType==="headline-only"||r.status==="headline-index-only")return "Headline-only indexes";
+ if(r.sourceType==="channel"||["NDTV","NDTV MPCG","Odisha TV","Bansal News","News18"].includes(r.publisher))return "News channels / broadcasters";
+ return "Newspapers / digital news";
+}
+const records=d.records.slice().sort((a,b)=>b.date.localeCompare(a.date));
+const posts=d.posts.slice().sort((a,b)=>b.date.localeCompare(a.date));
+const bigHead=(label,count)=>'<div class="archive-head"><div><strong>'+esc(label)+'</strong><span>Click a headline to open its original source. Dates: 5 August–5 November 2026.</span></div><div>'+count+' DIRECT LINKS</div></div>';
+function groupHeader(topic,quantity){
+ return '<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+String(d.issues.indexOf(topic)+1).padStart(2,"0")+'</span><div><h3>'+esc(topic)+'</h3><small>'+quantity+' sourced links</small></div></div>';
+}
+function leaderStart(l,n){
+ return '<details class="leader-group" '+(n?'open':'')+'><summary><span class="leader-name">'+esc(l.name)+'</span><span>'+esc(l.state)+' · '+esc(l.role)+'</span><b>'+n+' link'+(n===1?'':'s')+'</b></summary>';
+}
+let reports=bigHead("NEWSPAPERS · NEWS CHANNELS · VIDEO",records.length);
+for(const topic of d.issues){
+ const topicRows=records.filter(r=>r.issue===topic);
+ reports+=groupHeader(topic,topicRows.length);
+ for(const l of d.leaders){
+  const own=topicRows.filter(r=>r.leader===l.id);
+  reports+=leaderStart(l,own.length);
+  for(const k of ["Newspapers / digital news","News channels / broadcasters","Video reports","Headline-only indexes"]){
+   const ss=own.filter(r=>classify(r)===k);
+   if(!ss.length)continue;
+   reports+='<div class="source-subhead">'+esc(k)+' <b>'+ss.length+'</b></div>';
+   reports+=ss.map(r=>'<article class="source-row"><div class="source-top"><span class="publisher-name">'+esc(r.publisher)+'</span><time>'+esc(r.date)+'</time><span class="source-type">'+esc(k)+'</span></div><a class="source-headline" href="'+link(r.url)+'" target="_blank" rel="noopener noreferrer">'+esc(r.title)+' ↗</a><div class="source-details">'+esc(r.summary)+'</div><div class="source-bottom"><span>'+esc(r.type||"Article")+'</span><a href="'+link(r.url)+'" target="_blank" rel="noopener noreferrer">Open original publisher ↗</a></div></article>').join("");
+  }
+  if(!own.length)reports+='<div class="no-sources">No indexed source in this research batch. This is not evidence of inactivity.</div>';
+  reports+='</details>';
+ }
+ reports+='</section>';
+}
+let social=bigHead("RECOVERED INDIVIDUAL X POST PERMALINKS · VIDEO",posts.length);
+for(const topic of d.issues){
+ const topicPosts=posts.filter(r=>r.issue===topic);
+ social+=groupHeader(topic,topicPosts.length);
+ for(const l of d.leaders){
+  const own=topicPosts.filter(p=>p.leader===l.id);
+  social+=leaderStart(l,own.length);
+  for(const p of own){
+   const headline=p.sourceHeadline||p.detail||"Post referenced by public reporting";
+   social+='<article class="source-row"><div class="source-top"><span class="publisher-name">'+esc(p.platform)+' · @'+esc(l.x)+'</span><time>'+esc(p.date)+'</time><span class="source-type">PUBLISHER-REPORTED HEADING</span></div><a class="source-headline" href="'+link(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(headline)+' ↗</a><div class="source-bottom"><span>Reported by '+esc(p.publisher)+'</span><a href="'+link(p.publisherUrl)+'" target="_blank" rel="noopener noreferrer">Corroborating publisher ↗</a></div></article>';
+  }
+  if(!own.length)social+='<div class="no-sources">No original post permalink recovered under this issue. Historical X searches are available in the interactive account directory.</div>';
+  social+='</details>';
+ }
+ social+='</section>';
+}
+const markers=[
+  {id:"reportList",begin:"<!-- STATIC_COMPARE_REPORTS_START -->",end:"<!-- STATIC_COMPARE_REPORTS_END -->",content:reports},
+  {id:"postList",begin:"<!-- STATIC_COMPARE_SOCIAL_START -->",end:"<!-- STATIC_COMPARE_SOCIAL_END -->",content:social}
+];
+for(const m of markers){
+ const start=html.indexOf(m.begin),stop=html.indexOf(m.end);
+ if(start>=0&&stop>start){html=html.slice(0,start+m.begin.length)+m.content+html.slice(stop);}
+ else{
+  const placeholder='<div id="'+m.id+'"></div>';
+  if(!html.includes(placeholder))throw Error("Cannot locate "+m.id+" static container");
+  html=html.replace(placeholder,'<div id="'+m.id+'">'+m.begin+m.content+m.end+'</div>');
+ }
+}
+const marker='<script id="oms-comparative-embedded" type="application/json">';
+const begin=html.indexOf(marker),end=html.indexOf("</script>",begin+marker.length);
+if(begin<0||end<0)throw Error("Data script missing");
+const json=JSON.stringify(d).replace(/</g,"\\u003c").replace(/>/g,"\\u003e");
+html=html.slice(0,begin+marker.length)+json+html.slice(end);
+html=html.replace(/<strong id="nReports">[^<]*<\/strong>/,'<strong id="nReports">'+d.records.length+'</strong>');
+html=html.replace(/<strong id="nPosts">[^<]*<\/strong>/,'<strong id="nPosts">'+d.posts.length+'</strong>');
+html=html.replace(/<strong id="nSources">[^<]*<\/strong>/,'<strong id="nSources">'+new Set(d.records.map(r=>r.publisher)).size+'</strong>');
+fs.writeFileSync(path,html,"utf8");
+console.log(JSON.stringify({reportLinks:records.length,postLinks:posts.length,leaderCount:d.leaders.length,issues:d.issues.length,htmlBytes:Buffer.byteLength(html)}));
