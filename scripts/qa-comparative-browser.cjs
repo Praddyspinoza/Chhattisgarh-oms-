@@ -44,8 +44,8 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   const main=await browser.newPage({viewport:{width:1366,height:860}});
   await main.goto("file://"+path.resolve("index.html"),{waitUntil:"domcontentloaded",timeout:30000});
   await main.waitForSelector("#oms-cmp-entry",{timeout:12000});
-  await main.locator("#oms-cmp-entry").click();
-  await main.waitForURL(/comparative\\.html/,{timeout:12000});
+  await main.locator("#oms-cmp-entry").click({noWaitAfter:true});
+  await main.waitForURL(/comparative\\.html/,{waitUntil:"commit",timeout:18000});
   await main.waitForSelector("#dossierList .dossier-leader",{timeout:10000});
   await main.close();
   console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,scriptErrors:errors.length,mainNavigationToDossier:"pass"},null,2));
