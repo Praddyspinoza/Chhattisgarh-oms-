@@ -4,6 +4,8 @@ on:
     paths:
       - '.github/workflows/sync-comparative.yml'
       - 'comparative_states_2026.json'
+      - 'comparative_government_2026.json'
+      - 'scripts/sync_comparative_data.cjs'
   workflow_dispatch:
 concurrency:
   group: comparative-html-synchronization
