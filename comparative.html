@@ -86,6 +86,19 @@ body{background:radial-gradient(circle at 75% -5%,#172741 0,transparent 31%),rad
 @media(max-width:760px){.shell{display:flex;flex-direction:column}.sidebar{position:relative;top:auto;grid-area:unset;height:auto;max-height:unset;width:100%;order:-1;display:flex;gap:10px;align-items:flex-start;overflow-x:auto;overflow-y:hidden;padding:9px 10px;border-right:none;border-bottom:1px solid #314466}.sidebar .cg-brand{flex:0 0 155px;border:0;margin:0;padding:8px 0}.sidebar .cg-navcap,.sidebar .cg-navitem,.sidebar .cg-railrule{display:none}.sidebar .group{flex:0 0 235px;margin:0}.topbar,.hero,.metrics,.stage,.footer{width:100%;grid-area:unset}.topbar{padding:10px 12px}.topbar .brand{display:none}.hero{padding:20px 12px}.metrics{padding:0 12px 15px}.stage{padding:0 12px 20px}.footer{padding:12px}.tabs{position:sticky;top:0}.cg-brand b{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.live:before,.metric:after{animation:none}}
 
+.social-issue-index{border:1px solid #304969;background:linear-gradient(120deg,#0a1b35,#10162d);border-radius:9px;padding:13px 14px;margin:8px 0 17px}
+.social-issue-index .pillrow{margin-top:10px}
+.social-chip{border:1px solid #465171;background:#121b36;color:#d7e1f5;border-radius:5px;padding:7px 9px;font-size:11px}
+.social-chip:hover{border-color:#f16e7d;background:#2a213d}
+.social-chip span{margin-left:6px;color:#ff95a4;font-variant-numeric:tabular-nums}
+.social-section-head{margin:22px 0 12px;display:flex;align-items:end;justify-content:space-between;gap:8px;border-bottom:1px solid #3a2c49;padding:0 0 9px}
+.social-section-head h3{font-size:17px;color:#f2a1ae;margin:3px 0 0}
+.social-section-head small{font-size:10px;color:#9aaccb}
+.social-entry{border-left:2px solid #f16e7d}
+.social-source-label{letter-spacing:1.5px;font-size:9px;color:#f19eac;margin:10px 0 0;font-weight:750}
+.social-entry .feed{padding-top:4px;margin-top:8px}
+.social-entry .feed a{border:1px solid #604456;padding:6px 9px;background:#221b32;border-radius:5px}
+
 </style>
 </head>
 <body><div class="shell">
@@ -132,6 +145,7 @@ function init(){
   el("publisher").addEventListener("change",v=>{publisher=v.target.value;resetLimit()});
   document.querySelector(".tabs").addEventListener("click",v=>{let b=v.target.closest("[data-tab]");if(!b)return;tab=b.dataset.tab;render()});
   el("more").addEventListener("click",()=>{visible+=14;renderReports()});
+  el("postList").addEventListener("click",v=>{const b=v.target.closest("[data-social-topic]");if(!b)return;issue=b.dataset.socialTopic;resetLimit();});
   render();
 }
 function renderFilters(){
@@ -157,15 +171,34 @@ function gsearch(q){return "https://www.google.com/search?q="+encodeURIComponent
 function xsearch(l){return "https://x.com/search?q="+encodeURIComponent("from:"+l.x+" since:2026-08-05 until:2026-11-06"+(issue!=="all"?" "+(keywords[issue]||issue):""))+"&src=typed_query"}
 function link(t,u){return '<a target="_blank" rel="noopener noreferrer" href="'+href(u)+'">'+e(t)+' ↗</a>'}
 function renderSocial(){
- let p=data.posts.filter(r=>matching(r)).sort((a,b)=>b.date.localeCompare(a.date));
- el("socialCount").textContent=p.length+" post/video links in current filter";
- el("postList").innerHTML=p.length?p.map(r=>{let l=person(r.leader);return '<article class="panel entry"><div class="meta"><span class="tag gold">'+e(r.date)+'</span><span>'+e(l.name)+'</span><span class="tag">'+e(r.issue)+'</span><span>'+e(r.platform)+'</span></div><h3>'+e(r.detail)+'</h3><p class="hint">'+e(r.status==="embedded-post-url"?"Individual X permalink recovered from a publisher embed. Platform accessibility not guaranteed.":r.status==="publisher-direct-video"?"Direct public video URL.":"Third-party indexed link: account attribution not independently verified.")+'</p><div class="feed">'+link("Open individual "+r.platform+" item",r.url)+link("Publisher corroboration",r.publisherUrl)+'</div></article>'}).join(""):'<div class="empty"><strong>No individual post URL recovered in this filter</strong>Use the issue-specific account searches below. They are discovery links, not verified post records.</div>';
- let leaders=data.leaders.filter(filterLeader);
+ const p=data.posts.filter(r=>matching(r)).sort((a,b)=>b.date.localeCompare(a.date));
+ const x=p.filter(r=>r.platform==="X").length;
+ el("socialCount").textContent=x+" sourced X permalinks · "+(p.length-x)+" video/other URLs";
+ const chipCounts=data.issues.map(i=>({issue:i,n:p.filter(t=>t.issue===i).length})).filter(x=>x.n>0);
+ const chips=chipCounts.map(x=>'<button type="button" class="social-chip" data-social-topic="'+e(x.issue)+'">'+e(issuesShort[x.issue]||x.issue)+' <span>'+x.n+'</span></button>').join("");
+ let body="";
+ const groups=issue==="all"?data.issues:[issue];
+ for(const topic of groups){
+  const rows=p.filter(r=>r.issue===topic);
+  if(!rows.length)continue;
+  body+='<div class="social-section-head"><div><span class="eyebrow">ISSUE-CLASSIFIED ORIGINAL LINKS</span><h3>'+e(topic)+'</h3></div><small>'+rows.length+' linked items</small></div>';
+  body+=rows.map(r=>{
+    const l=person(r.leader),isX=r.platform==="X",verified=r.status==="embedded-post-url";
+    const headline=r.sourceHeadline||r.detail||"Public post referenced in newspaper";
+    const account=r.posterHandle?"@"+r.posterHandle:(isX?"@"+l.x:r.platform);
+    const status=verified?"Original X permalink recovered from an embedded post on the linked news page. Original post text is not independently verified.":r.status==="publisher-direct-video"?"Direct video URL referenced by its public publisher.":"Third-party indexed post; original account not authenticated.";
+    const title=isX?"SOURCE-REPORTED HEADLINE":"SOURCE-REPORTED VIDEO CONTEXT";
+    return '<article class="panel entry social-entry"><div class="meta"><span class="tag gold">'+e(r.date)+'</span><span>'+e(l.name)+' · '+e(l.state)+'</span><span class="tag">'+e(r.platform)+'</span><span>'+e(account)+'</span></div><div class="social-source-label">'+e(title)+'</div><h3>'+e(headline)+'</h3><div class="meta" style="margin-bottom:8px"><span>Source: '+e(r.publisher)+'</span><span> · '+e(r.issue)+'</span></div><p class="hint">'+e(status)+'</p><div class="feed">'+link("Open original "+r.platform+" post",r.url)+link("Read corroborating article",r.publisherUrl)+'</div></article>';
+  }).join("");
+ }
+ el("postList").innerHTML=p.length?(issue==="all"?'<div class="social-issue-index"><span class="eyebrow">QUICK ISSUE FILTER</span><div class="pillrow">'+chips+'</div></div>':"")+body:'<div class="empty"><strong>No individual post URL recovered for this filter</strong>Use issue-specific account searches below. Searches are not post evidence.</div>';
+ const leaders=data.leaders.filter(filterLeader);
  el("accountList").innerHTML=leaders.map(l=>{
- let k=issue==="all"?"":keywords[issue]||issue;
- let query='"'+l.name+'" '+k+' after:2026-08-04 before:2026-11-06';
+ const k=issue==="all"?"":keywords[issue]||issue;
+ const query='"'+l.name+'" '+k+' after:2026-08-04 before:2026-11-06';
  const metaQuery='"'+l.name+'" '+k+' 2026';
- return '<div class="socialbox"><strong>'+e(l.name)+' · '+e(l.role)+' · '+e(l.state)+'</strong><div class="links">'+link("X profile","https://x.com/"+l.x)+(l.fb?link("Facebook profile",l.fb):"")+(l.ig?link("Instagram profile",l.ig):"")+'</div><p class="hint" style="margin-top:10px">Issue discovery / '+e(issue==="all"?"all topics":issue)+'. These are queries, not direct source posts.</p><div class="links">'+link("X dated search",xsearch(l))+link("Indexed Facebook",gsearch("site:facebook.com "+metaQuery))+link("Indexed Instagram",gsearch("site:instagram.com/p/ "+metaQuery))+link("LinkedIn posts search",gsearch("site:linkedin.com/posts/ "+query))+'</div><p class="hint">'+e(l.accountBasis)+"</p></div>" }).join("");
+ return '<div class="socialbox"><strong>'+e(l.name)+' · '+e(l.role)+' · '+e(l.state)+'</strong><div class="links">'+link("X profile","https://x.com/"+l.x)+(l.fb?link("Facebook profile",l.fb):"")+(l.ig?link("Instagram profile",l.ig):"")+'</div><p class="hint" style="margin-top:10px">Issue discovery / '+e(issue==="all"?"all topics":issue)+'. These are searches, not confirmed post URLs.</p><div class="links">'+link("Date-limited X search",xsearch(l))+link("Indexed Facebook",gsearch("site:facebook.com "+metaQuery))+link("Indexed Instagram",gsearch("site:instagram.com/p/ "+metaQuery))+link("LinkedIn post discovery",gsearch("site:linkedin.com/posts/ "+query))+'</div><p class="hint">'+e(l.accountBasis)+"</p></div>"
+ }).join("");
 }
 function renderOverview(){
  let r=data.records.filter(x=>matching(x));
