@@ -1,0 +1,29 @@
+name: Comparative real-browser smoke test
+on:
+  push:
+    paths:
+      - '.github/workflows/qa-comparative-browser.yml'
+      - 'comparative.html'
+      - 'scripts/qa-comparative-browser.cjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  chromium:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install lightweight Chromium controller
+        run: npm install --no-save --ignore-scripts --no-audit --no-fund playwright-core@1.58.2
+      - name: Run real-browser source and interaction tests
+        run: node scripts/qa-comparative-browser.cjs
+      - name: Upload evidence screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: comparative-qa-screenshots
+          path: |
+            comparative-desktop-qa.png
+            comparative-issue-qa.png
+          if-no-files-found: ignore
