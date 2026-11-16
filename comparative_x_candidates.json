@@ -1,6 +1,6 @@
 {
-  "tested": 64,
-  "recoveredPages": 11,
+  "tested": 117,
+  "recoveredPages": 18,
   "captures": [
     {
       "recordId": "cmp-006",
@@ -127,7 +127,87 @@
       "posts": [
         "https://x.com/yourBabulal/status/2113121698308579575"
       ]
+    },
+    {
+      "recordId": "cmp-054",
+      "publisher": "KohramLive",
+      "date": "2026-10-20",
+      "leader": "jh-lop",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://kohramlive.com/message-from-jharkhands-big-names-on-vijayadashami-find-out-who-said-what/",
+      "posts": [
+        "https://x.com/HemantSorenJMM/status/2112381563132666116",
+        "https://x.com/yourBabulal/status/2112407297125503051"
+      ]
+    },
+    {
+      "recordId": "cmp-111",
+      "publisher": "Free Press Journal",
+      "date": "2026-08-29",
+      "leader": "mp-cm",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-interacts-with-villagers-in-former-naxal-affected-balaghat-announces-225-crore-development-push",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2093662256592757112"
+      ]
+    },
+    {
+      "recordId": "cmp-113",
+      "publisher": "Free Press Journal",
+      "date": "2026-10-11",
+      "leader": "mp-cm",
+      "issue": "Governance",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-transfers-213-crore-to-over-35-lakh-social-security-pension-beneficiaries-video",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2109205338583072840"
+      ]
+    },
+    {
+      "recordId": "cmp-116",
+      "publisher": "Free Press Journal",
+      "date": "2026-10-21",
+      "leader": "mp-cm",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-distributes-954-compassionate-appointment-letters-in-school-education-department-announces-20k-new-jobs-video",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2112857314915205266",
+        "https://x.com/DrMohanYadav51/status/2112824164486930763",
+        "https://x.com/DrMohanYadav51/status/2112830541359927600"
+      ]
+    },
+    {
+      "recordId": "cmp-119",
+      "publisher": "Free Press Journal",
+      "date": "2026-09-02",
+      "leader": "mp-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/nafrat-ki-rajneeti-congress-chief-jitu-patwari-slams-bjp-over-dropping-rajiv-gandhis-name-from-rgpv-university-warns-cm-of-consequences-video",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2095009490781565108"
+      ]
+    },
+    {
+      "recordId": "cmp-130",
+      "publisher": "Sambad English",
+      "date": "2026-09-18",
+      "leader": "od-cm",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://sambadenglish.com/latest-news/eastern-indias-silicon-valley-to-come-up-at-kataka-odisha-cm-announces-at-semicon-india-2026-12549866",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2100940289825505507"
+      ]
+    },
+    {
+      "recordId": "cmp-159",
+      "publisher": "Dainik Jagran",
+      "date": "2026-08-22",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.jagran.com/jharkhand/ranchi-ranchi-student-protest-clash-with-police-lathicharge-over-putla-dahan-40348517.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2091032693635178861"
+      ]
     }
   ],
-  "generatedAt": "2026-11-16T12:47:06.812Z"
+  "generatedAt": "2026-11-16T12:50:54.004Z"
 }
