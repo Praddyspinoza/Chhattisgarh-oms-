@@ -189,6 +189,18 @@
       "name": "The Times of India",
       "url": "https://timesofindia.indiatimes.com/",
       "access": "city desks with dated reports"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "Bhaskar Hindi",
+      "url": "https://www.bhaskarhindi.com/",
+      "access": "Separate publicly indexed Hindi publication; not a substitute for restricted bhaskar.com articles"
+    },
+    {
+      "state": "Jharkhand",
+      "name": "Bhaskar Hindi",
+      "url": "https://www.bhaskarhindi.com/",
+      "access": "Separate publicly indexed Hindi publication; not a substitute for restricted bhaskar.com articles"
     }
   ],
   "records": [
@@ -886,6 +898,126 @@
       "summary": "Majhi inaugurated 26 electric bus services at the National Urban Conclave; 400 additional buses and expansion to nine towns were presented as plans, not completed deployments.",
       "publisher": "Sambad English",
       "url": "https://sambadenglish.com/latest-news/odisha-to-add-400-e-buses-expand-ama-bus-services-to-9-more-towns-12747226",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-100",
+      "date": "2026-08-09",
+      "leader": "od-lop",
+      "issue": "Tribal Issues",
+      "type": "Opposition demand",
+      "title": "ST recognition sought for 169 communities",
+      "summary": "Patnaik reiterated the BJD demand for Scheduled Tribe recognition for 169 communities and discussed tribal cultural rights and councils; demand remains subject to applicable central decisions.",
+      "publisher": "Prameya",
+      "url": "https://www.prameyanews.com/odisha-naveen-patnaik-renews-demand-for-st-status-for-169-communities-says-tribal-rights-will-always-remain-bjds-priority",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-101",
+      "date": "2026-10-17",
+      "leader": "jh-lop",
+      "issue": "Mining",
+      "type": "Social statement",
+      "title": "Sand mining approvals and delayed Ranchi works questioned",
+      "summary": "Marandi claimed 288 of 302 auctioned sand ghats remained closed and raised questions about environmental/Gram Sabha clearances, local taxes and road projects; claims are attributed, not independently verified.",
+      "publisher": "UNI India",
+      "url": "https://www.uniindia.com/east-india/politics-jharkhand-marandi-17ca35/217687",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-102",
+      "date": "2026-10-05",
+      "leader": "mp-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Planned event",
+      "title": "Youth conclave involving students and startups announced",
+      "summary": "Raj Express previewed a state youth conclave scheduled for 6 October and intended CM engagement with young people; scheduling is not confirmation of attendance or results.",
+      "publisher": "Raj Express",
+      "url": "https://rajexpress.com/madhya-pradesh-news/bhopal-cm-youth-conclave-2026-mohan-yadav-skill-development-startups-gen-z-mp-news-in-hindi-20261005052141",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-103",
+      "date": "2026-10-21",
+      "leader": "mp-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Reported action",
+      "title": "954 compassionate appointment letters distributed",
+      "summary": "Raj Express reported Yadav distributed 954 compassionate appointment letters and announced construction and school recruitment proposals; proposed buildings and posts are not completed outcomes.",
+      "publisher": "Raj Express",
+      "url": "https://rajexpress.com/madhya-pradesh-news/bhopal-cm-mohan-yadav-compassionate-appointment-letters-sandipani-schools-education-recruitment-mp-news-hindi",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-104",
+      "date": "2026-10-24",
+      "leader": "mp-cm",
+      "issue": "Tribal Issues",
+      "type": "Scheduled event",
+      "title": "Tendu-leaf gatherers' bonus distribution announced",
+      "summary": "Raj Express previewed an intended Shahdol visit and tendu-leaf bonus distribution benefiting multiple districts, with associated development works; the article itself is a preview, not verification of transfers.",
+      "publisher": "Raj Express",
+      "url": "https://rajexpress.com/madhya-pradesh-news/shahdol-cm-mohan-yadav-visit-tendupatta-bonus-development-works",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-105",
+      "date": "2026-10-06",
+      "leader": "mp-cm",
+      "issue": "Environment & Forests",
+      "type": "Planned event",
+      "title": "Cheetah reintroduction event planned in Sagar",
+      "summary": "Raj Express reported preparations for a cheetah release expected on 7 October in the Veerangana Durgavati Tiger Reserve. This source does not establish release occurred.",
+      "publisher": "Raj Express",
+      "url": "https://rajexpress.com/madhya-pradesh-news/sagar-veerangna-durgavati-tiger-reserve-cheetah-reintroduction-kuno",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-106",
+      "date": "2026-10-22",
+      "leader": "mp-cm",
+      "issue": "Infrastructure & Development",
+      "type": "Planned event",
+      "title": "Indore semiconductor summit and investment discussions previewed",
+      "summary": "Raj Express described planned summit discussions on semiconductor design, advanced packaging and investment opportunities. Announced events and targets are not realised investments.",
+      "publisher": "Raj Express",
+      "url": "https://rajexpress.com/madhya-pradesh-news/indore-mp-semiconductor-summit-2026-bilingual-tech-event-cm-mohan-yadav-mp-news-in-hindi",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-107",
+      "date": "2026-10-06",
+      "leader": "jh-cm",
+      "issue": "Religion / Hinduism",
+      "type": "Administrative direction",
+      "title": "Durga Puja arrangements and environmental precautions",
+      "summary": "Bhaskar Hindi reported Soren's directions to maintain policing, traffic, electricity, sanitation and environmental care during Durga Puja festivities.",
+      "publisher": "Bhaskar Hindi",
+      "url": "https://www.bhaskarhindi.com/other/durga-puja-mein-suraksha-se-lekar-paryavaran-tak-par-cm-hemant-soren-ka-jor-samitiyon-se-ki-sahyog-ki-appeal-1372344",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-108",
+      "date": "2026-10-08",
+      "leader": "mp-cm",
+      "issue": "Governance",
+      "type": "Political statement",
+      "title": "Election Commission criticism exchanged with opposition",
+      "summary": "Mohan Yadav said Congress should introspect rather than question the Election Commission over defeats; his position is reported as a party-political statement.",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/bhopal/congress-should-introspect-instead-of-blaming-ec-for-its-defeat-says-cm-mohan-yadav",
+      "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-109",
+      "date": "2026-10-08",
+      "leader": "mp-lop",
+      "issue": "Governance",
+      "type": "Opposition statement",
+      "title": "Election Commission independence questioned",
+      "summary": "Singhar accused the Election Commission of favouring the BJP and warned about voters' rights. This is an attributed allegation, not established fact.",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/bhopal/congress-should-introspect-instead-of-blaming-ec-for-its-defeat-says-cm-mohan-yadav",
       "status": "publisher-report-reviewed"
     }
   ],
