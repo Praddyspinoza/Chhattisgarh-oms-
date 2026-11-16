@@ -3,6 +3,7 @@ const { chromium } = require("playwright-core");
 const assert = require("node:assert/strict");
 const fs = require("fs"),path=require("path");
 const data=JSON.parse(fs.readFileSync("comparative_states_2026.json","utf8"));
+const gov=JSON.parse(fs.readFileSync("comparative_government_2026.json","utf8"));
 const exec=require("child_process").execSync;
 let chrome=process.env.CHROME_PATH||"";
 if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chromium-browser",{encoding:"utf8"}).trim()}catch(e){throw Error("Chromium executable unavailable; browser QA cannot run")}}
@@ -20,6 +21,8 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.locator('[data-dossier-topic="all"]').first().click();
   const all=await page.locator("#dossierList a.dossier-headline").count();
   assert.equal(all,data.records.length+data.posts.length,"Not all original source links are rendered in combined dossiers");
+  const institutional=await page.locator("#dossierList a.institution-headline").count();
+  assert.equal(institutional,gov.officialRecords.length+gov.assemblyRecords.length,"Government and assembly links absent from combined issue dossiers");
   const actualSourceLinks=await page.locator("#dossierList a.dossier-headline").evaluateAll(as=>as.map(a=>a.getAttribute("href")));
   for(const r of [...data.records,...data.posts])assert(actualSourceLinks.includes(r.url),"Missing original "+r.url);
   await page.locator('[data-dossier-topic="Mining"]').first().click();
@@ -32,6 +35,11 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.locator('button[data-role="Leader of Opposition"]').first().click();
   assert.equal(await page.locator("#dossierList .dossier-leader").count(),30,"Office filter should yield 3 leaders across 10 topics");
   await page.locator('button[data-role="all"]').first().click();
+  await page.locator('button[data-tab="official"]').click();
+  assert.equal(await page.locator("#officialList a.institution-headline").count(),gov.officialRecords.length,"Every departmental original link must be in the official tab");
+  await page.locator('button[data-tab="assembly"]').click();
+  assert.equal(await page.locator("#assemblyList a.institution-headline").count(),gov.assemblyRecords.length,"Every legislative original link must be in the assembly tab");
+  assert.equal(await page.locator("#sessionList .panel").count(),3,"Missing three-state legislative session calendar");
   await page.locator('button[data-tab="social"]').click();
   const social=await page.locator("#postList a.source-headline").count();
   assert.equal(social,data.posts.length,"Social archive should include every original permalink");
@@ -48,6 +56,6 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await main.waitForURL(/comparative\.html/,{waitUntil:"commit",timeout:18000});
   await main.waitForSelector("#dossierList .dossier-leader",{timeout:10000});
   await main.close();
-  console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,scriptErrors:errors.length,mainNavigationToDossier:"pass"},null,2));
+  console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,governmentLinks:gov.officialRecords.length,legislativeLinks:gov.assemblyRecords.length,integratedInstitutionLinks:institutional,scriptErrors:errors.length,mainNavigationToDossier:"pass"},null,2));
  } finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});
