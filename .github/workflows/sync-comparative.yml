@@ -1,0 +1,41 @@
+name: Publish synchronized comparative source archive
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-comparative.yml'
+      - 'comparative_states_2026.json'
+  workflow_dispatch:
+concurrency:
+  group: comparative-html-synchronization
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Embed and pre-render all categorized newspaper, video and X links
+        run: node scripts/sync_comparative_data.cjs
+      - name: Verify original OMS remains intact
+        run: node scripts/qa-terminal.cjs
+      - name: Verify comparative links, categories and X authors
+        run: node scripts/qa-comparative.cjs
+      - name: Push the verified standalone source archive
+        run: |
+          if git diff --quiet -- comparative.html; then
+            echo "Comparative archive is already synchronized"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comparative.html
+          git commit -m "Render all comparative issue-source and X headline links as static HTML"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 2
+          done
+          exit 1
