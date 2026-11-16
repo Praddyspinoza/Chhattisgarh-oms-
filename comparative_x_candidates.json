@@ -3,17 +3,6 @@
   "recoveredPages": 18,
   "captures": [
     {
-      "recordId": "cmp-008",
-      "publisher": "Free Press Journal",
-      "date": "2026-10-19",
-      "leader": "mp-cm",
-      "issue": "Religion / Hinduism",
-      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
-      "posts": [
-        "https://x.com/DrMohanYadav51/status/2112078621737398662"
-      ]
-    },
-    {
       "recordId": "cmp-006",
       "publisher": "Free Press Journal",
       "date": "2026-10-05",
@@ -23,6 +12,17 @@
       "posts": [
         "https://x.com/DrMohanYadav51/status/2107042027963818377",
         "https://x.com/DrMohanYadav51/status/2107037833806639454"
+      ]
+    },
+    {
+      "recordId": "cmp-008",
+      "publisher": "Free Press Journal",
+      "date": "2026-10-19",
+      "leader": "mp-cm",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2112078621737398662"
       ]
     },
     {
@@ -83,17 +83,6 @@
       ]
     },
     {
-      "recordId": "cmp-043",
-      "publisher": "DNP India",
-      "date": "2026-09-02",
-      "leader": "jh-cm",
-      "issue": "Infrastructure & Development",
-      "publisherUrl": "https://www.dnpindia.in/states/jharkhand-news-hemant-soren-chairs-high-level-secretariat-review-meeting-demanding-immediate-pothole-repairs-improved-monsoon-drainage/613461/?amp=1",
-      "posts": [
-        "https://x.com/HemantSorenJMM/status/2095128909377601979"
-      ]
-    },
-    {
       "recordId": "cmp-038",
       "publisher": "Odisha Bytes",
       "date": "2026-10-16",
@@ -104,6 +93,17 @@
         "https://x.com/MohanMOdisha/status/2110955568425058380",
         "https://x.com/MohanMOdisha/status/2110983229713125796",
         "https://x.com/Naveen_Odisha/status/2110943691313664248"
+      ]
+    },
+    {
+      "recordId": "cmp-043",
+      "publisher": "DNP India",
+      "date": "2026-09-02",
+      "leader": "jh-cm",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://www.dnpindia.in/states/jharkhand-news-hemant-soren-chairs-high-level-secretariat-review-meeting-demanding-immediate-pothole-repairs-improved-monsoon-drainage/613461/?amp=1",
+      "posts": [
+        "https://x.com/HemantSorenJMM/status/2095128909377601979"
       ]
     },
     {
@@ -127,6 +127,17 @@
       "posts": [
         "https://x.com/HemantSorenJMM/status/2112381563132666116",
         "https://x.com/yourBabulal/status/2112407297125503051"
+      ]
+    },
+    {
+      "recordId": "cmp-055",
+      "publisher": "Dainik Jagran",
+      "date": "2026-10-22",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2113121698308579575"
       ]
     },
     {
@@ -187,17 +198,6 @@
       ]
     },
     {
-      "recordId": "cmp-055",
-      "publisher": "Dainik Jagran",
-      "date": "2026-10-22",
-      "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2113121698308579575"
-      ]
-    },
-    {
       "recordId": "cmp-159",
       "publisher": "Dainik Jagran",
       "date": "2026-08-22",
@@ -209,5 +209,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-16T12:52:54.774Z"
+  "generatedAt": "2026-11-16T12:53:25.921Z"
 }
