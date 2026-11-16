@@ -1,0 +1,20 @@
+name: Comparative intelligence integrity
+on:
+  push:
+    paths:
+      - "comparative.html"
+      - "comparative_states_2026.json"
+      - "scripts/qa-comparative.cjs"
+      - ".github/workflows/comparative-qa.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify original Chhattisgarh terminal
+        run: node scripts/qa-terminal.cjs
+      - name: Verify cross-state source and original X post provenance
+        run: node scripts/qa-comparative.cjs
