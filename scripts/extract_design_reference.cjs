@@ -1,0 +1,13 @@
+"use strict";
+const fs=require("fs");
+const html=fs.readFileSync("index.html","utf8");
+const styles=[...html.matchAll(/<style[^>]*>([\s\S]*?)<\/style>/gi)].map(m=>m[1]);
+const all=styles.join("\n");
+const selectorTerms=[":root","body",".nav",".sidebar",".v12-", ".cg-", ".brand", "header", ".card", ".panel"];
+const rules=[...all.matchAll(/([^{}]+)\{([^{}]{0,1800})\}/g)];
+const selected=rules.filter(m=>selectorTerms.some(s=>m[1].includes(s))).slice(0,110).map(m=>({selector:m[1].trim().slice(0,190),css:m[2].trim().slice(0,450)}));
+const counts={stylesheets:styles.length,totalCSSBytes:all.length,totalHTMLBytes:html.length};
+const head=html.slice(0,5000).replace(/<script[\s\S]*?<\/script>/gi,"[script]");
+const sample=html.match(/<body[^>]*>[\s\S]{0,3800}/i)?.[0]||"";
+fs.writeFileSync("comparative_design_reference.json",JSON.stringify({counts,head,sample,selected},null,2)+"\n");
+console.log(JSON.stringify({counts,selected: selected.length}));
