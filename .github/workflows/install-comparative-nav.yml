@@ -1,0 +1,31 @@
+name: Install comparative OMS navigation
+on:
+  push:
+    paths:
+      - '.github/workflows/install-comparative-nav.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  integrate:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Add comparative navigation without replacing original terminal
+        run: node scripts/install_comparative_nav.cjs
+      - name: Verify original OMS structural integrity
+        run: node scripts/qa-terminal.cjs
+      - name: Commit additive navigation if verification succeeds
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "Already integrated"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Link three-state comparative module from existing OMS"
+          git push
