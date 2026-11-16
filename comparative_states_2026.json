@@ -9,7 +9,7 @@
     "Every item has a source URL and its publisher's publication date; dates are not necessarily event dates.",
     "Counts show only items captured in this research batch, not relative political activity or media attention.",
     "X post permalinks were recovered from publisher embeds. They may require a login or be inaccessible via crawlers; source page corroborates link.",
-    "One Instagram URL was recovered through a third-party mirror and has NOT been verified as an original account post.",
+    "No individually verifiable historic Meta or LinkedIn post URL has been recovered in this batch; public account and issue-search links are discovery only.",
     "When an issue/leader filter returns no records, that means not yet captured, not that no reporting or posts exist.",
     "Allegations, proposed schemes and projected outcomes must not be represented as established wrongdoing or completed results."
   ],
@@ -523,9 +523,9 @@
       "issue": "Education, Healthcare & Employment",
       "type": "Reported action",
       "title": "Industrial projects with projected job creation",
-      "summary": "Majhi inaugurated and laid foundations for industrial projects; 42,512 jobs were reported as potential, not realised.",
+      "summary": "Sambad reports that Majhi inaugurated and laid the foundations of 53 industrial projects worth ₹39,383 crore; 42,512 jobs are projected, not verified realised employment.",
       "publisher": "Sambad English",
-      "url": "https://sambadenglish.com/tags/cm-mohan-charan-majhi",
+      "url": "https://sambadenglish.com/latest-news/odisha-cm-unveils-industrial-projects-worth-over-rs-39000-crore-42512-new-jobs-likely-12675795",
       "status": "publisher-report-reviewed"
     },
     {
@@ -875,6 +875,18 @@
       "publisher": "The Times of India",
       "url": "https://timesofindia.indiatimes.com/city/ranchi/jharkhand-cm-secretariat-directs-action-on-delayed-juidco-engineer-recruitment/articleshow/135327083.cms",
       "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-058",
+      "date": "2026-10-24",
+      "leader": "od-cm",
+      "issue": "Infrastructure & Development",
+      "type": "Reported action",
+      "title": "Electric-bus launch and urban transport expansion",
+      "summary": "Majhi inaugurated 26 electric bus services at the National Urban Conclave; 400 additional buses and expansion to nine towns were presented as plans, not completed deployments.",
+      "publisher": "Sambad English",
+      "url": "https://sambadenglish.com/latest-news/odisha-to-add-400-e-buses-expand-ama-bus-services-to-9-more-towns-12747226",
+      "status": "publisher-report-reviewed"
     }
   ],
   "posts": [
@@ -925,18 +937,6 @@
       "publisher": "Free Press Journal",
       "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-announces-1-crore-aid-for-families-of-martyred-police-personnel-amount-to-be-equally-divided-between-wife-parents-video",
       "status": "embedded-post-url"
-    },
-    {
-      "id": "social-005",
-      "date": "2026-09-05",
-      "leader": "mp-cm",
-      "issue": "Environment & Forests",
-      "platform": "Instagram",
-      "detail": "Waterbody clean-up encouragement; indexed mirror, original account/post not independently opened",
-      "url": "https://www.instagram.com/p/Dc5AAFKM2Vl/",
-      "publisher": "Imginn index",
-      "publisherUrl": "https://imginn.com/p/Dc5AAFKM2Vl/",
-      "status": "indexed-instagram-unconfirmed"
     },
     {
       "id": "social-006",
