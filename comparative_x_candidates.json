@@ -3,6 +3,17 @@
   "recoveredPages": 28,
   "captures": [
     {
+      "recordId": "cmp-008",
+      "publisher": "Free Press Journal",
+      "date": "2026-10-19",
+      "leader": "mp-cm",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2112078621737398662"
+      ]
+    },
+    {
       "recordId": "cmp-006",
       "publisher": "Free Press Journal",
       "date": "2026-10-05",
@@ -15,14 +26,15 @@
       ]
     },
     {
-      "recordId": "cmp-008",
+      "recordId": "cmp-010",
       "publisher": "Free Press Journal",
-      "date": "2026-10-19",
+      "date": "2026-10-24",
       "leader": "mp-cm",
-      "issue": "Religion / Hinduism",
-      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
+      "issue": "Agriculture & Farmers",
+      "publisherUrl": "https://www.freepressjournal.in/indore/mp-cm-mohan-yadav-inaugurates-2387-crore-irrigation-project-in-dhar-transfers-317-crore-crop-insurance-to-farmers-video",
       "posts": [
-        "https://x.com/DrMohanYadav51/status/2112078621737398662"
+        "https://x.com/DrMohanYadav51/status/2113973725414707541",
+        "https://x.com/DrMohanYadav51/status/2113978741265502432"
       ]
     },
     {
@@ -34,18 +46,6 @@
       "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-announces-1-crore-aid-for-families-of-martyred-police-personnel-amount-to-be-equally-divided-between-wife-parents-video",
       "posts": [
         "https://x.com/DrMohanYadav51/status/2112780082150514792"
-      ]
-    },
-    {
-      "recordId": "cmp-010",
-      "publisher": "Free Press Journal",
-      "date": "2026-10-24",
-      "leader": "mp-cm",
-      "issue": "Agriculture & Farmers",
-      "publisherUrl": "https://www.freepressjournal.in/indore/mp-cm-mohan-yadav-inaugurates-2387-crore-irrigation-project-in-dhar-transfers-317-crore-crop-insurance-to-farmers-video",
-      "posts": [
-        "https://x.com/DrMohanYadav51/status/2113973725414707541",
-        "https://x.com/DrMohanYadav51/status/2113978741265502432"
       ]
     },
     {
@@ -72,6 +72,17 @@
       ]
     },
     {
+      "recordId": "cmp-042",
+      "publisher": "Prameya",
+      "date": "2026-10-31",
+      "leader": "od-lop",
+      "issue": "Environment & Forests",
+      "publisherUrl": "https://www.prameyanews.com/cyclone-arnab-naveen-patnaik-expresses-grief-over-kandhamal-landslide-deaths-seeks-urgent-rescue",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2116369262378094932"
+      ]
+    },
+    {
       "recordId": "cmp-038",
       "publisher": "Odisha Bytes",
       "date": "2026-10-16",
@@ -82,17 +93,6 @@
         "https://x.com/MohanMOdisha/status/2110955568425058380",
         "https://x.com/MohanMOdisha/status/2110983229713125796",
         "https://x.com/Naveen_Odisha/status/2110943691313664248"
-      ]
-    },
-    {
-      "recordId": "cmp-042",
-      "publisher": "Prameya",
-      "date": "2026-10-31",
-      "leader": "od-lop",
-      "issue": "Environment & Forests",
-      "publisherUrl": "https://www.prameyanews.com/cyclone-arnab-naveen-patnaik-expresses-grief-over-kandhamal-landslide-deaths-seeks-urgent-rescue",
-      "posts": [
-        "https://x.com/Naveen_Odisha/status/2116369262378094932"
       ]
     },
     {
@@ -129,6 +129,18 @@
       ]
     },
     {
+      "recordId": "cmp-054",
+      "publisher": "KohramLive",
+      "date": "2026-10-20",
+      "leader": "jh-lop",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://kohramlive.com/message-from-jharkhands-big-names-on-vijayadashami-find-out-who-said-what/",
+      "posts": [
+        "https://x.com/HemantSorenJMM/status/2112381563132666116",
+        "https://x.com/yourBabulal/status/2112407297125503051"
+      ]
+    },
+    {
       "recordId": "cmp-111",
       "publisher": "Free Press Journal",
       "date": "2026-08-29",
@@ -148,18 +160,6 @@
       "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-transfers-213-crore-to-over-35-lakh-social-security-pension-beneficiaries-video",
       "posts": [
         "https://x.com/DrMohanYadav51/status/2109205338583072840"
-      ]
-    },
-    {
-      "recordId": "cmp-054",
-      "publisher": "KohramLive",
-      "date": "2026-10-20",
-      "leader": "jh-lop",
-      "issue": "Religion / Hinduism",
-      "publisherUrl": "https://kohramlive.com/message-from-jharkhands-big-names-on-vijayadashami-find-out-who-said-what/",
-      "posts": [
-        "https://x.com/HemantSorenJMM/status/2112381563132666116",
-        "https://x.com/yourBabulal/status/2112407297125503051"
       ]
     },
     {
@@ -231,6 +231,18 @@
       ]
     },
     {
+      "recordId": "cmp-203",
+      "publisher": "MP Breaking News",
+      "date": "2026-10-25",
+      "leader": "mp-lop",
+      "issue": "Environment & Forests",
+      "publisherUrl": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2114265094175809897",
+        "https://x.com/UmangSinghar/status/2114242584499634343"
+      ]
+    },
+    {
       "recordId": "cmp-208",
       "publisher": "Free Press Journal",
       "date": "2026-08-25",
@@ -242,15 +254,14 @@
       ]
     },
     {
-      "recordId": "cmp-203",
+      "recordId": "cmp-202",
       "publisher": "MP Breaking News",
-      "date": "2026-10-25",
+      "date": "2026-10-21",
       "leader": "mp-lop",
-      "issue": "Environment & Forests",
-      "publisherUrl": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
+      "issue": "Agriculture & Farmers",
+      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/mp-farmers-issues-umang-singhar-targets-bjp-government-06-934270",
       "posts": [
-        "https://x.com/UmangSinghar/status/2114265094175809897",
-        "https://x.com/UmangSinghar/status/2114242584499634343"
+        "https://x.com/UmangSinghar/status/2112825339538030850"
       ]
     },
     {
@@ -265,17 +276,6 @@
       ]
     },
     {
-      "recordId": "cmp-212",
-      "publisher": "Dainik Jagran",
-      "date": "2026-09-07",
-      "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://www.jagran.com/jharkhand/ranchi-jssc-cgl-paper-leak-confirmed-by-accused-in-jharkhand-40365112.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2096838318176834025"
-      ]
-    },
-    {
       "recordId": "cmp-213",
       "publisher": "Dainik Jagran",
       "date": "2026-09-28",
@@ -287,14 +287,14 @@
       ]
     },
     {
-      "recordId": "cmp-202",
-      "publisher": "MP Breaking News",
-      "date": "2026-10-21",
-      "leader": "mp-lop",
-      "issue": "Agriculture & Farmers",
-      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/mp-farmers-issues-umang-singhar-targets-bjp-government-06-934270",
+      "recordId": "cmp-212",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-07",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.jagran.com/jharkhand/ranchi-jssc-cgl-paper-leak-confirmed-by-accused-in-jharkhand-40365112.html",
       "posts": [
-        "https://x.com/UmangSinghar/status/2112825339538030850"
+        "https://x.com/yourBabulal/status/2096838318176834025"
       ]
     },
     {
@@ -320,5 +320,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-16T18:15:04.385Z"
+  "generatedAt": "2026-11-16T18:22:55.128Z"
 }
