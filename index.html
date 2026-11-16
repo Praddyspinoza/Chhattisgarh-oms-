@@ -2117,4 +2117,27 @@ return '<article class="cg-sdir-card"><strong>'+E(x.person)+'</strong><small>'+n
 +'<div class="cg-sdir-meta"><h4>Source-backed public Facebook and Instagram account links</h4><div class="cg-sdir-links">'+(s.accounts||[]).filter(x=>x.platform==="Facebook"||x.platform==="Instagram").map(x=>link(x.url,x.person+' · '+x.platform)).join('')+'</div></div>';
 const hero=el.querySelector(".v12-hero");if(hero)hero.insertAdjacentElement("afterend",box);else el.insertBefore(box,el.firstChild);
 })();
-</script></body></html>
+</script><script id="omsThreeStateLinkInstaller">
+(function(){
+"use strict";
+function install(){
+ if(document.getElementById("oms-cmp-entry"))return;
+ var ref=document.querySelector('[data-nav="v12-links"]')||document.querySelector('[data-nav="v12-bjp"]');
+ var button=document.createElement("button");
+ button.id="oms-cmp-entry";button.type="button";button.textContent="THREE-STATE COMPARATIVE ↗";
+ button.setAttribute("aria-label","Open Madhya Pradesh, Odisha and Jharkhand comparative intelligence");
+ button.addEventListener("click",function(){window.location.href="./comparative.html";});
+ if(ref){
+  button.className=ref.className;
+  button.style.cssText="min-width:0;max-width:100%;";
+  ref.insertAdjacentElement("afterend",button);
+ }else{
+  button.style.cssText="position:fixed;bottom:18px;right:18px;z-index:2147482000;background:#1a3430;border:1px solid #72cfb5;color:#eaf4ef;padding:12px 16px;border-radius:8px;font:700 12px sans-serif;box-shadow:0 8px 26px #0008;cursor:pointer";
+  document.body.appendChild(button);
+ }
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",install,{once:true});
+else install();
+})();
+</script>
+</body></html>
