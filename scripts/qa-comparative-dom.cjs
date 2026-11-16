@@ -18,7 +18,7 @@ function node(id){
  }
  return nodes[id];
 }
-const tabs=["reports","social","overview","sources","method"].map(id=>({...node("tab-"+id),dataset:{tab:id}}));
+const tabs=["dossiers","reports","social","overview","sources","method"].map(id=>({...node("tab-"+id),dataset:{tab:id}}));
 const sections=tabs.map(t=>({...node(t.dataset.tab),id:t.dataset.tab}));
 const dom={
  getElementById(id){return id==="oms-comparative-embedded"?{textContent:embedded}:node(id);},
@@ -26,6 +26,13 @@ const dom={
  querySelectorAll(sel){if(sel===".section")return sections;if(sel==="[data-tab]")return tabs;return [];}
 };
 vm.runInNewContext(runtime,{document:dom,console,encodeURIComponent,Date,Error,URL,Math,Object,Array,String,Number,Set,Map,RegExp,Boolean},{timeout:4000});
+const initial=node("dossierList").innerHTML;
+assert(initial.includes("dossier-headline") && initial.includes("Tribal Issues"),"Default combined dossier is not visible");
+const selectAll=node("topicPicker").events.click;
+assert(typeof selectAll==="function","Topic selection is not wired");
+selectAll({target:{closest:()=>({dataset:{dossierTopic:"all"}})}});
+const allDossiers=node("dossierList").innerHTML;
+assert(allDossiers.includes("ORIGINAL X / VIDEO PERMALINKS"),"Posts are not integrated with leader dossier");
 const reports=node("reportList").innerHTML,posts=node("postList").innerHTML,source=node("sourceGrid").innerHTML;
 assert(reports.includes("source-headline"),"No clickable news headlines were rendered");
 assert(posts.includes("source-headline"),"No clickable X post headline was rendered");
@@ -35,12 +42,13 @@ assert(source.includes("Dainik Bhaskar"),"Blocked publication source listing dis
 for(const l of records.leaders)assert(reports.includes(l.name)&&posts.includes(l.name),"Missing leader dossier "+l.name);
 const escapeHtml=v=>String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 for(const topic of records.issues)assert(reports.includes(escapeHtml(topic))&&posts.includes(escapeHtml(topic)),"Missing issue "+topic);
-for(const r of records.records)assert(reports.includes(escapeHtml(r.url)),"Missing original news link "+r.id);
-for(const p of records.posts)assert(posts.includes(escapeHtml(p.url)),"Missing original post link "+p.id);
+for(const r of records.records){assert(reports.includes(escapeHtml(r.url)),"Missing original news link "+r.id);assert(allDossiers.includes(escapeHtml(r.url)),"Missing dossier article "+r.id);}
+for(const p of records.posts){assert(posts.includes(escapeHtml(p.url)),"Missing original post link "+p.id);assert(allDossiers.includes(escapeHtml(p.url)),"Missing dossier original post "+p.id);}
 const staticNews=html.slice(html.indexOf("<!-- STATIC_COMPARE_REPORTS_START -->"),html.indexOf("<!-- STATIC_COMPARE_REPORTS_END -->"));
 const staticSocial=html.slice(html.indexOf("<!-- STATIC_COMPARE_SOCIAL_START -->"),html.indexOf("<!-- STATIC_COMPARE_SOCIAL_END -->"));
 assert.equal((staticNews.match(/class="source-headline"/g)||[]).length,records.records.length,"Static news links missing");
 assert.equal((staticSocial.match(/class="source-headline"/g)||[]).length,records.posts.length,"Static social links missing");
 assert.equal(node("nReports").textContent,records.records.length,"News metric wrong");
 assert.equal(node("nPosts").textContent,records.posts.length,"Social metric wrong");
+assert(html.includes("STATIC_DOSSIERS_START"),"No static initial dossier fallback");
 console.log(JSON.stringify({pass:true,renderedNews:records.records.length,renderedPosts:records.posts.length,leaders:records.leaders.length,issues:records.issues.length,staticFallback:true,newsChannelLinks:true,missingLinks:0},null,2));
