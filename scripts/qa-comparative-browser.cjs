@@ -1,0 +1,46 @@
+"use strict";
+const { chromium } = require("playwright-core");
+const assert = require("node:assert/strict");
+const fs = require("fs"),path=require("path");
+const data=JSON.parse(fs.readFileSync("comparative_states_2026.json","utf8"));
+const exec=require("child_process").execSync;
+let chrome=process.env.CHROME_PATH||"";
+if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chromium-browser",{encoding:"utf8"}).trim()}catch(e){throw Error("Chromium executable unavailable; browser QA cannot run")}}
+(async()=>{
+ const browser=await chromium.launch({headless:true,executablePath:chrome,args:["--no-sandbox","--disable-dev-shm-usage"]});
+ let errors=[];
+ try{
+  const page=await browser.newPage({viewport:{width:1440,height:960},deviceScaleFactor:1});
+  page.on("pageerror",e=>errors.push(e.message));
+  await page.goto("file://"+path.resolve("comparative.html"),{waitUntil:"load",timeout:30000});
+  await page.waitForSelector("#dossierList .dossier-leader",{timeout:8000});
+  assert.equal(await page.locator("#dossierList .dossier-leader").count(),6,"Initial dossier missing leaders");
+  assert(await page.locator("#dossierList a.dossier-headline").count()>=15,"Initial report links not visible");
+  await page.screenshot({path:"comparative-desktop-qa.png",fullPage:false});
+  await page.locator('[data-dossier-topic="all"]').first().click();
+  const all=await page.locator("#dossierList a.dossier-headline").count();
+  assert.equal(all,data.records.length+data.posts.length,"Not all original source links are rendered in combined dossiers");
+  const actualSourceLinks=await page.locator("#dossierList a.dossier-headline").evaluateAll(as=>as.map(a=>a.getAttribute("href")));
+  for(const r of [...data.records,...data.posts])assert(actualSourceLinks.includes(r.url),"Missing original "+r.url);
+  await page.locator('[data-dossier-topic="Mining"]').first().click();
+  const count=await page.locator("#dossierList a.dossier-headline").count();
+  assert.equal(count,data.records.filter(r=>r.issue==="Mining").length+data.posts.filter(r=>r.issue==="Mining").length);
+  await page.locator('[data-dossier-topic="all"]').first().click();
+  await page.locator('button[data-state="Odisha"]').first().click();
+  assert.equal(await page.locator("#dossierList .dossier-leader").count(),20,"State filter should yield 2 leaders across 10 topics");
+  await page.locator('button[data-state="all"]').first().click();
+  await page.locator('button[data-role="Leader of Opposition"]').first().click();
+  assert.equal(await page.locator("#dossierList .dossier-leader").count(),30,"Office filter should yield 3 leaders across 10 topics");
+  await page.locator('button[data-role="all"]').first().click();
+  await page.locator('button[data-tab="social"]').click();
+  const social=await page.locator("#postList a.source-headline").count();
+  assert.equal(social,data.posts.length,"Social archive should include every original permalink");
+  const target=await page.locator("#postList a.source-headline").first().getAttribute("href");
+  assert(target.startsWith("https://x.com/")||target.startsWith("https://www.youtube.com/"),"Social headline links must be permalinks");
+  await page.locator('button[data-tab="dossiers"]').click();
+  await page.locator('[data-dossier-topic="Education, Healthcare & Employment"]').first().click();
+  await page.screenshot({path:"comparative-issue-qa.png",fullPage:false});
+  assert.deepEqual(errors,[],"Browser JavaScript runtime errors");
+  console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,scriptErrors:errors.length},null,2));
+ } finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exit(1)});
