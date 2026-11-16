@@ -1,0 +1,451 @@
+{
+  "counts": {
+    "stylesheets": 10,
+    "totalCSSBytes": 87225,
+    "totalHTMLBytes": 1283174
+  },
+  "head": "<!DOCTYPE html>\n<html lang=\"en\"><head><meta charset=\"utf-8\"/><meta content=\"width=device-width,initial-scale=1\" name=\"viewport\"/><meta content=\"dark\" name=\"color-scheme\"/><title>Chhattisgarh Opposition Monitoring Console — Research Archive</title><style>\n:root{--bg:#03060c;--black:#020306;--navy:#08172d;--navy2:#0d2040;--navy3:#11294e;--navy4:#182c4a;--red:#eb5662;--red2:#ff7580;--silver:#c9d3e5;--muted:#8d9ab2;--border:#23334e;--soft:#172842;--blue:#557ac0;--white:#eff3fb}\n*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--silver);font:13px/1.48 Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}::-webkit-scrollbar{width:9px;height:8px}::-webkit-scrollbar-thumb{background:#293c5c;border-radius:9px}*{scrollbar-color:#293c5c transparent}svg.ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.6;flex:none}\n.shell{display:grid;grid-template-columns:246px minmax(0,1fr);min-height:100vh}.sidebar{background:linear-gradient(175deg,#050b19 0,#060d1b 68%,#070b14);border-right:1px solid #2a3850;position:sticky;top:0;height:100vh;overflow:auto;scrollbar-width:thin}.brand{padding:23px 16px 19px;display:flex;align-items:center;gap:13px;border-bottom:1px solid var(--border)}.brandmark{display:grid;place-items:center;width:39px;height:39px;border:1px solid #60738d;background:#0e223e;color:#e1e9f6;font:700 20px Georgia,serif;border-radius:11px}.brand b{display:block;color:#f5f6fb;font-size:12px;letter-spacing:2.1px}.brand small{display:block;color:#788ba8;font-size:9px;letter-spacing:1.2px;line-height:1.55}.sidebar-section{padding:20px 12px 12px}.sidecap{font-size:10px;font-weight:800;letter-spacing:2.1px;color:#8899b6;padding:0 12px;margin:0 0 11px}.side-link{display:flex;gap:11px;align-items:center;min-height:40px;border:1px solid transparent;border-radius:7px;padding:9px 12px;color:#becadd;font-weight:650;font-size:12px;transition:background .18s,color .18s}.side-link:hover,.side-link.on{background:#132a4c;color:#fff}.side-link.on{border-color:#28446e;box-shadow:inset 3px 0 0 var(--red)}.side-link i{font-style:normal;margin-left:auto;padding:0 6px;border-radius:4px;font-size:10px;background:#243a58;color:#c6d2e8}.watchlist{border-top:1px solid var(--border);padding-top:18px}.watchperson{display:flex;gap:10px;align-items:center;padding:7px 12px;border-radius:8px;transition:background .2s}.watchperson:hover{background:#132440}.roundel{display:inline-grid;place-items:center;background:linear-gradient(140deg,#1f3758,#263b54);border:1px solid #4d6179;color:#e9eef7;width:30px;height:30px;border-radius:50%;font-size:10px;font-weight:750;flex:none}.watchperson b,.watchperson small{display:block}.watchperson b{color:#e3e7ed;font-size:11px}.watchperson small{color:#8496b0;font-size:9.5px;line-height:1.25;margin-top:2px}.sidefoot{padding:14px;margin:18px 12px;border:1px solid #32435d;background:#0e1c32;border-radius:9px;color:#8c9bb3;font-size:11px}.sidefoot b{display:block;color:#d5dcec;letter-spacing:1.2px;font-size:10px;margin-bottom:8px}.dotlive{display:inline-block;width:7px;height:7px;background:#d8ad76;border-radius:50%;margin-right:6px}\n.app{min-width:0}.topbar{height:74px;position:sticky;top:0;z-index:20;background:rgba(3,6,13,.97);backdrop-filter:blur(15px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:13px 23px;gap:12px}.topbrand{min-width:0}.smallcaps{font-size:9px;letter-spacing:2px;color:#9dafc9;text-transform:uppercase;font-weight:850}.topbrand strong{display:block;color:var(--white);font-size:18px;line-height:1.4}.toolbar{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:7px}.toolbar .period{padding:8px 11px;background:#0b1b34;border:1px solid #324563;border-radius:6px;color:#c6d3e8;font-size:11px;font-weight:700}.action{border:1px solid #3b5070;background:#10223e;color:#d4deef;border-radius:6px;padding:8px 12px;display:inline-flex;gap:7px;align-items:center;font-size:11px;font-weight:650;white-space:nowrap}.action:hover{background:#173b66}.action.primary{background:#d2dbea;color:#07101d;border-color:#d2dbea}.action svg.ic{height:14px;width:14px}.content{padding:25px 23px 32px;max-width:1760px;margin:auto}.view{scroll-margin-top:92px;padding-bottom:58px}.js-enabled .view:not(.active){display:none}.eyebrow{font-size:10px;color:#adbdcf;font-weight:850;letter-spacing:1.8px}.hero{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin:0 0 17px}.hero h1{font-family:Georgia,'Times New Roman',serif;color:var(--red2);font-size:29px;line-height:1.12;margin:6px 0 7px;letter-spacing:-.55px}.hero p{color:#acbad0;margin:0;max-width:850px;font-size:12px}.tagset{display:flex;gap:6px;flex:none}.tag{font-size:9px;letter-spacing:1px;border:1px solid #40516a;padding:6px 9px;border-radius:5px;color:#bbc9df;font-weight",
+  "sample": "<body><div class=\"shell\"><aside class=\"sidebar\"><div class=\"brand\"><div class=\"brandmark\">CG</div><div><b>CHHATTISGARH</b><small>POLITICAL INTELLIGENCE<br/>V12 PREVIEW</small></div></div><div class=\"sidebar-section\"><p class=\"sidecap\">WORKSPACE</p><nav class=\"navlinks\"><a class=\"side-link\" data-nav=\"command\" href=\"#command\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><rect height=\"7\" rx=\"1\" width=\"7\" x=\"3\" y=\"3\"></rect><rect height=\"7\" rx=\"1\" width=\"7\" x=\"14\" y=\"3\"></rect><rect height=\"7\" rx=\"1\" width=\"7\" x=\"3\" y=\"14\"></rect><rect height=\"7\" rx=\"1\" width=\"7\" x=\"14\" y=\"14\"></rect></svg><span>Command centre</span></a><a class=\"side-link\" data-nav=\"v12-bjp\" href=\"#v12-bjp\"><svg aria-hidden=\"true\" class=\"ic\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"4\"></circle><path d=\"M4 21a8 8 0 0 1 16 0\"></path></svg><span>BJP / Government</span><i>10</i></a><a class=\"side-link\" data-nav=\"v12-cm\" href=\"#v12-cm\"><svg aria-hidden=\"true\" class=\"ic\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"4\"></circle><path d=\"M4 21a8 8 0 0 1 16 0\"></path></svg><span>CM intelligence</span><i>DEDICATED</i></a><a class=\"side-link\" data-nav=\"v12-issues\" href=\"#v12-issues\"><svg aria-hidden=\"true\" class=\"ic\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"4\"></circle><path d=\"M4 21a8 8 0 0 1 16 0\"></path></svg><span>Issue observatory</span><i>10 TOPICS</i></a><button class=\"side-link\" id=\"v12FlowJump\" type=\"button\" style=\"width:100%;text-align:left;color:#d3f3ed;border:0;background:transparent;cursor:pointer\"><span>◉ &nbsp; LIVE MOTION FLOW</span><i>DATA STREAM</i></button><a class=\"side-link\" data-nav=\"v12-links\" href=\"#v12-links\"><svg aria-hidden=\"true\" class=\"ic\" viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle><path d=\"M3 12h18M12 3a17 17 0 0 0 0 18M12 3a17 17 0 0 1 0 18\"></path></svg><span>Original X &amp; Meta links</span><i>RECOVERED</i></a><a class=\"side-link\" data-nav=\"dossiers\" href=\"#dossiers\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"4\"></circle><path d=\"M4 21a8 8 0 0 1 16 0\"></path></svg><span>Leader dossiers</span><i>10</i></a><a class=\"side-link\" data-nav=\"social\" href=\"#social\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><path d=\"M3 12h4l3-7 4 14 3-7h4\"></path></svg><span>X / Meta chronicle</span></a><a class=\"side-link\" data-nav=\"meta\" href=\"#meta\"><svg aria-hidden=\"true\" class=\"ic\" viewBox=\"0 0 24 24\"><rect x=\"2\" y=\"5\" width=\"8\" height=\"14\" rx=\"2\"></rect><rect x=\"14\" y=\"5\" width=\"8\" height=\"14\" rx=\"2\"></rect><path d=\"M5 10h2M17 10h2M5 14h2M17 14h2\"></path></svg><span>Social intelligence</span><i>X / FB / IG</i></a><a class=\"side-link\" data-nav=\"archive\" href=\"#archive\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><rect height=\"5\" rx=\"1\" width=\"18\" x=\"3\" y=\"4\"></rect><path d=\"M5 9v11h14V9M9 14h6\"></path></svg><span>Activity archive</span><i>161</i></a><a class=\"side-link\" data-nav=\"events\" href=\"#events\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><rect height=\"16\" rx=\"2\" width=\"18\" x=\"3\" y=\"5\"></rect><path d=\"M7 3v4M17 3v4M3 10h18\"></path></svg><span>Public activity ledger</span><i>42</i></a><a class=\"side-link\" data-nav=\"video\" href=\"#video\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><rect height=\"14\" rx=\"3\" width=\"18\" x=\"3\" y=\"5\"></rect><path d=\"m10 9 5 3-5 3z\"></path></svg><span>Video library</span><i>13</i></a><a class=\"side-link\" data-nav=\"audit\" href=\"#audit\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><path d=\"m12 2 9 4v6c0 5-4 9-9 10-5-1-9-5-9-10V6zM8 12l3 3 5-6\"></path></svg><span>Source coverage audit</span><i>22</i></a><a class=\"side-link\" data-nav=\"sources\" href=\"#sources\"><svg aria-hidden=\"true\" class=\"ic\" viewbox=\"0 0 24 24\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5v14c0 3 18 3 18 0V5M3 12c0 4 18 4 18 0\"></p",
+  "selected": [
+    {
+      "selector": ":root",
+      "css": "--bg:#03060c;--black:#020306;--navy:#08172d;--navy2:#0d2040;--navy3:#11294e;--navy4:#182c4a;--red:#eb5662;--red2:#ff7580;--silver:#c9d3e5;--muted:#8d9ab2;--border:#23334e;--soft:#172842;--blue:#557ac0;--white:#eff3fb"
+    },
+    {
+      "selector": "body",
+      "css": "margin:0;background:var(--bg);color:var(--silver);font:13px/1.48 Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+    },
+    {
+      "selector": ".sidebar",
+      "css": "background:linear-gradient(175deg,#050b19 0,#060d1b 68%,#070b14);border-right:1px solid #2a3850;position:sticky;top:0;height:100vh;overflow:auto;scrollbar-width:thin"
+    },
+    {
+      "selector": ".brand",
+      "css": "padding:23px 16px 19px;display:flex;align-items:center;gap:13px;border-bottom:1px solid var(--border)"
+    },
+    {
+      "selector": ".brandmark",
+      "css": "display:grid;place-items:center;width:39px;height:39px;border:1px solid #60738d;background:#0e223e;color:#e1e9f6;font:700 20px Georgia,serif;border-radius:11px"
+    },
+    {
+      "selector": ".brand b",
+      "css": "display:block;color:#f5f6fb;font-size:12px;letter-spacing:2.1px"
+    },
+    {
+      "selector": ".brand small",
+      "css": "display:block;color:#788ba8;font-size:9px;letter-spacing:1.2px;line-height:1.55"
+    },
+    {
+      "selector": ".sidebar-section",
+      "css": "padding:20px 12px 12px"
+    },
+    {
+      "selector": ".panel",
+      "css": "background:linear-gradient(155deg,#0c1d36,#07152b 77%);border:1px solid #344861;border-radius:9px;padding:12px 14px;min-width:0;box-shadow:0 4px 20px #0003"
+    },
+    {
+      "selector": ".panel-head",
+      "css": "display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px"
+    },
+    {
+      "selector": ".panel h2",
+      "css": "font-size:14px;color:var(--red2);margin:0;font-weight:750;letter-spacing:.1px"
+    },
+    {
+      "selector": ".panel-head p",
+      "css": "font-size:10px;color:#97a9c0;margin:1px 0 0"
+    },
+    {
+      "selector": ".panel-head .minor",
+      "css": "font-size:10px;color:#c4d4e9;text-decoration:underline"
+    },
+    {
+      "selector": ".flbody",
+      "css": "min-width:0"
+    },
+    {
+      "selector": ".flbody a",
+      "css": "font-size:11px;display:block;color:#e2e8f2;font-weight:700"
+    },
+    {
+      "selector": ".flbody a:hover",
+      "css": "color:var(--red2)"
+    },
+    {
+      "selector": ".panel.slim",
+      "css": "padding:16px"
+    },
+    {
+      "selector": ".brand b",
+      "css": "font-size:11px"
+    },
+    {
+      "selector": ".brand small",
+      "css": "font-size:8px"
+    },
+    {
+      "selector": ".brand",
+      "css": "padding:13px 9px"
+    },
+    {
+      "selector": ".sidebar-section",
+      "css": "padding:14px 7px"
+    },
+    {
+      "selector": ".sidebar .side-link",
+      "css": "padding:8px"
+    },
+    {
+      "selector": ".sidebar",
+      "css": "height:auto;max-height:none;position:relative;border-right:0;border-bottom:1px solid #32435f"
+    },
+    {
+      "selector": ".brand",
+      "css": "padding:8px 14px"
+    },
+    {
+      "selector": ".sidebar-section",
+      "css": "padding:6px 10px 9px"
+    },
+    {
+      "selector": ".navlinks",
+      "css": "display:flex;gap:5px;overflow-x:auto;padding-bottom:4px"
+    },
+    {
+      "selector": "/* V5: five-theme circular intelligence explorer; server-rendered for no-script iPad previews. */\n:root",
+      "css": "--bg:#020204;--black:#010102;--navy:#061329;--navy2:#081c37;--navy3:#0d2545;--red:#ed4657;--red2:#ff6474;--silver:#d4dceb"
+    },
+    {
+      "selector": "body",
+      "css": "background:#020307;color:#d0d9ec"
+    },
+    {
+      "selector": ".sidebar",
+      "css": "background:linear-gradient(165deg,#030611,#071127 70%,#020307)"
+    },
+    {
+      "selector": ".panel,.metric,.leader-top,.archive-record,.vid-card",
+      "css": "background:linear-gradient(135deg,#091a35,#070f23)!important;border-color:#283b5b!important"
+    },
+    {
+      "selector": ".hero h1,.panel h2,.panel-head h2,.orbit-heading,.leader-top h3",
+      "css": "color:#f15d6b"
+    },
+    {
+      "selector": ".panel-head h2",
+      "css": "color:#f65a6b"
+    },
+    {
+      "selector": "/* V6 political profile integrated into dossier above five-topic navigator */\n:root",
+      "css": "--red2:#ef6876"
+    },
+    {
+      "selector": ".cg-map-hub",
+      "css": "border:1px solid #2b4569;background:linear-gradient(140deg,#02050b 0%,#06132a 45%,#02050c 100%);border-radius:16px;margin:19px 0 22px;overflow:hidden;box-shadow:0 14px 60px #0008"
+    },
+    {
+      "selector": ".cg-map-heading",
+      "css": "padding:21px 23px 16px;display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #243653"
+    },
+    {
+      "selector": ".cg-map-heading h2",
+      "css": "margin:4px 0 6px;color:#f16d78;font-size:25px;font-weight:700;letter-spacing:-.3px"
+    },
+    {
+      "selector": ".cg-map-heading p",
+      "css": "color:#a5b5d0;max-width:750px;margin:0;font-size:12px"
+    },
+    {
+      "selector": ".cg-map-status",
+      "css": "display:grid;grid-template-columns:54px 125px;align-items:center;gap:5px 8px;color:#8fa4c8;font-size:10px;flex:none"
+    },
+    {
+      "selector": ".cg-map-status strong",
+      "css": "font-size:22px;color:#ebeff6;text-align:right"
+    },
+    {
+      "selector": ".cg-map-controls",
+      "css": "display:flex;align-items:end;flex-wrap:wrap;gap:10px;padding:13px 19px;background:#08182f;border-bottom:1px solid #294166"
+    },
+    {
+      "selector": ".cg-map-controls label",
+      "css": "display:flex;flex-direction:column;gap:4px;color:#adbdd7;font-size:10px;letter-spacing:.3px;text-transform:uppercase;flex:1 1 115px"
+    },
+    {
+      "selector": ".cg-map-controls label:first-child",
+      "css": "min-width:150px"
+    },
+    {
+      "selector": ".cg-map-controls select,.cg-map-controls input",
+      "css": "background:#050d1e;color:#eff4ff;border:1px solid #3c5275;border-radius:7px;min-height:34px;padding:6px 8px;width:100%;font-size:11px;color-scheme:dark"
+    },
+    {
+      "selector": ".cg-map-controls button",
+      "css": "background:#243f68;color:#edf3ff;border:1px solid #536e91;border-radius:7px;padding:8px 10px;white-space:nowrap"
+    },
+    {
+      "selector": ".cg-map-layout",
+      "css": "display:grid;grid-template-columns:minmax(280px,1fr) minmax(300px,.88fr);gap:0"
+    },
+    {
+      "selector": ".cg-map-visual",
+      "css": "padding:15px 18px 9px;min-width:0;border-right:1px solid #223a5e;background:radial-gradient(ellipse at 45% 50%,#102e52 0%,#06172a 40%,#020914 83%);position:relative"
+    },
+    {
+      "selector": ".cg-map-visual-head",
+      "css": "display:flex;align-items:center;gap:9px;font-size:12px;color:#dfe8f5"
+    },
+    {
+      "selector": ".cg-map-visual-head span:last-child",
+      "css": "margin-left:auto;color:#8ea7c7;font-size:10px"
+    },
+    {
+      "selector": ".cg-live-dot",
+      "css": "width:7px;height:7px;background:#d85d72;border-radius:50%;box-shadow:0 0 14px #df6078;animation:cgStatus 2.9s infinite alternate"
+    },
+    {
+      "selector": ".cg-svg-frame",
+      "css": "position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;height:min(59vw,550px);min-height:400px"
+    },
+    {
+      "selector": ".cg-svg-frame svg",
+      "css": "width:100%;height:100%;max-height:550px;position:relative;z-index:2;filter:drop-shadow(0px 8px 13px #0009)"
+    },
+    {
+      "selector": ".cg-svg-beam",
+      "css": "position:absolute;left:0;right:0;top:-15%;height:14%;background:linear-gradient(180deg,transparent,#87bdff08,transparent);animation:cgSweep 12s linear infinite;z-index:1;pointer-events:none"
+    },
+    {
+      "selector": ".cg-poly",
+      "css": "stroke:#95a5c0;stroke-width:.85;stroke-linejoin:round;vector-effect:non-scaling-stroke;transition:fill .55s,stroke .4s,filter .4s;outline:0;cursor:pointer"
+    },
+    {
+      "selector": ".cg-poly:hover,.cg-poly:focus",
+      "css": "stroke:#e9f0ff;stroke-width:2.15;filter:drop-shadow(0 0 3px #bad6ff)"
+    },
+    {
+      "selector": ".cg-poly.cg-selected",
+      "css": "stroke:#fff0f3;stroke-width:2.8;filter:drop-shadow(0 0 6px #ef748e);animation:cgOutline 2.6s infinite alternate"
+    },
+    {
+      "selector": ".cg-map-legend",
+      "css": "display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;font-size:10px;color:#a5b6ce;margin:4px 0 8px"
+    },
+    {
+      "selector": ".cg-map-legend i",
+      "css": "height:9px;width:28px;border:1px solid #ffffff29;border-radius:2px"
+    },
+    {
+      "selector": ".cg-map-footnote",
+      "css": "font-size:10px;color:#8ea6c5;line-height:1.6;margin:3px 4px 6px"
+    },
+    {
+      "selector": ".cg-map-footnote a",
+      "css": "text-decoration:underline;color:#d1ddf0"
+    },
+    {
+      "selector": ".cg-map-detail",
+      "css": "padding:20px 19px 16px;background:linear-gradient(180deg,#0b1c38,#07132b);max-height:710px;overflow:auto"
+    },
+    {
+      "selector": ".cg-map-detail h3",
+      "css": "margin:5px 0;color:#f27483;font-size:25px"
+    },
+    {
+      "selector": ".cg-map-detail-top p",
+      "css": "color:#a2b2c9;font-size:11px;margin:5px 0 15px"
+    },
+    {
+      "selector": ".cg-map-districtstats",
+      "css": "display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px"
+    },
+    {
+      "selector": ".cg-map-districtstats div",
+      "css": "background:#071127;border:1px solid #2c4163;border-radius:9px;padding:9px 7px;display:flex;flex-direction:column;gap:2px"
+    },
+    {
+      "selector": ".cg-map-districtstats strong",
+      "css": "font-size:22px;color:#f1f5fc"
+    },
+    {
+      "selector": ".cg-map-districtstats span",
+      "css": "font-size:10px;color:#a4b5cc"
+    },
+    {
+      "selector": ".cg-district-associations",
+      "css": "margin:14px 0 8px;font-size:11px;color:#9db0ce;line-height:1.45"
+    },
+    {
+      "selector": ".cg-district-associations b",
+      "css": "color:#dde9f9"
+    },
+    {
+      "selector": ".cg-district-leaders",
+      "css": "display:flex;flex-wrap:wrap;gap:7px;margin:12px 0"
+    },
+    {
+      "selector": ".cg-district-leaders button",
+      "css": "background:#142c50;border:1px solid #4a6893;color:#d9e5f5;border-radius:99px;padding:6px 9px;font-size:11px"
+    },
+    {
+      "selector": ".cg-district-leaders button:hover",
+      "css": "background:#284b7b"
+    },
+    {
+      "selector": ".cg-district-evidence-title",
+      "css": "display:flex;justify-content:space-between;color:#f46e7c;font-size:12px;font-weight:700;padding-bottom:9px;border-bottom:1px solid #2d4365"
+    },
+    {
+      "selector": ".cg-district-evidence",
+      "css": "overflow:auto;max-height:260px;scrollbar-width:thin"
+    },
+    {
+      "selector": ".cg-evidence-item",
+      "css": "padding:12px 0;border-bottom:1px solid #233d62"
+    },
+    {
+      "selector": ".cg-evidence-item a",
+      "css": "display:block;color:#e5effe;font-size:11.5px;font-weight:650;text-decoration:none"
+    },
+    {
+      "selector": ".cg-evidence-item a:hover",
+      "css": "text-decoration:underline"
+    },
+    {
+      "selector": ".cg-evidence-item .cg-meta",
+      "css": "font-size:10px;color:#9daecd;margin:4px 0"
+    },
+    {
+      "selector": ".cg-evidence-item p",
+      "css": "margin:4px 0;color:#9db0c8;font-size:10.5px"
+    },
+    {
+      "selector": ".cg-empty",
+      "css": "padding:15px 0;color:#b9c8dc;font-size:11px"
+    },
+    {
+      "selector": ".cg-map-all-districts",
+      "css": "padding:14px 18px;border-top:1px solid #2a4163;background:#050c1c"
+    },
+    {
+      "selector": ".cg-map-roster-head",
+      "css": "display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:11px"
+    },
+    {
+      "selector": ".cg-map-roster-head h3",
+      "css": "margin:0;color:#f27482;font-size:14px"
+    },
+    {
+      "selector": ".cg-map-roster-head p",
+      "css": "margin:0;color:#839ab9;font-size:10px"
+    },
+    {
+      "selector": ".cg-district-choices",
+      "css": "display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px"
+    },
+    {
+      "selector": ".cg-district-choice",
+      "css": "text-align:left;display:flex;align-items:center;justify-content:space-between;gap:4px;border-radius:6px;background:#0f213d;border:1px solid #2a456c;color:#c6d3e9;padding:7px 8px;min-width:0;font-size:10px;line-height:1.25"
+    },
+    {
+      "selector": ".cg-district-choice span",
+      "css": "overflow:hidden;text-overflow:ellipsis"
+    },
+    {
+      "selector": ".cg-district-choice small",
+      "css": "color:#8aa9d8;font-size:10px"
+    },
+    {
+      "selector": ".cg-district-choice.cg-active",
+      "css": "border-color:#e56d82;background:#2c2b47;color:#fff"
+    },
+    {
+      "selector": ".cg-map-disclaimer",
+      "css": "border-top:1px solid #2c4164;padding:12px 19px;background:#050c1c;color:#95a9c8;font-size:11px;line-height:1.65"
+    },
+    {
+      "selector": ".cg-map-disclaimer strong",
+      "css": "color:#e9a6b2"
+    },
+    {
+      "selector": ".cg-district-choices",
+      "css": "grid-template-columns:repeat(4,minmax(0,1fr))"
+    },
+    {
+      "selector": ".cg-map-layout",
+      "css": "grid-template-columns:1fr"
+    },
+    {
+      "selector": ".cg-map-visual",
+      "css": "border-right:0;border-bottom:1px solid #263c59"
+    },
+    {
+      "selector": ".cg-map-detail",
+      "css": "max-height:unset"
+    },
+    {
+      "selector": ".cg-svg-frame",
+      "css": "height:500px"
+    },
+    {
+      "selector": ".cg-district-choices",
+      "css": "grid-template-columns:repeat(3,minmax(0,1fr))"
+    },
+    {
+      "selector": ".cg-map-heading",
+      "css": "flex-direction:column;padding:14px"
+    },
+    {
+      "selector": ".cg-map-heading h2",
+      "css": "font-size:21px"
+    },
+    {
+      "selector": ".cg-map-status",
+      "css": "grid-template-columns:46px 1fr"
+    },
+    {
+      "selector": ".cg-map-controls",
+      "css": "padding:10px"
+    },
+    {
+      "selector": ".cg-map-controls label",
+      "css": "flex-basis:135px"
+    },
+    {
+      "selector": ".cg-svg-frame",
+      "css": "height:415px;min-height:350px"
+    },
+    {
+      "selector": ".cg-map-visual",
+      "css": "padding:12px 9px"
+    },
+    {
+      "selector": ".cg-map-detail",
+      "css": "padding:14px"
+    },
+    {
+      "selector": ".cg-district-choices",
+      "css": "grid-template-columns:repeat(2,minmax(0,1fr))"
+    },
+    {
+      "selector": ".cg-map-legend i",
+      "css": "width:19px"
+    },
+    {
+      "selector": ".cg-live-dot,.cg-svg-beam,.cg-poly.cg-selected",
+      "css": "animation:none"
+    },
+    {
+      "selector": ".cg-playback",
+      "css": "border:1px solid #344d6e;border-radius:9px;background:linear-gradient(115deg,#0b1e3d,#071327);padding:13px 15px;margin:10px 0 16px"
+    },
+    {
+      "selector": ".cg-playback-top",
+      "css": "display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px"
+    },
+    {
+      "selector": ".cg-playback-top>div",
+      "css": "display:flex;flex-wrap:wrap;align-items:baseline;gap:10px"
+    }
+  ]
+}
