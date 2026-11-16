@@ -231,15 +231,14 @@
       ]
     },
     {
-      "recordId": "cmp-203",
-      "publisher": "MP Breaking News",
-      "date": "2026-10-25",
+      "recordId": "cmp-208",
+      "publisher": "Free Press Journal",
+      "date": "2026-08-25",
       "leader": "mp-lop",
-      "issue": "Environment & Forests",
-      "publisherUrl": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/lop-umang-singhar-questions-mp-govt-over-teacher-aspirants-protest-jitu-patwari-video-calls-candidates",
       "posts": [
-        "https://x.com/UmangSinghar/status/2114265094175809897",
-        "https://x.com/UmangSinghar/status/2114242584499634343"
+        "https://x.com/UmangSinghar/status/2092136508400730419"
       ]
     },
     {
@@ -254,17 +253,6 @@
       ]
     },
     {
-      "recordId": "cmp-208",
-      "publisher": "Free Press Journal",
-      "date": "2026-08-25",
-      "leader": "mp-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://www.freepressjournal.in/bhopal/lop-umang-singhar-questions-mp-govt-over-teacher-aspirants-protest-jitu-patwari-video-calls-candidates",
-      "posts": [
-        "https://x.com/UmangSinghar/status/2092136508400730419"
-      ]
-    },
-    {
       "recordId": "cmp-207",
       "publisher": "MP Breaking News",
       "date": "2026-08-05",
@@ -273,6 +261,29 @@
       "publisherUrl": "https://www.mpbreakingnews.in/bhopal/after-vidisha-sagar-raises-fresh-school-safety-concerns-umang-singhar-targets-bjp-government-912980",
       "posts": [
         "https://x.com/UmangSinghar/status/2084884875149291599"
+      ]
+    },
+    {
+      "recordId": "cmp-203",
+      "publisher": "MP Breaking News",
+      "date": "2026-10-25",
+      "leader": "mp-lop",
+      "issue": "Environment & Forests",
+      "publisherUrl": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2114265094175809897",
+        "https://x.com/UmangSinghar/status/2114242584499634343"
+      ]
+    },
+    {
+      "recordId": "cmp-211",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-04",
+      "leader": "jh-lop",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/giridih-giridih-molestation-complaint-police-lathicharge-at-pachamba-ps-40362563.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2095792643536228780"
       ]
     },
     {
@@ -307,18 +318,7 @@
       "posts": [
         "https://x.com/Naveen_Odisha/status/2112549591111569682"
       ]
-    },
-    {
-      "recordId": "cmp-211",
-      "publisher": "Dainik Jagran",
-      "date": "2026-09-04",
-      "leader": "jh-lop",
-      "issue": "Internal Security & Bastar",
-      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/giridih-giridih-molestation-complaint-police-lathicharge-at-pachamba-ps-40362563.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2095792643536228780"
-      ]
     }
   ],
-  "generatedAt": "2026-11-16T19:29:56.924Z"
+  "generatedAt": "2026-11-16T19:54:26.169Z"
 }
