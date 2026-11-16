@@ -20,7 +20,7 @@
     "departmentData": "Every dated official entry comes from a government department's public dated archive, except Union MoTA's original letter. Some URLs resolve to searchable archives rather than one PDF; clearly label those as index entries.",
     "assemblyData": "Legislative items are source-backed accounts of proceedings or exact dated calendar/list records. Do not suggest a verbatim transcript or name a CM as speaker if only a minister or MLA was quoted.",
     "principle": "Official orders are state-administration actions, not evidence that a named politician personally issued them. If no order was recovered for a department, do not show '0 orders issued'.",
-    "validation": "All cited government records were checked against dated public indexes; some source pages are dynamic or archived. Exact individual PDF URLs are not assumed and records are labeled ARCHIVE INDEX vs DIRECT PDF vs UNCONFIRMED."
+    "validation": "Department items are separated by provenance: official archive index, original PIB release, or court-referenced circular. The October FRA conference is one event represented by each state's participation, not three different government decisions. The original PDF of the 1 Oct MP departmental circular was not obtained."
   },
   "sessionNotes": [
     {
@@ -29,7 +29,9 @@
       "end": null,
       "sessionStatus": "No plenary session in 5 August–5 November 2026 verified. The 16th Assembly's 11th session was in July 2026; the next regular sitting was scheduled for December 2026. October 'training session' is not a regular House sitting.",
       "evidenceUrl": "https://mpvidhansabha.nic.in/stats/stat16vs.htm",
-      "secretariatUrl": "https://mpvidhansabha.nic.in/P2/p2_2026.htm"
+      "secretariatUrl": "https://mpvidhansabha.nic.in/P2/p2_2026.htm",
+      "questionIndexUrl": "https://mpvidhansabha.nic.in/P2/p2_2026.htm",
+      "questionIndexNote": "The assembly's official 2026 calendar; no House questioning within the target window."
     },
     {
       "state": "Odisha",
@@ -37,7 +39,9 @@
       "end": "2026-09-28",
       "sessionStatus": "Seventh sitting of the 17th Assembly began 22 September and adjourned sine die on 28 September, before provisional 3 October end. Question Hour was substantially disrupted; written question lists and minister replies are distinct from successful oral debates.",
       "evidenceUrl": "https://odisha.neva.gov.in/Home/Index/",
-      "secretariatUrl": "https://odisha.neva.gov.in/Home/Index/OR?StateCode=OR&UnitTypeId=OR"
+      "secretariatUrl": "https://odisha.neva.gov.in/Home/Index/OR?StateCode=OR&UnitTypeId=OR",
+      "questionIndexUrl": "https://odisha.neva.gov.in/Home/",
+      "questionIndexNote": "Official NeVA portal lists dated 24, 25 and 28 Sep 2026 starred/unstarred question lists, but questions have not been mapped item-by-item to the ten issues."
     },
     {
       "state": "Jharkhand",
@@ -45,27 +49,12 @@
       "end": "2026-08-12",
       "sessionStatus": "Monsoon session scheduled for 6–12 August, with five working days according to Assembly programme; track questions and supplementary budget separately from protests on premises.",
       "evidenceUrl": "https://jhla.neva.gov.in/",
-      "secretariatUrl": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/jharkhand-assembly-monsoon-session-2026-opposition-gears-up-to-corner-govt-on-jpscjssc-issues-session-begins-aug-6"
+      "secretariatUrl": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/jharkhand-assembly-monsoon-session-2026-opposition-gears-up-to-corner-govt-on-jpscjssc-issues-session-begins-aug-6",
+      "questionIndexUrl": "https://jhla.neva.gov.in/",
+      "questionIndexNote": "Official Jharkhand NeVA portal provides session papers and question discovery; no claim of complete question-text extraction."
     }
   ],
   "officialRecords": [
-    {
-      "id": "official-001",
-      "state": "Madhya Pradesh",
-      "date": "2026-08-07",
-      "issue": "Agriculture & Farmers",
-      "authority": "Directorate of Agricultural Engineering",
-      "recordType": "Public application notice",
-      "documentNumber": "CHC 2026-27",
-      "title": "Agricultural machinery custom-hiring applications — programme portal (historical notice unconfirmed)",
-      "summary": "The government programme portal is accessible, but a 7 August 2026 notice was not confirmed in the available register. The linked portal does not substantiate the record date.",
-      "url": "https://chc.mpdage.mp.gov.in/",
-      "provenance": "unconfirmed-historical-entry",
-      "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "The current live application portal does not independently confirm this alleged 7 August CHC notice. Treat as a research lead, NOT a verified official circular.",
-      "linkKind": "Unverified portal reference",
-      "documentVerified": false
-    },
     {
       "id": "official-002",
       "state": "Madhya Pradesh",
@@ -897,6 +886,91 @@
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
       "verificationNote": "PDF URL identified by a government publisher, but full document content has not yet been independently reviewed.",
       "linkKind": "Original PDF",
+      "documentVerified": false
+    },
+    {
+      "id": "official-149",
+      "state": "Madhya Pradesh",
+      "date": "2026-08-20",
+      "issue": "Tribal Issues",
+      "authority": "Ministry of Tribal Affairs, Government of India; MP Tribal Welfare Department",
+      "recordType": "Central ministry field inspection",
+      "documentNumber": "PIB 2301418",
+      "title": "Union Ministry of Tribal Affairs and MP officials review tribal welfare delivery in Indore division",
+      "summary": "Union MoTA Secretary and MP Tribal Welfare Department officials visited EMRS Morod, tribal women's weaving centre, Adi Sewa Kendra and forest-rights holders; the ministry called for time-bound welfare-scheme saturation. This is an official field-review report, not a circular or proof that all benefits were delivered.",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2301418&lang=2&reg=48",
+      "provenance": "government-press-release",
+      "leaderAttribution": "State/Union institution activity; not personally attributable to the named Chief Minister or Leader of Opposition.",
+      "verificationNote": "The 20 Aug 2026 official Union-government release identifies state officials and the review's scope; no separate MP notification is claimed.",
+      "linkKind": "Original PIB release",
+      "documentVerified": false
+    },
+    {
+      "id": "official-150",
+      "state": "Madhya Pradesh",
+      "date": "2026-10-01",
+      "issue": "Education, Healthcare & Employment",
+      "authority": "Commissioner, Tribal Welfare Department, Madhya Pradesh",
+      "recordType": "Court-described departmental circular",
+      "documentNumber": "Circular 01-10-2026; WP 46371/2026",
+      "title": "Tribal hostel superintendents' seven-year posting/transfer directive cited by MP High Court",
+      "summary": "A departmental circular dated 1 Oct 2026 reportedly directed transfer-option procedures for hostel superintendents who served seven continuous years in one posting. The 4 Nov 2026 High Court order references and discusses the circular without deciding its merits. This link is the court decision, NOT the original departmental circular.",
+      "url": "https://indiankanoon.org/doc/38946550/",
+      "provenance": "court-described-circular",
+      "leaderAttribution": "State/Union institution activity; not personally attributable to the named Chief Minister or Leader of Opposition.",
+      "verificationNote": "Only the MP High Court's description of the 1 October directive is established here. Not the circular PDF; implementation and any future amendments unverified.",
+      "linkKind": "Court record discussing circular",
+      "documentVerified": false
+    },
+    {
+      "id": "official-151",
+      "state": "Madhya Pradesh",
+      "date": "2026-10-10",
+      "issue": "Tribal Issues",
+      "authority": "Ministry of Tribal Affairs, Government of India; state Tribal/Forest/Revenue departments",
+      "recordType": "Central-to-state FRA implementation review",
+      "documentNumber": "PIB 2321667",
+      "title": "Forest Rights Act implementation review: Madhya Pradesh officials at Kolkata conference",
+      "summary": "The Union Ministry described pending forest-rights claims in MP districts among national priorities. On 9 Oct 2026 the Union ministry brought state officials together for a forest-rights implementation review; its 10 Oct press release describes directions for time-bound claims, Gram Sabha capacity, CFR rights and habitat rights. This is ONE multi-state event, repeated for state comparison, not three different meetings.",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2321667&lang=2&reg=48",
+      "provenance": "government-press-release",
+      "leaderAttribution": "State/Union institution activity; not personally attributable to the named Chief Minister or Leader of Opposition.",
+      "verificationNote": "Issued 10 Oct 2026, conference held 9 Oct. This is a public official review release, not an individual state department circular.",
+      "linkKind": "Original PIB release",
+      "documentVerified": false
+    },
+    {
+      "id": "official-152",
+      "state": "Odisha",
+      "date": "2026-10-10",
+      "issue": "Tribal Issues",
+      "authority": "Ministry of Tribal Affairs, Government of India; state Tribal/Forest/Revenue departments",
+      "recordType": "Central-to-state FRA implementation review",
+      "documentNumber": "PIB 2321667",
+      "title": "Forest Rights Act implementation review: Odisha officials at Kolkata conference",
+      "summary": "The Union Ministry cited Odisha's past work on PVTG habitat rights while requesting further actions on pending claims. On 9 Oct 2026 the Union ministry brought state officials together for a forest-rights implementation review; its 10 Oct press release describes directions for time-bound claims, Gram Sabha capacity, CFR rights and habitat rights. This is ONE multi-state event, repeated for state comparison, not three different meetings.",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2321667&lang=2&reg=48",
+      "provenance": "government-press-release",
+      "leaderAttribution": "State/Union institution activity; not personally attributable to the named Chief Minister or Leader of Opposition.",
+      "verificationNote": "Issued 10 Oct 2026, conference held 9 Oct. This is a public official review release, not an individual state department circular.",
+      "linkKind": "Original PIB release",
+      "documentVerified": false
+    },
+    {
+      "id": "official-153",
+      "state": "Jharkhand",
+      "date": "2026-10-10",
+      "issue": "Tribal Issues",
+      "authority": "Ministry of Tribal Affairs, Government of India; state Tribal/Forest/Revenue departments",
+      "recordType": "Central-to-state FRA implementation review",
+      "documentNumber": "PIB 2321667",
+      "title": "Forest Rights Act implementation review: Jharkhand officials at Kolkata conference",
+      "summary": "Jharkhand was among eight states presenting implementation progress and plans. On 9 Oct 2026 the Union ministry brought state officials together for a forest-rights implementation review; its 10 Oct press release describes directions for time-bound claims, Gram Sabha capacity, CFR rights and habitat rights. This is ONE multi-state event, repeated for state comparison, not three different meetings.",
+      "url": "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2321667&lang=2&reg=48",
+      "provenance": "government-press-release",
+      "leaderAttribution": "State/Union institution activity; not personally attributable to the named Chief Minister or Leader of Opposition.",
+      "verificationNote": "Issued 10 Oct 2026, conference held 9 Oct. This is a public official review release, not an individual state department circular.",
+      "linkKind": "Original PIB release",
       "documentVerified": false
     }
   ],
