@@ -1,7 +1,18 @@
 {
-  "tested": 155,
-  "recoveredPages": 20,
+  "tested": 159,
+  "recoveredPages": 22,
   "captures": [
+    {
+      "recordId": "cmp-008",
+      "publisher": "Free Press Journal",
+      "date": "2026-10-19",
+      "leader": "mp-cm",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2112078621737398662"
+      ]
+    },
     {
       "recordId": "cmp-006",
       "publisher": "Free Press Journal",
@@ -12,17 +23,6 @@
       "posts": [
         "https://x.com/DrMohanYadav51/status/2107042027963818377",
         "https://x.com/DrMohanYadav51/status/2107037833806639454"
-      ]
-    },
-    {
-      "recordId": "cmp-008",
-      "publisher": "Free Press Journal",
-      "date": "2026-10-19",
-      "leader": "mp-cm",
-      "issue": "Religion / Hinduism",
-      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
-      "posts": [
-        "https://x.com/DrMohanYadav51/status/2112078621737398662"
       ]
     },
     {
@@ -49,6 +49,17 @@
       ]
     },
     {
+      "recordId": "cmp-039",
+      "publisher": "The New Indian Express",
+      "date": "2026-10-20",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "publisherUrl": "https://www.newindianexpress.com/states/odisha/2026/Oct/21/bjp-accuses-naveen-patnaik-of-backing-regime-change-campaign-over-support-for-cjp-leaders",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2112549591111569682"
+      ]
+    },
+    {
       "recordId": "cmp-029",
       "publisher": "Prameya",
       "date": "2026-10-19",
@@ -61,17 +72,6 @@
       ]
     },
     {
-      "recordId": "cmp-039",
-      "publisher": "The New Indian Express",
-      "date": "2026-10-20",
-      "leader": "od-lop",
-      "issue": "Governance",
-      "publisherUrl": "https://www.newindianexpress.com/states/odisha/2026/Oct/21/bjp-accuses-naveen-patnaik-of-backing-regime-change-campaign-over-support-for-cjp-leaders",
-      "posts": [
-        "https://x.com/Naveen_Odisha/status/2112549591111569682"
-      ]
-    },
-    {
       "recordId": "cmp-042",
       "publisher": "Prameya",
       "date": "2026-10-31",
@@ -80,6 +80,17 @@
       "publisherUrl": "https://www.prameyanews.com/cyclone-arnab-naveen-patnaik-expresses-grief-over-kandhamal-landslide-deaths-seeks-urgent-rescue",
       "posts": [
         "https://x.com/Naveen_Odisha/status/2116369262378094932"
+      ]
+    },
+    {
+      "recordId": "cmp-043",
+      "publisher": "DNP India",
+      "date": "2026-09-02",
+      "leader": "jh-cm",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://www.dnpindia.in/states/jharkhand-news-hemant-soren-chairs-high-level-secretariat-review-meeting-demanding-immediate-pothole-repairs-improved-monsoon-drainage/613461/?amp=1",
+      "posts": [
+        "https://x.com/HemantSorenJMM/status/2095128909377601979"
       ]
     },
     {
@@ -96,17 +107,6 @@
       ]
     },
     {
-      "recordId": "cmp-043",
-      "publisher": "DNP India",
-      "date": "2026-09-02",
-      "leader": "jh-cm",
-      "issue": "Infrastructure & Development",
-      "publisherUrl": "https://www.dnpindia.in/states/jharkhand-news-hemant-soren-chairs-high-level-secretariat-review-meeting-demanding-immediate-pothole-repairs-improved-monsoon-drainage/613461/?amp=1",
-      "posts": [
-        "https://x.com/HemantSorenJMM/status/2095128909377601979"
-      ]
-    },
-    {
       "recordId": "cmp-044",
       "publisher": "DNP India",
       "date": "2026-09-12",
@@ -115,6 +115,17 @@
       "publisherUrl": "https://www.dnpindia.in/states/hemant-soren-directs-godda-dc-to-take-action-after-report-on-man-living-without-basic-welfare-benefits/614538/",
       "posts": [
         "https://x.com/HemantSorenJMM/status/2098838431724175451"
+      ]
+    },
+    {
+      "recordId": "cmp-111",
+      "publisher": "Free Press Journal",
+      "date": "2026-08-29",
+      "leader": "mp-cm",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-interacts-with-villagers-in-former-naxal-affected-balaghat-announces-225-crore-development-push",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2093662256592757112"
       ]
     },
     {
@@ -127,28 +138,6 @@
       "posts": [
         "https://x.com/HemantSorenJMM/status/2112381563132666116",
         "https://x.com/yourBabulal/status/2112407297125503051"
-      ]
-    },
-    {
-      "recordId": "cmp-055",
-      "publisher": "Dainik Jagran",
-      "date": "2026-10-22",
-      "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2113121698308579575"
-      ]
-    },
-    {
-      "recordId": "cmp-111",
-      "publisher": "Free Press Journal",
-      "date": "2026-08-29",
-      "leader": "mp-cm",
-      "issue": "Internal Security & Bastar",
-      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-interacts-with-villagers-in-former-naxal-affected-balaghat-announces-225-crore-development-push",
-      "posts": [
-        "https://x.com/DrMohanYadav51/status/2093662256592757112"
       ]
     },
     {
@@ -198,6 +187,17 @@
       ]
     },
     {
+      "recordId": "cmp-055",
+      "publisher": "Dainik Jagran",
+      "date": "2026-10-22",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2113121698308579575"
+      ]
+    },
+    {
       "recordId": "cmp-159",
       "publisher": "Dainik Jagran",
       "date": "2026-08-22",
@@ -229,7 +229,30 @@
       "posts": [
         "https://x.com/Naveen_Odisha/status/2099705711328714778"
       ]
+    },
+    {
+      "recordId": "cmp-203",
+      "publisher": "MP Breaking News",
+      "date": "2026-10-25",
+      "leader": "mp-lop",
+      "issue": "Environment & Forests",
+      "publisherUrl": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2114265094175809897",
+        "https://x.com/UmangSinghar/status/2114242584499634343"
+      ]
+    },
+    {
+      "recordId": "cmp-202",
+      "publisher": "MP Breaking News",
+      "date": "2026-10-21",
+      "leader": "mp-lop",
+      "issue": "Agriculture & Farmers",
+      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/mp-farmers-issues-umang-singhar-targets-bjp-government-06-934270",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2112825339538030850"
+      ]
     }
   ],
-  "generatedAt": "2026-11-16T18:01:38.987Z"
+  "generatedAt": "2026-11-16T18:03:10.991Z"
 }
