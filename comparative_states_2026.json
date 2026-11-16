@@ -3476,13 +3476,14 @@
       "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
       "status": "embedded-post-url",
       "posterHandle": "drmohanyadav51",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Navratri visit to Ujjain Kali temple"
     },
     {
       "id": "social-002",
@@ -3496,13 +3497,14 @@
       "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-orders-annual-dpcs-says-promotions-recruitment-must-continue-like-flow-of-ganga-video",
       "status": "embedded-post-url",
       "posterHandle": "drmohanyadav51",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Agriculture-department promotion and recruitment directions"
     },
     {
       "id": "social-003",
@@ -3516,13 +3518,14 @@
       "publisherUrl": "https://www.freepressjournal.in/indore/mp-cm-mohan-yadav-inaugurates-2387-crore-irrigation-project-in-dhar-transfers-317-crore-crop-insurance-to-farmers-video",
       "status": "embedded-post-url",
       "posterHandle": "drmohanyadav51",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Dhar micro-irrigation project and crop-insurance transfer"
     },
     {
       "id": "social-004",
@@ -3536,13 +3539,14 @@
       "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-announces-1-crore-aid-for-families-of-martyred-police-personnel-amount-to-be-equally-divided-between-wife-parents-video",
       "status": "embedded-post-url",
       "posterHandle": "drmohanyadav51",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Police Commemoration Day welfare announcement"
     },
     {
       "id": "social-006",
@@ -3573,13 +3577,14 @@
       "publisherUrl": "https://www.prameyanews.com/cm-mohan-charan-majhi-extends-maha-navami-greetings-seeks-goddess-durgas-blessings",
       "status": "embedded-post-url",
       "posterHandle": "mohanmodisha",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Maha Navami greetings"
     },
     {
       "id": "social-008",
@@ -3593,13 +3598,14 @@
       "publisherUrl": "https://www.prameyanews.com/cm-mohan-charan-majhi-extends-maha-navami-greetings-seeks-goddess-durgas-blessings",
       "status": "embedded-post-url",
       "posterHandle": "mohanmodisha",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Maha Navami greetings"
     },
     {
       "id": "social-009",
@@ -3613,13 +3619,14 @@
       "publisherUrl": "https://www.prameyanews.com/odisha-cm-welcomes-pm-modi-says-centre-state-coordination-opening-new-avenues-for-development",
       "status": "embedded-post-url",
       "posterHandle": "mohanmodisha",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Centre–state development message"
     },
     {
       "id": "social-010",
@@ -3633,13 +3640,14 @@
       "publisherUrl": "https://odishabytes.com/odisha-student-polls-mohan-majhi-naveen-patnaik-trade-charges-hail-gen-z-while-congratulating-winners/",
       "status": "embedded-post-url",
       "posterHandle": "naveen_odisha",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Student-union elections commented upon"
     },
     {
       "id": "social-011",
@@ -3653,13 +3661,14 @@
       "publisherUrl": "https://www.newindianexpress.com/states/odisha/2026/Oct/21/bjp-accuses-naveen-patnaik-of-backing-regime-change-campaign-over-support-for-cjp-leaders",
       "status": "embedded-post-url",
       "posterHandle": "naveen_odisha",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Judicial-custody review demanded for youth activists"
     },
     {
       "id": "social-012",
@@ -3673,13 +3682,14 @@
       "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-latehar-police-misconduct-bariyatu-officer-accused-of-assault-40399268.html",
       "status": "embedded-post-url",
       "posterHandle": "hemantsorenjmm",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Directs Latehar police to investigate custody allegations"
     },
     {
       "id": "social-013",
@@ -3693,13 +3703,14 @@
       "publisherUrl": "https://www.dnpindia.in/states/hemant-soren-directs-godda-dc-to-take-action-after-report-on-man-living-without-basic-welfare-benefits/614538/",
       "status": "embedded-post-url",
       "posterHandle": "hemantsorenjmm",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Godda welfare-access complaint referred to DC"
     },
     {
       "id": "social-014",
@@ -3713,13 +3724,14 @@
       "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
       "status": "embedded-post-url",
       "posterHandle": "yourbabulal",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Snakebite-patient care at Manika CHC questioned"
     },
     {
       "id": "social-015",
@@ -3733,13 +3745,14 @@
       "publisherUrl": "https://kohramlive.com/message-from-jharkhands-big-names-on-vijayadashami-find-out-who-said-what/",
       "status": "embedded-post-url",
       "posterHandle": "yourbabulal",
-      "headlineBasis": "Publisher report or embedded X post, not independently authenticated tweet transcript",
+      "headlineBasis": "Short source-context headline; not a verified verbatim transcription of the original X post",
       "postTextConfirmed": false,
       "linkCheck": {
         "status": "http-reachable",
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
-      }
+      },
+      "sourceHeadline": "Vijayadashami festival greeting"
     },
     {
       "id": "social-016",
