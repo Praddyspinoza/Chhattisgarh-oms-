@@ -1,6 +1,6 @@
 {
-  "tested": 159,
-  "recoveredPages": 22,
+  "tested": 173,
+  "recoveredPages": 28,
   "captures": [
     {
       "recordId": "cmp-006",
@@ -118,6 +118,17 @@
       ]
     },
     {
+      "recordId": "cmp-055",
+      "publisher": "Dainik Jagran",
+      "date": "2026-10-22",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2113121698308579575"
+      ]
+    },
+    {
       "recordId": "cmp-054",
       "publisher": "KohramLive",
       "date": "2026-10-20",
@@ -127,17 +138,6 @@
       "posts": [
         "https://x.com/HemantSorenJMM/status/2112381563132666116",
         "https://x.com/yourBabulal/status/2112407297125503051"
-      ]
-    },
-    {
-      "recordId": "cmp-055",
-      "publisher": "Dainik Jagran",
-      "date": "2026-10-22",
-      "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2113121698308579575"
       ]
     },
     {
@@ -252,7 +252,73 @@
       "posts": [
         "https://x.com/UmangSinghar/status/2112825339538030850"
       ]
+    },
+    {
+      "recordId": "cmp-208",
+      "publisher": "Free Press Journal",
+      "date": "2026-08-25",
+      "leader": "mp-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/lop-umang-singhar-questions-mp-govt-over-teacher-aspirants-protest-jitu-patwari-video-calls-candidates",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2092136508400730419"
+      ]
+    },
+    {
+      "recordId": "cmp-207",
+      "publisher": "MP Breaking News",
+      "date": "2026-08-05",
+      "leader": "mp-lop",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/after-vidisha-sagar-raises-fresh-school-safety-concerns-umang-singhar-targets-bjp-government-912980",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2084884875149291599"
+      ]
+    },
+    {
+      "recordId": "cmp-212",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-07",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.jagran.com/jharkhand/ranchi-jssc-cgl-paper-leak-confirmed-by-accused-in-jharkhand-40365112.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2096838318176834025"
+      ]
+    },
+    {
+      "recordId": "cmp-213",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-28",
+      "leader": "jh-lop",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://www.jagran.com/jharkhand/jamshedpur-babulal-marandi-questions-jamshedpur-police-lathi-charge-40387456.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2104145843016388664"
+      ]
+    },
+    {
+      "recordId": "cmp-211",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-04",
+      "leader": "jh-lop",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/giridih-giridih-molestation-complaint-police-lathicharge-at-pachamba-ps-40362563.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2095792643536228780"
+      ]
+    },
+    {
+      "recordId": "cmp-219",
+      "publisher": "Odisha TV",
+      "date": "2026-10-21",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "publisherUrl": "https://odishatv.in/odisha/bjd-chief-naveen-patnaik-calls-for-release-of-cjp-leaders-opposes-extension-of-judicial-custody-12693941",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2112549591111569682"
+      ]
     }
   ],
-  "generatedAt": "2026-11-16T18:08:03.493Z"
+  "generatedAt": "2026-11-16T18:13:53.641Z"
 }
