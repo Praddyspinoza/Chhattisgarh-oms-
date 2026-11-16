@@ -203,6 +203,30 @@
       "name": "Bhaskar Hindi",
       "url": "https://www.bhaskarhindi.com/",
       "access": "Separate publicly indexed Hindi publication; not a substitute for restricted bhaskar.com articles"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "NDTV MPCG",
+      "url": "https://mpcg.ndtv.in/videos",
+      "access": "Dated video articles"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "Bansal News",
+      "url": "https://bansalnews.com/",
+      "access": "Regional newsroom, dated article and video index"
+    },
+    {
+      "state": "Odisha",
+      "name": "Odisha TV",
+      "url": "https://odishatv.in/",
+      "access": "Dated TV-channel stories and videos"
+    },
+    {
+      "state": "National",
+      "name": "NDTV",
+      "url": "https://www.ndtv.com/videos",
+      "access": "Dated video and text reporting"
     }
   ],
   "records": [
@@ -1985,6 +2009,162 @@
       "publisher": "ThePrint / PTI",
       "url": "https://theprint.in/india/bjd-to-demonstrate-outside-odisha-assembly-on-sep-28-to-protest-against-amended-mmdr-act/3052579/",
       "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-190",
+      "date": "2026-09-23",
+      "leader": "mp-cm",
+      "issue": "Governance",
+      "type": "News-channel video",
+      "title": "Mohan Yadav discusses Ladli Behna at NDTV Bhopal conclave",
+      "summary": "NDTV MPCG video of Mohan Yadav discussing the Ladli Behna welfare scheme and responding to Congress criticism. The original broadcaster video is linked.",
+      "publisher": "NDTV MPCG",
+      "url": "https://mpcg.ndtv.in/videos/cm-mohan-yadav-says-congress-s-hojma-shakti-is-weakening-due-to-ladli-behna-yojana-at-ndtv-mpcg-conc-1163032",
+      "status": "publisher-report-reviewed",
+      "sourceType": "video"
+    },
+    {
+      "id": "cmp-191",
+      "date": "2026-09-27",
+      "leader": "mp-cm",
+      "issue": "Infrastructure & Development",
+      "type": "News-channel video",
+      "title": "Ujjain road-widening and Singhasth project: Mohan Yadav statement",
+      "summary": "NDTV MPCG video about the Ujjain infrastructure works ahead of Singhasth 2028 and the political message concerning the CM's family property.",
+      "publisher": "NDTV MPCG",
+      "url": "https://mpcg.ndtv.in/videos/cm-mohan-yadav-sends-strong-message-for-singhasth-2028-takes-action-in-ujjain-1165061",
+      "status": "publisher-report-reviewed",
+      "sourceType": "video"
+    },
+    {
+      "id": "cmp-192",
+      "date": "2026-10-17",
+      "leader": "mp-lop",
+      "issue": "Governance",
+      "type": "News-channel report",
+      "title": "Umang Singhar writes to Governor and CM on 27% OBC reservation",
+      "summary": "Bansal News reports Singhar's letter requesting steps to secure legal protections and consideration of Ninth Schedule options for the 27% OBC quota.",
+      "publisher": "Bansal News",
+      "url": "https://bansalnews.com/madhya-pradesh/bhopal/mp-obc-27-percent-reservation-umang-singhar-letter-cm-governor-zss-12684887",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-193",
+      "date": "2026-10-29",
+      "leader": "mp-lop",
+      "issue": "Education, Healthcare & Employment",
+      "type": "News-channel report",
+      "title": "Umang Singhar comments on Bhopal teachers' appointment protest",
+      "summary": "Bansal News covers protesting teaching candidates and quotes Singhar's published X criticism of the state government's handling of the protesters.",
+      "publisher": "Bansal News",
+      "url": "https://bansalnews.com/madhya-pradesh/bhopal/bhopal-school-teacher-protest-appointment-letter-wks-12765937",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-194",
+      "date": "2026-08-09",
+      "leader": "od-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "News-channel report",
+      "title": "Majhi addresses Gen Z and social-media influences during Har Ghar Tiranga",
+      "summary": "Odisha TV reports the chief minister's comments on misinformation, youth and unity at the campaign event.",
+      "publisher": "Odisha TV",
+      "url": "https://odishatv.in/odisha/odisha-cm-mohan-majhi-urges-gen-z-to-stay-away-from-external-influences-12244393",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-195",
+      "date": "2026-10-09",
+      "leader": "od-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Headline only",
+      "title": "Odisha CM directs health department to reduce maternal and infant mortality",
+      "summary": "Headline found in the OTV topical index; article-level content is not established from this link.",
+      "publisher": "Odisha TV",
+      "url": "https://odishatv.in/tags/cm-mohan-charan-majhi",
+      "status": "headline-index-only",
+      "sourceType": "headline-only"
+    },
+    {
+      "id": "cmp-196",
+      "date": "2026-10-24",
+      "leader": "od-cm",
+      "issue": "Environment & Forests",
+      "type": "News-channel report",
+      "title": "Majhi reviews cyclone preparedness; 302 response teams mobilised",
+      "summary": "Odisha TV reports the CM's 24 October review of disaster readiness, including 302 response teams and temporary school closures. The zero-casualty objective was a stated goal.",
+      "publisher": "Odisha TV",
+      "url": "https://odishatv.in/odisha/odisha-cyclone-news-schools-to-shut-in-5-districts-302-response-teams-ready-12746270",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-197",
+      "date": "2026-09-25",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "type": "News-channel report",
+      "title": "Naveen Patnaik demands review of electoral-roll revision process",
+      "summary": "Odisha TV reports Patnaik's call for the chief election commissioner's resignation and for a review of the SIR exercise, while noting the commission's response.",
+      "publisher": "Odisha TV",
+      "url": "https://odishatv.in/odisha/bjd-supremo-naveen-patnaik-demands-gyanesh-kumars-resignation-calls-for-sir-review-12574370",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-198",
+      "date": "2026-09-15",
+      "leader": "od-lop",
+      "issue": "Religion / Hinduism",
+      "type": "News-channel report",
+      "title": "Naveen Patnaik shares Nuakhai festival greeting",
+      "summary": "Odisha TV quoted Patnaik's Nuakhai greeting originally shared on X in the cultural/festival context.",
+      "publisher": "Odisha TV",
+      "url": "https://odishatv.in/odisha/nuakhai-2026-odisha-leaders-extend-greetings-as-state-celebrates-harvest-festival-12533398",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-199",
+      "date": "2026-08-17",
+      "leader": "jh-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "News-channel report",
+      "title": "Hemant Soren announces cancellation and review of recruitment examinations",
+      "summary": "NDTV reports Soren's decision to cancel examinations linked to an external processing agency, examine irregularities going back to 2014 and constitute a reform committee. Later court developments are distinct.",
+      "publisher": "NDTV",
+      "url": "https://www.ndtv.com/india-news/jharkhand-student-protests-jharkhand-cancels-key-exams-5-big-announcements-by-hemant-soren-11922718",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-200",
+      "date": "2026-08-20",
+      "leader": "jh-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "News-channel video",
+      "title": "Jharkhand High Court stays parts of recruitment-exam cancellation",
+      "summary": "NDTV's dated video reports the court's stay of state cancellation orders following candidate challenges; it should not be described as a general conclusion on exam validity.",
+      "publisher": "NDTV",
+      "url": "https://www.ndtv.com/video/jharkhand-government-s-order-cancelling-jpsc-jssc-exams-stayed-by-high-court-1145853",
+      "status": "publisher-report-reviewed",
+      "sourceType": "video"
+    },
+    {
+      "id": "cmp-201",
+      "date": "2026-08-18",
+      "leader": "jh-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "News-channel report",
+      "title": "Already-appointed Jharkhand candidates protest job losses after cancellation",
+      "summary": "NDTV interviews affected candidates following the Soren cabinet's exam-cancellation decision; this is reporting about policy impacts and affected people's responses.",
+      "publisher": "NDTV",
+      "url": "https://www.ndtv.com/india-news/jssc-cgl-jharkhand-protests-kill-us-jharkhand-cancels-exams-selected-candidates-brace-for-job-loss-11926039",
+      "status": "publisher-report-reviewed",
+      "sourceType": "channel"
     }
   ],
   "posts": [
