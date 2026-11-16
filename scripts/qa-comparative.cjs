@@ -36,5 +36,12 @@ for(const p of d.posts){
 }
 assert(html.includes("comparative_states_2026.json"));assert(html.includes("cg-brand"));assert(html.includes("original Chhattisgarh OMS V12") && html.includes("cg-brand"),"Original OMS visual tokens missing");
 const scripts=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];for(const [,s] of scripts){if(s.trim())new vm.Script(s);}
-assert(d.records.length>=120,"Comparative research count unexpectedly reduced");
+assert(d.records.length>=160,"Comparative research count unexpectedly reduced");
+const embed=html.match(/<script id="oms-comparative-embedded" type="application\\/json">([\\s\\S]*?)<\\/script>/);
+assert(embed,"Embedded research data missing");
+const embedded=JSON.parse(embed[1]);
+assert.equal(embedded.records.length,d.records.length,"Embedded report count stale");
+assert.equal(embedded.posts.length,d.posts.length,"Embedded post count stale");
+assert(html.includes("source-headline"),"Clickable headline renderer missing");
+assert(html.includes("topic-frame"),"Issue heading renderer missing");
 console.log(JSON.stringify({pass:true,recordCount:d.records.length,sourceURLs:sourceLinks.size,postCount:d.posts.length,xPosts:d.posts.filter(x=>x.platform==="X").length,leaders:d.leaders.length,issues:issueIDs.length},null,2));
