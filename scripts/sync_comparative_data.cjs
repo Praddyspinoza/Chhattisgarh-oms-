@@ -75,5 +75,27 @@ html=html.slice(0,begin+marker.length)+json+html.slice(end);
 html=html.replace(/<strong id="nReports">[^<]*<\/strong>/,'<strong id="nReports">'+d.records.length+'</strong>');
 html=html.replace(/<strong id="nPosts">[^<]*<\/strong>/,'<strong id="nPosts">'+d.posts.length+'</strong>');
 html=html.replace(/<strong id="nSources">[^<]*<\/strong>/,'<strong id="nSources">'+new Set(d.records.map(r=>r.publisher)).size+'</strong>');
+
+// Static initial issue dossier, so source headings remain visible without any JavaScript.
+const initialTopic=d.issues[0];
+const initialNews=records.filter(x=>x.issue===initialTopic);
+const initialPosts=posts.filter(x=>x.issue===initialTopic);
+const htmlLink=(title,url,cls="")=>'<a class="'+cls+'" href="'+link(url)+'" target="_blank" rel="noopener noreferrer">'+esc(title)+' ↗</a>';
+const auditTag=r=>r.linkCheck?.status==="http-reachable"?"LINK REACHABLE":r.linkCheck?.status==="restricted-or-rate-limited"?"ACCESS RESTRICTED":r.linkCheck?.status==="network-unconfirmed"?"LINK NOT CONFIRMED":"NOT AUDITED";
+const kindTag=r=>r.sourceType==="video"||r.type==="News-channel video"?"BROADCAST VIDEO":r.sourceType==="channel"||["NDTV","NDTV MPCG","Odisha TV","Bansal News"].includes(r.publisher)?"NEWS CHANNEL":r.sourceType==="headline-only"||r.status==="headline-index-only"?"HEADLINE INDEX":"NEWSPAPER / NEWS";
+const newsRow=r=>'<div class="dossier-link"><div class="dossier-byline"><b>'+esc(r.publisher)+'</b><time>'+esc(r.date)+'</time><span>'+esc(kindTag(r))+'</span><span>'+esc(auditTag(r))+'</span></div>'+htmlLink(r.title,r.url,"dossier-headline")+'<div class="dossier-subtitle">'+esc(r.type||"News report")+'</div></div>';
+const postRow=p=>'<div class="dossier-link"><div class="dossier-byline"><b>X · @'+esc(d.leaders.find(l=>l.id===p.leader)?.x||"")+'</b><time>'+esc(p.date)+'</time><span>ORIGINAL POST URL</span></div>'+htmlLink(p.sourceHeadline||p.detail||"Publisher-referenced post",p.url,"dossier-headline")+'<div class="dossier-subtitle">Heading from publisher coverage · '+htmlLink("Corroborating report",p.publisherUrl)+'</div></div>';
+let dossier='<div class="dossier-topic-header"><div><span class="eyebrow">SELECTED ISSUE · 01 / 10</span><h3>'+esc(initialTopic)+'</h3></div><span class="dossier-count">'+initialNews.length+' news · '+initialPosts.filter(p=>p.platform==="X").length+' X posts</span></div>';
+for(const l of d.leaders){
+ const lr=initialNews.filter(r=>r.leader===l.id);
+ const lp=initialPosts.filter(p=>p.leader===l.id);
+ dossier+='<article class="dossier-leader"><header class="dossier-person"><div><strong>'+esc(l.name)+'</strong><span>'+esc(l.state)+' · '+esc(l.role)+' · '+esc(l.party)+'</span></div><b>'+lr.length+' news / '+lp.length+' posts</b></header><div class="dossier-columns">';
+ dossier+='<section class="dossier-panel"><div class="dossier-panel-head">NEWSPAPER & BROADCAST REPORTS <b>'+lr.length+'</b></div>'+(lr.length?lr.map(newsRow).join(""):'<p class="dossier-empty">No item captured for this leader and issue.</p>')+'</section>';
+ dossier+='<section class="dossier-panel"><div class="dossier-panel-head">ORIGINAL X / VIDEO LINKS <b>'+lp.length+'</b></div>'+(lp.length?lp.map(postRow).join(""):'<p class="dossier-empty">No dated original post link recovered for this issue.</p>')+'</section></div></article>';
+}
+const dossierStart="<!-- STATIC_DOSSIERS_START -->",dossierEnd="<!-- STATIC_DOSSIERS_END -->";
+const ds=html.indexOf(dossierStart),de=html.indexOf(dossierEnd);
+if(ds>=0&&de>ds)html=html.slice(0,ds+dossierStart.length)+dossier+html.slice(de);
+
 fs.writeFileSync(path,html,"utf8");
 console.log(JSON.stringify({reportLinks:records.length,postLinks:posts.length,leaderCount:d.leaders.length,issues:d.issues.length,htmlBytes:Buffer.byteLength(html)}));
