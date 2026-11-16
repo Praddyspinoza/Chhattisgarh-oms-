@@ -19,7 +19,8 @@
   "methodology": {
     "departmentData": "Every dated official entry comes from a government department's public dated archive, except Union MoTA's original letter. Some URLs resolve to searchable archives rather than one PDF; clearly label those as index entries.",
     "assemblyData": "Legislative items are source-backed accounts of proceedings or exact dated calendar/list records. Do not suggest a verbatim transcript or name a CM as speaker if only a minister or MLA was quoted.",
-    "principle": "Official orders are state-administration actions, not evidence that a named politician personally issued them. If no order was recovered for a department, do not show '0 orders issued'."
+    "principle": "Official orders are state-administration actions, not evidence that a named politician personally issued them. If no order was recovered for a department, do not show '0 orders issued'.",
+    "validation": "All cited government records were checked against dated public indexes; some source pages are dynamic or archived. Exact individual PDF URLs are not assumed and records are labeled ARCHIVE INDEX vs DIRECT PDF vs UNCONFIRMED."
   },
   "sessionNotes": [
     {
@@ -56,12 +57,14 @@
       "authority": "Directorate of Agricultural Engineering",
       "recordType": "Public application notice",
       "documentNumber": "CHC 2026-27",
-      "title": "Applications invited to establish private agricultural machinery rental centres (CHCs)",
-      "summary": "Agriculture engineering directorate's dated 7 August 2026 announcement for the 2026-27 scheme.",
-      "url": "https://mpdage.mp.gov.in/",
-      "provenance": "official-register",
+      "title": "Agricultural machinery custom-hiring applications — programme portal (historical notice unconfirmed)",
+      "summary": "The government programme portal is accessible, but a 7 August 2026 notice was not confirmed in the available register. The linked portal does not substantiate the record date.",
+      "url": "https://chc.mpdage.mp.gov.in/",
+      "provenance": "unconfirmed-historical-entry",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "The current live application portal does not independently confirm this alleged 7 August CHC notice. Treat as a research lead, NOT a verified official circular.",
+      "linkKind": "Unverified portal reference",
+      "documentVerified": false
     },
     {
       "id": "official-002",
@@ -76,7 +79,9 @@
       "url": "https://www.mpbse.nic.in/latest-circulars.html",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-003",
@@ -91,7 +96,9 @@
       "url": "https://www.mpbse.nic.in/latest-circulars.html",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-004",
@@ -106,7 +113,9 @@
       "url": "https://www.mpbse.nic.in/latest-circulars.html",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-005",
@@ -121,7 +130,9 @@
       "url": "https://www.mpbse.nic.in/latest-circulars.html",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-006",
@@ -136,7 +147,9 @@
       "url": "https://www.mpbse.nic.in/latest-circulars.html",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-007",
@@ -151,7 +164,9 @@
       "url": "https://www.mpbse.nic.in/latest-circulars.html",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-008",
@@ -166,7 +181,9 @@
       "url": "https://www.mpbse.nic.in/latest-circulars.html",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-009",
@@ -181,7 +198,9 @@
       "url": "https://jabalpur.nic.in/en/notice_category/order-and-circular/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-010",
@@ -193,10 +212,12 @@
       "documentNumber": "26212/Gen",
       "title": "Odisha Civil Services (Rehabilitation Assistance) Rules, 2026",
       "summary": "The official local-fund-audit department circular register lists the 18 August 2026 rehabilitation-assistance rules.",
-      "url": "https://www.lfaodisha.nic.in/view_upload_file.php?type=ZEVRRjR6MGxmRG1KdnRmYUVGaUd0UT09OjoH5yzZk7teKiahxKvLiSM2",
+      "url": "https://www.lfaodisha.nic.in/view_upload_file.php?type=SXVjWDYyVzNaeEtMMkhkMkVQenRmUT09Ojrfx6oMONFvlbikFuvo4Ldg",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "2026 entry confirmed in the Local Fund Audit Odisha circular register; this source opens the searchable register, not an individual signed PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-011",
@@ -208,10 +229,12 @@
       "documentNumber": "24133/HUD",
       "title": "Operational guidelines on 16th Finance Commission urban local-body grants",
       "summary": "The LFA state government register lists dated implementation guidelines for ULB grants, dated 24 August 2026.",
-      "url": "https://www.lfaodisha.nic.in/view_upload_file.php?type=ZEVRRjR6MGxmRG1KdnRmYUVGaUd0UT09OjoH5yzZk7teKiahxKvLiSM2",
+      "url": "https://www.lfaodisha.nic.in/view_upload_file.php?type=SXVjWDYyVzNaeEtMMkhkMkVQenRmUT09Ojrfx6oMONFvlbikFuvo4Ldg",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "2026 entry confirmed in the Local Fund Audit Odisha circular register; this source opens the searchable register, not an individual signed PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-012",
@@ -223,10 +246,12 @@
       "documentNumber": "21602/F; issued 17-08-2026",
       "title": "Guidelines for hiring consultants, PMUs and technical-support units",
       "summary": "The LFA register published the Finance Department's new PMU/technical-support engagement guidelines on 29 August 2026.",
-      "url": "https://www.lfaodisha.nic.in/view_upload_file.php?type=ZEVRRjR6MGxmRG1KdnRmYUVGaUd0UT09OjoH5yzZk7teKiahxKvLiSM2",
+      "url": "https://www.lfaodisha.nic.in/view_upload_file.php?type=SXVjWDYyVzNaeEtMMkhkMkVQenRmUT09Ojrfx6oMONFvlbikFuvo4Ldg",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "2026 entry confirmed in the Local Fund Audit Odisha circular register; this source opens the searchable register, not an individual signed PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-013",
@@ -241,7 +266,9 @@
       "url": "https://ctz.edodisha.gov.in/Citizen/WebSearchLetterNew?ijl=j+Cq0m1sDjR9fYzK+bqADN6lj39Ha3C8",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-014",
@@ -256,7 +283,9 @@
       "url": "https://ctz.edodisha.gov.in/Citizen/WebSearchLetterNew?ijl=j+Cq0m1sDjR9fYzK+bqADN6lj39Ha3C8",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-015",
@@ -271,7 +300,9 @@
       "url": "https://ctz.edodisha.gov.in/Citizen/WebSearchLetterNew?ijl=j+Cq0m1sDjR9fYzK+bqADN6lj39Ha3C8",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-016",
@@ -286,7 +317,9 @@
       "url": "https://ctz.edodisha.gov.in/Citizen/WebSearchLetterNew?ijl=j+Cq0m1sDjR9fYzK+bqADN6lj39Ha3C8",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-017",
@@ -301,7 +334,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-018",
@@ -316,7 +351,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-019",
@@ -331,7 +368,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-020",
@@ -346,7 +385,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-021",
@@ -361,7 +402,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-022",
@@ -376,7 +419,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-023",
@@ -391,7 +436,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-024",
@@ -406,7 +453,9 @@
       "url": "https://bseodisha.nic.in/all_updates/",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-025",
@@ -421,7 +470,9 @@
       "url": "https://tribal.nic.in/DivisionsFiles/TRI/apexminutes/Mom13082608192026102453.pdf",
       "provenance": "official-document",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Original publicly posted document or exact government source."
+      "verificationNote": "PDF URL identified by a government publisher, but full document content has not yet been independently reviewed.",
+      "linkKind": "Original PDF",
+      "documentVerified": false
     },
     {
       "id": "official-026",
@@ -436,7 +487,9 @@
       "url": "https://finance.jharkhand.gov.in/News",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-027",
@@ -451,7 +504,9 @@
       "url": "https://cm.jharkhand.gov.in/cabinet-decision",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-028",
@@ -466,7 +521,9 @@
       "url": "https://cm.jharkhand.gov.in/cabinet-decision",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-029",
@@ -481,7 +538,9 @@
       "url": "https://finance.jharkhand.gov.in/Circular",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-030",
@@ -496,7 +555,9 @@
       "url": "https://finance.jharkhand.gov.in/Circular",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-031",
@@ -511,7 +572,9 @@
       "url": "https://finance.jharkhand.gov.in/Circular",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-032",
@@ -526,7 +589,9 @@
       "url": "https://finance.jharkhand.gov.in/Circular",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-033",
@@ -541,7 +606,9 @@
       "url": "https://finance.jharkhand.gov.in/Circular",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-034",
@@ -556,7 +623,9 @@
       "url": "https://finance.jharkhand.gov.in/Circular",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-035",
@@ -571,7 +640,9 @@
       "url": "https://finance.jharkhand.gov.in/Circular",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-036",
@@ -586,7 +657,9 @@
       "url": "https://jharkhand.jharkhand.gov.in/Home/DocumentList?doctype=eccbc87e4b5ce2fe28308fd9f2a7baf3&subdoctype=1679091c5a880faf6fb5e6087eb1b2dc",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-037",
@@ -601,7 +674,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-038",
@@ -616,7 +691,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-039",
@@ -631,7 +708,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-040",
@@ -646,7 +725,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-041",
@@ -661,7 +742,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-042",
@@ -676,7 +759,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-043",
@@ -691,7 +776,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-044",
@@ -706,7 +793,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-045",
@@ -721,7 +810,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-046",
@@ -736,7 +827,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-047",
@@ -751,7 +844,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-048",
@@ -766,7 +861,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-049",
@@ -781,7 +878,9 @@
       "url": "https://forest.jharkhand.gov.in/documents_departmental-orders.aspx",
       "provenance": "official-register",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF."
+      "verificationNote": "Dated item and description are visible on the named official archive; link opens the archive, not necessarily the individual PDF.",
+      "linkKind": "Official archive / register",
+      "documentVerified": false
     },
     {
       "id": "official-050",
@@ -796,7 +895,9 @@
       "url": "https://tribal.nic.in/DivisionsFiles/TRI/apexminutes/Mom13082608192026102453.pdf",
       "provenance": "official-document",
       "leaderAttribution": "State institution/department; not personally attributed to the chief minister.",
-      "verificationNote": "Original publicly posted document or exact government source."
+      "verificationNote": "PDF URL identified by a government publisher, but full document content has not yet been independently reviewed.",
+      "linkKind": "Original PDF",
+      "documentVerified": false
     }
   ],
   "assemblyRecords": [
