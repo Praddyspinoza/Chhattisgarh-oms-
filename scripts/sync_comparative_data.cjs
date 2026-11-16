@@ -103,7 +103,7 @@ for(const l of d.leaders){
  dossier+='<section class="dossier-panel"><div class="dossier-panel-head">ORIGINAL X / VIDEO LINKS <b>'+lp.length+'</b></div>'+(lp.length?lp.map(postRow).join(""):'<p class="dossier-empty">No dated original post link recovered for this issue.</p>')+'</section></div></article>';
 }
 
-function statKind(g){return g.provenance==="official-register"?"OFFICIAL REGISTRY":g.provenance==="official-document"?"ORIGINAL GOVT PDF":"UNCONFIRMED PORTAL";}
+function statKind(g){return g.provenance==="official-register"?"OFFICIAL REGISTRY":g.provenance==="official-document"?"GOVT PDF LINK":g.provenance==="court-described-circular"?"COURT-CITED CIRCULAR":g.provenance==="government-press-release"?"OFFICIAL PRESS RELEASE":"UNCONFIRMED PORTAL";}
 function institutionLine(g,kind){
  const tag=kind==="order"?statKind(g):g.provenance==="official-assembly-index"?"ASSEMBLY INDEX":"PUBLISHER-REPORTED HOUSE RECORD";
  const author=kind==="order"?g.authority:g.recordType;
