@@ -4,6 +4,17 @@
 
 **Source window:** 5 August–5 November 2026. **Research update:** 13 November 2026.
 
+## Three-state comparative source library (5 August–5 November 2026)
+
+**Live comparative dashboard:** https://praddyspinoza.github.io/Chhattisgarh-oms-/comparative.html
+
+- **Six leaders:** Mohan Yadav and Umang Singhar (Madhya Pradesh); Mohan Charan Majhi and Naveen Patnaik (Odisha); Hemant Soren and Babulal Marandi (Jharkhand).
+- **Visible evidence:** `comparative.html` has an embedded and pre-rendered **issue → leader → source type → clickable publisher headline** index. It is readable even if a browser blocks the JSON fetch, and it includes a separately grouped **issue → leader → clickable original X post** archive.
+- **Research dataset:** `comparative_states_2026.json` (currently 164 source-linked reporting entries, 33 individual X status permalinks, and one direct video URL). Count each sourced item, not each unique event; multiple reports can concern the same event.
+- **Newspaper and channel coverage:** includes dated examples from regional dailies, national papers and television/digital newsrooms (NDTV MPCG, Bansal News, Odisha TV and NDTV). Publisher directory also lists inaccessible or partly indexed newspapers with their limitations.
+- **Coverage warning:** This is **not every article or every X post** published in the 93-day period. It is a defensible source-linked sample. Headlines derived from newspaper reporting must not be represented as verbatim social post text. Direct historical Facebook/Instagram/X timelines require suitably authorised platform data or independently verifiable public records.
+- **Automation and QA:** `scripts/sync_comparative_data.cjs` generates the embedded, static fallback source index when the JSON archive changes. `scripts/qa-comparative.cjs` validates categories, dates, original X author handles and source links; `scripts/qa-comparative-dom.cjs` checks that every link is actually rendered in the issue/leader interface.
+
 ## Contents
 
 - **BJP/Government:** 10 leader dossiers and 149 dated, source-linked research entries. They include public statements, reported activities, decisions, legislative records, and independent reporting; they are not 149 distinct speeches or authenticated social posts.
