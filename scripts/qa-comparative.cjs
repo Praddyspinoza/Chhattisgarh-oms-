@@ -34,7 +34,7 @@ for(const p of d.posts){
   assert(p.status==="embedded-post-url","Unverified social item presented as direct X "+p.id);
  }
 }
-assert(html.includes("comparative_states_2026.json"));assert(html.includes("cg-brand"));assert(html.includes("Original OMS V12"));
+assert(html.includes("comparative_states_2026.json"));assert(html.includes("cg-brand"));assert(html.includes("Original Chhattisgarh OMS V12") && html.includes("cg-brand"),"Original OMS visual tokens missing");
 const scripts=[...html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/gi)];for(const [,s] of scripts){if(s.trim())new vm.Script(s);}
 assert(d.records.length>=120,"Comparative research count unexpectedly reduced");
 console.log(JSON.stringify({pass:true,recordCount:d.records.length,sourceURLs:sourceLinks.size,postCount:d.posts.length,xPosts:d.posts.filter(x=>x.platform==="X").length,leaders:d.leaders.length,issues:issueIDs.length},null,2));
