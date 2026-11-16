@@ -1825,6 +1825,58 @@
       "publisher": "Prabhat Khabar",
       "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/jharkhand-108-ambulance-scam-babulal-marandi-sent-letter-to-health-secretary",
       "status": "publisher-report-reviewed"
+    },
+    {
+      "id": "cmp-177",
+      "date": "2026-11-02",
+      "leader": "od-cm",
+      "issue": "Governance",
+      "type": "Independent accountability reporting",
+      "title": "Eight Odisha departments had not submitted compliance reports on CM notesheets",
+      "summary": "Dharitri reported that eight departments had not submitted compliance reports on Chief Minister Mohan Charan Majhi's directions, despite monthly chief-secretary reminders. The article distinguishes reported administrative follow-through from the instructions themselves.",
+      "publisher": "Dharitri",
+      "url": "https://www.dharitri.com/8-departments-disregard-chief-ministers-directive/",
+      "status": "publisher-report-reviewed",
+      "originalLanguage": "Odia"
+    },
+    {
+      "id": "cmp-178",
+      "date": "2026-09-29",
+      "leader": "od-cm",
+      "issue": "Environment & Forests",
+      "type": "Reported statement",
+      "title": "Majhi discusses possible negotiated resolution of Mahanadi water dispute",
+      "summary": "Dharitri reported Majhi had suggested that residents might receive news on resolving the Odisha-Chhattisgarh Mahanadi dispute before Diwali; the article did not establish that a settlement had been reached.",
+      "publisher": "Dharitri",
+      "url": "https://www.dharitri.com/shah-will-resolve-mahanadi-water-dispute-good-news-may-come-on-october-1/",
+      "status": "publisher-report-reviewed",
+      "originalLanguage": "Odia"
+    },
+    {
+      "id": "cmp-179",
+      "date": "2026-09-27",
+      "leader": "od-cm",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Independent accountability reporting",
+      "title": "Dharitri questions progress of previously announced second Odisha AIIMS",
+      "summary": "The Odia newspaper described an RTI-based inquiry into the status of the second AIIMS proposed for Sambalpur, referencing Majhi's 2024 announcement; the 2026 report is about implementation status, not a new 2026 promise.",
+      "publisher": "Dharitri",
+      "url": "https://www.dharitri.com/centre-non-committal-on-second-aiims-in-odisha/",
+      "status": "publisher-report-reviewed",
+      "originalLanguage": "Odia"
+    },
+    {
+      "id": "cmp-180",
+      "date": "2026-10-07",
+      "leader": "od-cm",
+      "issue": "Religion / Hinduism",
+      "type": "Government decision",
+      "title": "Dharitri independently reports BMC festival ground-rent waiver",
+      "summary": "The Odia-language report says the Odisha government waived municipal ground rent for Durga, Lakshmi and Kali Puja events in Bhubaneswar during the stated festival period; this independently covers an announcement also reported elsewhere.",
+      "publisher": "Dharitri",
+      "url": "https://www.dharitri.com/major-festive-gift-from-chief-minister-ground-rent-waived-for-puja-committees-across-bmc-area/",
+      "status": "publisher-report-reviewed",
+      "originalLanguage": "Odia"
     }
   ],
   "posts": [
