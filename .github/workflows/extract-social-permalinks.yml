@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - '.github/workflows/extract-social-permalinks.yml'
+      - 'comparative_states_2026.json'
   workflow_dispatch:
 permissions:
   contents: write
