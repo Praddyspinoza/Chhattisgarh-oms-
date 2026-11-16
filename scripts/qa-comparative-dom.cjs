@@ -33,9 +33,10 @@ assert(reports.includes("Newspapers / digital news"),"News publisher subcategory
 assert(reports.includes("News channels / broadcasters"),"News channel subcategory missing");
 assert(source.includes("Dainik Bhaskar"),"Blocked publication source listing disappeared");
 for(const l of records.leaders)assert(reports.includes(l.name)&&posts.includes(l.name),"Missing leader dossier "+l.name);
-for(const topic of records.issues)assert(reports.includes(topic)&&posts.includes(topic),"Missing issue "+topic);
-for(const r of records.records)assert(reports.includes(r.url),"Missing original news link "+r.id);
-for(const p of records.posts)assert(posts.includes(p.url),"Missing original post link "+p.id);
+const escapeHtml=v=>String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+for(const topic of records.issues)assert(reports.includes(escapeHtml(topic))&&posts.includes(escapeHtml(topic)),"Missing issue "+topic);
+for(const r of records.records)assert(reports.includes(escapeHtml(r.url)),"Missing original news link "+r.id);
+for(const p of records.posts)assert(posts.includes(escapeHtml(p.url)),"Missing original post link "+p.id);
 const staticNews=html.slice(html.indexOf("<!-- STATIC_COMPARE_REPORTS_START -->"),html.indexOf("<!-- STATIC_COMPARE_REPORTS_END -->"));
 const staticSocial=html.slice(html.indexOf("<!-- STATIC_COMPARE_SOCIAL_START -->"),html.indexOf("<!-- STATIC_COMPARE_SOCIAL_END -->"));
 assert.equal((staticNews.match(/class="source-headline"/g)||[]).length,records.records.length,"Static news links missing");
