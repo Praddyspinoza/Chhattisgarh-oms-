@@ -135,7 +135,7 @@ const person=id=>data.leaders.find(l=>l.id===id);
 function matching(r,withIssue=true){const l=person(r.leader);return !!l&&filterLeader(l)&&(!withIssue||issue==="all"||r.issue===issue)&&(!term||(r.title||r.detail||"").toLowerCase().includes(term)||l.name.toLowerCase().includes(term)||(r.summary||"").toLowerCase().includes(term)||r.issue.toLowerCase().includes(term))&&(publisher==="all"||r.publisher===publisher)}
 function resetLimit(){visible=14;render()}
 function init(){
-  el("nReports").textContent=data.records.length;el("nPosts").textContent=data.posts.length;el("nSources").textContent=new Set(data.outlets.map(o=>o.name)).size;
+  el("nReports").textContent=data.records.length;el("nPosts").textContent=data.posts.length;el("nSources").textContent=new Set(data.records.filter(r=>!r.publisher.includes("YouTube")).map(r=>r.publisher)).size;
   el("states").addEventListener("click",v=>{let b=v.target.closest("[data-state]");if(!b)return;state=b.dataset.state;leader="all";resetLimit()});
   el("roles").addEventListener("click",v=>{let b=v.target.closest("[data-role]");if(!b)return;role=b.dataset.role;leader="all";resetLimit()});
   el("leaders").addEventListener("click",v=>{let b=v.target.closest("[data-leader]");if(!b)return;leader=b.dataset.leader;resetLimit()});
@@ -208,8 +208,18 @@ function renderOverview(){
  el("matrix").innerHTML='<table style="border-collapse:collapse;width:100%;font-size:11px"><thead><tr><th style="text-align:left;padding:10px;white-space:nowrap">Issue / leader</th>'+ls.map(l=>'<th style="padding:10px;white-space:nowrap">'+e(l.name)+'</th>').join("")+'</tr></thead><tbody>'+data.issues.map(i=>'<tr><th style="text-align:left;padding:10px;border-bottom:1px solid var(--line);white-space:nowrap">'+e(issuesShort[i]||i)+'</th>'+ls.map(l=>cell(r.filter(x=>x.issue===i&&x.leader===l.id).length)).join("")+'</tr>').join("")+'</tbody></table>';
 }
 function renderSources(){
- let dirs=data.outlets.filter(o=>state==="all"||o.state==="National"||o.state===state);
- el("sourceGrid").innerHTML=dirs.map(o=>'<article class="panel"><h3>'+e(o.name)+'</h3><div class="meta"><span class="tag">'+e(o.state)+'</span></div><p>'+e(o.access)+'</p>'+link("Publisher",o.url)+'</article>').join("");
+ const dirs=data.outlets.filter(o=>state==="all"||o.state==="National"||o.state===state);
+ const visible=data.records.filter(r=>{const l=person(r.leader);return l&&(state==="all"||l.state===state)});
+ const coverage=new Map();
+ for(const r of visible){if(!coverage.has(r.publisher))coverage.set(r.publisher,{name:r.publisher,state:person(r.leader).state,items:[],url:r.url});coverage.get(r.publisher).items.push(r);}
+ const existing=new Set(dirs.map(x=>x.name));
+ const extra=[...coverage.values()].filter(x=>!existing.has(x.name));
+ const all=dirs.map(o=>({name:o.name,state:o.state,url:o.url,access:o.access,items:coverage.get(o.name)?.items||[]})).concat(extra.map(x=>({name:x.name,state:x.state,url:x.url,access:"Article-specific source retrieved. Full archive access and rights may differ.",items:x.items})));
+ all.sort((a,b)=>b.items.length-a.items.length||a.name.localeCompare(b.name));
+ el("sourceGrid").innerHTML=all.map(o=>{
+ const newest=o.items.slice().sort((a,b)=>b.date.localeCompare(a.date))[0];
+ return '<article class="panel"><h3>'+e(o.name)+'</h3><div class="meta"><span class="tag">'+e(o.state)+'</span><span>'+o.items.length+' linked reports</span></div><p>'+e(o.access)+'</p><div class="feed">'+link("Publisher / source",o.url)+(newest?link("Recent indexed report",newest.url):"")+'</div></article>';
+ }).join("");
 }
 function render(){
  renderFilters();for(const s of document.querySelectorAll(".section"))s.hidden=s.id!==tab;
