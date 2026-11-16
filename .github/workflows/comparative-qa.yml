@@ -4,9 +4,11 @@ on:
     paths:
       - "comparative.html"
       - "comparative_states_2026.json"
+      - "comparative_government_2026.json"
       - "scripts/qa-comparative.cjs"
       - ".github/workflows/comparative-qa.yml"
       - "scripts/qa-comparative-dom.cjs"
+      - "scripts/qa-comparative-government.cjs"
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,5 +21,7 @@ jobs:
         run: node scripts/qa-terminal.cjs
       - name: Verify cross-state source and original X post provenance
         run: node scripts/qa-comparative.cjs
+      - name: Verify official department registers and Vidhan Sabha attributions
+        run: node scripts/qa-comparative-government.cjs
       - name: Render-test issue and leader source links, including static fallback
         run: node scripts/qa-comparative-dom.cjs
