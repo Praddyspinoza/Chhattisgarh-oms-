@@ -2,6 +2,7 @@
 const fs=require("node:fs");
 const path="comparative.html";
 const d=JSON.parse(fs.readFileSync("comparative_states_2026.json","utf8"));
+const gov=JSON.parse(fs.readFileSync("comparative_government_2026.json","utf8"));
 let html=fs.readFileSync(path,"utf8");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const link=r=>/^https:\/\//.test(r)?esc(r):"#";
@@ -67,6 +68,12 @@ for(const m of markers){
   html=html.replace(placeholder,'<div id="'+m.id+'">'+m.begin+m.content+m.end+'</div>');
  }
 }
+const gmarker='<script id="oms-comparative-government" type="application/json">';
+const gs=html.indexOf(gmarker),ge=html.indexOf("</script>",gs+gmarker.length);
+if(gs<0||ge<gs)throw Error("Government data script missing");
+const governmentJson=JSON.stringify(gov).replace(/</g,"\\u003c").replace(/>/g,"\\u003e");
+html=html.slice(0,gs+gmarker.length)+governmentJson+html.slice(ge);
+
 const marker='<script id="oms-comparative-embedded" type="application/json">';
 const begin=html.indexOf(marker),end=html.indexOf("</script>",begin+marker.length);
 if(begin<0||end<0)throw Error("Data script missing");
@@ -75,9 +82,11 @@ html=html.slice(0,begin+marker.length)+json+html.slice(end);
 html=html.replace(/<strong id="nReports">[^<]*<\/strong>/,'<strong id="nReports">'+d.records.length+'</strong>');
 html=html.replace(/<strong id="nPosts">[^<]*<\/strong>/,'<strong id="nPosts">'+d.posts.length+'</strong>');
 html=html.replace(/<strong id="nSources">[^<]*<\/strong>/,'<strong id="nSources">'+new Set(d.records.map(r=>r.publisher)).size+'</strong>');
+html=html.replace(/<strong id="nGov">[^<]*<\/strong>/,'<strong id="nGov">'+gov.officialRecords.length+'</strong>');
+html=html.replace(/<strong id="nAssembly">[^<]*<\/strong>/,'<strong id="nAssembly">'+gov.assemblyRecords.length+'</strong>');
 
 // Static initial issue dossier, so source headings remain visible without any JavaScript.
-const initialTopic=d.issues[0];
+const initialTopic="Governance";
 const initialNews=records.filter(x=>x.issue===initialTopic);
 const initialPosts=posts.filter(x=>x.issue===initialTopic);
 const htmlLink=(title,url,cls="")=>'<a class="'+cls+'" href="'+link(url)+'" target="_blank" rel="noopener noreferrer">'+esc(title)+' ↗</a>';
@@ -85,7 +94,7 @@ const auditTag=r=>r.linkCheck?.status==="http-reachable"?"LINK REACHABLE":r.link
 const kindTag=r=>r.sourceType==="video"||r.type==="News-channel video"?"BROADCAST VIDEO":r.sourceType==="channel"||["NDTV","NDTV MPCG","Odisha TV","Bansal News"].includes(r.publisher)?"NEWS CHANNEL":r.sourceType==="headline-only"||r.status==="headline-index-only"?"HEADLINE INDEX":"NEWSPAPER / NEWS";
 const newsRow=r=>'<div class="dossier-link"><div class="dossier-byline"><b>'+esc(r.publisher)+'</b><time>'+esc(r.date)+'</time><span>'+esc(kindTag(r))+'</span><span>'+esc(auditTag(r))+'</span></div>'+htmlLink(r.title,r.url,"dossier-headline")+'<div class="dossier-subtitle">'+esc(r.type||"News report")+'</div></div>';
 const postRow=p=>'<div class="dossier-link"><div class="dossier-byline"><b>X · @'+esc(d.leaders.find(l=>l.id===p.leader)?.x||"")+'</b><time>'+esc(p.date)+'</time><span>ORIGINAL POST URL</span></div>'+htmlLink(p.sourceHeadline||p.detail||"Publisher-referenced post",p.url,"dossier-headline")+'<div class="dossier-subtitle">Heading from publisher coverage · '+htmlLink("Corroborating report",p.publisherUrl)+'</div></div>';
-let dossier='<div class="dossier-topic-header"><div><span class="eyebrow">SELECTED ISSUE · 01 / 10</span><h3>'+esc(initialTopic)+'</h3></div><span class="dossier-count">'+initialNews.length+' news · '+initialPosts.filter(p=>p.platform==="X").length+' X posts</span></div>';
+let dossier='<div class="dossier-topic-header"><div><span class="eyebrow">SELECTED ISSUE · 03 / 10</span><h3>'+esc(initialTopic)+'</h3></div><span class="dossier-count">'+initialNews.length+' news · '+initialPosts.filter(p=>p.platform==="X").length+' X posts</span></div>';
 for(const l of d.leaders){
  const lr=initialNews.filter(r=>r.leader===l.id);
  const lp=initialPosts.filter(p=>p.leader===l.id);
@@ -93,6 +102,28 @@ for(const l of d.leaders){
  dossier+='<section class="dossier-panel"><div class="dossier-panel-head">NEWSPAPER & BROADCAST REPORTS <b>'+lr.length+'</b></div>'+(lr.length?lr.map(newsRow).join(""):'<p class="dossier-empty">No item captured for this leader and issue.</p>')+'</section>';
  dossier+='<section class="dossier-panel"><div class="dossier-panel-head">ORIGINAL X / VIDEO LINKS <b>'+lp.length+'</b></div>'+(lp.length?lp.map(postRow).join(""):'<p class="dossier-empty">No dated original post link recovered for this issue.</p>')+'</section></div></article>';
 }
+
+function statKind(g){return g.provenance==="official-register"?"OFFICIAL REGISTRY":g.provenance==="official-document"?"ORIGINAL GOVT PDF":"UNCONFIRMED PORTAL";}
+function institutionLine(g,kind){
+ const tag=kind==="order"?statKind(g):g.provenance==="official-assembly-index"?"ASSEMBLY INDEX":"PUBLISHER-REPORTED HOUSE RECORD";
+ const author=kind==="order"?g.authority:g.recordType;
+ return '<div class="institution-item"><div class="institution-meta"><time>'+esc(g.date)+'</time><b>'+esc(author)+'</b><span>'+esc(tag)+'</span></div>'+
+ '<a class="institution-headline" href="'+link(g.url)+'" target="_blank" rel="noopener noreferrer">'+esc(g.title)+' ↗</a><p>'+esc(g.summary)+'</p></div>';
+}
+const states=["Madhya Pradesh","Odisha","Jharkhand"];
+let govtBox='<div class="institution-dossier-block"><div class="institution-block-heading"><div><span class="eyebrow">STATE ACTIONS / LEGISLATIVE OVERSIGHT</span><h3>Official orders &amp; Vidhan Sabha: '+esc(initialTopic)+'</h3></div></div><p class="institution-disclaimer">State department records and legislative references are not personally attributable to the CM or opposition leader without direct evidence.</p>';
+for(const st of states){
+ const orders=gov.officialRecords.filter(x=>x.state===st&&x.issue===initialTopic);
+ const house=gov.assemblyRecords.filter(x=>x.state===st&&x.issue===initialTopic);
+ const session=gov.sessionNotes.find(x=>x.state===st);
+ govtBox+='<details class="institution-state" open><summary><strong>'+esc(st)+'</strong><span>'+orders.length+' official · '+house.length+' assembly</span></summary><div class="institution-two"><div class="institution-part"><div class="institution-part-heading">GOVERNMENT ORDERS / NOTICES <b>'+orders.length+'</b></div>'+(orders.length?orders.map(x=>institutionLine(x,"order")).join(""):'<p class="dossier-empty">No indexed in-window order yet for this issue.</p>')+'</div><div class="institution-part"><div class="institution-part-heading">VIDHAN SABHA RECORDS <b>'+house.length+'</b></div><p class="institution-status">'+esc(session?.start?session.start+" to "+session.end:"No plenary sitting during the requested window")+'</p>'+(house.length?house.map(x=>institutionLine(x,"house")).join(""):'<p class="dossier-empty">No issue-specific House record recovered.</p>')+'</div></div></details>';
+}
+govtBox+='</div>';
+dossier+=govtBox;
+// Keep static issue selector visually aligned to the default selected topic.
+html=html.replace(/class="topic-choice active" data-dossier-topic="Tribal Issues"/,'class="topic-choice " data-dossier-topic="Tribal Issues"');
+html=html.replace(/class="topic-choice " data-dossier-topic="Governance"/,'class="topic-choice active" data-dossier-topic="Governance"');
+
 const dossierStart="<!-- STATIC_DOSSIERS_START -->",dossierEnd="<!-- STATIC_DOSSIERS_END -->";
 const ds=html.indexOf(dossierStart),de=html.indexOf(dossierEnd);
 if(ds>=0&&de>ds)html=html.slice(0,ds+dossierStart.length)+dossier+html.slice(de);
