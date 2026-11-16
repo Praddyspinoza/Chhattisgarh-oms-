@@ -422,7 +422,7 @@ function houseMatches(r,withTopic=true){
 function evidenceItem(o,type){
  const label=type==="gov"?o.authority:o.recordType;
  const proof=type==="gov"?o.provenance:o.provenance;
- const status=type==="gov"?(proof==="unconfirmed-historical-entry"?"UNCONFIRMED HISTORICAL DATE":proof==="official-document"?"GOVERNMENT PDF LINK":"DATED OFFICIAL REGISTER"):(proof==="official-assembly-index"?"OFFICIAL ASSEMBLY INDEX":"REPORTED LEGISLATIVE COVERAGE");
+ const status=type==="gov"?(proof==="court-described-circular"?"COURT-REFERENCED CIRCULAR":proof==="government-press-release"?"OFFICIAL GOVERNMENT RELEASE":proof==="official-document"?"GOVERNMENT PDF LINK":proof==="official-register"?"DATED OFFICIAL REGISTER":"SOURCE NOT CONFIRMED"):(proof==="official-assembly-index"?"OFFICIAL ASSEMBLY INDEX":"REPORTED LEGISLATIVE COVERAGE");
  const other=type==="gov"?(o.documentNumber||""):(o.relatedLeaders||[]).length?"Named leader specifically referenced":"Institutional record";
  const url=href(o.url);
  const caution=type==="gov"?(o.verificationNote||""):(o.verificationNote||"");
@@ -455,7 +455,7 @@ function renderOfficial(){
 function renderAssembly(){
  const rows=gov.assemblyRecords.filter(houseMatches).sort((a,b)=>b.date.localeCompare(a.date));
  el("assemblyCount").textContent=rows.length+" source-backed legislative items";
- el("sessionList").innerHTML=gov.sessionNotes.filter(x=>institutionalFilteredState(x.state)).map(s=>'<div class="panel"><span class="eyebrow">'+e(s.state)+'</span><h3>'+(s.start?e(s.start+" to "+s.end):"No plenary in window")+'</h3><p class="hint">'+e(s.sessionStatus)+'</p><a href="'+href(s.evidenceUrl)+'" target="_blank" rel="noopener noreferrer">Official Assembly archive ↗</a></div>').join("");
+ el("sessionList").innerHTML=gov.sessionNotes.filter(x=>institutionalFilteredState(x.state)).map(s=>'<div class="panel"><span class="eyebrow">'+e(s.state)+'</span><h3>'+(s.start?e(s.start+" to "+s.end):"No plenary in window")+'</h3><p class="hint">'+e(s.sessionStatus)+'</p><a href="'+href(s.evidenceUrl)+'" target="_blank" rel="noopener noreferrer">Official Assembly archive ↗</a> · <a href="'+href(s.questionIndexUrl||s.evidenceUrl)+'" target="_blank" rel="noopener noreferrer">Starred / unstarred question index ↗</a><p class="hint">'+e(s.questionIndexNote||"")+'</p></div>').join("");
  const subjects=issue==="all"?gov.issues:[issue];
  el("assemblyList").innerHTML=subjects.map(t=>{const xs=rows.filter(x=>x.issue===t);return '<section class="institution-topic"><h3>'+e(t)+'</h3><small>'+xs.length+' items</small>'+xs.map(x=>'<div class="institution-state-title">'+e(x.state)+'</div>'+evidenceItem(x,"house")).join("")+'</section>'}).join("");
 }
