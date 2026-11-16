@@ -5,6 +5,9 @@ on:
       - '.github/workflows/extract-social-permalinks.yml'
       - 'comparative_states_2026.json'
   workflow_dispatch:
+concurrency:
+  group: comparative-social-candidate-write
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -21,4 +24,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add comparative_x_candidates.json
-          git diff --cached --quiet || (git commit -m "Record public-publisher original X permalink candidates" && git push)
+          if git diff --cached --quiet; then
+            echo "No candidate changes"
+            exit 0
+          fi
+          git commit -m "Record public-publisher original X permalink candidates"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 2
+          done
+          exit 1
