@@ -1,0 +1,22 @@
+name: Extract OMS design reference
+on:
+  push:
+    paths:
+      - '.github/workflows/extract-design-reference.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  inspect:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract existing terminal styles
+        run: node scripts/extract_design_reference.cjs
+      - name: Save design reference
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comparative_design_reference.json
+          git diff --cached --quiet || (git commit -m "Extract visual reference from original OMS" && git push)
