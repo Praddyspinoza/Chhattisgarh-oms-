@@ -227,6 +227,12 @@
       "name": "NDTV",
       "url": "https://www.ndtv.com/videos",
       "access": "Dated video and text reporting"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "MP Breaking News",
+      "url": "https://www.mpbreakingnews.in/",
+      "access": "MP-focused digital newspaper; dated article pages with embedded X text in some reports"
     }
   ],
   "records": [
@@ -2165,6 +2171,58 @@
       "url": "https://www.ndtv.com/india-news/jssc-cgl-jharkhand-protests-kill-us-jharkhand-cancels-exams-selected-candidates-brace-for-job-loss-11926039",
       "status": "publisher-report-reviewed",
       "sourceType": "channel"
+    },
+    {
+      "id": "cmp-202",
+      "type": "Reported statement / coverage",
+      "status": "publisher-report-reviewed",
+      "date": "2026-10-21",
+      "leader": "mp-lop",
+      "issue": "Agriculture & Farmers",
+      "publisher": "MP Breaking News",
+      "title": "Umang Singhar questions farmer payments, procurement and MSP implementation",
+      "summary": "MP Breaking News reported Singhar's statement questioning delays in crop procurement, insurance and farmer payments. His criticism is an attributed political statement, not a verified audit of the programmes.",
+      "url": "https://www.mpbreakingnews.in/bhopal/mp-farmers-issues-umang-singhar-targets-bjp-government-06-934270",
+      "sourceType": "news"
+    },
+    {
+      "id": "cmp-203",
+      "type": "Reported statement / coverage",
+      "status": "publisher-report-reviewed",
+      "date": "2026-10-25",
+      "leader": "mp-lop",
+      "issue": "Environment & Forests",
+      "publisher": "MP Breaking News",
+      "title": "Umang Singhar raises environmental and village-consent concerns over Rewa nuclear project",
+      "summary": "MP Breaking News reported Singhar's comments and embedded public X statements concerning a proposed nuclear project, local consent, safety and environmental risks. The project remained proposed.",
+      "url": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
+      "sourceType": "news"
+    },
+    {
+      "id": "cmp-204",
+      "type": "Reported statement / coverage",
+      "status": "publisher-report-reviewed",
+      "date": "2026-08-17",
+      "leader": "jh-cm",
+      "issue": "Education, Healthcare & Employment",
+      "publisher": "NDTV",
+      "title": "Jharkhand students seek independent investigation after state announces exam cancellations",
+      "summary": "NDTV reported that Soren agreed to major recruitment-examination demands but protesting students continued to call for an independent inquiry. This is additional coverage of the same underlying decision.",
+      "url": "https://www.ndtv.com/india-news/jharkhand-ranchi-protests-key-recruitment-test-will-be-cancelled-says-hemant-soren-after-weeks-of-student-protests-11922607",
+      "sourceType": "channel"
+    },
+    {
+      "id": "cmp-205",
+      "type": "Headline-index reference",
+      "status": "headline-index-only",
+      "date": "2026-08-19",
+      "leader": "jh-cm",
+      "issue": "Education, Healthcare & Employment",
+      "publisher": "NDTV",
+      "title": "Students suspend 26-day Jharkhand recruitment protest with a two-month deadline",
+      "summary": "NDTV's dated protest archive reported the suspension of a 26-day student agitation after the Soren government's examination decision, with further demands outstanding.",
+      "url": "https://www.ndtv.com/topic/jharkhand-protest",
+      "sourceType": "headline-only"
     }
   ],
   "posts": [
