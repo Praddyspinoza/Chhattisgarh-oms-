@@ -5,7 +5,7 @@
     "end": "2026-11-05"
   },
   "method": "Public X status URL discovery via web indexing, not private X account export. These are candidates until original status contents are verified and coded.",
-  "tasks": 18,
+  "tasks": 24,
   "errors": [
     {
       "q": "site:x.com/HemantSorenJMM/status/ 2026 August",
@@ -1151,6 +1151,596 @@
       "snippet": "Congratulate Indian Hockey Team on beating Japan to advance into semi-final of Hero Asian Champions Trophy Punjab 2026. May the team continue its winning ...",
       "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 October",
       "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-13",
+      "url": "https://x.com/HemantSorenJMM/status/2087933019139281212",
+      "title": "देश की माननीय राष्ट्रपति आदरणीय श्रीमती द्रौपदी मुर्मु जी को ...",
+      "snippet": "संशोधन विधेयक, 2026 को लेकर झारखंड और झारखंडवासियों की गंभीर चिंताओं से अवगत कराया है। समुदायों और खनन अधिकारों से जुड़ा प्रश्न है। माननीय राष्ट्रपति महोदया जी. Aug 13 द्रौपदी मुर्मु तब",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-17",
+      "url": "https://x.com/HemantSorenJMM/status/2089392452679729299",
+      "title": "\"झारखंड के मेरे युवा साथियों के हितों, भविष्य और विश्वास की रक्षा ...",
+      "snippet": "... कैबिनेट बैठक के पश्चात मीडिया बंधुओं से बातचीत... 00:00. 4:42 PM · Aug 17, 2026·. 260.9K. Views · 612. 1.1K. 6.6K. 113.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-10",
+      "url": "https://x.com/HemantSorenJMM/status/2086840484694196316",
+      "title": "आज के छात्र आंदोलन के दौरान संयम, संवेदनशीलता और पूरी ...",
+      "snippet": "... और विश्वास के साथ मिलकर इस मुद्दे का समाधान करें। 3:41 PM · Aug 10, 2026·. 728.7K. Views · 1.4K. 1.3K. 6.7K. 205.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-09",
+      "url": "https://x.com/HemantSorenJMM/status/2086406781941805068",
+      "title": "आज भी जब कोई अपनी आवाज उठाता है तो उसे कभी बदनाम करने ...",
+      "snippet": "आज भी जब कोई अपनी आवाज उठाता है तो उसे कभी बदनाम करने, कभी लाठी-डंडे से दबाने, Aug 9, 2026· United States Defensive Player of the Week Sports … 2026 X Corp.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-05",
+      "url": "https://x.com/HemantSorenJMM/status/2084941548685504719",
+      "title": "माननीय विधानसभा में मीडिया बंधुओं से बातचीत... मेरे युवा साथियों ...",
+      "snippet": "... साथियों की प्रत्येक बात को पूरी गंभीरता से सुना जाएगा। 00:00. 9:56 AM · Aug 5, 2026·. 132.5K. Views · 244. 502. 2.9 ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-20",
+      "url": "https://x.com/HemantSorenJMM/status/2090423342163808344",
+      "title": "झारखंड और झारखंडवासियों ने आगे बढ़ना शुरू किया ही था कि ...",
+      "snippet": "झारखंड और झारखंडवासियों ने आगे बढ़ना शुरू किया ही था कि केंद्र सरकार द्वारा खनन कानून ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-28",
+      "url": "https://x.com/HemantSorenJMM/status/2093210428235239716",
+      "title": "रक्षाबंधन के पावन पर्व पर सभी को हार्दिक बधाई, शुभकामनाएं ...",
+      "snippet": "आप सभी को रक्षाबंधन की हार्दिक बधाई एवं शुभकामनाएं। 5:33 AM · Aug 28, 2026· ... © 2026 X Corp.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-13",
+      "url": "https://x.com/HemantSorenJMM/status/2087945269191340165",
+      "title": "माननीय लोकसभा में नेता प्रतिपक्ष श्री @RahulGandhi जी को ...",
+      "snippet": "Hemant Soren on X: Mines and Minerals (Development and Regulation) Amendment Bill, 2026. Aug 13, 2026· 117.6K. Log in or sign up for X See what's happening and ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-13",
+      "url": "https://x.com/HemantSorenJMM/status/2087937974596145474",
+      "title": "माननीय प्रधानमंत्री आदरणीय श्री @narendramodi जी को ...",
+      "snippet": "... 2026 पर पुनर्विचार हेतु आग्रह किया। प्रस्तावित प्रावधान झारखंड जैसे खनिज-समृद्ध ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-05",
+      "url": "https://x.com/HemantSorenJMM/status/2096107132483711282",
+      "title": "Hemant Soren (@HemantSorenJMM) on X",
+      "snippet": "### Chitranjan Jha (@Chitran34871136) · [2026-09-05](https://x.com/Chitran34871136/status/2096218444199059632)",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-23",
+      "url": "https://x.com/HemantSorenJMM/status/2102667214641823825",
+      "title": "पलामू में करम डाली विसर्जन के दौरान हुए हादसे में कुछ लोगों के ...",
+      "snippet": "पलामू में करम डाली विसर्जन के दौरान हुए हादसे में कुछ लोगों के नदी में डूबने का समाचार ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-24",
+      "url": "https://x.com/HemantSorenJMM/status/2102962833738916309",
+      "title": "जमशेदपुर में एनएच हाईवे पर हुए सड़क हादसे में राज्य सरकार में ...",
+      "snippet": "जमशेदपुर में एनएच हाईवे पर हुए सड़क हादसे में राज्य सरकार में साथी मंत्री एवं बहन ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-06",
+      "url": "https://x.com/HemantSorenJMM/status/2096420932382531825",
+      "title": "देर रात अपने बड़े भाई, हमारे प्रिय सुदिव्य कुमार सोनू जी के निधन ...",
+      "snippet": "देर रात अपने बड़े भाई, हमारे प्रिय सुदिव्य कुमार सोनू जी के निधन का दुःखद समाचार मिला।",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-14",
+      "url": "https://x.com/HemantSorenJMM/status/2099356539807269206",
+      "title": "एकदन्तं महाकायं लम्बोदरं गजाननम्। विघ्ननाशकरं देवं हेरम्बं ...",
+      "snippet": "... हूं। ॐ गं गणपतये नमः। गणपति बप्पा मोरया! मंगल मूर्ति मोरया! 4:36 AM · Sep 14, 2026·. 18.3K. Views · 18. 45. 245.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-01",
+      "url": "https://x.com/HemantSorenJMM/status/2094800740980232604",
+      "title": "Hemant Soren on X: \".@SportsJhr तत्काल संज्ञान लें।\" / X",
+      "snippet": "... का घोर अनादर है। @HemantSorenJMM जी, झारखंड की माटी का यह लाल सम्मान. 2:53 PM · Sep 1, 2026·. 88.9K. Views · 28. 88. 502.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-08",
+      "url": "https://x.com/HemantSorenJMM/status/2097223764157337766",
+      "title": "झारखंड की धरती हमेशा से जल, जंगल, जमीन और अपने अधिकारों ...",
+      "snippet": "... वीर शहीद अमर रहें! झारखंड के वीर शहीद अमर रहें! जय झारखंड! 7:21 AM · Sep 8, 2026·. 25.3K. Views · 21. 53. 198.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-28",
+      "url": "https://x.com/HemantSorenJMM/status/2104518178055614681",
+      "title": "Hemant Soren on X",
+      "snippet": "Met Shri Deepak Chhabaria, President, RMZ Infrastructure, in Ranchi today. We had a productive discussion on exploring investment opportunities in Jharkhand ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-24",
+      "url": "https://x.com/HemantSorenJMM/status/2103119016986558584",
+      "title": "Hemant Soren on X: \"आज शब्द नहीं हैं मेरे पास। दीपिका जी ...",
+      "snippet": "... की यह असहनीय पीड़ा सहन करने की शक्ति दे। अंतिम जोहार तृषा... 1:47 PM · Sep 24, 2026·. 82.6K. Views · 82. 139. 1.4K.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-16",
+      "url": "https://x.com/HemantSorenJMM/status/2100161664784257491",
+      "title": "Hemant Soren on X",
+      "snippet": "Our discussions covered areas of mutual interest and significant potential for collaboration, including skills and technical education, technology and ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-17",
+      "url": "https://x.com/HemantSorenJMM/status/2111520558194253920",
+      "title": "कोलकाता के चोरबागन पूजा पंडाल में भगदड़ से कुछ लोगों की मृत्यु ...",
+      "snippet": "कोलकाता के चोरबागन पूजा पंडाल में भगदड़ से कुछ लोगों की मृत्यु की दुखद खबर से मन ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-27",
+      "url": "https://x.com/HemantSorenJMM/status/2115077228493201479",
+      "title": "कैबिनेट बैठक पश्चात मीडिया बंधुओं से बातचीत।",
+      "snippet": "Conversation @HemantSorenJMM. Oct 27, 2026· See what's happening and join the conversation. Chief Minister, Jharkhand | President - JMM | Disciple of Birsa ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-20",
+      "url": "https://x.com/HemantSorenJMM/status/2112381563132666116",
+      "title": "विजयादशमी असत्य पर सत्य, अधर्म पर धर्म और अन्याय पर ...",
+      "snippet": "आप सभी को विजयादशमी की हार्दिक शुभकामनाएं। शुभो विजया! 3:13 AM · Oct 20, 2026·. 36.2K. Views · 37. 74. 592. 2.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-05",
+      "url": "https://x.com/HemantSorenJMM/status/2107061768937975840",
+      "title": "\"मरांग बुरु दिवंगत युविका बिटिया की आत्मा को शांति प्रदान करें ...",
+      "snippet": "मरांग बुरु दिवंगत युविका बिटिया की आत्मा को शांति प्रदान करें और शोकाकुल दीपिका जी, ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-07",
+      "url": "https://x.com/HemantSorenJMM/status/2107869453241528487",
+      "title": "\"बाबा के जाने के बाद माँ ही मेरी सबसे बड़ी छाँव थीं। आज वह ...",
+      "snippet": "Oct 7, 2026· 563.8K. Jharkhand Mukti Morcha 2026@झा•मु•मो @Jmm_next2026 Oct 7 निःशब्द! @BrahmdevMehra15 Brahmdev Kumar Das @BrahmdevMehra15",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-28",
+      "url": "https://x.com/HemantSorenJMM/status/2115367900676845825",
+      "title": "\".@dc_sahibganj अविलंब संज्ञान लें, एवं इलाज की पूरी सुविधा ...",
+      "snippet": ".@dc_sahibganj अविलंब संज्ञान लें, एवं इलाज की पूरी सुविधा मुहैया कराते हुए सूचना दें। @The_FollowUp.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-26",
+      "url": "https://x.com/HemantSorenJMM/status/2114701357768925460",
+      "title": "आज रांची में 15वीं अखिल भारतीय पुलिस तीरंदाजी प्रतियोगिता के ...",
+      "snippet": "... सभी प्रतिभागियों को उज्ज्वल भविष्य के लिए शुभकामनाएँ। जोहार! 12:51 PM · Oct 26, 2026·. 14.6K. Views · 3. 29.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-02",
+      "url": "https://x.com/HemantSorenJMM/status/2105906997862580499",
+      "title": "राष्ट्रपिता महात्मा गांधी जी की जयंती पर सादर नमन। बापू ने ...",
+      "snippet": "... भाईचारे और जनकल्याण के लिए अपने संकल्प को और मजबूत करें। 6:25 AM · Oct 2, 2026·. 14.1K. Views · 6. 35. 161. 1.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-15",
+      "url": "https://x.com/HemantSorenJMM/status/2110587110122295479",
+      "title": "मैं माँ का ही अंश हूँ। वह हर पल मेरे साथ हैं।",
+      "snippet": "Hemant Soren on X: Oct 15, 2026· Disciple of Birsa Munda, Sidho-Kanhu & Baba Sahab, Marang Gomke … © 2026 X Corp.",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-09",
+      "url": "https://x.com/HemantSorenJMM/status/2108408555233849473",
+      "title": "\".@LateharPolice तत्काल संज्ञान लें, जाँच करें एवं उचित ...",
+      "snippet": "आदिवासी पुनिया देवी (हेरंज, लातेहार) को 5 अक्टूबर को दोपहर में बकरी चराने के दौरान ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-11",
+      "url": "https://x.com/yourBabulal/status/2087070706949616017",
+      "title": "राहुल गांधी अपना चेहरा छुपाने के लिए उपरी मन से छात्रों ...",
+      "snippet": "राहुल गांधी अपना चेहरा छुपाने के लिए उपरी मन से छात्रों पर हुई बर्बरता को गलत बता रहे ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-05",
+      "url": "https://x.com/yourBabulal/status/2085012407752290450",
+      "title": "तिरंगे के सम्मान के साथ न्याय की मांग... रांची में भारी बारिश के ...",
+      "snippet": "तिरंगे के सम्मान के साथ न्याय की मांग... रांची में भारी बारिश के बीच आंदोलनरत छात्रों ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-19",
+      "url": "https://x.com/yourBabulal/status/2090085808418267159",
+      "title": "मुख्यमंत्री @HemantSorenJMM जी को पत्र लिखकर JPSC ...",
+      "snippet": "मुख्यमंत्री @HemantSorenJMM जी को पत्र लिखकर JPSC, JSSC-CGL एवं हाल ही में रद्द की गई सभी परीक्षाओं ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-12",
+      "url": "https://x.com/yourBabulal/status/2087407419823628293",
+      "title": "रांची जिला प्रशासन द्वारा देर रात झारखंड छात्र आंदोलनकारियों ...",
+      "snippet": "रांची जिला प्रशासन द्वारा देर रात झारखंड छात्र आंदोलनकारियों को जबरन हटाए जाने की ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-17",
+      "url": "https://x.com/yourBabulal/status/2089387784889139636",
+      "title": "रांची के जयपाल सिंह मुंडा स्टेडियम में विगत 23 दिनों से आंदोलन ...",
+      "snippet": "रांची के जयपाल सिंह मुंडा स्टेडियम में विगत 23 दिनों से आंदोलन कर रहे छात्रों को बधाई ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-09",
+      "url": "https://x.com/yourBabulal/status/2086327609642926457",
+      "title": "झारखंड पुलिस के IG, Provision पंकज कंबोज द्वारा रांची के कांके ...",
+      "snippet": "झारखंड पुलिस के IG, Provision पंकज कंबोज द्वारा रांची के कांके अंचल स्थित मौजा चामा की ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-26",
+      "url": "https://x.com/yourBabulal/status/2092479757413974448",
+      "title": "विधानसभा सदस्य और थाना प्रभारी के बीच हॉट-टॉक के बाद पुलिस ...",
+      "snippet": "विधानसभा सदस्य और थाना प्रभारी के बीच हॉट-टॉक के बाद पुलिस एसोसिएशन से लेकर तरह-तरह के ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-11",
+      "url": "https://x.com/yourBabulal/status/2087176941019570264",
+      "title": "अब तक हेमंत सरकार छात्रों से कहती रही कि वह JPSC-JSSC ...",
+      "snippet": "अब तक हेमंत सरकार छात्रों से कहती रही कि वह JPSC-JSSC परीक्षाओं में हुई धांधली की ED से जांच ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-24",
+      "url": "https://x.com/yourBabulal/status/2091847616132944245",
+      "title": "JPSC व JSSC परीक्षाओं में धांधली कर नौकरी बेचे जाने के मामले ...",
+      "snippet": "JPSC व JSSC परीक्षाओं में धांधली कर नौकरी बेचे जाने के मामले में माननीय सुप्रीम कोर्ट ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-10",
+      "url": "https://x.com/yourBabulal/status/2086687944539344973",
+      "title": "JPSC और JSSC की परीक्षाओं में नौकरी बेचकर झामुमो-कांग्रेस ...",
+      "snippet": "JPSC और JSSC की परीक्षाओं में नौकरी बेचकर झामुमो-कांग्रेस की सरकार ने झारखंड के उन लाखों ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-27",
+      "url": "https://x.com/yourBabulal/status/2104145843016388664",
+      "title": "जमशेदपुर में रात्रि गश्ती के वायरल वीडियो में पुलिसकर्मी दुकानों ...",
+      "snippet": "जमशेदपुर में रात्रि गश्ती के वायरल वीडियो में पुलिसकर्मी दुकानों और सड़कों पर मौजूद ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-24",
+      "url": "https://x.com/yourBabulal/status/2102962985304272966",
+      "title": "Babulal Marandi on X: \"सड़क दुर्घटना में घायल बच्ची के ...",
+      "snippet": "सड़क दुर्घटना में घायल बच्ची के असामयिक निधन की हृदयविदारक सूचना से मर्माहत हूँ।",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-04",
+      "url": "https://x.com/yourBabulal/status/2095722962263703936",
+      "title": "Babulal Marandi on X: \"आप सभी को श्री कृष्ण जन्माष्टमी की ...",
+      "snippet": "आप सभी को श्री कृष्ण जन्माष्टमी की हार्दिक बधाई एवं शुभकामनाएं। प्रेम, दया, करुणा ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-02",
+      "url": "https://x.com/yourBabulal/status/2095000836095213623",
+      "title": "पिछले कई दिनों से सोशल मीडिया पर JSSC नियुक्ति घोटाले को ...",
+      "snippet": "पिछले कई दिनों से सोशल मीडिया पर JSSC नियुक्ति घोटाले को लेकर CID की जाँच से संबंधित ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-04",
+      "url": "https://x.com/yourBabulal/status/2095792643536228780",
+      "title": "अपराधियों के सामने पीठ दिखाकर भागने वाली हेमंत सरकार की ...",
+      "snippet": "अपराधियों के सामने पीठ दिखाकर भागने वाली हेमंत सरकार की पुलिस थाने में भाजपा ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-04",
+      "url": "https://x.com/yourBabulal/status/2095724538944434330",
+      "title": "मुख्यमंत्री @HemantSorenJMM जी के निर्वाचन क्षेत्र ...",
+      "snippet": "मुख्यमंत्री @HemantSorenJMM जी के निर्वाचन क्षेत्र साहिबगंज जिले के बरहेट विधानसभा क्षेत्र ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-29",
+      "url": "https://x.com/yourBabulal/status/2104788136735944933",
+      "title": "JSSC-CGL मामले में जिस तरह से CID की जांच सिर्फ ...",
+      "snippet": "JSSC-CGL मामले में जिस तरह से CID की जांच सिर्फ अभ्यर्थियों और एजेंटों की गिरफ्तारी तक ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-06",
+      "url": "https://x.com/yourBabulal/status/2096440935554916588",
+      "title": "झारखंड के माननीय मंत्री श्री सुदिव्य कुमार सोनू जी के निधन की ...",
+      "snippet": "झारखंड के माननीय मंत्री श्री सुदिव्य कुमार सोनू जी के निधन की खबर से मन अत्यंत व्यथित ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-17",
+      "url": "https://x.com/yourBabulal/status/2100428790266765571",
+      "title": "Babulal Marandi on X: \"आदरणीय प्रधानमंत्री श्री ...",
+      "snippet": "आदरणीय प्रधानमंत्री श्री @narendramodi जी को जन्मदिवस की हार्दिक बधाई एवं अनंत शुभकामनाएं।",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-29",
+      "url": "https://x.com/yourBabulal/status/2104900277396754627",
+      "title": "तदाशा मिश्रा जी, आज सर्वोच्च न्यायालय में झारखंड के डीजीपी ...",
+      "snippet": "तदाशा मिश्रा जी, आज सर्वोच्च न्यायालय में झारखंड के डीजीपी नियुक्ति मामले की बहस आपने ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-07",
+      "url": "https://x.com/yourBabulal/status/2107859579350680028",
+      "title": "मुख्यमंत्री श्री @HemantSorenJMM जी की माताजी के निधन ...",
+      "snippet": "मुख्यमंत्री श्री @HemantSorenJMM जी की माताजी के निधन की सूचना से मन अत्यंत व्यथित है।",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-20",
+      "url": "https://x.com/yourBabulal/status/2112407297125503051",
+      "title": "Babulal Marandi on X: \"अधर्म पर धर्म, असत्य पर सत्य और ...",
+      "snippet": "... , समृद्धि एवं खुशहाली का वास हो, यही मंगलकामना है। जय श्री राम! 4:55 AM · Oct 20, 2026·. 935. Views · 3. 7. 31.",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-18",
+      "url": "https://x.com/yourBabulal/status/2111610724858712337",
+      "title": "\"कोलकाता के चोरबगान दुर्गा पूजा पंडाल में हुए हादसे में 19 ...",
+      "snippet": "कोलकाता के चोरबगान दुर्गा पूजा पंडाल में हुए हादसे में 19 श्रद्धालुओं की मृत्यु अत्यंत ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-13",
+      "url": "https://x.com/yourBabulal/status/2110023914298675372",
+      "title": "गढ़वा से कोलकाता के बीच चलने वाली मुन्ना ट्रैवल्स की बस के ...",
+      "snippet": "गढ़वा से कोलकाता के बीच चलने वाली मुन्ना ट्रैवल्स की बस के कंडक्टर पर निमियाघाट थाना ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-28",
+      "url": "https://x.com/yourBabulal/status/2115338402707210481",
+      "title": "Babulal Marandi on X: \"पूर्व मंत्री श्री रामचंद्र चन्द्रवंशी जी ...",
+      "snippet": "पूर्व मंत्री श्री रामचंद्र चन्द्रवंशी जी की धर्मपत्नी स्वर्गीय तेतरी चन्द्रवंशी जी ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-01",
+      "url": "https://x.com/yourBabulal/status/2105513487208415691",
+      "title": "कैप्टन स्मित मच्छार ने Flydubai की Flight FZ1073 में उत्पन्न ...",
+      "snippet": "कैप्टन स्मित मच्छार ने Flydubai की Flight FZ1073 में उत्पन्न गंभीर संकट के दौरान खुद घायल होने ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-22",
+      "url": "https://x.com/yourBabulal/status/2113121698308579575",
+      "title": "लातेहार जिला के मनिका सामुदायिक स्वास्थ्य केंद्र पर सर्पदंश से ...",
+      "snippet": "लातेहार जिला के मनिका सामुदायिक स्वास्थ्य केंद्र पर सर्पदंश से पीड़ित महिला का इलाज ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-14",
+      "url": "https://x.com/yourBabulal/status/2110276077994357025",
+      "title": "प्रदेश भाजपा कार्यालय में आयोजित संगठनात्मक बैठक में ...",
+      "snippet": "प्रदेश भाजपा कार्यालय में आयोजित संगठनात्मक बैठक में उपस्थित रहा। बैठक में प्रदेश ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-06",
+      "url": "https://x.com/yourBabulal/status/2107351644551922145",
+      "title": "रांची में 9 अक्टूबर को होने वाले भारत-वेस्टइंडीज क्रिकेट मैच के ...",
+      "snippet": "रांची में 9 अक्टूबर को होने वाले भारत-वेस्टइंडीज क्रिकेट मैच के टिकटों की कालाबाजारी ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-26",
+      "url": "https://x.com/yourBabulal/status/2114596981876326787",
+      "title": "JPSC के पूर्व अध्यक्ष एल.खियांगते के लैपटॉप बैग में 15 ...",
+      "snippet": "JPSC के पूर्व अध्यक्ष एल.खियांगते के लैपटॉप बैग में 15 अभ्यर्थियों की सूची मिली है, ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
       "status": "candidate-needs-content-check"
     }
   ]
