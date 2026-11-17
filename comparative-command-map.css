@@ -105,3 +105,12 @@
 .tabs [data-tab="official"].active,.tabs [data-tab="assembly"].active{border-bottom-color:#ff9e8f;background:#2d233e;color:#fff}
 @media(max-width:1100px){#omsCommandMap .cm-issue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:620px){#omsCommandMap .cm-map-grid{grid-template-columns:1fr}#omsCommandMap .cm-svg{height:320px}#omsCommandMap .cm-issue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#omsCommandMap .cm-district-toolbar{padding:10px}#omsCommandMap #cmDistrictPicker{max-width:100%}}
+
+
+/* Selected leader or state: a true full-width, readable administrative district map. */
+#omsCommandMap .cm-map-grid.cm-focused{grid-template-columns:minmax(0,1fr)}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-dim{display:none}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected{padding:16px 20px;border-color:#b76c86}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected .cm-svg{height:min(61vw,520px);width:100%;max-width:900px;min-height:340px;margin:0 auto}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected .cm-map-foot{justify-content:center}
+@media(max-width:650px){#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected{padding:10px}#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected .cm-svg{height:350px;min-height:290px}}
