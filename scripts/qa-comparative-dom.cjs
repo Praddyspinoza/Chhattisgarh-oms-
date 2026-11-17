@@ -68,5 +68,13 @@ assert.equal(node("nPosts").textContent,records.posts.length,"Social metric wron
 assert.equal(node("nGov").textContent,govRecords.officialRecords.length,"Government metric wrong");
 assert.equal(node("nAssembly").textContent,govRecords.assemblyRecords.length,"Legislative metric wrong");
 assert(html.includes("STATIC_DOSSIERS_START"),"No static initial dossier fallback");
+assert(html.includes("comparative-geo-data.js"),"Actual district polygon asset not loaded by comparative HTML");
+assert(html.includes("data-tab=\"official\"")&&html.includes("data-tab=\"assembly\""),"Independent official circulars and Vidhan Sabha tabs missing");
+const shapes=[["comparative-geo-mp.json",55],["comparative-geo-od.json",30],["comparative-geo-jh.json",24]];
+for(const [path,n] of shapes){
+ const f=JSON.parse(fs.readFileSync(path,"utf8"));assert.equal(f.features.length,n,path+" lacks complete district polygons");
+ for(const geom of f.features){assert(geom.properties.name&&geom.geometry.type,"Missing actual geometry "+path);}
+}
+
 assert(html.includes("id=\"omsCommandMap\"")&&html.includes("comparative-command-map.js")&&html.includes("comparative-command-map.css"),"Three-state district command map missing from comparative dashboard");
 console.log(JSON.stringify({pass:true,renderedNews:records.records.length,renderedPosts:records.posts.length,leaders:records.leaders.length,issues:records.issues.length,staticFallback:true,newsChannelLinks:true,missingLinks:0},null,2));

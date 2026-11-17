@@ -1,4 +1,4 @@
-/* Three-state comparative district motion interface. All locations schematic, not GIS boundaries. */
+/* OpenStreetMap-derived district boundaries under ODbL; source mentions are not event geolocations. */
 (()=>{"use strict";
 const root=document.getElementById("omsCommandMap");if(!root)return;
 const d=document.getElementById("oms-comparative-embedded"),g=document.getElementById("oms-comparative-government");
@@ -7,23 +7,19 @@ const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const states=["Madhya Pradesh","Odisha","Jharkhand"];
 const short={"Madhya Pradesh":"MP","Odisha":"OD","Jharkhand":"JH"};
 const L=id=>data.leaders.find(l=>l.id===id);
-const geo={
-"Madhya Pradesh":{
- box:[74,83,21.1,26.9],
- path:"M22 77 L41 47 L82 48 L106 31 L147 39 L174 29 L204 36 L246 30 L282 47 L302 77 L291 108 L304 125 L287 155 L261 158 L255 188 L220 213 L180 216 L151 206 L130 220 L97 205 L70 208 L42 183 L27 148 L15 117 Z",
- list:"Bhopal:23.26:77.41,Raisen:23.33:77.78,Rajgarh:23.85:76.73,Sehore:23.20:77.08,Vidisha:23.53:77.81,Alirajpur:22.31:74.36,Barwani:22.03:74.90,Burhanpur:21.31:76.23,Dhar:22.60:75.30,Indore:22.72:75.86,Jhabua:22.77:74.60,Khandwa:21.83:76.35,Khargone:21.82:75.62,Agar Malwa:23.71:76.02,Dewas:22.96:76.05,Mandsaur:24.07:75.07,Neemuch:24.47:74.87,Ratlam:23.33:75.04,Shajapur:23.43:76.27,Ujjain:23.18:75.79,Ashoknagar:24.57:77.73,Datia:25.67:78.46,Guna:24.65:77.31,Gwalior:26.22:78.18,Shivpuri:25.43:77.66,Bhind:26.55:78.79,Morena:26.49:77.99,Sheopur:25.67:76.70,Balaghat:21.82:80.18,Chhindwara:22.06:78.94,Dindori:22.95:81.08,Jabalpur:23.18:79.99,Katni:23.82:80.39,Mandla:22.60:80.37,Narsinghpur:22.95:79.20,Pandhurna:21.60:78.52,Seoni:22.08:79.54,Betul:21.90:77.90,Harda:22.34:77.10,Narmadapuram:22.74:77.72,Maihar:24.27:80.76,Mauganj:24.68:81.89,Rewa:24.54:81.30,Satna:24.58:80.83,Sidhi:24.42:81.88,Singrauli:24.20:82.68,Chhatarpur:24.91:79.59,Damoh:23.83:79.45,Niwari:25.35:78.60,Panna:24.72:80.20,Sagar:23.84:78.74,Tikamgarh:24.75:78.82,Anuppur:23.10:81.70,Shahdol:23.29:81.36,Umaria:23.53:80.84"
-},
-"Odisha":{
- box:[81,87.9,17.5,22.7],
- path:"M30 62 L54 39 L83 43 L108 26 L138 53 L172 44 L193 73 L224 57 L249 84 L267 91 L288 114 L277 141 L297 163 L278 187 L257 182 L245 211 L221 228 L198 211 L181 227 L158 208 L140 206 L107 178 L83 164 L69 137 L42 108 Z",
- list:"Angul:20.84:85.10,Balangir:20.70:83.50,Balasore:21.49:86.93,Bargarh:21.33:83.62,Bhadrak:21.05:86.50,Boudh:20.83:84.33,Cuttack:20.46:85.88,Deogarh:21.53:84.73,Dhenkanal:20.67:85.60,Gajapati:18.78:84.09,Ganjam:19.39:85.05,Jagatsinghpur:20.25:86.17,Jajpur:20.85:86.34,Jharsuguda:21.86:84.01,Kalahandi:19.91:83.16,Kandhamal:20.20:84.08,Kendrapara:20.50:86.42,Keonjhar:21.63:85.58,Khordha:20.25:85.80,Koraput:18.81:82.71,Malkangiri:18.35:81.90,Mayurbhanj:21.93:86.73,Nabarangpur:19.23:82.55,Nayagarh:20.13:85.10,Nuapada:20.81:82.54,Puri:19.80:85.82,Rayagada:19.17:83.42,Sambalpur:21.47:83.98,Subarnapur:20.84:83.92,Sundargarh:22.12:84.03"
-},
-"Jharkhand":{
- box:[83.1,88.2,21.6,25.5],
- path:"M17 106 L34 78 L58 85 L81 53 L111 49 L130 27 L159 42 L187 34 L213 52 L242 45 L270 64 L291 96 L277 127 L302 146 L273 170 L248 164 L231 201 L205 210 L170 200 L144 221 L106 204 L84 188 L60 185 L34 154 Z",
- list:"Bokaro:23.67:86.15,Chatra:24.22:84.86,Deoghar:24.48:86.69,Dhanbad:23.80:86.43,Dumka:24.27:87.25,East Singhbhum:22.80:86.20,Garhwa:24.15:83.80,Giridih:24.19:86.30,Godda:24.83:87.21,Gumla:23.04:84.54,Hazaribagh:23.99:85.36,Jamtara:23.95:86.80,Khunti:23.08:85.28,Koderma:24.47:85.60,Latehar:23.75:84.50,Lohardaga:23.44:84.68,Pakur:24.63:87.85,Palamu:24.03:84.07,Ramgarh:23.63:85.52,Ranchi:23.34:85.31,Sahibganj:25.24:87.64,Seraikela Kharsawan:22.70:85.97,Simdega:22.62:84.50,West Singhbhum:22.55:85.80"
-}};
-for(const st of states)geo[st].places=geo[st].list.split(",").map(x=>{const a=x.split(":");return[a[0],Number(a[1]),Number(a[2])]});
+const geo={};
+const spatial=window.OMS_GEO_BOUNDARIES;
+if(!spatial||states.some(s=>!spatial[s]||!spatial[s].features)){root.innerHTML='<div class="cm-detail"><strong>Real district boundary data could not be loaded.</strong> The source archive and existing tabs remain available.</div>';return}
+function pointsOf(geom){if(!geom)return [];if(geom.type==="Polygon")return geom.coordinates.flat(1);if(geom.type==="MultiPolygon")return geom.coordinates.flat(2);return []}
+for(const st of states){
+ const feats=spatial[st].features;const all=feats.flatMap(f=>pointsOf(f.geometry));
+ const xs=all.map(p=>p[0]),ys=all.map(p=>p[1]);
+ const box=[Math.min(...xs),Math.max(...xs),Math.min(...ys),Math.max(...ys)];
+ const list=feats.map(f=>{const p=pointsOf(f.geometry);let ax=0,ay=0;for(const q of p){ax+=q[0];ay+=q[1]}return[f.properties.name,ay/p.length,ax/p.length]});
+ geo[st]={box,features:feats,places:list};
+}
+const canonical={"Madhya Pradesh":{},"Odisha":{"Baleshwar":"Balasore","Kendujhar":"Keonjhar","Nabarangapur":"Nabarangpur","Debagarh":"Deogarh","Jagatsinghapur":"Jagatsinghpur"},"Jharkhand":{"Kodarma":"Koderma","Seraikela-Kharsawan":"Seraikela Kharsawan"}};
+function displayName(st,name){return canonical[st]?.[name]||name}
 const aliases={"Madhya Pradesh":{"Narmadapuram":["hoshangabad"],"Katni":["kymore"],"Khargone":["west nimar"],"Khandwa":["east nimar"]},
  "Odisha":{"Khordha":["khurda","bhubaneswar"],"Keonjhar":["kendujhar"],"Sundargarh":["sundergarh","rourkela"],"Koraput":["kotia"],"Balasore":["baleswar"],"Subarnapur":["sonepur"],"Balangir":["bolangir"]},
  "Jharkhand":{"East Singhbhum":["jamshedpur"],"West Singhbhum":["chaibasa"],"Seraikela Kharsawan":["seraikela","saraikela","kharsawan"],"Palamu":["palamau","daltonganj","medininagar"],"Sahibganj":["sahebganj"]}};
@@ -34,12 +30,27 @@ const research=[...data.records.map(r=>Object.assign({kind:"News / broadcaster",
  ...gov.assemblyRecords.map(r=>Object.assign({kind:"Legislative record (not personally attributed)",leader:null},r))];
 let view={state:"all",leader:"all",issue:"Governance",role:"all",publisher:"all",term:""};
 let district=null,showAll=false,stats={},filtered=[],key="";
-function near(st,lat,lon){const b=geo[st].box;return[Math.min(302,Math.max(18,20+280*(lon-b[0])/(b[1]-b[0]))),Math.min(229,Math.max(20,23+206*(b[3]-lat)/(b[3]-b[2])))]}
-function testWord(txt,phrase){const v=phrase.toLowerCase();return new RegExp("(^|[^a-z])"+v+"([^a-z]|$)","i").test(txt)}
+const mapZoom=Object.fromEntries(states.map(s=>[s,1]));
+function near(st,lat,lon){
+ const b=geo[st].box,lonRange=b[1]-b[0],latRange=b[3]-b[2];
+ const scale=Math.min(286/lonRange,215/latRange),offx=(320-lonRange*scale)/2,offy=(250-latRange*scale)/2;
+ return[offx+(lon-b[0])*scale,offy+(b[3]-lat)*scale]
+}
+function svgPath(st,geom){
+ const rings=geom.type==="Polygon"?geom.coordinates:(geom.type==="MultiPolygon"?geom.coordinates.flat():[]);
+ return rings.map(ring=>ring.map((xy,i)=>{const p=near(st,xy[1],xy[0]);return(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)}).join("")+"Z").join("");
+}
+function testWord(txt,phrase){
+ const v=String(phrase).toLowerCase().replace(/[\^$.*+?()[\]{}|]/g,"\\$&");
+ return new RegExp("(^|[^a-z])"+v+"([^a-z]|$)","i").test(txt)
+}
 function mention(r,st){
  const names=Array.isArray(r.districts)?r.districts.map(x=>x.toLowerCase()):[];
  const txt=[r.title,r.summary,r.detail,r.sourceHeadline].filter(Boolean).join(" ").toLowerCase();
- return geo[st].places.map(p=>p[0]).filter(n=>names.includes(n.toLowerCase())||[n,...(aliases[st]?.[n]||[])].some(x=>testWord(txt,x)));
+ return geo[st].places.map(p=>p[0]).filter(n=>{
+  const variants=[n,displayName(st,n),...(aliases[st]?.[n]||[]),...(aliases[st]?.[displayName(st,n)]||[])];
+  return variants.some(x=>names.includes(x.toLowerCase())||testWord(txt,x))
+ });
 }
 function calculate(){
  filtered=research.filter(r=>{
@@ -60,22 +71,30 @@ function calculate(){
  }
 }
 function stateCard(st){
- const s=stats[st],group=geo[st],one=view.state===st,dim=view.state!=="all"&&!one;
+ const s=stats[st],group=geo[st],focused=view.state!=="all"?view.state:(view.leader!=="all"?L(view.leader)?.state:null),one=focused===st,dim=Boolean(focused)&&!one;
  const ranked=[...s.map].filter(([n,r])=>r.length).sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0]));
- let svg='<svg class="cm-svg" viewBox="0 0 320 250" role="group" aria-label="'+esc(st)+' schematic evidence points"><path class="cm-outline" d="'+group.path+'"/>';
- for(let i=45;i<310;i+=52)svg+='<path class="cm-gridline" d="M'+i+' 22V228"/>';
- for(let i=45;i<230;i+=45)svg+='<path class="cm-gridline" d="M21 '+i+'H300"/>';
- svg+='<path class="cm-contour" d="'+group.path+'"/>';
- for(const [name,lat,lon] of group.places){
- const pt=near(st,lat,lon),rows=s.map.get(name)||[],hot=rows.length>0,sel=district?.state===st&&district?.name===name;
- const radius=sel?7.1:hot?Math.min(6.8,4.6+Math.sqrt(rows.length)*.6):3.1;
- svg+='<circle tabindex="0" role="button" class="cm-district'+(hot?' cm-hot':'')+(sel?' cm-target':'')+'" cx="'+pt[0].toFixed(1)+'" cy="'+pt[1].toFixed(1)+'" r="'+radius.toFixed(1)+'" data-action="district" data-state="'+esc(st)+'" data-district="'+esc(name)+'" aria-label="'+esc(name+', '+st+': '+rows.length+' matching source entries')+'"><title>'+esc(name+' · '+rows.length+' source mentions')+'</title></circle>';
+ const max=Math.max(1,...ranked.map(x=>x[1].length));
+ const z=mapZoom[st]||1, vw=320/z, vh=250/z;
+ const middle=district?.state===st?group.places.find(p=>p[0]===district.name):null;
+ const center=middle?near(st,middle[1],middle[2]):[160,125];
+ const vx=Math.max(0,Math.min(320-vw,center[0]-vw/2)),vy=Math.max(0,Math.min(250-vh,center[1]-vh/2));
+ let svg='<svg class="cm-svg" viewBox="'+vx.toFixed(1)+' '+vy.toFixed(1)+' '+vw.toFixed(1)+' '+vh.toFixed(1)+'" role="group" aria-label="'+esc(st)+' real district boundaries with reporting highlights">'+
+ '<defs><radialGradient id="cm-glow-'+short[st]+'"><stop stop-color="#f16e7d" stop-opacity=".13"/><stop offset="1" stop-color="#020a1a" stop-opacity="0"/></radialGradient></defs>'+
+ '<ellipse cx="160" cy="129" rx="156" ry="117" fill="url(#cm-glow-'+short[st]+')"/>';
+ for(const f of group.features){
+  const name=f.properties.name,rows=s.map.get(name)||[],hot=rows.length>0,sel=district?.state===st&&district?.name===name;
+  const opacity=hot?Math.min(.98,.48+Math.log1p(rows.length)/Math.log1p(max)*.5):.96;
+  svg+='<path tabindex="0" role="button" class="cm-district cm-polygon'+(hot?' cm-hot':'')+(sel?' cm-target':'')+'" data-action="district" data-state="'+esc(st)+'" data-district="'+esc(name)+'" d="'+svgPath(st,f.geometry)+'" aria-label="'+esc(displayName(st,name)+', '+st+': '+rows.length+' matching source items')+'" style="--cm-intensity:'+opacity.toFixed(2)+'"><title>'+esc(displayName(st,name)+' · '+rows.length+' source mentions')+'</title></path>';
  }
- for(const [name,rows] of ranked.slice(0,7)){const place=group.places.find(x=>x[0]===name),pt=near(st,place[1],place[2]);svg+='<text class="cm-label" x="'+Math.min(265,pt[0]+6).toFixed(1)+'" y="'+(pt[1]-7).toFixed(1)+'">'+esc(name.length>18?name.slice(0,15)+"…":name)+'</text>'}
+ for(const [name] of ranked.slice(0,6)){
+  const p=group.places.find(x=>x[0]===name);if(!p)continue;const xy=near(st,p[1],p[2]);
+  svg+='<text class="cm-label" x="'+xy[0].toFixed(1)+'" y="'+xy[1].toFixed(1)+'" text-anchor="middle">'+esc(displayName(st,name).length>15?displayName(st,name).slice(0,13)+"…":displayName(st,name))+'</text>';
+ }
  svg+='</svg>';
- const chips=ranked.slice(0,5).map(([name,rr])=>'<button class="cm-chip" data-action="district" data-state="'+esc(st)+'" data-district="'+esc(name)+'">'+esc(name)+' · '+rr.length+'</button>').join("");
- return '<article class="cm-map-card'+(one?' cm-selected':'')+(dim?' cm-dim':'')+'"><div class="cm-map-head"><button data-action="state" data-state="'+esc(st)+'" title="Filter the entire terminal to this state">'+esc(st)+' ⌄</button><small>'+s.lit+'/'+group.places.length+' LIT · '+s.rows.length+' LINKS</small></div>'+svg+
- '<div class="cm-map-foot">'+(chips||'<span class="cm-empty">No named district in this filter</span>')+(ranked.length>5?'<button class="cm-chip cm-quiet" data-action="state" data-state="'+esc(st)+'">+'+(ranked.length-5)+' districts</button>':'')+'</div></article>';
+ const chips=ranked.slice(0,5).map(([name,rr])=>'<button class="cm-chip" data-action="district" data-state="'+esc(st)+'" data-district="'+esc(name)+'">'+esc(displayName(st,name))+' · '+rr.length+'</button>').join("");
+ return '<article class="cm-map-card'+(one?' cm-selected':'')+(dim?' cm-dim':'')+'"><div class="cm-map-head"><button data-action="state" data-state="'+esc(st)+'" title="Filter entire comparative dashboard to '+esc(st)+'">'+esc(st)+' ⌄</button><small>'+s.lit+'/'+group.features.length+' DISTRICTS LIT</small><div class="cm-zoom-controls"><button data-action="zoom" data-state="'+esc(st)+'" data-zoom="in" aria-label="Zoom into '+esc(st)+'">+</button><button data-action="zoom" data-state="'+esc(st)+'" data-zoom="out" aria-label="Zoom out from '+esc(st)+'">−</button></div></div>'+svg+
+ '<div class="cm-map-foot">'+(chips||'<span class="cm-empty">No district-named report for current selection</span>')+
+ (ranked.length>5?'<button class="cm-chip cm-quiet" data-action="state" data-state="'+esc(st)+'">View '+ranked.length+' districts</button>':'')+'</div></article>';
 }
 function choices(arr,key,label){return arr.map(o=>'<button data-action="'+key+'" data-'+key+'="'+esc(o[0])+'" class="'+(view[key]===o[0]?'active':'')+'" title="'+esc(o[2]||o[1])+'">'+esc(o[1])+'</button>').join("")}
 function flow(){
@@ -88,47 +107,118 @@ function flow(){
 }
 function evidence(r){const headline=r.title||r.detail||r.sourceHeadline||"Original source";return '<article class="cm-evidence-item"><small class="cm-meta">'+esc([r.date,r.publisher||r.authority||r.recordType||"Public source",r.kind].filter(Boolean).join(" · "))+'</small>'+
  '<a target="_blank" rel="noopener noreferrer" href="'+esc(/^https:\/\//.test(r.url||"")?r.url:"#")+'">'+esc(headline)+' ↗</a>'+(r.summary?'<p>'+esc(r.summary.length>250?r.summary.slice(0,250)+"…":r.summary)+'</p>':'')+'</article>'}
+
+function districtResearch(st,name,ignoreIssue){
+ return research.filter(r=>{
+  if(!r.leader||r.state!==st)return false;
+  const l=L(r.leader);if(!l)return false;
+  if(view.leader!=="all"&&r.leader!==view.leader)return false;
+  if(view.role!=="all"&&l.role!==view.role)return false;
+  if(!ignoreIssue&&view.issue!=="all"&&r.issue!==view.issue)return false;
+  if(r.kind==="News / broadcaster"&&view.publisher!=="all"&&r.publisher!==view.publisher)return false;
+  if(view.term&&!([r.title,r.summary,r.detail,r.issue,r.publisher,l.name].filter(Boolean).join(" ").toLowerCase().includes(view.term)))return false;
+  return mention(r,st).includes(name);
+ });
+}
+function institutionalDistrict(st,name){
+ return research.filter(r=>!r.leader&&r.state===st&&mention(r,st).includes(name)&&(view.issue==="all"||r.issue===view.issue));
+}
+function districtPicker(){
+ const chosen=district?district.state+"|"+district.name:"";
+ const opts=states.filter(st=>view.state==="all"||view.state===st).map(st=>'<optgroup label="'+esc(st)+'">'+geo[st].places.map(p=>{
+  const val=st+"|"+p[0];
+  return '<option value="'+esc(val)+'"'+(chosen===val?' selected':'')+'>'+esc(displayName(st,p[0]))+'</option>';
+ }).join("")+'</optgroup>').join("");
+ return '<div class="cm-district-toolbar"><div class="cm-toolbar-title"><b>District dossier navigator</b><span>Leader + district shows every issue · Leader + issue illuminates all mentioned districts</span></div>'+
+ '<select id="cmDistrictPicker" class="cm-selector" aria-label="Choose an actual administrative district"><option value="">Select any district from these three states</option>'+opts+'</select>'+
+ '<button class="cm-button" data-action="allIssues">All ten issues</button>'+
+ '<button class="cm-button" data-action="tab" data-open-tab="official">Government circulars · '+gov.officialRecords.length+'</button>'+
+ '<button class="cm-button" data-action="tab" data-open-tab="assembly">Vidhan Sabha records · '+gov.assemblyRecords.length+'</button>'+
+ '<button class="cm-button" data-action="tab" data-open-tab="social">Original X links · '+data.posts.filter(x=>x.platform==="X").length+'</button></div>';
+}
 function details(){
  const all=states.flatMap(st=>[...stats[st].map].filter(x=>x[1].length).map(([name,rs])=>({st,name,rs}))).sort((a,b)=>b.rs.length-a.rs.length);
  if(!district){
- return '<div class="cm-detail"><div class="cm-detail-head"><strong>Choose any glowing district to reveal its evidence</strong><small>'+all.length+' highlighted districts</small></div>'+
- '<p class="cm-summary">Click an illuminated point or district chip; every linked headline opens its original publisher, post, or institution.</p>'+
- '<div class="cm-map-foot">'+all.slice(0,12).map(x=>'<button class="cm-chip" data-action="district" data-state="'+esc(x.st)+'" data-district="'+esc(x.name)+'">'+esc(x.name)+' · '+short[x.st]+' ('+x.rs.length+')</button>').join("")+'</div></div>';
+ return '<div class="cm-detail"><div class="cm-detail-head"><strong>Geographic evidence dossier · Choose a district</strong><small>'+all.length+' highlighted districts under your current filters</small></div>'+
+ '<p class="cm-summary">Select a chief minister or opposition leader, then choose a district on the map or in the district navigator. The ten-issue archive, X posts and links to original publisher reports will open together.</p>'+
+ '<div class="cm-map-foot">'+all.slice(0,14).map(x=>'<button class="cm-chip" data-action="district" data-state="'+esc(x.st)+'" data-district="'+esc(x.name)+'">'+esc(displayName(x.st,x.name))+' · '+short[x.st]+' ('+x.rs.length+')</button>').join("")+'</div></div>';
  }
- const rows=stats[district.state]?.map.get(district.name)||[];
- const unique=[...new Map(rows.map(r=>[(r.kind||"")+":"+(r.url||r.id),r])).values()].sort((a,b)=>(b.date||"").localeCompare(a.date||""));
- return '<div class="cm-detail"><div class="cm-detail-head"><strong>'+esc(district.name+' · '+district.state)+'</strong><small>'+unique.length+' matching original source links</small><button class="cm-button" data-action="close">Close ×</button></div>'+
- (unique.length?'<div class="cm-evidence">'+(showAll?unique:unique.slice(0,8)).map(evidence).join("")+'</div>'+(unique.length>8?'<p><button class="cm-button" data-action="more">'+(showAll?'Show fewer':'Show all '+unique.length+' links')+'</button></p>':''):
- '<p class="cm-summary">No district-specific item was recovered for the current combined filters. This does not mean the district had no political activity.</p>')+'</div>';
+ const st=district.state,name=district.name;
+ const allIssueItems=districtResearch(st,name,true);
+ const current=districtResearch(st,name,false);
+ const institution=institutionalDistrict(st,name);
+ const unique=[...new Map(current.map(r=>[(r.kind||"")+":"+(r.url||r.id),r])).values()].sort((a,b)=>(b.date||"").localeCompare(a.date||""));
+ const visible=showAll?unique:unique.slice(0,14);
+ const leaderLabel=view.leader==="all"?"both state leaders":L(view.leader)?.name||"filtered leaders";
+ const leadersForDiscovery=data.leaders.filter(l=>l.state===st&&(view.leader==="all"||view.leader===l.id)&&(view.role==="all"||view.role===l.role));
+ const xDiscovery=leadersForDiscovery.map(l=>{
+  const terms=["from:"+l.x,"since:2026-08-05","until:2026-11-06",displayName(st,name)];
+  if(view.issue!=="all")terms.push(view.issue);
+  const u="https://x.com/search?q="+encodeURIComponent(terms.join(" "))+"&src=typed_query";
+  return '<a class="cm-x-search" href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">Search @'+esc(l.x)+' × '+esc(displayName(st,name))+' on X ↗ <small>(discovery search; not a verified post)</small></a>';
+ }).join("");
+ let issues='<div class="cm-issue-grid">';
+ for(const t of data.issues){
+  const count=allIssueItems.filter(r=>r.issue===t).length;
+  issues+='<button class="cm-issue-tile'+(view.issue===t?' active':'')+'" data-action="issue" data-issue="'+esc(t)+'" title="'+esc(t)+' - '+count+' district-linked items"><span>'+esc(t)+'</span><b>'+count+'</b></button>';
+ }
+ issues+='</div>';
+ const sections=data.issues.filter(t=>view.issue==="all"||view.issue===t).map(t=>{
+  const rows=visible.filter(r=>r.issue===t);
+  if(!rows.length)return "";
+  return '<section class="cm-source-group"><div class="cm-source-group-head"><strong>'+esc(t)+'</strong><small>'+rows.length+' linked records shown</small></div><div class="cm-evidence">'+rows.map(evidence).join("")+'</div></section>';
+ }).join("");
+ const instParts=institution.length?'<section class="cm-source-group cm-institution-context"><div class="cm-source-group-head"><strong>Official/legislative references naming '+esc(displayName(st,name))+'</strong><small>'+institution.length+' institutional items · NOT leader statements</small></div>'+
+ '<div class="cm-evidence">'+institution.slice(0,10).map(evidence).join("")+'</div></section>':'';
+ return '<div class="cm-detail"><div class="cm-detail-head"><strong>'+esc(displayName(st,name)+' · '+st)+'</strong><small>'+allIssueItems.length+' items across ten issues · '+esc(leaderLabel)+'</small><button class="cm-button" data-action="close">Close district ×</button></div>'+
+ '<p class="cm-summary">Reporting period: 5 August–5 November 2026. These counts describe indexed sources mentioning the district, not a measured incidence of events. Choose an issue below to highlight its other districts; return to all ten issues for the full district record.</p>'+
+ '<div class="cm-social-discovery">'+xDiscovery+'</div>'+issues+
+ '<div class="cm-detail-head cm-subheading"><strong>'+esc(view.issue==="all"?"Reporting on all ten issues":view.issue)+'</strong><small>'+unique.length+' source entries · '+unique.filter(x=>x.kind==="Original X link").length+' X permalinks</small></div>'+
+ (unique.length?(sections||'<p class="cm-summary">No entries displayed under this filter.</p>')+(unique.length>14?'<p><button class="cm-button" data-action="more">'+(showAll?'Show fewer':'Show all '+unique.length+' original headlines')+'</button></p>':''):
+ '<p class="cm-summary">No specific publisher source in the selected leader and issue combination names this district. It does not establish that no activity took place.</p>')+instParts+'</div>';
 }
 function render(){
  calculate();
- const k=[view.state,view.leader,view.role,view.issue,view.publisher,view.term,district?.name,district?.state,showAll].join("|");if(k===key)return;key=k;
+ if(district&&view.state!=="all"&&district.state!==view.state)district=null;
+ const k=[view.state,view.leader,view.role,view.issue,view.publisher,view.term,district?.name,district?.state,showAll,...states.map(st=>mapZoom[st])].join("|");if(k===key)return;key=k;
  const lit=states.reduce((n,s)=>n+stats[s].lit,0),unplaced=states.reduce((n,s)=>n+stats[s].unplaced,0),named=filtered.length-unplaced;
- root.innerHTML='<div class="cm-top"><div><div class="cm-overline">Command center / three-state comparative source intelligence</div><h2>Interactive district heat field · MP / Odisha / Jharkhand</h2>'+
- '<p class="cm-summary">Click a state, political leader, and policy issue together. Matching districts glow; others return to a neutral tone. Click the district to see what was reported and open the actual original links.</p></div>'+
- '<div class="cm-action-row"><button class="cm-button" data-action="reset">Reset selection</button><a class="cm-button" target="_blank" rel="noopener noreferrer" href="./district-atlas.html">Full geographic atlas ↗</a></div></div>'+
- '<div class="cm-totals"><span><b>'+lit+'</b> highlighted districts</span><span><b>'+filtered.length+'</b> linked records for filters</span><span><b>'+named+'</b> located items</span><span><b>'+unplaced+'</b> unplaced sources retained</span><span><b>109</b> district nodes</span></div>'+
- '<div class="cm-map-grid">'+states.map(stateCard).join("")+'</div>'+flow()+details()+
- '<p class="cm-footnote">Schematic state outlines and approximate district-headquarter positions, not survey/GIS boundaries or event coordinates. Highlights follow explicit district mentions or labelled city-to-district aliases in reporting, not inferred activity ratings. Grey means no indexed match, not no event. Institutional circulars and Assembly reports are not attributed personally to a chief minister or opposition leader. Multiple sources may report one event.</p>';
+ root.innerHTML='<div class="cm-top"><div><div class="cm-overline">District-boundary evidence command center / Madhya Pradesh · Odisha · Jharkhand</div><h2>Three-state geographic intelligence · six leaders · ten issues</h2>'+
+ '<p class="cm-summary">Real district polygons. Select a leader and district for reporting on all ten issues, or select a leader and issue to light up the districts mentioned in matching sources. Click any shaded district to open linked evidence.</p></div>'+
+ '<div class="cm-action-row"><button class="cm-button" data-action="reset">Clear filters</button><a class="cm-button" target="_blank" rel="noopener noreferrer" href="./district-atlas.html">Full geographic atlas ↗</a></div></div>'+
+ districtPicker()+
+ '<div class="cm-totals"><span><b>'+lit+'</b> reporting-linked districts</span><span><b>'+filtered.length+'</b> matching source records</span><span><b>'+named+'</b> district-named source entries</span><span><b>'+unplaced+'</b> unplaced records preserved</span><span><b>109</b> district polygons</span></div>'+
+ '<div class="cm-map-grid'+(view.state!=="all"||view.leader!=="all"?" cm-focused":"")+'">'+states.map(stateCard).join("")+'</div>'+flow()+details()+
+ '<p class="cm-footnote">Real district boundaries © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>, ODbL 1.0, via <a href="https://github.com/Vardhan-Systems/vardhan-maps" target="_blank" rel="noopener noreferrer">vardhan-maps</a>. This is not an official Survey of India map. Madhya Pradesh 55; Odisha 30; Jharkhand 24 districts. Highlighting is based on explicit district references or documented place-name aliases in news and official materials; it is not incident geolocation, a measurement of political activity, or a census of all news. Statewide sources without district mentions remain in the research tabs.</p>';
 }
 function clickFilter(holder,key,val){const el=[...document.querySelectorAll(holder+' [data-'+key+']')].find(n=>n.getAttribute('data-'+key)===val);if(el){el.click();return true}return false}
 function state(st){clickFilter("#states","state",view.state===st?"all":st)}
 function leader(id){if(id!=="all"){const l=L(id);if(!l)return;if(view.state!=="all"&&view.state!==l.state)clickFilter("#states","state",l.state);if(view.role!=="all"&&view.role!==l.role)clickFilter("#roles","role","all")}
  clickFilter("#leaders","leader",view.leader===id?"all":id)}
 function issue(id){if(id==="all"){clickFilter(".sidebar","issue","all");return}clickFilter("#issues","issue",id)}
+function openDistrict(st,name,resetIssue){
+ if(!geo[st]?.places.some(p=>p[0]===name))return;
+ district={state:st,name};showAll=false;
+ if(view.state!=="all"&&view.state!==st)clickFilter("#states","state",st);
+ if(view.leader!=="all"&&L(view.leader)?.state!==st)clickFilter("#leaders","leader","all");
+ if(resetIssue&&view.issue!=="all")clickFilter(".sidebar","issue","all");
+ key="";render();root.querySelector(".cm-detail")?.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+root.addEventListener("change",ev=>{if(ev.target?.id==="cmDistrictPicker"&&ev.target.value){const sep=ev.target.value.indexOf("|");openDistrict(ev.target.value.slice(0,sep),ev.target.value.slice(sep+1),true)}});
 root.addEventListener("click",ev=>{
  const b=ev.target.closest("[data-action]");if(!b||!root.contains(b))return;
  const action=b.getAttribute("data-action");
  if(action==="state")return state(b.getAttribute("data-state"));
  if(action==="leader")return leader(b.getAttribute("data-leader"));
  if(action==="issue")return issue(b.getAttribute("data-issue"));
- if(action==="district"){district={state:b.getAttribute("data-state"),name:b.getAttribute("data-district")};showAll=false;key="";render();root.querySelector(".cm-detail")?.scrollIntoView({behavior:"smooth",block:"nearest"});return}
+ if(action==="district")return openDistrict(b.getAttribute("data-state"),b.getAttribute("data-district"),false);
+ if(action==="tab"){const tab=b.getAttribute("data-open-tab");const button=document.querySelector('.tabs [data-tab="'+tab+'"]');if(button){button.click();button.scrollIntoView({behavior:"smooth",block:"center"})}return}
+ if(action==="allIssues")return issue("all");
+ if(action==="zoom"){const st=b.getAttribute("data-state"),factor=b.getAttribute("data-zoom")==="in"?1.5:1/1.5;mapZoom[st]=Math.max(1,Math.min(3.5,(mapZoom[st]||1)*factor));key="";return render()}
  if(action==="close"){district=null;showAll=false;key="";return render()}
  if(action==="more"){showAll=!showAll;key="";return render()}
- if(action==="reset"){district=null;showAll=false;clickFilter("#states","state","all");clickFilter("#roles","role","all");clickFilter("#leaders","leader","all");clickFilter(".sidebar","issue","all");return}
+ if(action==="reset"){district=null;showAll=false;for(const st of states)mapZoom[st]=1;clickFilter("#states","state","all");clickFilter("#roles","role","all");clickFilter("#leaders","leader","all");clickFilter(".sidebar","issue","all");const q=document.getElementById("q");if(q&&q.value){q.value="";q.dispatchEvent(new Event("input",{bubbles:true}))}const p=document.getElementById("publisher");if(p&&p.value!=="all"){p.value="all";p.dispatchEvent(new Event("change",{bubbles:true}))}key="";return render()}
 });
-root.addEventListener("keydown",ev=>{if((ev.key===" "||ev.key==="Enter")&&ev.target.matches("circle[data-action='district']")){ev.preventDefault();ev.target.dispatchEvent(new MouseEvent("click",{bubbles:true}))}});
+root.addEventListener("keydown",ev=>{if((ev.key===" "||ev.key==="Enter")&&ev.target.matches("path[data-action='district']")){ev.preventDefault();ev.target.dispatchEvent(new MouseEvent("click",{bubbles:true}))}});
 document.addEventListener("comparative:render",event=>{if(event.detail){view=Object.assign({},view,event.detail);key="";render()}});
 render();
 })();

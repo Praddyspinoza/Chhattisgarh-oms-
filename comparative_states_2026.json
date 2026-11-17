@@ -1,5 +1,5 @@
 {
-  "build": "Comparative district-linked research and newspaper expansion 17 November 2026",
+  "build": "Comparative district geometry and publisher-embedded X evidence expansion 17 November 2026",
   "window": {
     "start": "2026-08-05",
     "end": "2026-11-05"
@@ -15,7 +15,8 @@
     "Original research batch now augmented with date-checked reporting across all six leaders; some stories about the same event from different publishers are separate source entries.",
     "Additional exact X status permalinks were recovered from HTML embeds on the public publisher pages. Tweet creation dates verified using X snowflake IDs; headlines are sourced from surrounding publisher reports and are not represented as verbatim original post text.",
     "17 November expansion added individually dated publisher links and recovered original X status URLs from publisher embeds. New items have not been included in the earlier 16 November HTTP-link audit.",
-    "District links are either editorially tagged to a named location in the report or title/summary text matches; they represent reported geographic mentions, not precise incident coordinates or verified administrative attribution."
+    "District links are either editorially tagged to a named location in the report or title/summary text matches; they represent reported geographic mentions, not precise incident coordinates or verified administrative attribution.",
+    "Additional 17 November post references are individual X status links corroborated by publisher embed capture, not search result pages or unverified quote transcriptions."
   ],
   "issues": [
     "Tribal Issues",
@@ -5061,6 +5062,40 @@
       "sourceHeadline": "Patnaik honours Gopabandhu Das on birth anniversary",
       "posterHandle": "naveen_odisha",
       "id": "social-047"
+    },
+    {
+      "date": "2026-10-19",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "url": "https://x.com/Naveen_Odisha/status/2112163975408537977",
+      "publisher": "OrissaPOST",
+      "publisherUrl": "https://www.orissapost.com/naveen-patnaik-writes-to-cm-majhi-over-andhra-polls-in-kotia/",
+      "sourceHeadline": "Naveen Patnaik raises questions on Andhra elections in Kotia",
+      "detail": "Kotia border/election concerns mentioned in accompanying OrissaPOST report",
+      "posterHandle": "naveen_odisha",
+      "id": "social-048",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Dated publisher-embedded original X status; headline summarises the corroborating report, not a verified verbatim post transcription",
+      "postTextConfirmed": false,
+      "sourceReview": "Author handle and snowflake date checked against publisher-embed discovery record on 17 November 2026"
+    },
+    {
+      "date": "2026-08-26",
+      "leader": "jh-lop",
+      "issue": "Governance",
+      "url": "https://x.com/yourBabulal/status/2092513218514317781",
+      "publisher": "Prabhat Khabar",
+      "publisherUrl": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/journalist-entry-banned-in-hospitals-babulal-marandis-sharp-attack-on-the-government",
+      "sourceHeadline": "Babulal Marandi criticises restrictions on journalists in hospitals",
+      "detail": "Publisher-corroborated statement on journalist access and hospital accountability",
+      "posterHandle": "yourbabulal",
+      "id": "social-049",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Dated publisher-embedded original X status; headline summarises the corroborating report, not a verified verbatim post transcription",
+      "postTextConfirmed": false,
+      "sourceReview": "Author handle and snowflake date checked against publisher-embed discovery record on 17 November 2026"
     }
   ],
   "linkAudit": {

@@ -65,3 +65,52 @@
 @media(max-width:1160px){#omsCommandMap .cm-map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#omsCommandMap .cm-lineage{grid-template-columns:1fr 1fr;gap:13px}#omsCommandMap .cm-flow-arrow{display:none}}
 @media(max-width:760px){#omsCommandMap{margin:12px 0;padding:13px}#omsCommandMap .cm-map-grid{grid-template-columns:1fr}#omsCommandMap .cm-svg{max-height:300px}#omsCommandMap .cm-lineage{grid-template-columns:1fr 1fr}#omsCommandMap .cm-evidence{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){#omsCommandMap:before,#omsCommandMap .cm-map-card:after,#omsCommandMap .cm-flow-arrow:after{animation:none!important}}
+
+
+/* 17 Nov geography upgrade: actual OSM-derived district polygons (not invented silhouettes). */
+#omsCommandMap .cm-svg{height:300px;max-height:none;overflow:visible;filter:drop-shadow(0 10px 15px #0008)}
+#omsCommandMap .cm-map-card{background:radial-gradient(ellipse at 48% 50%,#192e4b 0,#0c1b34 48%,#060d1d 86%);border:1px solid #324969}
+#omsCommandMap .cm-map-head{flex-wrap:wrap}
+#omsCommandMap .cm-map-card.cm-selected{background:radial-gradient(ellipse at 48% 50%,#2f3049 0,#141c37 48%,#070c1b 86%)}
+#omsCommandMap .cm-district.cm-polygon{cursor:pointer;stroke:#506e89;stroke-width:.75;vector-effect:non-scaling-stroke;opacity:1;fill:#243653;transition:fill .24s,stroke .24s,filter .24s;pointer-events:visiblePainted}
+#omsCommandMap .cm-district.cm-polygon.cm-hot{fill:#eb6c85;stroke:#ffd3db;stroke-width:1.3;opacity:var(--cm-intensity,1);filter:drop-shadow(0 0 2.6px #d46179)}
+#omsCommandMap .cm-district.cm-polygon.cm-target{fill:#ffd0a6;stroke:#fff2e3;stroke-width:2.3;opacity:1;filter:drop-shadow(0 0 5px #f5b8a1)}
+#omsCommandMap .cm-district.cm-polygon:hover,#omsCommandMap .cm-district.cm-polygon:focus-visible{fill:#f7d1ab;stroke:#fff;stroke-width:1.7;opacity:1;filter:drop-shadow(0 0 6px #e67987)}
+#omsCommandMap .cm-gridline{stroke:#223452;opacity:.22}
+#omsCommandMap .cm-label{font-size:9px;stroke:#0b1526;stroke-width:3.6px;fill:#fff3f4;paint-order:stroke}
+#omsCommandMap .cm-zoom-controls{display:flex;gap:3px}
+#omsCommandMap .cm-map-head .cm-zoom-controls button{padding:1px 9px;font-size:15px;border:1px solid #486180;color:#e6eefa;border-radius:5px;background:#0c1c37;line-height:1.5}
+#omsCommandMap .cm-map-head .cm-zoom-controls button:hover{background:#40293e;border-color:#ef8396}
+#omsCommandMap .cm-district-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:14px 0 11px;padding:12px;border-radius:9px;border:1px solid #344767;background:linear-gradient(120deg,#101c35,#09152b);position:relative;z-index:2}
+#omsCommandMap .cm-toolbar-title{flex:1 1 100%;display:flex;gap:7px;align-items:baseline;flex-wrap:wrap}
+#omsCommandMap .cm-toolbar-title b{font-size:12px;color:#ffe0e3}
+#omsCommandMap .cm-toolbar-title span{font-size:10px;color:#99afce}
+#omsCommandMap #cmDistrictPicker{flex:2 1 220px;max-width:360px;min-width:170px;height:34px}
+#omsCommandMap .cm-district-toolbar .cm-button{min-height:34px}
+#omsCommandMap .cm-issue-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin:13px 0 17px}
+#omsCommandMap .cm-issue-tile{display:flex;min-width:0;gap:7px;align-items:flex-start;justify-content:space-between;padding:9px;border:1px solid #344a68;border-radius:7px;background:#101e37;color:#b7c9e2;text-align:left;font-size:10px;min-height:51px;transition:background .18s,border-color .18s}
+#omsCommandMap .cm-issue-tile span{line-height:1.35}
+#omsCommandMap .cm-issue-tile b{color:#ffabb5;font-family:ui-monospace,monospace}
+#omsCommandMap .cm-issue-tile.active,#omsCommandMap .cm-issue-tile:hover{background:#30253e;border-color:#ea7e95;color:#fff}
+#omsCommandMap .cm-source-group{margin:12px 0 17px;border-radius:7px;overflow:hidden;border:1px solid #344664;background:#07142b}
+#omsCommandMap .cm-source-group-head{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;background:#1a223d;padding:11px 12px;color:#f2c0c9;font-size:11px}
+#omsCommandMap .cm-source-group-head small{color:#b7c7df}
+#omsCommandMap .cm-source-group .cm-evidence{padding:10px;margin:0}
+#omsCommandMap .cm-institution-context{border-color:#776151}
+#omsCommandMap .cm-institution-context .cm-source-group-head{background:#292339;color:#f8d0b6}
+#omsCommandMap .cm-subheading{padding-top:12px;border-top:1px solid #314663;margin-top:12px}
+#omsCommandMap .cm-footnote a{color:#f6b7c3;text-decoration:underline}
+#omsCommandMap .cm-flow-choices button{cursor:pointer}
+.tabs [data-tab="official"],.tabs [data-tab="assembly"]{border-bottom:2px solid #b78261;color:#f2ccb5}
+.tabs [data-tab="official"].active,.tabs [data-tab="assembly"].active{border-bottom-color:#ff9e8f;background:#2d233e;color:#fff}
+@media(max-width:1100px){#omsCommandMap .cm-issue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:620px){#omsCommandMap .cm-map-grid{grid-template-columns:1fr}#omsCommandMap .cm-svg{height:320px}#omsCommandMap .cm-issue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#omsCommandMap .cm-district-toolbar{padding:10px}#omsCommandMap #cmDistrictPicker{max-width:100%}}
+
+
+/* Selected leader or state: a true full-width, readable administrative district map. */
+#omsCommandMap .cm-map-grid.cm-focused{grid-template-columns:minmax(0,1fr)}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-dim{display:none}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected{padding:16px 20px;border-color:#b76c86}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected .cm-svg{height:min(61vw,520px);width:100%;max-width:900px;min-height:340px;margin:0 auto}
+#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected .cm-map-foot{justify-content:center}
+@media(max-width:650px){#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected{padding:10px}#omsCommandMap .cm-map-grid.cm-focused .cm-map-card.cm-selected .cm-svg{height:350px;min-height:290px}}
