@@ -69,6 +69,22 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert.equal(await page.locator("#omsCommandMap .cm-map-card").count(),3,"Reset must preserve three-state map");
   await page.screenshot({path:"comparative-desktop-qa.png",fullPage:false});
   await page.locator('[data-dossier-topic="all"]').first().click();
+  // Verify all original MP CM Office posts, not merely Governance-filtered posts.
+  await page.locator("#accountSource").selectOption("cmo");
+  await page.locator('button[data-state="Madhya Pradesh"]').first().click();
+  await page.locator('button[data-role="Chief Minister"]').first().click();
+  const mpCmoURLs=data.posts.filter(p=>p.accountType==="cmo"&&p.leader==="mp-cm");
+  assert.equal(mpCmoURLs.length,47,"MP office archive must retain 47 dated posts");
+  const mpOfficeLinks=await page.locator("#postList a.source-headline").evaluateAll(as=>as.map(a=>a.getAttribute("href")));
+  assert.equal(mpOfficeLinks.length,47,"Official MP CMO filter must show all 47 original posts");
+  for(const p of mpCmoURLs)assert(mpOfficeLinks.includes(p.url),"Missing office link "+p.url);
+  await page.locator("#accountSource").selectOption("personal");
+  const mpPersonalLinks=await page.locator("#postList a.source-headline").evaluateAll(as=>as.map(a=>a.getAttribute("href")));
+  assert.equal(mpPersonalLinks.length,38,"MP individual leader X archive must still show all 38 posts");
+  assert(!mpPersonalLinks.some(x=>x.includes("/CMMadhyaPradesh/status/")),"Office posts leaked into individual leader view");
+  await page.locator("#accountSource").selectOption("all");
+  await page.locator('button[data-state="all"]').first().click();
+  await page.locator('button[data-role="all"]').first().click();
   const all=await page.locator("#dossierList a.dossier-headline").count();
   assert.equal(all,data.records.length+data.posts.length,"Every X and video link, including Other category, must be reachable in all-issue dossiers");
   const institutional=await page.locator("#dossierList a.institution-headline").count();
