@@ -31,7 +31,7 @@ for(const p of d.posts){
   assert.equal(m[1].toLowerCase(),byID[p.leader].x.toLowerCase(),"X account misattribution "+p.id);
   const date=new Date(Number((BigInt(m[2])>>22n)+1288834974657n)).toISOString().slice(0,10);
   assert.equal(date,p.date,"X snowflake timestamp mismatch "+p.id);
-  assert(["embedded-post-url","original-page-fetched"].includes(p.status),"Unverified social item presented as direct X "+p.id);
+  assert(["embedded-post-url","original-page-fetched","original-post-fetched"].includes(p.status),"Unverified social item presented as direct X "+p.id);
  }
 }
 assert(html.includes("comparative_states_2026.json"));assert(html.includes("cg-brand"));assert(html.includes("original Chhattisgarh OMS V12") && html.includes("cg-brand"),"Original OMS visual tokens missing");
