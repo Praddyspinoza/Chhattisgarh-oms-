@@ -79,10 +79,10 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert.equal(count,data.records.filter(r=>r.issue==="Mining").length+data.posts.filter(r=>r.issue==="Mining").length);
   await page.locator('[data-dossier-topic="all"]').first().click();
   await page.locator('button[data-state="Odisha"]').first().click();
-  assert.equal(await page.locator("#dossierList .dossier-leader").count(),20,"State filter should yield 2 leaders across 10 topics");
+  assert.equal(await page.locator("#dossierList .dossier-leader").count(),22,"State filter should yield 2 leaders across 10 issues plus non-policy category");
   await page.locator('button[data-state="all"]').first().click();
   await page.locator('button[data-role="Leader of Opposition"]').first().click();
-  assert.equal(await page.locator("#dossierList .dossier-leader").count(),30,"Office filter should yield 3 leaders across 10 topics");
+  assert.equal(await page.locator("#dossierList .dossier-leader").count(),33,"Office filter should yield 3 leaders across 10 issues plus non-policy category");
   await page.locator('button[data-role="all"]').first().click();
   await page.locator('button[data-tab="official"]').click();
   assert.equal(await page.locator("#officialList a.institution-headline").count(),gov.officialRecords.length,"Every departmental original link must be in the official tab");
