@@ -17,6 +17,20 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.waitForSelector("#dossierList .dossier-leader",{timeout:8000});
   assert.equal(await page.locator("#dossierList .dossier-leader").count(),6,"Initial dossier missing leaders");
   assert(await page.locator("#dossierList a.dossier-headline").count()>=15,"Initial report links not visible");
+  const cartograms=page.locator("#omsCommandMap .cm-map-card");
+  await page.waitForSelector("#omsCommandMap .cm-district",{timeout:9000});
+  assert.equal(await cartograms.count(),3,"Missing 3 schematic state maps in dashboard command center");
+  assert.equal(await page.locator("#omsCommandMap circle.cm-district").count(),109,"Expected 109 named district nodes");
+  await page.locator('#omsCommandMap [data-action="leader"][data-leader="mp-lop"]').click();
+  await page.locator('#omsCommandMap [data-action="issue"][data-issue="Environment & Forests"]').click();
+  assert(await page.locator("#omsCommandMap circle.cm-hot").count()>=1,"Leader + issue filter should highlight district-level reporting");
+  const katni=page.locator('#omsCommandMap circle[data-state="Madhya Pradesh"][data-district="Katni"]');
+  assert(await katni.evaluate(el=>el.classList.contains("cm-hot")),"Katni source-linked MP LoP/environment record not highlighted");
+  await katni.click();
+  assert(await page.locator("#omsCommandMap .cm-detail a[href*='timesofindia.indiatimes.com']").count()>=1,"Click district must open original source headlines");
+  assert((await page.locator("#omsCommandMap .cm-detail").innerText()).includes("Katni"),"District dossier must identify selected district");
+  await page.locator('#omsCommandMap [data-action="reset"]').first().click();
+  assert.equal(await page.locator("#omsCommandMap .cm-map-card").count(),3,"Reset must preserve three-state map");
   await page.screenshot({path:"comparative-desktop-qa.png",fullPage:false});
   await page.locator('[data-dossier-topic="all"]').first().click();
   const all=await page.locator("#dossierList a.dossier-headline").count();
@@ -48,6 +62,9 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.locator('button[data-tab="dossiers"]').click();
   await page.locator('[data-dossier-topic="Education, Healthcare & Employment"]').first().click();
   await page.screenshot({path:"comparative-issue-qa.png",fullPage:false});
+  await page.setViewportSize({width:390,height:844});
+  assert.equal(await page.locator("#omsCommandMap .cm-map-card").count(),3,"Map must remain available on mobile");
+  await page.screenshot({path:"comparative-map-mobile-qa.png",fullPage:false});
   assert.deepEqual(errors,[],"Browser JavaScript runtime errors");
   const main=await browser.newPage({viewport:{width:1366,height:860}});
   await main.goto("file://"+path.resolve("index.html"),{waitUntil:"domcontentloaded",timeout:30000});
@@ -56,6 +73,6 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await main.waitForURL(/comparative\.html/,{waitUntil:"commit",timeout:18000});
   await main.waitForSelector("#dossierList .dossier-leader",{timeout:10000});
   await main.close();
-  console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,governmentLinks:gov.officialRecords.length,legislativeLinks:gov.assemblyRecords.length,integratedInstitutionLinks:institutional,scriptErrors:errors.length,mainNavigationToDossier:"pass"},null,2));
+  console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,governmentLinks:gov.officialRecords.length,legislativeLinks:gov.assemblyRecords.length,integratedInstitutionLinks:institutional,scriptErrors:errors.length,mainNavigationToDossier:"pass",districtMaps:"3 maps / 109 nodes",jointLeaderIssueFilter:"pass",districtSourceClick:"pass"},null,2));
  } finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});
