@@ -1,5 +1,5 @@
 {
-  "build": "2026-11-17 verified public original X status expansion + district labels + per-leader topic analytics",
+  "build": "17 November 2026 - individual X post proofing, corrected issue taxonomy, six-leader issue charts",
   "window": {
     "start": "2026-08-05",
     "end": "2026-11-05"
@@ -20,7 +20,8 @@
     "17 November: individually read 171 newly discovered original X status URLs, of which 161 were accessible with matching account and date and 159 had usable body excerpts; 10 unavailable, 2 not readable. Issue coding is provisional keyword-assisted; non-issue ceremonial/general posts are explicitly categorised separately and never forced into the ten-issue hierarchy.",
     "X post text snippets are short headline excerpts only; click original source for context, provenance, and any changed/deleted content.",
     "17 Nov X expansion: individual original X status pages were fetched and their author/date verified; issue/headline is manually researcher-coded. Only policy-related original posts with supported classification were added; generic sports congratulations and unrelated condolences remain in external candidate audit, not falsely counted within ten policy issues.",
-    "The X ledger remains a non-exhaustive research sample. Quantities do not measure the complete number of X posts published by any leader."
+    "The X ledger remains a non-exhaustive research sample. Quantities do not measure the complete number of X posts published by any leader.",
+    "Editorial review 17 Nov: corrected obvious topic errors in new original X posts. Political commentary, condolences, sport congratulations and festivals are not automatically claims about governance, healthcare or security. Pie denominators include the 'Other / general and ceremonial' bucket to avoid representing greetings as policy activity."
   ],
   "issues": [
     "Tribal Issues",
@@ -5103,7 +5104,7 @@
     },
     {
       "leader": "mp-cm",
-      "issue": "Infrastructure & Development",
+      "issue": "Governance",
       "date": "2026-08-19",
       "url": "https://x.com/DrMohanYadav51/status/2089905834101018722",
       "platform": "X",
@@ -5115,7 +5116,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-050",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-cm",
@@ -5135,7 +5137,7 @@
     },
     {
       "leader": "mp-cm",
-      "issue": "Religion / Hinduism",
+      "issue": "Governance",
       "date": "2026-08-19",
       "url": "https://x.com/DrMohanYadav51/status/2090018493215433143",
       "platform": "X",
@@ -5147,7 +5149,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-052",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-cm",
@@ -5167,7 +5170,7 @@
     },
     {
       "leader": "mp-cm",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-08-25",
       "url": "https://x.com/DrMohanYadav51/status/2092135511460884788",
       "platform": "X",
@@ -5179,7 +5182,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-054",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-cm",
@@ -5215,7 +5219,7 @@
     },
     {
       "leader": "mp-cm",
-      "issue": "Environment & Forests",
+      "issue": "Infrastructure & Development",
       "date": "2026-08-16",
       "url": "https://x.com/DrMohanYadav51/status/2088995623999815904",
       "platform": "X",
@@ -5227,11 +5231,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-057",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-cm",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-03",
       "url": "https://x.com/DrMohanYadav51/status/2095335055182962801",
       "platform": "X",
@@ -5243,7 +5248,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-058",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-cm",
@@ -5263,7 +5269,7 @@
     },
     {
       "leader": "mp-cm",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-10",
       "url": "https://x.com/DrMohanYadav51/status/2097941515213648349",
       "platform": "X",
@@ -5275,7 +5281,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-060",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-cm",
@@ -5295,7 +5302,7 @@
     },
     {
       "leader": "mp-cm",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Environment & Forests",
       "date": "2026-10-05",
       "url": "https://x.com/DrMohanYadav51/status/2107033913684353393",
       "platform": "X",
@@ -5307,7 +5314,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-062",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-lop",
@@ -5343,7 +5351,7 @@
     },
     {
       "leader": "mp-lop",
-      "issue": "Governance",
+      "issue": "Agriculture & Farmers",
       "date": "2026-08-24",
       "url": "https://x.com/UmangSinghar/status/2091731500693946839",
       "platform": "X",
@@ -5355,11 +5363,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-065",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-lop",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Tribal Issues",
       "date": "2026-08-14",
       "url": "https://x.com/UmangSinghar/status/2088251696514490712",
       "platform": "X",
@@ -5371,7 +5380,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-066",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-lop",
@@ -5439,7 +5449,7 @@
     },
     {
       "leader": "mp-lop",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Internal Security & Bastar",
       "date": "2026-09-06",
       "url": "https://x.com/UmangSinghar/status/2096469348114428272",
       "platform": "X",
@@ -5451,11 +5461,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-071",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-lop",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-08",
       "url": "https://x.com/UmangSinghar/status/2097135330487136538",
       "platform": "X",
@@ -5467,11 +5478,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-072",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-lop",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Tribal Issues",
       "date": "2026-09-02",
       "url": "https://x.com/UmangSinghar/status/2095003172523979182",
       "platform": "X",
@@ -5483,7 +5495,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-073",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "mp-lop",
@@ -5551,7 +5564,7 @@
     },
     {
       "leader": "od-cm",
-      "issue": "Internal Security & Bastar",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-19",
       "url": "https://x.com/MohanMOdisha/status/2101229190058250420",
       "platform": "X",
@@ -5563,7 +5576,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-078",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-cm",
@@ -5583,7 +5597,7 @@
     },
     {
       "leader": "od-cm",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-20",
       "url": "https://x.com/MohanMOdisha/status/2101531597434659182",
       "platform": "X",
@@ -5595,7 +5609,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-080",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-cm",
@@ -5615,7 +5630,7 @@
     },
     {
       "leader": "od-cm",
-      "issue": "Infrastructure & Development",
+      "issue": "Environment & Forests",
       "date": "2026-09-02",
       "url": "https://x.com/MohanMOdisha/status/2095208232570835410",
       "platform": "X",
@@ -5627,11 +5642,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-082",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-cm",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Infrastructure & Development",
       "date": "2026-09-11",
       "url": "https://x.com/MohanMOdisha/status/2098476770169323719",
       "platform": "X",
@@ -5643,7 +5659,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-083",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-cm",
@@ -5679,7 +5696,7 @@
     },
     {
       "leader": "od-cm",
-      "issue": "Internal Security & Bastar",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-22",
       "url": "https://x.com/MohanMOdisha/status/2113155647558873174",
       "platform": "X",
@@ -5691,7 +5708,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-086",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-cm",
@@ -5711,7 +5729,7 @@
     },
     {
       "leader": "od-cm",
-      "issue": "Internal Security & Bastar",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-21",
       "url": "https://x.com/MohanMOdisha/status/2112773104963576073",
       "platform": "X",
@@ -5723,11 +5741,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-088",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-lop",
-      "issue": "Internal Security & Bastar",
+      "issue": "Other / general and ceremonial",
       "date": "2026-08-31",
       "url": "https://x.com/Naveen_Odisha/status/2094359006546710784",
       "platform": "X",
@@ -5739,7 +5758,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-089",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-lop",
@@ -5775,7 +5795,7 @@
     },
     {
       "leader": "od-lop",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-17",
       "url": "https://x.com/Naveen_Odisha/status/2100450960242020464",
       "platform": "X",
@@ -5787,7 +5807,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-092",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-lop",
@@ -5807,7 +5828,7 @@
     },
     {
       "leader": "od-lop",
-      "issue": "Internal Security & Bastar",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-18",
       "url": "https://x.com/Naveen_Odisha/status/2111703015875100810",
       "platform": "X",
@@ -5819,11 +5840,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-094",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "od-lop",
-      "issue": "Religion / Hinduism",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-17",
       "url": "https://x.com/Naveen_Odisha/status/2111510950562165002",
       "platform": "X",
@@ -5835,7 +5857,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-095",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
@@ -5887,7 +5910,7 @@
     },
     {
       "leader": "jh-cm",
-      "issue": "Internal Security & Bastar",
+      "issue": "Governance",
       "date": "2026-08-09",
       "url": "https://x.com/HemantSorenJMM/status/2086406781941805068",
       "platform": "X",
@@ -5899,11 +5922,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-099",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
-      "issue": "Environment & Forests",
+      "issue": "Education, Healthcare & Employment",
       "date": "2026-08-05",
       "url": "https://x.com/HemantSorenJMM/status/2084941548685504719",
       "platform": "X",
@@ -5915,11 +5939,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-100",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
-      "issue": "Mining",
+      "issue": "Minerals",
       "date": "2026-08-20",
       "url": "https://x.com/HemantSorenJMM/status/2090423342163808344",
       "platform": "X",
@@ -5931,7 +5956,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-101",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
@@ -5967,7 +5993,7 @@
     },
     {
       "leader": "jh-cm",
-      "issue": "Environment & Forests",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-23",
       "url": "https://x.com/HemantSorenJMM/status/2102667214641823825",
       "platform": "X",
@@ -5979,11 +6005,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-104",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
-      "issue": "Infrastructure & Development",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-24",
       "url": "https://x.com/HemantSorenJMM/status/2102962833738916309",
       "platform": "X",
@@ -5995,11 +6022,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-105",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-06",
       "url": "https://x.com/HemantSorenJMM/status/2096420932382531825",
       "platform": "X",
@@ -6011,7 +6039,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-106",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
@@ -6031,7 +6060,7 @@
     },
     {
       "leader": "jh-cm",
-      "issue": "Environment & Forests",
+      "issue": "Tribal Issues",
       "date": "2026-09-08",
       "url": "https://x.com/HemantSorenJMM/status/2097223764157337766",
       "platform": "X",
@@ -6043,7 +6072,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-108",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
@@ -6063,7 +6093,7 @@
     },
     {
       "leader": "jh-cm",
-      "issue": "Religion / Hinduism",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-17",
       "url": "https://x.com/HemantSorenJMM/status/2111520558194253920",
       "platform": "X",
@@ -6075,11 +6105,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-110",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
-      "issue": "Environment & Forests",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-27",
       "url": "https://x.com/HemantSorenJMM/status/2115077228493201479",
       "platform": "X",
@@ -6091,7 +6122,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-111",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-cm",
@@ -6111,7 +6143,7 @@
     },
     {
       "leader": "jh-cm",
-      "issue": "Internal Security & Bastar",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-26",
       "url": "https://x.com/HemantSorenJMM/status/2114701357768925460",
       "platform": "X",
@@ -6123,7 +6155,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-113",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
@@ -6223,7 +6256,7 @@
     },
     {
       "leader": "jh-lop",
-      "issue": "Internal Security & Bastar",
+      "issue": "Governance",
       "date": "2026-08-26",
       "url": "https://x.com/yourBabulal/status/2092479757413974448",
       "platform": "X",
@@ -6235,7 +6268,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-120",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
@@ -6287,7 +6321,7 @@
     },
     {
       "leader": "jh-lop",
-      "issue": "Infrastructure & Development",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-24",
       "url": "https://x.com/yourBabulal/status/2102962985304272966",
       "platform": "X",
@@ -6299,7 +6333,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-124",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
@@ -6367,7 +6402,7 @@
     },
     {
       "leader": "jh-lop",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-06",
       "url": "https://x.com/yourBabulal/status/2096440935554916588",
       "platform": "X",
@@ -6379,11 +6414,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-129",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Other / general and ceremonial",
       "date": "2026-09-17",
       "url": "https://x.com/yourBabulal/status/2100428790266765571",
       "platform": "X",
@@ -6395,11 +6431,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-130",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
+      "issue": "Governance",
       "date": "2026-09-29",
       "url": "https://x.com/yourBabulal/status/2104900277396754627",
       "platform": "X",
@@ -6411,11 +6448,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-131",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-07",
       "url": "https://x.com/yourBabulal/status/2107859579350680028",
       "platform": "X",
@@ -6427,11 +6465,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-132",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
-      "issue": "Religion / Hinduism",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-18",
       "url": "https://x.com/yourBabulal/status/2111610724858712337",
       "platform": "X",
@@ -6443,7 +6482,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-133",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
@@ -6463,7 +6503,7 @@
     },
     {
       "leader": "jh-lop",
-      "issue": "Religion / Hinduism",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-28",
       "url": "https://x.com/yourBabulal/status/2115338402707210481",
       "platform": "X",
@@ -6475,11 +6515,12 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-135",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
-      "issue": "Governance",
+      "issue": "Other / general and ceremonial",
       "date": "2026-10-14",
       "url": "https://x.com/yourBabulal/status/2110276077994357025",
       "platform": "X",
@@ -6491,7 +6532,8 @@
       "sourceReview": "Original public X status-page author, date and visible excerpt checked via TinyFish 2026-11-17",
       "postTextConfirmed": true,
       "id": "social-136",
-      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification"
+      "categoryProvenance": "keyword-coded from directly read original X status; issue code is indicative and not a full-context editorial verification",
+      "issueReview": "Editorial correction: coded from original fetched public X status text on 2026-11-17; non-policy greetings/condolences retained as Other."
     },
     {
       "leader": "jh-lop",
