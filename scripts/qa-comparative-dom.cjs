@@ -33,7 +33,7 @@ const dom={
  querySelector(sel){return node("selector:"+sel);},
  querySelectorAll(sel){if(sel===".section")return sections;if(sel==="[data-tab]")return tabs;return [];}
 };
-vm.runInNewContext(runtime,{document:dom,console,encodeURIComponent,Date,Error,URL,Math,Object,Array,String,Number,Set,Map,RegExp,Boolean},{timeout:4000});
+vm.runInNewContext(runtime,{document:dom,window:{addEventListener(){}},console,encodeURIComponent,Date,Error,URL,Math,Object,Array,String,Number,Set,Map,RegExp,Boolean},{timeout:4000});
 const initial=node("dossierList").innerHTML;
 assert(initial.includes("dossier-headline") && initial.includes("Governance"),"Default governance combined dossier is not visible");
 const selectAll=node("topicPicker").events.click;
