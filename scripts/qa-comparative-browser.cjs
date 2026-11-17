@@ -69,11 +69,11 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.screenshot({path:"comparative-desktop-qa.png",fullPage:false});
   await page.locator('[data-dossier-topic="all"]').first().click();
   const all=await page.locator("#dossierList a.dossier-headline").count();
-  assert.equal(all,data.records.length+data.posts.filter(p=>p.issue!=="Other / general and ceremonial").length,"Not all ten-issue original source links are rendered in combined dossiers");
+  assert.equal(all,data.records.length+data.posts.length,"Every X and video link, including Other category, must be reachable in all-issue dossiers");
   const institutional=await page.locator("#dossierList a.institution-headline").count();
   assert.equal(institutional,gov.officialRecords.length+gov.assemblyRecords.length,"Government and assembly links absent from combined issue dossiers");
   const actualSourceLinks=await page.locator("#dossierList a.dossier-headline").evaluateAll(as=>as.map(a=>a.getAttribute("href")));
-  for(const r of [...data.records,...data.posts.filter(p=>p.issue!=="Other / general and ceremonial")])assert(actualSourceLinks.includes(r.url),"Missing original "+r.url);
+  for(const r of [...data.records,...data.posts])assert(actualSourceLinks.includes(r.url),"Missing original "+r.url);
   await page.locator('[data-dossier-topic="Mining"]').first().click();
   const count=await page.locator("#dossierList a.dossier-headline").count();
   assert.equal(count,data.records.filter(r=>r.issue==="Mining").length+data.posts.filter(r=>r.issue==="Mining").length);
