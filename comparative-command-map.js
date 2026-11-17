@@ -132,9 +132,9 @@ function districtPicker(){
  return '<div class="cm-district-toolbar"><div class="cm-toolbar-title"><b>District dossier navigator</b><span>Leader + district shows every issue · Leader + issue illuminates all mentioned districts</span></div>'+
  '<select id="cmDistrictPicker" class="cm-selector" aria-label="Choose an actual administrative district"><option value="">Select any district from these three states</option>'+opts+'</select>'+
  '<button class="cm-button" data-action="allIssues">All ten issues</button>'+
- '<button class="cm-button" data-action="tab" data-tab="official">Government circulars · '+gov.officialRecords.length+'</button>'+
- '<button class="cm-button" data-action="tab" data-tab="assembly">Vidhan Sabha records · '+gov.assemblyRecords.length+'</button>'+
- '<button class="cm-button" data-action="tab" data-tab="social">Original X links · '+data.posts.filter(x=>x.platform==="X").length+'</button></div>';
+ '<button class="cm-button" data-action="tab" data-open-tab="official">Government circulars · '+gov.officialRecords.length+'</button>'+
+ '<button class="cm-button" data-action="tab" data-open-tab="assembly">Vidhan Sabha records · '+gov.assemblyRecords.length+'</button>'+
+ '<button class="cm-button" data-action="tab" data-open-tab="social">Original X links · '+data.posts.filter(x=>x.platform==="X").length+'</button></div>';
 }
 function details(){
  const all=states.flatMap(st=>[...stats[st].map].filter(x=>x[1].length).map(([name,rs])=>({st,name,rs}))).sort((a,b)=>b.rs.length-a.rs.length);
@@ -204,7 +204,7 @@ root.addEventListener("click",ev=>{
  if(action==="leader")return leader(b.getAttribute("data-leader"));
  if(action==="issue")return issue(b.getAttribute("data-issue"));
  if(action==="district")return openDistrict(b.getAttribute("data-state"),b.getAttribute("data-district"));
- if(action==="tab"){const tab=b.getAttribute("data-tab");const button=document.querySelector('.tabs [data-tab="'+tab+'"]');if(button){button.click();button.scrollIntoView({behavior:"smooth",block:"center"})}return}
+ if(action==="tab"){const tab=b.getAttribute("data-open-tab");const button=document.querySelector('.tabs [data-tab="'+tab+'"]');if(button){button.click();button.scrollIntoView({behavior:"smooth",block:"center"})}return}
  if(action==="allIssues")return issue("all");
  if(action==="zoom"){const st=b.getAttribute("data-state"),factor=b.getAttribute("data-zoom")==="in"?1.5:1/1.5;mapZoom[st]=Math.max(1,Math.min(3.5,(mapZoom[st]||1)*factor));key="";return render()}
  if(action==="close"){district=null;showAll=false;key="";return render()}
