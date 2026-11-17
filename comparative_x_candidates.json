@@ -1,6 +1,6 @@
 {
-  "tested": 189,
-  "recoveredPages": 25,
+  "tested": 225,
+  "recoveredPages": 35,
   "captures": [
     {
       "recordId": "cmp-006",
@@ -15,15 +15,14 @@
       ]
     },
     {
-      "recordId": "cmp-010",
+      "recordId": "cmp-009",
       "publisher": "Free Press Journal",
-      "date": "2026-10-24",
+      "date": "2026-10-21",
       "leader": "mp-cm",
-      "issue": "Agriculture & Farmers",
-      "publisherUrl": "https://www.freepressjournal.in/indore/mp-cm-mohan-yadav-inaugurates-2387-crore-irrigation-project-in-dhar-transfers-317-crore-crop-insurance-to-farmers-video",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-announces-1-crore-aid-for-families-of-martyred-police-personnel-amount-to-be-equally-divided-between-wife-parents-video",
       "posts": [
-        "https://x.com/DrMohanYadav51/status/2113973725414707541",
-        "https://x.com/DrMohanYadav51/status/2113978741265502432"
+        "https://x.com/DrMohanYadav51/status/2112780082150514792"
       ]
     },
     {
@@ -38,14 +37,15 @@
       ]
     },
     {
-      "recordId": "cmp-009",
+      "recordId": "cmp-010",
       "publisher": "Free Press Journal",
-      "date": "2026-10-21",
+      "date": "2026-10-24",
       "leader": "mp-cm",
-      "issue": "Internal Security & Bastar",
-      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-announces-1-crore-aid-for-families-of-martyred-police-personnel-amount-to-be-equally-divided-between-wife-parents-video",
+      "issue": "Agriculture & Farmers",
+      "publisherUrl": "https://www.freepressjournal.in/indore/mp-cm-mohan-yadav-inaugurates-2387-crore-irrigation-project-in-dhar-transfers-317-crore-crop-insurance-to-farmers-video",
       "posts": [
-        "https://x.com/DrMohanYadav51/status/2112780082150514792"
+        "https://x.com/DrMohanYadav51/status/2113973725414707541",
+        "https://x.com/DrMohanYadav51/status/2113978741265502432"
       ]
     },
     {
@@ -231,6 +231,29 @@
       ]
     },
     {
+      "recordId": "cmp-203",
+      "publisher": "MP Breaking News",
+      "date": "2026-10-25",
+      "leader": "mp-lop",
+      "issue": "Environment & Forests",
+      "publisherUrl": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2114265094175809897",
+        "https://x.com/UmangSinghar/status/2114242584499634343"
+      ]
+    },
+    {
+      "recordId": "cmp-202",
+      "publisher": "MP Breaking News",
+      "date": "2026-10-21",
+      "leader": "mp-lop",
+      "issue": "Agriculture & Farmers",
+      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/mp-farmers-issues-umang-singhar-targets-bjp-government-06-934270",
+      "posts": [
+        "https://x.com/UmangSinghar/status/2112825339538030850"
+      ]
+    },
+    {
       "recordId": "cmp-208",
       "publisher": "Free Press Journal",
       "date": "2026-08-25",
@@ -242,14 +265,14 @@
       ]
     },
     {
-      "recordId": "cmp-211",
-      "publisher": "Dainik Jagran",
-      "date": "2026-09-04",
-      "leader": "jh-lop",
-      "issue": "Internal Security & Bastar",
-      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/giridih-giridih-molestation-complaint-police-lathicharge-at-pachamba-ps-40362563.html",
+      "recordId": "cmp-207",
+      "publisher": "MP Breaking News",
+      "date": "2026-08-05",
+      "leader": "mp-lop",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/after-vidisha-sagar-raises-fresh-school-safety-concerns-umang-singhar-targets-bjp-government-912980",
       "posts": [
-        "https://x.com/yourBabulal/status/2095792643536228780"
+        "https://x.com/UmangSinghar/status/2084884875149291599"
       ]
     },
     {
@@ -261,6 +284,17 @@
       "publisherUrl": "https://www.jagran.com/jharkhand/ranchi-jssc-cgl-paper-leak-confirmed-by-accused-in-jharkhand-40365112.html",
       "posts": [
         "https://x.com/yourBabulal/status/2096838318176834025"
+      ]
+    },
+    {
+      "recordId": "cmp-211",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-04",
+      "leader": "jh-lop",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/giridih-giridih-molestation-complaint-police-lathicharge-at-pachamba-ps-40362563.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2095792643536228780"
       ]
     },
     {
@@ -284,7 +318,85 @@
       "posts": [
         "https://x.com/Naveen_Odisha/status/2112549591111569682"
       ]
+    },
+    {
+      "recordId": "cmp-242",
+      "publisher": "OrissaPOST",
+      "date": "2026-09-17",
+      "leader": "od-cm",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.orissapost.com/odisha-cm-launches-seva-sankalp-abhiyan/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2100478183170801732"
+      ]
+    },
+    {
+      "recordId": "cmp-241",
+      "publisher": "OrissaPOST",
+      "date": "2026-09-14",
+      "leader": "od-cm",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.orissapost.com/cm-majhi-urges-odisha-people-to-light-lamps-on-modis-birthday/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2099397042737238486"
+      ]
+    },
+    {
+      "recordId": "cmp-243",
+      "publisher": "OrissaPOST",
+      "date": "2026-09-18",
+      "leader": "od-cm",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://www.orissapost.com/majhi-hails-nit-rourkelas-chips-at-semicon-india/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2100791217932144656"
+      ]
+    },
+    {
+      "recordId": "cmp-255",
+      "publisher": "OrissaPOST",
+      "date": "2026-10-19",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "publisherUrl": "https://www.orissapost.com/naveen-patnaik-writes-to-cm-majhi-over-andhra-polls-in-kotia/",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2112163975408537977"
+      ]
+    },
+    {
+      "recordId": "cmp-258",
+      "publisher": "OrissaPOST",
+      "date": "2026-10-20",
+      "leader": "od-lop",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.orissapost.com/odisha-guv-cm-lop-greet-people-on-occasion-of-dussehra/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2112340523059216488",
+        "https://x.com/Naveen_Odisha/status/2111683353682592223"
+      ]
+    },
+    {
+      "recordId": "cmp-269",
+      "publisher": "Prabhat Khabar",
+      "date": "2026-08-26",
+      "leader": "jh-lop",
+      "issue": "Governance",
+      "publisherUrl": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/journalist-entry-banned-in-hospitals-babulal-marandis-sharp-attack-on-the-government",
+      "posts": [
+        "https://x.com/yourBabulal/status/2092513218514317781"
+      ]
+    },
+    {
+      "recordId": "cmp-259",
+      "publisher": "OrissaPOST",
+      "date": "2026-10-09",
+      "leader": "od-lop",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.orissapost.com/odisha-pays-tribute-to-utkalmani-gopabandhu-das/",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2108403517182574677"
+      ]
     }
   ],
-  "generatedAt": "2026-11-17T07:01:45.268Z"
+  "generatedAt": "2026-11-17T07:43:12.246Z"
 }
