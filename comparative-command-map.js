@@ -195,22 +195,22 @@ function state(st){clickFilter("#states","state",view.state===st?"all":st)}
 function leader(id){if(id!=="all"){const l=L(id);if(!l)return;if(view.state!=="all"&&view.state!==l.state)clickFilter("#states","state",l.state);if(view.role!=="all"&&view.role!==l.role)clickFilter("#roles","role","all")}
  clickFilter("#leaders","leader",view.leader===id?"all":id)}
 function issue(id){if(id==="all"){clickFilter(".sidebar","issue","all");return}clickFilter("#issues","issue",id)}
-function openDistrict(st,name){
+function openDistrict(st,name,resetIssue){
  if(!geo[st]?.places.some(p=>p[0]===name))return;
  district={state:st,name};showAll=false;
  if(view.state!=="all"&&view.state!==st)clickFilter("#states","state",st);
  if(view.leader!=="all"&&L(view.leader)?.state!==st)clickFilter("#leaders","leader","all");
- if(view.issue!=="all")clickFilter(".sidebar","issue","all");
+ if(resetIssue&&view.issue!=="all")clickFilter(".sidebar","issue","all");
  key="";render();root.querySelector(".cm-detail")?.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
-root.addEventListener("change",ev=>{if(ev.target?.id==="cmDistrictPicker"&&ev.target.value){const sep=ev.target.value.indexOf("|");openDistrict(ev.target.value.slice(0,sep),ev.target.value.slice(sep+1))}});
+root.addEventListener("change",ev=>{if(ev.target?.id==="cmDistrictPicker"&&ev.target.value){const sep=ev.target.value.indexOf("|");openDistrict(ev.target.value.slice(0,sep),ev.target.value.slice(sep+1),true)}});
 root.addEventListener("click",ev=>{
  const b=ev.target.closest("[data-action]");if(!b||!root.contains(b))return;
  const action=b.getAttribute("data-action");
  if(action==="state")return state(b.getAttribute("data-state"));
  if(action==="leader")return leader(b.getAttribute("data-leader"));
  if(action==="issue")return issue(b.getAttribute("data-issue"));
- if(action==="district")return openDistrict(b.getAttribute("data-state"),b.getAttribute("data-district"));
+ if(action==="district")return openDistrict(b.getAttribute("data-state"),b.getAttribute("data-district"),false);
  if(action==="tab"){const tab=b.getAttribute("data-open-tab");const button=document.querySelector('.tabs [data-tab="'+tab+'"]');if(button){button.click();button.scrollIntoView({behavior:"smooth",block:"center"})}return}
  if(action==="allIssues")return issue("all");
  if(action==="zoom"){const st=b.getAttribute("data-state"),factor=b.getAttribute("data-zoom")==="in"?1.5:1/1.5;mapZoom[st]=Math.max(1,Math.min(3.5,(mapZoom[st]||1)*factor));key="";return render()}
