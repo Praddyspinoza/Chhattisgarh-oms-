@@ -70,6 +70,52 @@ function calculate(){
  stats[st]={rows,map,unplaced,lit:[...map].filter(x=>x[1].length).length};
  }
 }
+
+function hotDistrictLabels(st,ranked){
+ const group=geo[st],taken=[];
+ const targets=ranked.map(([name,rows])=>{
+  const p=group.places.find(x=>x[0]===name),xy=near(st,p[1],p[2]);
+  return{name,rows:rows.length,x:xy[0],y:xy[1],full:displayName(st,name)};
+ });
+ targets.sort((a,b)=>b.rows-a.rows||a.y-b.y);
+ let output="";
+ for(const t of targets){
+  const text=t.full.length>17?t.full.slice(0,16)+"…":t.full;
+  const width=Math.max(30,Math.min(112,text.length*4.1+8)),height=13.5;
+  let best=null,score=1e15;
+  const count=ranked.length;
+  const maxR=count>30?75:58;
+  for(let radius=7;radius<=maxR;radius+=6){
+   for(let step=0;step<16;step++){
+    const ang=step*Math.PI/8;
+    const rawX=t.x+radius*Math.cos(ang)-width/2;
+    const rawY=t.y+radius*Math.sin(ang)-height/2;
+    const x=Math.max(4,Math.min(316-width,rawX)),y=Math.max(3,Math.min(247-height,rawY));
+    let overlaps=0;
+    for(const old of taken){
+     const overlapX=Math.max(0,Math.min(x+width,old.x+old.w)-Math.max(x,old.x));
+     const overlapY=Math.max(0,Math.min(y+height,old.y+old.h)-Math.max(y,old.y));
+     overlaps+=overlapX*overlapY;
+    }
+    const penalty=overlaps*110+Math.hypot(x+width/2-t.x,y+height/2-t.y)*0.8+Math.hypot(rawX-x,rawY-y)*3;
+    if(penalty<score){best={x,y,w:width,h:height};score=penalty}
+    if(penalty<8)break;
+   }
+   if(score<8)break;
+  }
+  if(!best)best={x:Math.max(3,Math.min(310-width,t.x)),y:t.y,w:width,h:height};
+  taken.push(best);
+  const x=best.x.toFixed(1),y=best.y.toFixed(1),tx=(best.x+best.w/2).toFixed(1),ty=(best.y+9).toFixed(1);
+  const offset=Math.hypot(t.x-(best.x+best.w/2),t.y-(best.y+best.h/2))>8;
+  output+='<g class="cm-hot-label" aria-label="'+esc(t.full)+' source-map label">'+
+  '<path class="cm-label-wire" d="M'+t.x.toFixed(1)+' '+t.y.toFixed(1)+'L'+tx+' '+(best.y+best.h/2).toFixed(1)+'"/>'+
+  '<rect class="cm-label-bg" x="'+x+'" y="'+y+'" width="'+best.w.toFixed(1)+'" height="'+best.h.toFixed(1)+'" rx="2.5"/>'+
+  '<text class="cm-label cm-active-label'+(offset?' cm-off-center':'')+'" x="'+tx+'" y="'+ty+'" text-anchor="middle">'+esc(text)+'</text>'+
+  '<title>'+esc(t.full+' · '+t.rows+' relevant source mentions')+'</title></g>';
+ }
+ return output;
+}
+
 function stateCard(st){
  const s=stats[st],group=geo[st],focused=view.state!=="all"?view.state:(view.leader!=="all"?L(view.leader)?.state:null),one=focused===st,dim=Boolean(focused)&&!one;
  const ranked=[...s.map].filter(([n,r])=>r.length).sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0]));
@@ -86,15 +132,13 @@ function stateCard(st){
   const opacity=hot?Math.min(.98,.48+Math.log1p(rows.length)/Math.log1p(max)*.5):.96;
   svg+='<path tabindex="0" role="button" class="cm-district cm-polygon'+(hot?' cm-hot':'')+(sel?' cm-target':'')+'" data-action="district" data-state="'+esc(st)+'" data-district="'+esc(name)+'" d="'+svgPath(st,f.geometry)+'" aria-label="'+esc(displayName(st,name)+', '+st+': '+rows.length+' matching source items')+'" style="--cm-intensity:'+opacity.toFixed(2)+'"><title>'+esc(displayName(st,name)+' · '+rows.length+' source mentions')+'</title></path>';
  }
- for(const [name] of ranked.slice(0,6)){
-  const p=group.places.find(x=>x[0]===name);if(!p)continue;const xy=near(st,p[1],p[2]);
-  svg+='<text class="cm-label" x="'+xy[0].toFixed(1)+'" y="'+xy[1].toFixed(1)+'" text-anchor="middle">'+esc(displayName(st,name).length>15?displayName(st,name).slice(0,13)+"…":displayName(st,name))+'</text>';
- }
+ svg+=hotDistrictLabels(st,ranked);
  svg+='</svg>';
  const chips=ranked.slice(0,5).map(([name,rr])=>'<button class="cm-chip" data-action="district" data-state="'+esc(st)+'" data-district="'+esc(name)+'">'+esc(displayName(st,name))+' · '+rr.length+'</button>').join("");
+ const directory=ranked.length?'<details class="cm-hot-list" open><summary class="cm-hot-title">All '+ranked.length+' highlighted districts · select a name ⌄</summary><div class="cm-hot-items">'+ranked.map(([name,rows])=>'<button data-action="district" data-state="'+esc(st)+'" data-district="'+esc(name)+'">'+esc(displayName(st,name))+' · '+rows.length+'</button>').join("")+'</div></details>':'';
  return '<article class="cm-map-card'+(one?' cm-selected':'')+(dim?' cm-dim':'')+'"><div class="cm-map-head"><button data-action="state" data-state="'+esc(st)+'" title="Filter entire comparative dashboard to '+esc(st)+'">'+esc(st)+' ⌄</button><small>'+s.lit+'/'+group.features.length+' DISTRICTS LIT</small><div class="cm-zoom-controls"><button data-action="zoom" data-state="'+esc(st)+'" data-zoom="in" aria-label="Zoom into '+esc(st)+'">+</button><button data-action="zoom" data-state="'+esc(st)+'" data-zoom="out" aria-label="Zoom out from '+esc(st)+'">−</button></div></div>'+svg+
  '<div class="cm-map-foot">'+(chips||'<span class="cm-empty">No district-named report for current selection</span>')+
- (ranked.length>5?'<button class="cm-chip cm-quiet" data-action="state" data-state="'+esc(st)+'">View '+ranked.length+' districts</button>':'')+'</div></article>';
+ (ranked.length>5?'<button class="cm-chip cm-quiet" data-action="state" data-state="'+esc(st)+'">Focus '+esc(st)+' map</button>':'')+'</div>'+directory+'</article>';
 }
 function choices(arr,key,label){return arr.map(o=>'<button data-action="'+key+'" data-'+key+'="'+esc(o[0])+'" class="'+(view[key]===o[0]?'active':'')+'" title="'+esc(o[2]||o[1])+'">'+esc(o[1])+'</button>').join("")}
 function flow(){
