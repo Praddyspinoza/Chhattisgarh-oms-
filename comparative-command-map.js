@@ -25,10 +25,10 @@ const aliases={"Madhya Pradesh":{"Narmadapuram":["hoshangabad"],"Katni":["kymore
  "Jharkhand":{"East Singhbhum":["jamshedpur"],"West Singhbhum":["chaibasa"],"Seraikela Kharsawan":["seraikela","saraikela","kharsawan"],"Palamu":["palamau","daltonganj","medininagar"],"Sahibganj":["sahebganj"]}};
 const leaderState=Object.fromEntries(data.leaders.map(l=>[l.id,l.state]));
 const research=[...data.records.map(r=>Object.assign({kind:"News / broadcaster",state:leaderState[r.leader]},r)),
- ...data.posts.map(r=>Object.assign({kind:r.platform==="X"?"Original X link":"Direct social/video",state:leaderState[r.leader],title:r.sourceHeadline||r.detail,summary:r.detail},r)),
+ ...data.posts.map(r=>Object.assign({kind:r.accountType==="cmo"?"Official CM Office X post":r.platform==="X"?"Individual leader X post":"Direct social/video",state:leaderState[r.leader],title:r.sourceHeadline||r.detail,summary:r.detail},r)),
  ...gov.officialRecords.map(r=>Object.assign({kind:"Government institution (not personally attributed)",leader:null},r)),
  ...gov.assemblyRecords.map(r=>Object.assign({kind:"Legislative record (not personally attributed)",leader:null},r))];
-let view={state:"all",leader:"all",issue:"Governance",role:"all",publisher:"all",term:""};
+let view={state:"all",leader:"all",issue:"Governance",role:"all",publisher:"all",term:"",accountSource:"all"};
 let district=null,showAll=false,stats={},filtered=[],key="";
 const mapZoom=Object.fromEntries(states.map(s=>[s,1]));
 function near(st,lat,lon){
@@ -58,6 +58,7 @@ function calculate(){
   if(view.issue!=="all"&&r.issue!==view.issue)return false;
   if(r.leader){const l=L(r.leader);if(!l||view.leader!=="all"&&r.leader!==view.leader||view.role!=="all"&&l.role!==view.role)return false;
    if(r.kind==="News / broadcaster"&&view.publisher!=="all"&&r.publisher!==view.publisher)return false;
+   if(r.platform==="X"&&view.accountSource!=="all"&&(view.accountSource==="cmo"?r.accountType!=="cmo":r.accountType==="cmo"))return false;
   }else if(view.leader!=="all"||view.role!=="all"||view.publisher!=="all")return false;
   if(view.term&&!([r.title,r.summary,r.detail,r.issue,r.authority,r.publisher,L(r.leader)?.name].filter(Boolean).join(" ").toLowerCase().includes(view.term)))return false;
   return true;
@@ -160,6 +161,8 @@ function districtResearch(st,name,ignoreIssue){
   if(view.role!=="all"&&l.role!==view.role)return false;
   if(!ignoreIssue&&view.issue!=="all"&&r.issue!==view.issue)return false;
   if(r.kind==="News / broadcaster"&&view.publisher!=="all"&&r.publisher!==view.publisher)return false;
+   if(r.platform==="X"&&view.accountSource!=="all"&&(view.accountSource==="cmo"?r.accountType!=="cmo":r.accountType==="cmo"))return false;
+  if(r.platform==="X"&&view.accountSource!=="all"&&(view.accountSource==="cmo"?r.accountType!=="cmo":r.accountType==="cmo"))return false;
   if(view.term&&!([r.title,r.summary,r.detail,r.issue,r.publisher,l.name].filter(Boolean).join(" ").toLowerCase().includes(view.term)))return false;
   return mention(r,st).includes(name);
  });
