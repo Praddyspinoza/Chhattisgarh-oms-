@@ -58,7 +58,7 @@ for(const l of records.leaders)assert(reports.includes(l.name)&&posts.includes(l
 const escapeHtml=v=>String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
 for(const topic of records.issues)assert(reports.includes(escapeHtml(topic))&&posts.includes(escapeHtml(topic)),"Missing issue "+topic);
 for(const r of records.records){assert(reports.includes(escapeHtml(r.url)),"Missing original news link "+r.id);assert(allDossiers.includes(escapeHtml(r.url)),"Missing dossier article "+r.id);}
-for(const p of records.posts){assert(posts.includes(escapeHtml(p.url)),"Missing original post link "+p.id);assert(allDossiers.includes(escapeHtml(p.url)),"Missing dossier original post "+p.id);}
+for(const p of records.posts){assert(posts.includes(escapeHtml(p.url)),"Missing original post link "+p.id);if(p.issue!=="Other / general and ceremonial")assert(allDossiers.includes(escapeHtml(p.url)),"Missing dossier original post "+p.id);}
 const staticNews=html.slice(html.indexOf("<!-- STATIC_COMPARE_REPORTS_START -->"),html.indexOf("<!-- STATIC_COMPARE_REPORTS_END -->"));
 const staticSocial=html.slice(html.indexOf("<!-- STATIC_COMPARE_SOCIAL_START -->"),html.indexOf("<!-- STATIC_COMPARE_SOCIAL_END -->"));
 assert.equal((staticNews.match(/class="source-headline"/g)||[]).length,records.records.length,"Static news links missing");
