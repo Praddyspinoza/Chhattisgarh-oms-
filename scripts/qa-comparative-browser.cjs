@@ -21,12 +21,27 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.waitForSelector("#omsCommandMap .cm-district",{timeout:9000});
   assert.equal(await cartograms.count(),3,"Missing 3 geographic district maps in dashboard command center");
   assert.equal(await page.locator("#omsCommandMap path.cm-polygon").count(),109,"Expected 109 named district nodes");
+  assert.equal(await page.locator("#comparisonAnalytics .an-leader").count(),6,"Missing leader-specific analytics cards");
+  assert.equal(await page.locator("#comparisonAnalytics .an-donut").count(),12,"Two issue pie charts required for each of the six leaders");
+  const xChartSum=await page.locator("#comparisonAnalytics .an-figure[data-an-chart='x'] .an-n").allTextContents();
+  assert.equal(xChartSum.reduce((sum,x)=>sum+Number(x),0),data.posts.filter(p=>p.platform==="X").length,"X pie denominators must equal original status archive");
+
+  const hotInitial=await page.locator("#omsCommandMap path.cm-polygon.cm-hot").count();
+  const labelsInitial=await page.locator("#omsCommandMap g.cm-hot-label").count();
+  assert(hotInitial>5,"Baseline archive must highlight source-linked districts");
+  assert.equal(labelsInitial,hotInitial,"Every highlighted district polygon must have a named label");
+  const namesInFullKey=await page.locator("#omsCommandMap .cm-hot-items button").count();
+  assert.equal(namesInFullKey,hotInitial,"Every highlighted district must also have a full-name clickable key");
+
   await page.locator('#omsCommandMap [data-action="leader"][data-leader="mp-lop"]').click();
   assert.equal(await page.locator("#omsCommandMap .cm-map-grid.cm-focused").count(),1,"Selecting an individual leader must expand their geographic map");
   await page.locator('#omsCommandMap [data-action="issue"][data-issue="Environment & Forests"]').click();
   assert(await page.locator("#omsCommandMap path.cm-hot").count()>=1,"Leader + issue filter should highlight district-level reporting");
   const katni=page.locator('#omsCommandMap path[data-state="Madhya Pradesh"][data-district="Katni"]');
   assert(await katni.evaluate(el=>el.classList.contains("cm-hot")),"Katni source-linked MP LoP/environment record not highlighted");
+  assert.equal(await page.locator("#omsCommandMap .cm-hot-label").count(),await page.locator("#omsCommandMap path.cm-hot").count(),"Every highlighted district must have an explicit name callout");
+  assert(await page.locator("#omsCommandMap .cm-hot-list .cm-hot-items button").count()>=1,"Every highlighted state map needs a clickable named district directory");
+
   await katni.click();
   assert(await page.locator("#omsCommandMap .cm-detail a[href*='timesofindia.indiatimes.com']").count()>=1,"Click district must open original source headlines");
   assert((await page.locator("#omsCommandMap .cm-detail").innerText()).includes("Katni"),"District dossier must identify selected district");
@@ -54,7 +69,7 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.screenshot({path:"comparative-desktop-qa.png",fullPage:false});
   await page.locator('[data-dossier-topic="all"]').first().click();
   const all=await page.locator("#dossierList a.dossier-headline").count();
-  assert.equal(all,data.records.length+data.posts.length,"Not all original source links are rendered in combined dossiers");
+  assert.equal(all,data.records.length+data.posts.length,"Every X and video link, including Other category, must be reachable in all-issue dossiers");
   const institutional=await page.locator("#dossierList a.institution-headline").count();
   assert.equal(institutional,gov.officialRecords.length+gov.assemblyRecords.length,"Government and assembly links absent from combined issue dossiers");
   const actualSourceLinks=await page.locator("#dossierList a.dossier-headline").evaluateAll(as=>as.map(a=>a.getAttribute("href")));
@@ -64,16 +79,22 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert.equal(count,data.records.filter(r=>r.issue==="Mining").length+data.posts.filter(r=>r.issue==="Mining").length);
   await page.locator('[data-dossier-topic="all"]').first().click();
   await page.locator('button[data-state="Odisha"]').first().click();
-  assert.equal(await page.locator("#dossierList .dossier-leader").count(),20,"State filter should yield 2 leaders across 10 topics");
+  assert.equal(await page.locator("#dossierList .dossier-leader").count(),22,"State filter should yield 2 leaders across 10 issues plus non-policy category");
   await page.locator('button[data-state="all"]').first().click();
   await page.locator('button[data-role="Leader of Opposition"]').first().click();
-  assert.equal(await page.locator("#dossierList .dossier-leader").count(),30,"Office filter should yield 3 leaders across 10 topics");
+  assert.equal(await page.locator("#dossierList .dossier-leader").count(),33,"Office filter should yield 3 leaders across 10 issues plus non-policy category");
   await page.locator('button[data-role="all"]').first().click();
   await page.locator('button[data-tab="official"]').click();
   assert.equal(await page.locator("#officialList a.institution-headline").count(),gov.officialRecords.length,"Every departmental original link must be in the official tab");
   await page.locator('button[data-tab="assembly"]').click();
+  assert((await page.locator("#assembly").innerText()).includes("Odisha"),"Odisha assembly session should be explained");
+  assert((await page.locator("#assembly").innerText()).includes("Jharkhand"),"Jharkhand assembly session should be explained");
+
   assert.equal(await page.locator("#assemblyList a.institution-headline").count(),gov.assemblyRecords.length,"Every legislative original link must be in the assembly tab");
   assert.equal(await page.locator("#sessionList .panel").count(),3,"Missing three-state legislative session calendar");
+  await page.locator('button[data-tab="analytics"]').click();
+  assert.equal(await page.locator("#analytics .an-figure").count(),12,"Analytics tab must expose 12 independent issue-share charts");
+  assert((await page.locator("#analytics").innerText()).includes("Other / general and ceremonial"),"Unclassified ceremonial X posts must have explicit own slice");
   await page.locator('button[data-tab="social"]').click();
   const social=await page.locator("#postList a.source-headline").count();
   assert.equal(social,data.posts.length,"Social archive should include every original permalink");
@@ -82,6 +103,29 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.locator('button[data-tab="dossiers"]').click();
   await page.locator('[data-dossier-topic="Education, Healthcare & Employment"]').first().click();
   await page.screenshot({path:"comparative-issue-qa.png",fullPage:false});
+
+  await page.locator('button.tab[data-tab="analytics"]').click();
+  await page.waitForSelector("#comparisonAnalytics .an-leader",{timeout:8000});
+  assert.equal(await page.locator("#comparisonAnalytics .an-leader").count(),6,"Six leader pie-chart groups must render");
+  assert.equal(await page.locator("#comparisonAnalytics svg.an-donut").count(),12,"Each leader needs independent X and media issue pie charts");
+  for(const leader of data.leaders){
+    const card=page.locator('#comparisonAnalytics .an-leader[data-an-card="'+leader.id+'"]');
+    assert.equal(await card.count(),1,"Missing per-leader analytics chart for "+leader.name);
+    const totals=await card.locator(".an-figure .an-n").allTextContents();
+    assert.equal(Number(totals[0]),data.posts.filter(p=>p.leader===leader.id&&p.platform==="X").length,"X sample total mismatch "+leader.name);
+    assert.equal(Number(totals[1]),data.records.filter(p=>p.leader===leader.id).length,"News sample total mismatch "+leader.name);
+  }
+  await page.screenshot({path:"comparative-analytics-qa.png",fullPage:false});
+  const legend=page.locator('#comparisonAnalytics .an-leader[data-an-card="jh-lop"] .an-figure[data-an-chart="x"] button.an-legend').first();
+  assert(await legend.count()>=1,"X issue chart must have interactive legend");
+  const clickedIssue=await legend.getAttribute("data-an-issue");
+  await legend.click();
+  assert.equal(await page.locator("#omsCommandMap .cm-map-grid.cm-focused").count(),1,"Pie legend click must filter to leader's state");
+  await page.locator('button.tab[data-tab="social"]').click();
+  assert.equal(await page.locator("#postList a.source-headline").count(),data.posts.filter(p=>p.leader==="jh-lop"&&(clickedIssue==="Other / general and ceremonial"||p.issue===clickedIssue)).length,"Social archive should respond to leader-and-issue drilldown");
+  await page.locator('button[data-state="all"]').first().click();
+  await page.locator('button[data-role="all"]').first().click();
+  await page.locator('button[data-tab="analytics"]').click();
   await page.setViewportSize({width:390,height:844});
   assert.equal(await page.locator("#omsCommandMap .cm-map-card").count(),3,"Map must remain available on mobile");
   await page.screenshot({path:"comparative-map-mobile-qa.png",fullPage:false});

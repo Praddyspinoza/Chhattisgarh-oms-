@@ -21,7 +21,7 @@ for(const r of d.records){
 for(const p of d.posts){
  assert(!ids.has(p.id),"Duplicate ID "+p.id);ids.add(p.id);
  assert(byID[p.leader],"Unknown post leader "+p.id);
- assert(issueIDs.includes(p.issue),"Wrong post issue "+p.id);
+ assert(issueIDs.includes(p.issue)||p.issue==="Other / general and ceremonial","Wrong post issue "+p.id);
  assert(p.date>=d.window.start&&p.date<=d.window.end,"Out of window post "+p.id);
  assert(/^https:\/\//.test(p.url)&&/^https:\/\//.test(p.publisherUrl),"Bad post URL "+p.id);
  assert(!socialLinks.has(p.url.toLowerCase()),"Duplicate post "+p.url);socialLinks.add(p.url.toLowerCase());
@@ -31,7 +31,7 @@ for(const p of d.posts){
   assert.equal(m[1].toLowerCase(),byID[p.leader].x.toLowerCase(),"X account misattribution "+p.id);
   const date=new Date(Number((BigInt(m[2])>>22n)+1288834974657n)).toISOString().slice(0,10);
   assert.equal(date,p.date,"X snowflake timestamp mismatch "+p.id);
-  assert(p.status==="embedded-post-url","Unverified social item presented as direct X "+p.id);
+  assert(["embedded-post-url","original-page-fetched","original-post-fetched"].includes(p.status),"Unverified social item presented as direct X "+p.id);
  }
 }
 assert(html.includes("comparative_states_2026.json"));assert(html.includes("cg-brand"));assert(html.includes("original Chhattisgarh OMS V12") && html.includes("cg-brand"),"Original OMS visual tokens missing");

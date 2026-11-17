@@ -1,0 +1,1576 @@
+{
+  "createdAt": "2026-11-17",
+  "window": {
+    "start": "2026-08-05",
+    "end": "2026-11-05"
+  },
+  "method": "Public X status URL discovery via web indexing, not private X account export. These are candidates until original status contents are verified and coded.; search snippets removed, original post permalinks retained",
+  "tasks": 24,
+  "errors": [
+    {
+      "q": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "error": "RATE_LIMITED: Error code: RATE_LIMITED; Error: McpServerError: Rate limit exceeded. Limit: 30 requests per minute. Retry in 5s. Find options to increa"
+    },
+    {
+      "q": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "error": "RATE_LIMITED: Error code: RATE_LIMITED; Error: McpServerError: Rate limit exceeded. Limit: 30 requests per minute. Retry in 5s. Find options to increa"
+    },
+    {
+      "q": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "error": "RATE_LIMITED: Error code: RATE_LIMITED; Error: McpServerError: Rate limit exceeded. Limit: 30 requests per minute. Retry in 5s. Find options to increa"
+    },
+    {
+      "q": "site:x.com/yourBabulal/status/ 2026 August",
+      "error": "RATE_LIMITED: Error code: RATE_LIMITED; Error: McpServerError: Rate limit exceeded. Limit: 30 requests per minute. Retry in 4s. Find options to increa"
+    },
+    {
+      "q": "site:x.com/yourBabulal/status/ 2026 September",
+      "error": "RATE_LIMITED: Error code: RATE_LIMITED; Error: McpServerError: Rate limit exceeded. Limit: 30 requests per minute. Retry in 3s. Find options to increa"
+    },
+    {
+      "q": "site:x.com/yourBabulal/status/ 2026 October",
+      "error": "RATE_LIMITED: Error code: RATE_LIMITED; Error: McpServerError: Rate limit exceeded. Limit: 30 requests per minute. Retry in 4s. Find options to increa"
+    }
+  ],
+  "candidates": [
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-19",
+      "url": "https://x.com/DrMohanYadav51/status/2089905834101018722",
+      "title": "\"आज मैहर से 'लाड़ली बहना योजना' की 39वीं किस्त पात्र बहनों के ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-31",
+      "url": "https://x.com/DrMohanYadav51/status/2094402688540979491",
+      "title": "\"UPSC की तर्ज पर एक ही परीक्षा से अलग-अलग प्रकार के पदों ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-19",
+      "url": "https://x.com/DrMohanYadav51/status/2090018493215433143",
+      "title": "माँ शारदा की पवित्र नगरी मैहर से आज 1.25 करोड़ से अधिक बहनों ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-08",
+      "url": "https://x.com/DrMohanYadav51/status/2085935482219749724",
+      "title": "\"जन-विश्वास अभियान... संवाद, समाधान, संवेदनशीलता और ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-15",
+      "url": "https://x.com/DrMohanYadav51/status/2088466377824985244",
+      "title": "\"देश के 80वें स्वतंत्रता दिवस के पावन पर्व पर आज निवास परिसर ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-25",
+      "url": "https://x.com/DrMohanYadav51/status/2092135511460884788",
+      "title": "\"राष्ट्रीय गीत 'वंदे मातरम्' गायन के साथ आज मंत्रालय में ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-18",
+      "url": "https://x.com/DrMohanYadav51/status/2089696541955223829",
+      "title": "\"आज कैबिनेट में माँ नर्मदा के पुनर्जीवन एवं दीर्घकालीन सतत ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-17",
+      "url": "https://x.com/DrMohanYadav51/status/2089376569940975722",
+      "title": "\"विश्वसनीय पत्रकारिता की विरासत को नई पहचान और नए स्वरूप ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-29",
+      "url": "https://x.com/DrMohanYadav51/status/2093767336247574738",
+      "title": "आज रात पूर्व निर्धारित कार्यक्रम निरस्त कर नई दिल्ली से सीधे ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-08-16",
+      "url": "https://x.com/DrMohanYadav51/status/2088995623999815904",
+      "title": "आज इंदौर में देश के पहले वर्चुअल चिड़ियाघर, प्राणी संग्रहालय ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-09",
+      "url": "https://x.com/DrMohanYadav51/status/2097591334584660083",
+      "title": "\"17 सितंबर 2026 से 17 अक्टूबर 2026 तक हम ' ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-03",
+      "url": "https://x.com/DrMohanYadav51/status/2095335055182962801",
+      "title": "ईशा फाउंडेशन के संस्थापक, प्रख्यात आध्यात्मिक गुरु, 'पद्म ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-30",
+      "url": "https://x.com/DrMohanYadav51/status/2105170225142628628",
+      "title": "Dr Mohan Yadav",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-05",
+      "url": "https://x.com/DrMohanYadav51/status/2096126383315435625",
+      "title": "भोपाल निवास पर ब्यावरा के बेटे सुरेंद्र सिंह चौधरी 'बिट्टू तबाही' से ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-30",
+      "url": "https://x.com/DrMohanYadav51/status/2105192789009207733",
+      "title": "Dr Mohan Yadav on X",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-08",
+      "url": "https://x.com/DrMohanYadav51/status/2097140641830768893",
+      "title": "\"संगीतकार व गायक, भारत रत्न, भूपेन हजारिका जी की जयंती पर ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-29",
+      "url": "https://x.com/DrMohanYadav51/status/2104827615806705915",
+      "title": "Asian Games 2026 में Women's Trap Individual Event में ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-23",
+      "url": "https://x.com/DrMohanYadav51/status/2102574961076613234",
+      "title": "राष्ट्रीय चेतना के ओजस्वी स्वर, 'राष्ट्रकवि' एवं पद्म भूषण से ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-10",
+      "url": "https://x.com/DrMohanYadav51/status/2097941515213648349",
+      "title": "\"आज लोक भवन में आयोजित गरिमामयी समारोह में माननीय ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-18",
+      "url": "https://x.com/DrMohanYadav51/status/2100852835042927041",
+      "title": "A historic milestone for Project Cheetah! The very next day ...",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-05",
+      "url": "https://x.com/DrMohanYadav51/status/2107033913684353393",
+      "title": "Dr Mohan Yadav on X",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-19",
+      "url": "https://x.com/DrMohanYadav51/status/2112139469537292487",
+      "title": "Dr Mohan Yadav on X",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-19",
+      "url": "https://x.com/DrMohanYadav51/status/2112162547659051023",
+      "title": "Dr Mohan Yadav on X",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-12",
+      "url": "https://x.com/DrMohanYadav51/status/2109687546049642684",
+      "title": "Dr Mohan Yadav on X",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-31",
+      "url": "https://x.com/DrMohanYadav51/status/2116509615324361054",
+      "title": "Dr Mohan Yadav",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-19",
+      "url": "https://x.com/DrMohanYadav51/status/2112086501081432405",
+      "title": "Dr Mohan Yadav on X",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-22",
+      "url": "https://x.com/DrMohanYadav51/status/2113261459115532455",
+      "title": "Dr Mohan Yadav",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-10-22",
+      "url": "https://x.com/DrMohanYadav51/status/2113204740817391898",
+      "title": "Dr Mohan Yadav",
+      "discoveryQuery": "site:x.com/DrMohanYadav51/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-26",
+      "url": "https://x.com/UmangSinghar/status/2092475392703754354",
+      "title": "\"जरूरत पड़ने पर आम जनता के घरों की आग बुझाने नहीं पहुँच पाती ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-08",
+      "url": "https://x.com/UmangSinghar/status/2086085423936553317",
+      "title": "छतरपुर के बड़ा मलहरा सामुदायिक स्वास्थ्य केंद्र में शव को कचरा ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-27",
+      "url": "https://x.com/UmangSinghar/status/2092861810043146477",
+      "title": "रायपुर दिनांक: 28 अगस्त 2026 \"राष्ट्रीय भोजली महोत्सव ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-24",
+      "url": "https://x.com/UmangSinghar/status/2091731500693946839",
+      "title": "मोहन सरकार के राज में खाद भी लगता है “जादुई” हो गई है! 13 ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-08",
+      "url": "https://x.com/UmangSinghar/status/2085901306250645565",
+      "title": "अगस्त क्रांति दिवस पर भारत छोड़ो आंदोलन के सभी अमर ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-14",
+      "url": "https://x.com/UmangSinghar/status/2088251696514490712",
+      "title": "मध्यप्रदेश सरकार की लापरवाही के चलते कई माताओं की कोख सूनी ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-31",
+      "url": "https://x.com/UmangSinghar/status/2094311282413629445",
+      "title": "कांग्रेस अध्यक्ष श्री मल्लिकार्जुन खरगे जी की रैली स्थल के ' ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-21",
+      "url": "https://x.com/UmangSinghar/status/2090687256868921667",
+      "title": "सरकार की इथेनॉल ब्लेंडिंग से भारत के त्योहार पड़ेंगे फीके! डॉलर ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-08-14",
+      "url": "https://x.com/UmangSinghar/status/2088229726066536509",
+      "title": "बालाघाट जिले के अस्पताल में भर्ती ग्राम कुण्डेकसा, बोनदारी एवं ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-06",
+      "url": "https://x.com/UmangSinghar/status/2096660043605430547",
+      "title": "Umang Singhar",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-08",
+      "url": "https://x.com/UmangSinghar/status/2097285873754931583",
+      "title": "\"दौरा कार्यक्रम:📍गंधवानी विधानसभा 09 सितंबर 2026 श्री गणेश ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-08",
+      "url": "https://x.com/UmangSinghar/status/2097192721459089720",
+      "title": "Umang Singhar on X: \"मध्यप्रदेश महिला कांग्रेस की प्रदेश ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-27",
+      "url": "https://x.com/UmangSinghar/status/2104013158658539873",
+      "title": "Umang Singhar on X: \"अंतरराष्ट्रीय बेटी दिवस की हार्दिक ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-26",
+      "url": "https://x.com/UmangSinghar/status/2103658313070334250",
+      "title": "\"भारत के पूर्व प्रधानमंत्री डॉ. मनमोहन सिंह जी की जयंती पर शत् ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-08",
+      "url": "https://x.com/UmangSinghar/status/2097185865453711680",
+      "title": "मध्यप्रदेश के 5200 पेसा मोबिलाइजरों की सेवा समाप्त होने से ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-06",
+      "url": "https://x.com/UmangSinghar/status/2096469348114428272",
+      "title": "सागर में जहरीली और अवैध शराब ने 11 लोगों की जान ले ली, जबकि ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-08",
+      "url": "https://x.com/UmangSinghar/status/2097135330487136538",
+      "title": "Umang Singhar on X: \"भारतीय स्वतंत्रता सेनानी फिरोज गांधी ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-02",
+      "url": "https://x.com/UmangSinghar/status/2095003172523979182",
+      "title": "आदिवासियों के स्वास्थ्य और समस्याओं को नजरअंदाज कर रही है ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-12",
+      "url": "https://x.com/UmangSinghar/status/2098750211581735177",
+      "title": "\"दौरा कार्यक्रम: गंधवानी 13/09/2026 श्री गणेश प्रतिमा वितरण ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-15",
+      "url": "https://x.com/UmangSinghar/status/2110609559064895496",
+      "title": "लाड़ली बहना का भविष्य खतरे में, सरकार में तालमेल गायब ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-27",
+      "url": "https://x.com/UmangSinghar/status/2114978853085139105",
+      "title": "Umang Singhar",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-28",
+      "url": "https://x.com/UmangSinghar/status/2115353452406796650",
+      "title": "कूनो में 'प्रोजेक्ट चीता' की शर्मनाक नाकामी: शावक के शरीर में ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-02",
+      "url": "https://x.com/UmangSinghar/status/2105953319156105579",
+      "title": "भाजपा सरकार कर रही थी भागीरथपुरा की रिपोर्ट छुपाने की कोशिश ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-14",
+      "url": "https://x.com/UmangSinghar/status/2110232673335792054",
+      "title": "संविधान और लोकतंत्र की रक्षा के लिए आवाज़ उठाने वाले ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-02",
+      "url": "https://x.com/UmangSinghar/status/2105931967514739000",
+      "title": "कब मिलेगा इंदौर की जनता को शुद्ध पानी? भागीरथपुरा की दर्दनाक ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-24",
+      "url": "https://x.com/UmangSinghar/status/2113970482773197090",
+      "title": "केन-बेतवा लिंक परियोजना से प्रभावित परिवार एवं श्री अमित ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-26",
+      "url": "https://x.com/UmangSinghar/status/2114732310281289842",
+      "title": "आज देवास जिले के ग्राम चंदाना पहुँचने के पश्चात अमलतास ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-02",
+      "url": "https://x.com/UmangSinghar/status/2105904660657864936",
+      "title": "प्रेम की शक्ति दंड की शक्ति से हजार गुनी प्रभावशाली और स्थायी ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-02",
+      "url": "https://x.com/UmangSinghar/status/2105960079061365148",
+      "title": "जांच कमेटी के सवालों और अपनी जवाबदेही से भाग रही है भाजपा ...",
+      "discoveryQuery": "site:x.com/UmangSinghar/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-17",
+      "url": "https://x.com/MohanMOdisha/status/2089283031374971391",
+      "title": "ଆଜି ଯାଜପୁର ଜିଲ୍ଲାର ଦଶରଥପୁର ବ୍ଲକ୍ ଅନ୍ତର୍ଗତ କସପା ଓ ତରପଡ଼ା ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-28",
+      "url": "https://x.com/MohanMOdisha/status/2093260588654940266",
+      "title": "\"ରାକ୍ଷୀ କେବଳ ଏକ ସୂତା ନୁହେଁ, ଏହା ଭାଇ-ଭଉଣୀଙ୍କ ଅତୁଟ ସ୍ନେହ, ବିଶ୍ୱାସ ଓ ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-17",
+      "url": "https://x.com/MohanMOdisha/status/2089230923627979187",
+      "title": "Mohan Charan Majhi on X: \"ବିଶିଷ୍ଟ ସ୍ୱାଧୀନତା ସଂଗ୍ରାମୀ ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-25",
+      "url": "https://x.com/MohanMOdisha/status/2092216286608769312",
+      "title": "From financial support to self-reliance, #Subhadra Yojana ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-19",
+      "url": "https://x.com/MohanMOdisha/status/2090147441123471763",
+      "title": "Mohan Charan Majhi on X",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-06",
+      "url": "https://x.com/MohanMOdisha/status/2085289042523119974",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-15",
+      "url": "https://x.com/MohanMOdisha/status/2088445097809494114",
+      "title": "Mohan Charan Majhi on X",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-08",
+      "url": "https://x.com/MohanMOdisha/status/2086092230004228346",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-10",
+      "url": "https://x.com/MohanMOdisha/status/2086741417536483772",
+      "title": "ଆଜି ଓଡ଼ିଶାର ସମୃଦ୍ଧ ଓ ବିକଶିତ ଭବିଷ୍ୟତ ଗଠନ ଦିଗରେ ଆଉ ଏକ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-08-27",
+      "url": "https://x.com/MohanMOdisha/status/2093011686618014099",
+      "title": "Heartiest congratulations to the Indian Women's Hockey ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-08",
+      "url": "https://x.com/MohanMOdisha/status/2097179420448665668",
+      "title": "Mohan Charan Majhi on X: \"#Odisha is emerging ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-19",
+      "url": "https://x.com/MohanMOdisha/status/2101229190058250420",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-23",
+      "url": "https://x.com/MohanMOdisha/status/2102695663314374700",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-12",
+      "url": "https://x.com/MohanMOdisha/status/2098665463547093182",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-11",
+      "url": "https://x.com/MohanMOdisha/status/2098399887742353495",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-20",
+      "url": "https://x.com/MohanMOdisha/status/2101531597434659182",
+      "title": "Rahul Gandhi's politics has reached a point where even an ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-10",
+      "url": "https://x.com/MohanMOdisha/status/2098088845640384835",
+      "title": "Mohan Charan Majhi on X: \"The Odisha Investors' Meet",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-02",
+      "url": "https://x.com/MohanMOdisha/status/2095208232570835410",
+      "title": "Participated in the National Departmental Summit on Water ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-11",
+      "url": "https://x.com/MohanMOdisha/status/2098476770169323719",
+      "title": "Odisha's three-day UAE Investment Outreach has added ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-03",
+      "url": "https://x.com/MohanMOdisha/status/2106255671876571611",
+      "title": "Mohan Charan Majhi (@MohanMOdisha) on X",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-29",
+      "url": "https://x.com/MohanMOdisha/status/2115693621974544594",
+      "title": "Mohan Charan Majhi on X",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-05",
+      "url": "https://x.com/MohanMOdisha/status/2107124194962186744",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-22",
+      "url": "https://x.com/MohanMOdisha/status/2113155647558873174",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-29",
+      "url": "https://x.com/MohanMOdisha/status/2115667096747344188",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-12",
+      "url": "https://x.com/MohanMOdisha/status/2109682115608777167",
+      "title": "Heartiest congratulations to Shri Braj Mohan Ram Ji on his ...",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-21",
+      "url": "https://x.com/MohanMOdisha/status/2112836601961431342",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-21",
+      "url": "https://x.com/MohanMOdisha/status/2112773104963576073",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-22",
+      "url": "https://x.com/MohanMOdisha/status/2113227725867741363",
+      "title": "Mohan Charan Majhi",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-12",
+      "url": "https://x.com/MohanMOdisha/status/2109502042884727036",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/MohanMOdisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-31",
+      "url": "https://x.com/Naveen_Odisha/status/2094359006546710784",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-18",
+      "url": "https://x.com/Naveen_Odisha/status/2111705304878702778",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-15",
+      "url": "https://x.com/Naveen_Odisha/status/2088461739956593087",
+      "title": "Naveen Patnaik on X: \"ସଭିଙ୍କୁ ସ୍ୱାଧୀନତା ଦିବସର ହାର୍ଦ୍ଦିକ ...",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-09",
+      "url": "https://x.com/Naveen_Odisha/status/2086413907560890853",
+      "title": "Naveen Patnaik on X: \"ଜନଜାତି ଭାଇଭଉଣୀଙ୍କ ଶ୍ରେଷ୍ଠ ବନ୍ଧୁ ବିଜେଡି ...",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-29",
+      "url": "https://x.com/Naveen_Odisha/status/2093583350317649969",
+      "title": "Naveen Patnaik (@Naveen_Odisha) on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-28",
+      "url": "https://x.com/Naveen_Odisha/status/2093189986472575389",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-07",
+      "url": "https://x.com/Naveen_Odisha/status/2085601059901497787",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-14",
+      "url": "https://x.com/Naveen_Odisha/status/2088281113496310250",
+      "title": "Naveen Patnaik",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-29",
+      "url": "https://x.com/Naveen_Odisha/status/2093529034735182234",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-08-09",
+      "url": "https://x.com/Naveen_Odisha/status/2086296491283644906",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 August",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-17",
+      "url": "https://x.com/Naveen_Odisha/status/2100450960242020464",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-26",
+      "url": "https://x.com/Naveen_Odisha/status/2103742097656619389",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-22",
+      "url": "https://x.com/Naveen_Odisha/status/2102340401399304460",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-10",
+      "url": "https://x.com/Naveen_Odisha/status/2097999109886275986",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-29",
+      "url": "https://x.com/Naveen_Odisha/status/2104925631259820214",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-20",
+      "url": "https://x.com/Naveen_Odisha/status/2101667819134013609",
+      "title": "Naveen Patnaik",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-30",
+      "url": "https://x.com/Naveen_Odisha/status/2105311350818025472",
+      "title": "Naveen Patnaik",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-26",
+      "url": "https://x.com/Naveen_Odisha/status/2103816061317738513",
+      "title": "Congratulate Indian Men's Kabaddi Team on winning gold ...",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-01",
+      "url": "https://x.com/Naveen_Odisha/status/2105552019226517773",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-09-11",
+      "url": "https://x.com/Naveen_Odisha/status/2098465303609176064",
+      "title": "Congratulate Indian Junior Men's Team on its 3-1 win over ...",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 September",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-22",
+      "url": "https://x.com/Naveen_Odisha/status/2113146800240799934",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-21",
+      "url": "https://x.com/Naveen_Odisha/status/2112867401540977096",
+      "title": "Post",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-16",
+      "url": "https://x.com/Naveen_Odisha/status/2110986543834042442",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-18",
+      "url": "https://x.com/Naveen_Odisha/status/2111703015875100810",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-17",
+      "url": "https://x.com/Naveen_Odisha/status/2111510950562165002",
+      "title": "Naveen Patnaik on X",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-31",
+      "url": "https://x.com/Naveen_Odisha/status/2116389667247653119",
+      "title": "Naveen Patnaik",
+      "discoveryQuery": "site:x.com/Naveen_Odisha/status/ 2026 October",
+      "source": "Public search result, direct original X status URL",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-13",
+      "url": "https://x.com/HemantSorenJMM/status/2087933019139281212",
+      "title": "देश की माननीय राष्ट्रपति आदरणीय श्रीमती द्रौपदी मुर्मु जी को ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-17",
+      "url": "https://x.com/HemantSorenJMM/status/2089392452679729299",
+      "title": "\"झारखंड के मेरे युवा साथियों के हितों, भविष्य और विश्वास की रक्षा ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-10",
+      "url": "https://x.com/HemantSorenJMM/status/2086840484694196316",
+      "title": "आज के छात्र आंदोलन के दौरान संयम, संवेदनशीलता और पूरी ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-09",
+      "url": "https://x.com/HemantSorenJMM/status/2086406781941805068",
+      "title": "आज भी जब कोई अपनी आवाज उठाता है तो उसे कभी बदनाम करने ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-05",
+      "url": "https://x.com/HemantSorenJMM/status/2084941548685504719",
+      "title": "माननीय विधानसभा में मीडिया बंधुओं से बातचीत... मेरे युवा साथियों ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-20",
+      "url": "https://x.com/HemantSorenJMM/status/2090423342163808344",
+      "title": "झारखंड और झारखंडवासियों ने आगे बढ़ना शुरू किया ही था कि ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-28",
+      "url": "https://x.com/HemantSorenJMM/status/2093210428235239716",
+      "title": "रक्षाबंधन के पावन पर्व पर सभी को हार्दिक बधाई, शुभकामनाएं ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-13",
+      "url": "https://x.com/HemantSorenJMM/status/2087945269191340165",
+      "title": "माननीय लोकसभा में नेता प्रतिपक्ष श्री @RahulGandhi जी को ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-13",
+      "url": "https://x.com/HemantSorenJMM/status/2087937974596145474",
+      "title": "माननीय प्रधानमंत्री आदरणीय श्री @narendramodi जी को ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-05",
+      "url": "https://x.com/HemantSorenJMM/status/2096107132483711282",
+      "title": "Hemant Soren (@HemantSorenJMM) on X",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-23",
+      "url": "https://x.com/HemantSorenJMM/status/2102667214641823825",
+      "title": "पलामू में करम डाली विसर्जन के दौरान हुए हादसे में कुछ लोगों के ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-24",
+      "url": "https://x.com/HemantSorenJMM/status/2102962833738916309",
+      "title": "जमशेदपुर में एनएच हाईवे पर हुए सड़क हादसे में राज्य सरकार में ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-06",
+      "url": "https://x.com/HemantSorenJMM/status/2096420932382531825",
+      "title": "देर रात अपने बड़े भाई, हमारे प्रिय सुदिव्य कुमार सोनू जी के निधन ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-14",
+      "url": "https://x.com/HemantSorenJMM/status/2099356539807269206",
+      "title": "एकदन्तं महाकायं लम्बोदरं गजाननम्। विघ्ननाशकरं देवं हेरम्बं ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-01",
+      "url": "https://x.com/HemantSorenJMM/status/2094800740980232604",
+      "title": "Hemant Soren on X: \".@SportsJhr तत्काल संज्ञान लें।\" / X",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-08",
+      "url": "https://x.com/HemantSorenJMM/status/2097223764157337766",
+      "title": "झारखंड की धरती हमेशा से जल, जंगल, जमीन और अपने अधिकारों ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-28",
+      "url": "https://x.com/HemantSorenJMM/status/2104518178055614681",
+      "title": "Hemant Soren on X",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-24",
+      "url": "https://x.com/HemantSorenJMM/status/2103119016986558584",
+      "title": "Hemant Soren on X: \"आज शब्द नहीं हैं मेरे पास। दीपिका जी ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-09-16",
+      "url": "https://x.com/HemantSorenJMM/status/2100161664784257491",
+      "title": "Hemant Soren on X",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-17",
+      "url": "https://x.com/HemantSorenJMM/status/2111520558194253920",
+      "title": "कोलकाता के चोरबागन पूजा पंडाल में भगदड़ से कुछ लोगों की मृत्यु ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-27",
+      "url": "https://x.com/HemantSorenJMM/status/2115077228493201479",
+      "title": "कैबिनेट बैठक पश्चात मीडिया बंधुओं से बातचीत।",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-20",
+      "url": "https://x.com/HemantSorenJMM/status/2112381563132666116",
+      "title": "विजयादशमी असत्य पर सत्य, अधर्म पर धर्म और अन्याय पर ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-05",
+      "url": "https://x.com/HemantSorenJMM/status/2107061768937975840",
+      "title": "\"मरांग बुरु दिवंगत युविका बिटिया की आत्मा को शांति प्रदान करें ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-07",
+      "url": "https://x.com/HemantSorenJMM/status/2107869453241528487",
+      "title": "\"बाबा के जाने के बाद माँ ही मेरी सबसे बड़ी छाँव थीं। आज वह ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-28",
+      "url": "https://x.com/HemantSorenJMM/status/2115367900676845825",
+      "title": "\".@dc_sahibganj अविलंब संज्ञान लें, एवं इलाज की पूरी सुविधा ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-26",
+      "url": "https://x.com/HemantSorenJMM/status/2114701357768925460",
+      "title": "आज रांची में 15वीं अखिल भारतीय पुलिस तीरंदाजी प्रतियोगिता के ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-02",
+      "url": "https://x.com/HemantSorenJMM/status/2105906997862580499",
+      "title": "राष्ट्रपिता महात्मा गांधी जी की जयंती पर सादर नमन। बापू ने ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-15",
+      "url": "https://x.com/HemantSorenJMM/status/2110587110122295479",
+      "title": "मैं माँ का ही अंश हूँ। वह हर पल मेरे साथ हैं।",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-09",
+      "url": "https://x.com/HemantSorenJMM/status/2108408555233849473",
+      "title": "\".@LateharPolice तत्काल संज्ञान लें, जाँच करें एवं उचित ...",
+      "discoveryQuery": "site:x.com/HemantSorenJMM/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-11",
+      "url": "https://x.com/yourBabulal/status/2087070706949616017",
+      "title": "राहुल गांधी अपना चेहरा छुपाने के लिए उपरी मन से छात्रों ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-05",
+      "url": "https://x.com/yourBabulal/status/2085012407752290450",
+      "title": "तिरंगे के सम्मान के साथ न्याय की मांग... रांची में भारी बारिश के ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-19",
+      "url": "https://x.com/yourBabulal/status/2090085808418267159",
+      "title": "मुख्यमंत्री @HemantSorenJMM जी को पत्र लिखकर JPSC ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-12",
+      "url": "https://x.com/yourBabulal/status/2087407419823628293",
+      "title": "रांची जिला प्रशासन द्वारा देर रात झारखंड छात्र आंदोलनकारियों ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-17",
+      "url": "https://x.com/yourBabulal/status/2089387784889139636",
+      "title": "रांची के जयपाल सिंह मुंडा स्टेडियम में विगत 23 दिनों से आंदोलन ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-09",
+      "url": "https://x.com/yourBabulal/status/2086327609642926457",
+      "title": "झारखंड पुलिस के IG, Provision पंकज कंबोज द्वारा रांची के कांके ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-26",
+      "url": "https://x.com/yourBabulal/status/2092479757413974448",
+      "title": "विधानसभा सदस्य और थाना प्रभारी के बीच हॉट-टॉक के बाद पुलिस ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-11",
+      "url": "https://x.com/yourBabulal/status/2087176941019570264",
+      "title": "अब तक हेमंत सरकार छात्रों से कहती रही कि वह JPSC-JSSC ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-24",
+      "url": "https://x.com/yourBabulal/status/2091847616132944245",
+      "title": "JPSC व JSSC परीक्षाओं में धांधली कर नौकरी बेचे जाने के मामले ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-10",
+      "url": "https://x.com/yourBabulal/status/2086687944539344973",
+      "title": "JPSC और JSSC की परीक्षाओं में नौकरी बेचकर झामुमो-कांग्रेस ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 August",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-27",
+      "url": "https://x.com/yourBabulal/status/2104145843016388664",
+      "title": "जमशेदपुर में रात्रि गश्ती के वायरल वीडियो में पुलिसकर्मी दुकानों ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-24",
+      "url": "https://x.com/yourBabulal/status/2102962985304272966",
+      "title": "Babulal Marandi on X: \"सड़क दुर्घटना में घायल बच्ची के ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-04",
+      "url": "https://x.com/yourBabulal/status/2095722962263703936",
+      "title": "Babulal Marandi on X: \"आप सभी को श्री कृष्ण जन्माष्टमी की ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-02",
+      "url": "https://x.com/yourBabulal/status/2095000836095213623",
+      "title": "पिछले कई दिनों से सोशल मीडिया पर JSSC नियुक्ति घोटाले को ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-04",
+      "url": "https://x.com/yourBabulal/status/2095792643536228780",
+      "title": "अपराधियों के सामने पीठ दिखाकर भागने वाली हेमंत सरकार की ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-04",
+      "url": "https://x.com/yourBabulal/status/2095724538944434330",
+      "title": "मुख्यमंत्री @HemantSorenJMM जी के निर्वाचन क्षेत्र ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-29",
+      "url": "https://x.com/yourBabulal/status/2104788136735944933",
+      "title": "JSSC-CGL मामले में जिस तरह से CID की जांच सिर्फ ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-06",
+      "url": "https://x.com/yourBabulal/status/2096440935554916588",
+      "title": "झारखंड के माननीय मंत्री श्री सुदिव्य कुमार सोनू जी के निधन की ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-17",
+      "url": "https://x.com/yourBabulal/status/2100428790266765571",
+      "title": "Babulal Marandi on X: \"आदरणीय प्रधानमंत्री श्री ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-29",
+      "url": "https://x.com/yourBabulal/status/2104900277396754627",
+      "title": "तदाशा मिश्रा जी, आज सर्वोच्च न्यायालय में झारखंड के डीजीपी ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 September",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-07",
+      "url": "https://x.com/yourBabulal/status/2107859579350680028",
+      "title": "मुख्यमंत्री श्री @HemantSorenJMM जी की माताजी के निधन ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-20",
+      "url": "https://x.com/yourBabulal/status/2112407297125503051",
+      "title": "Babulal Marandi on X: \"अधर्म पर धर्म, असत्य पर सत्य और ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-18",
+      "url": "https://x.com/yourBabulal/status/2111610724858712337",
+      "title": "\"कोलकाता के चोरबगान दुर्गा पूजा पंडाल में हुए हादसे में 19 ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-13",
+      "url": "https://x.com/yourBabulal/status/2110023914298675372",
+      "title": "गढ़वा से कोलकाता के बीच चलने वाली मुन्ना ट्रैवल्स की बस के ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-28",
+      "url": "https://x.com/yourBabulal/status/2115338402707210481",
+      "title": "Babulal Marandi on X: \"पूर्व मंत्री श्री रामचंद्र चन्द्रवंशी जी ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-01",
+      "url": "https://x.com/yourBabulal/status/2105513487208415691",
+      "title": "कैप्टन स्मित मच्छार ने Flydubai की Flight FZ1073 में उत्पन्न ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-22",
+      "url": "https://x.com/yourBabulal/status/2113121698308579575",
+      "title": "लातेहार जिला के मनिका सामुदायिक स्वास्थ्य केंद्र पर सर्पदंश से ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-14",
+      "url": "https://x.com/yourBabulal/status/2110276077994357025",
+      "title": "प्रदेश भाजपा कार्यालय में आयोजित संगठनात्मक बैठक में ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-06",
+      "url": "https://x.com/yourBabulal/status/2107351644551922145",
+      "title": "रांची में 9 अक्टूबर को होने वाले भारत-वेस्टइंडीज क्रिकेट मैच के ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-26",
+      "url": "https://x.com/yourBabulal/status/2114596981876326787",
+      "title": "JPSC के पूर्व अध्यक्ष एल.खियांगते के लैपटॉप बैग में 15 ...",
+      "discoveryQuery": "site:x.com/yourBabulal/status/ 2026 October",
+      "source": "TinyFish public original X status search",
+      "status": "candidate-needs-content-check"
+    }
+  ]
+}
