@@ -22,6 +22,7 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert.equal(await cartograms.count(),3,"Missing 3 geographic district maps in dashboard command center");
   assert.equal(await page.locator("#omsCommandMap path.cm-polygon").count(),109,"Expected 109 named district nodes");
   await page.locator('#omsCommandMap [data-action="leader"][data-leader="mp-lop"]').click();
+  assert.equal(await page.locator("#omsCommandMap .cm-map-grid.cm-focused").count(),1,"Selecting an individual leader must expand their geographic map");
   await page.locator('#omsCommandMap [data-action="issue"][data-issue="Environment & Forests"]').click();
   assert(await page.locator("#omsCommandMap path.cm-hot").count()>=1,"Leader + issue filter should highlight district-level reporting");
   const katni=page.locator('#omsCommandMap path[data-state="Madhya Pradesh"][data-district="Katni"]');
@@ -30,6 +31,7 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert(await page.locator("#omsCommandMap .cm-detail a[href*='timesofindia.indiatimes.com']").count()>=1,"Click district must open original source headlines");
   assert((await page.locator("#omsCommandMap .cm-detail").innerText()).includes("Katni"),"District dossier must identify selected district");
   await page.locator('#omsCommandMap [data-action="reset"]').first().click();
+  assert.equal(await page.locator("#omsCommandMap .cm-map-grid.cm-focused").count(),0,"Clearing filters must restore three-state overview");
   assert.equal(await page.locator("#omsCommandMap path.cm-polygon").count(),109,"Map reset must keep all 109 geographic districts");
   await page.locator('#omsCommandMap [data-action="leader"][data-leader="mp-cm"]').click();
   await page.locator("#cmDistrictPicker").selectOption("Madhya Pradesh|Bhopal");
