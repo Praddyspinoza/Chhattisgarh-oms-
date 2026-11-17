@@ -1,5 +1,5 @@
 {
-  "build": "Expanded comparative political-intelligence archive: 16 November 2026",
+  "build": "Comparative research expanded 17 November 2026",
   "window": {
     "start": "2026-08-05",
     "end": "2026-11-05"
@@ -3461,6 +3461,91 @@
       "sourceType": "news",
       "status": "publisher-report-reviewed",
       "verifiedTitleSource": "Dated newspaper article"
+    },
+    {
+      "id": "cmp-231",
+      "date": "2026-10-15",
+      "leader": "mp-cm",
+      "issue": "Agriculture & Farmers",
+      "type": "Publisher reporting",
+      "title": "Mohan Yadav advises low-water crops in 12 rain-deficient MP districts",
+      "summary": "CM instructed officials to discourage wheat cultivation in 12 rain-deficient districts and prioritise drinking water; guidance is not a completed crop transition.",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/bhopal/farmers-in-12-districts-to-be-discouraged-from-sowing-wheat-across-madhya-pradesh",
+      "status": "publisher-report-reviewed",
+      "linkCheck": {
+        "status": "source-found-in-web-search",
+        "checkedAt": "2026-11-17",
+        "method": "Search result and article text; not a fresh HTTP status audit"
+      }
+    },
+    {
+      "id": "cmp-232",
+      "date": "2026-11-02",
+      "leader": "mp-cm",
+      "issue": "Agriculture & Farmers",
+      "type": "Publisher reporting",
+      "title": "Mohan Yadav to meet farmers' union over drought, MSP and fertiliser concerns",
+      "summary": "The report previews a planned 3 November meeting; it does not confirm its outcome or drought declarations.",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/bhopal/bhopal-cm-mohan-yadav-to-meet-bharatiya-kisan-sangh-on-november-3-mp-districts-may-be-declared-drought-hit",
+      "status": "publisher-report-reviewed",
+      "linkCheck": {
+        "status": "source-found-in-web-search",
+        "checkedAt": "2026-11-17",
+        "method": "Search result and article text; not a fresh HTTP status audit"
+      }
+    },
+    {
+      "id": "cmp-233",
+      "date": "2026-09-03",
+      "leader": "od-cm",
+      "issue": "Minerals",
+      "type": "Publisher reporting",
+      "title": "Majhi defends MMDR amendment against opposition revenue concerns",
+      "summary": "The CM argued the amendment would stabilise mineral revenue; opposition claims about losses remain contested.",
+      "publisher": "The New Indian Express",
+      "url": "https://www.newindianexpress.com/states/odisha/2026/Sep/03/cm-majhi-joins-mmdr-debate-says-no-harm-to-odisha",
+      "status": "publisher-report-reviewed",
+      "linkCheck": {
+        "status": "source-found-in-web-search",
+        "checkedAt": "2026-11-17",
+        "method": "Search result and article text; not a fresh HTTP status audit"
+      }
+    },
+    {
+      "id": "cmp-234",
+      "date": "2026-09-26",
+      "leader": "od-cm",
+      "issue": "Mining",
+      "type": "Publisher reporting",
+      "title": "Vedanta chairman discusses proposed Niyamgiri mining revival with Majhi",
+      "summary": "A company executive said talks with the CM included the shelved Niyamgiri project. Discussion does not establish government approval or tribal consent.",
+      "publisher": "The New Indian Express",
+      "url": "https://www.newindianexpress.com/states/odisha/2026/Sep/26/vedanta-renews-push-for-niyamgiri-mining-announces-rs-1-lakh-crore-investment-plan-in-odisha",
+      "status": "publisher-report-reviewed",
+      "linkCheck": {
+        "status": "source-found-in-web-search",
+        "checkedAt": "2026-11-17",
+        "method": "Search result and article text; not a fresh HTTP status audit"
+      }
+    },
+    {
+      "id": "cmp-235",
+      "date": "2026-10-25",
+      "leader": "jh-lop",
+      "issue": "Governance",
+      "type": "Publisher reporting",
+      "title": "Jharkhand BJP adopts resolution criticising Hemant Soren government",
+      "summary": "The BJP state committee adopted a political resolution at a meeting attended by Marandi. This is party action, not a verified verbatim statement by Marandi.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/bjp-passes-political-resolution-against-hemant-soren-government",
+      "status": "publisher-report-reviewed",
+      "linkCheck": {
+        "status": "source-found-in-web-search",
+        "checkedAt": "2026-11-17",
+        "method": "Search result and article text; not a fresh HTTP status audit"
+      }
     }
   ],
   "posts": [
