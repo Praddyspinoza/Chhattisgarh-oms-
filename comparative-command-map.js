@@ -150,6 +150,13 @@ function details(){
  const unique=[...new Map(current.map(r=>[(r.kind||"")+":"+(r.url||r.id),r])).values()].sort((a,b)=>(b.date||"").localeCompare(a.date||""));
  const visible=showAll?unique:unique.slice(0,14);
  const leaderLabel=view.leader==="all"?"both state leaders":L(view.leader)?.name||"filtered leaders";
+ const leadersForDiscovery=data.leaders.filter(l=>l.state===st&&(view.leader==="all"||view.leader===l.id)&&(view.role==="all"||view.role===l.role));
+ const xDiscovery=leadersForDiscovery.map(l=>{
+  const terms=["from:"+l.x,"since:2026-08-05","until:2026-11-06",displayName(st,name)];
+  if(view.issue!=="all")terms.push(view.issue);
+  const u="https://x.com/search?q="+encodeURIComponent(terms.join(" "))+"&src=typed_query";
+  return '<a class="cm-x-search" href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">Search @'+esc(l.x)+' × '+esc(displayName(st,name))+' on X ↗ <small>(discovery search; not a verified post)</small></a>';
+ }).join("");
  let issues='<div class="cm-issue-grid">';
  for(const t of data.issues){
   const count=allIssueItems.filter(r=>r.issue===t).length;
@@ -165,7 +172,7 @@ function details(){
  '<div class="cm-evidence">'+institution.slice(0,10).map(evidence).join("")+'</div></section>':'';
  return '<div class="cm-detail"><div class="cm-detail-head"><strong>'+esc(displayName(st,name)+' · '+st)+'</strong><small>'+allIssueItems.length+' items across ten issues · '+esc(leaderLabel)+'</small><button class="cm-button" data-action="close">Close district ×</button></div>'+
  '<p class="cm-summary">Reporting period: 5 August–5 November 2026. These counts describe indexed sources mentioning the district, not a measured incidence of events. Choose an issue below to highlight its other districts; return to all ten issues for the full district record.</p>'+
- issues+
+ '<div class="cm-social-discovery">'+xDiscovery+'</div>'+issues+
  '<div class="cm-detail-head cm-subheading"><strong>'+esc(view.issue==="all"?"Reporting on all ten issues":view.issue)+'</strong><small>'+unique.length+' source entries · '+unique.filter(x=>x.kind==="Original X link").length+' X permalinks</small></div>'+
  (unique.length?(sections||'<p class="cm-summary">No entries displayed under this filter.</p>')+(unique.length>14?'<p><button class="cm-button" data-action="more">'+(showAll?'Show fewer':'Show all '+unique.length+' original headlines')+'</button></p>':''):
  '<p class="cm-summary">No specific publisher source in the selected leader and issue combination names this district. It does not establish that no activity took place.</p>')+instParts+'</div>';
