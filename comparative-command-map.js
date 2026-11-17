@@ -214,4 +214,4 @@ root.addEventListener("click",ev=>{
 root.addEventListener("keydown",ev=>{if((ev.key===" "||ev.key==="Enter")&&ev.target.matches("path[data-action='district']")){ev.preventDefault();ev.target.dispatchEvent(new MouseEvent("click",{bubbles:true}))}});
 document.addEventListener("comparative:render",event=>{if(event.detail){view=Object.assign({},view,event.detail);key="";render()}});
 render();
-}})();
+})();
