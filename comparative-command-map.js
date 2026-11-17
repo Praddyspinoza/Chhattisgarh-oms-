@@ -71,7 +71,7 @@ function calculate(){
  }
 }
 function stateCard(st){
- const s=stats[st],group=geo[st],one=view.state===st,dim=view.state!=="all"&&!one;
+ const s=stats[st],group=geo[st],focused=view.state!=="all"?view.state:(view.leader!=="all"?L(view.leader)?.state:null),one=focused===st,dim=Boolean(focused)&&!one;
  const ranked=[...s.map].filter(([n,r])=>r.length).sort((a,b)=>b[1].length-a[1].length||a[0].localeCompare(b[0]));
  const max=Math.max(1,...ranked.map(x=>x[1].length));
  const z=mapZoom[st]||1, vw=320/z, vh=250/z;
@@ -187,7 +187,7 @@ function render(){
  '<div class="cm-action-row"><button class="cm-button" data-action="reset">Clear filters</button><a class="cm-button" target="_blank" rel="noopener noreferrer" href="./district-atlas.html">Full geographic atlas ↗</a></div></div>'+
  districtPicker()+
  '<div class="cm-totals"><span><b>'+lit+'</b> reporting-linked districts</span><span><b>'+filtered.length+'</b> matching source records</span><span><b>'+named+'</b> district-named source entries</span><span><b>'+unplaced+'</b> unplaced records preserved</span><span><b>109</b> district polygons</span></div>'+
- '<div class="cm-map-grid">'+states.map(stateCard).join("")+'</div>'+flow()+details()+
+ '<div class="cm-map-grid'+(view.state!=="all"||view.leader!=="all"?" cm-focused":"")+'">'+states.map(stateCard).join("")+'</div>'+flow()+details()+
  '<p class="cm-footnote">Real district boundaries © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>, ODbL 1.0, via <a href="https://github.com/Vardhan-Systems/vardhan-maps" target="_blank" rel="noopener noreferrer">vardhan-maps</a>. This is not an official Survey of India map. Madhya Pradesh 55; Odisha 30; Jharkhand 24 districts. Highlighting is based on explicit district references or documented place-name aliases in news and official materials; it is not incident geolocation, a measurement of political activity, or a census of all news. Statewide sources without district mentions remain in the research tabs.</p>';
 }
 function clickFilter(holder,key,val){const el=[...document.querySelectorAll(holder+' [data-'+key+']')].find(n=>n.getAttribute('data-'+key)===val);if(el){el.click();return true}return false}
