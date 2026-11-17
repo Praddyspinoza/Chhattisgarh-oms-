@@ -36,6 +36,11 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert.equal(await page.locator("#omsCommandMap .cm-issue-tile").count(),10,"Leader + district must show ten issue categories");
   assert(await page.locator("#omsCommandMap .cm-detail a[href^='https://']").count()>0,"Leader + district should show original report headlines across all issues");
   assert((await page.locator("#omsCommandMap .cm-detail").innerText()).includes("Bhopal"),"District panel should retain selected administrative district");
+  assert(await page.locator("#omsCommandMap .cm-x-search").count()>=1,"Leader + district must provide date-scoped X discovery links");
+  assert((await page.locator("#omsCommandMap .cm-x-search").first().getAttribute("href")).startsWith("https://x.com/search?"),"X discovery link must be identifiable as a search");
+  await page.locator('#omsCommandMap [data-action="tab"][data-open-tab="official"]').click();
+  assert.equal(await page.locator("#officialList a.institution-headline").count(),gov.officialRecords.length,"Quick official tab must show all source records");
+  await page.locator('button.tab[data-tab="dossiers"]').click();
   const boxBefore=await page.locator('#omsCommandMap .cm-map-card').first().locator("svg").getAttribute("viewBox");
   await page.locator('#omsCommandMap [data-action="zoom"][data-state="Madhya Pradesh"][data-zoom="in"]').click();
   const boxAfter=await page.locator('#omsCommandMap .cm-map-card').first().locator("svg").getAttribute("viewBox");
@@ -86,6 +91,6 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await main.waitForURL(/comparative\.html/,{waitUntil:"commit",timeout:18000});
   await main.waitForSelector("#dossierList .dossier-leader",{timeout:10000});
   await main.close();
-  console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,governmentLinks:gov.officialRecords.length,legislativeLinks:gov.assemblyRecords.length,integratedInstitutionLinks:institutional,scriptErrors:errors.length,mainNavigationToDossier:"pass",districtMaps:"3 maps / 109 nodes",jointLeaderIssueFilter:"pass",districtSourceClick:"pass"},null,2));
+  console.log(JSON.stringify({pass:true,chrome,defaultLeaders:6,totalDirectHeadlines:all,miningLinks:count,socialLinks:social,governmentLinks:gov.officialRecords.length,legislativeLinks:gov.assemblyRecords.length,integratedInstitutionLinks:institutional,scriptErrors:errors.length,mainNavigationToDossier:"pass",districtMaps:"3 actual-polygon maps / 109 districts",jointLeaderIssueFilter:"pass",districtSourceClick:"pass"},null,2));
  } finally{await browser.close()}
 })().catch(e=>{console.error(e);process.exit(1)});
