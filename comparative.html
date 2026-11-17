@@ -342,7 +342,7 @@ function renderSocial(){
  const realX=posts.filter(p=>p.platform==="X").length;
  el("socialCount").textContent=realX+" recovered X permalinks · "+(posts.length-realX)+" direct video/other links";
  const topics=issue==="all"?data.issues.concat(["Other / general and ceremonial"]):[issue], leaders=activeLeaders();
- let html='<div class="archive-head"><div><strong>ORIGINAL X POST PERMALINKS — LINKED HEADLINES</strong><span>For publisher-embedded posts, headlines summarize newspaper coverage. For posts checked directly, short headlines are excerpts from the original public X status. Every link opens a specific post, not an account or search page. 'Other / general and ceremonial' is kept separate from the ten policy issues.</span></div><div>'+realX+' X LINKS</div></div>';
+ let html='<div class="archive-head"><div><strong>ORIGINAL X POST PERMALINKS — LINKED HEADLINES</strong><span>For publisher-embedded posts, headlines summarize newspaper coverage. For posts checked directly, short headlines are excerpts from the original public X status. Every link opens a specific post, not an account or search page. The Other / general and ceremonial category is kept separate from the ten policy issues.</span></div><div>'+realX+' X LINKS</div></div>';
  for(const topic of topics){
   let topicPosts=posts.filter(p=>p.issue===topic);
   html+='<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+String(data.issues.indexOf(topic)+1).padStart(2,"0")+'</span><div><h3>'+e(topic)+'</h3><small>'+topicPosts.length+' individually linked posts / videos</small></div></div>';
