@@ -14,7 +14,7 @@ const govRecords=JSON.parse(fs.readFileSync("comparative_government_2026.json","
 assert.equal(JSON.parse(govEmbedded).officialRecords.length,govRecords.officialRecords.length,"Stale government records in HTML");
 assert.equal(JSON.parse(govEmbedded).assemblyRecords.length,govRecords.assemblyRecords.length,"Stale legislative records in HTML");
 
-const scripts=[...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].filter(x=>!/application\/json/i.test(x[1]));
+const scripts=[...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].filter(x=>!/application\/json/i.test(x[1])&&x[2].trim());
 assert.equal(scripts.length,1,"One executable runtime expected");
 const runtime=scripts[0][2];
 const nodes={};
@@ -68,4 +68,5 @@ assert.equal(node("nPosts").textContent,records.posts.length,"Social metric wron
 assert.equal(node("nGov").textContent,govRecords.officialRecords.length,"Government metric wrong");
 assert.equal(node("nAssembly").textContent,govRecords.assemblyRecords.length,"Legislative metric wrong");
 assert(html.includes("STATIC_DOSSIERS_START"),"No static initial dossier fallback");
+assert(html.includes("id=\"omsCommandMap\"")&&html.includes("comparative-command-map.js")&&html.includes("comparative-command-map.css"),"Three-state district command map missing from comparative dashboard");
 console.log(JSON.stringify({pass:true,renderedNews:records.records.length,renderedPosts:records.posts.length,leaders:records.leaders.length,issues:records.issues.length,staticFallback:true,newsChannelLinks:true,missingLinks:0},null,2));
