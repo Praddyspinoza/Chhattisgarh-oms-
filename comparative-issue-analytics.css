@@ -1,0 +1,55 @@
+/* Comparative leader issue pie charts: isolated from Chhattisgarh homepage. */
+#analytics{max-width:100%;color:#e4edf5}
+#analytics .an-header{border:1px solid #3e5168;border-radius:12px;padding:22px 24px;margin:10px 0 14px;background:radial-gradient(ellipse at 90% -20%,#352e42,transparent 56%),#101c2c}
+#analytics .an-header .eyebrow{font-size:10px;letter-spacing:2px;color:#f4adb4;font-weight:800}
+#analytics .an-header h2{font-size:clamp(20px,2.1vw,29px);font-weight:750;letter-spacing:-.025em;margin:9px 0 8px}
+#analytics .an-header p{font-size:12px;line-height:1.75;color:#aab8c9;max-width:920px}
+#analytics .an-summary{display:flex;flex-wrap:wrap;gap:8px;margin:11px 0 16px}
+#analytics .an-summary span{font-size:11px;border:1px solid #344660;border-radius:6px;padding:8px 12px;background:#0f1b31;color:#a7b7ce}
+#analytics .an-summary b{font-family:ui-monospace,monospace;color:#efbec0;font-size:14px}
+#analytics .an-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+#analytics .an-leader{border:1px solid #334862;background:linear-gradient(125deg,#101d31,#0b1528);border-radius:12px;min-width:0;overflow:hidden;transition:opacity .2s,border-color .2s,box-shadow .2s}
+#analytics .an-leader:hover{border-color:#ae7484;box-shadow:0 10px 28px #0004}
+#analytics .an-leader.an-faded{opacity:.56}
+#analytics .an-leader-head{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap;background:#182238;border-bottom:1px solid #32455e;padding:15px}
+#analytics .an-leader-head strong{font-size:14px;display:block;color:#f7edf2}
+#analytics .an-leader-head span{display:block;font-size:10px;color:#a7b6c9;margin-top:4px}
+#analytics .an-badges{display:flex;gap:5px;flex-wrap:wrap}
+#analytics .an-badges span{font-size:10px;font-family:ui-monospace,monospace;border:1px solid #6a5065;color:#ffd1d5;border-radius:5px;padding:5px}
+#analytics .an-leader-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+#analytics .an-figure{min-width:0;padding:11px 11px 13px}
+#analytics .an-figure:first-child{border-right:1px solid #304158}
+#analytics .an-figure-title{font-size:10px;font-weight:780;letter-spacing:.2px;color:#cbd6e6;min-height:28px;text-transform:uppercase}
+#analytics .an-figure-body{display:flex;flex-direction:column;align-items:stretch;gap:7px}
+#analytics .an-pie-wrap{width:100%;display:flex;align-items:center;justify-content:center}
+#analytics .an-donut{width:min(100%,194px);height:auto;aspect-ratio:1}
+#analytics .an-hole{fill:#111f32;pointer-events:none}
+#analytics .an-n{font-size:23px;fill:#f6e2dd;font-family:ui-monospace,monospace;font-weight:800;text-anchor:middle;pointer-events:none}
+#analytics .an-n-caption{font-size:8px;letter-spacing:1.3px;fill:#a7b6c9;font-family:ui-monospace,monospace;text-anchor:middle;pointer-events:none}
+#analytics .an-slice{cursor:pointer;stroke:#142134;stroke-width:1.4;transition:opacity .2s,filter .2s}
+#analytics .an-slice:hover,#analytics .an-slice:focus{opacity:.82;filter:drop-shadow(0 0 6px #f1bec6);outline:none;stroke:#fff;stroke-width:2}
+#analytics .an-legend-list{max-height:215px;overflow-y:auto;padding-right:2px;display:grid;gap:4px;align-content:start}
+#analytics .an-legend{width:100%;display:grid;grid-template-columns:10px minmax(0,1fr) 21px 42px;gap:6px;align-items:center;text-align:left;padding:5px 6px;border:1px solid #293e55;background:#101f35;border-radius:5px;color:#c9d7e7;cursor:pointer;font:inherit;font-size:9px}
+#analytics .an-legend:hover,#analytics .an-legend:focus-visible{border-color:#db9cae;background:#27233c;color:#fff}
+#analytics .an-swatch{width:9px;height:9px;border-radius:2px}
+#analytics .an-issue-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#analytics .an-legend strong{color:#efc9c9;text-align:right}
+#analytics .an-legend small{color:#b3c0d0;font-family:ui-monospace,monospace;font-size:9px;text-align:right}
+#analytics .an-empty{font-size:10px;color:#9daec6;padding:7px}
+#analytics .an-leader-footer{display:flex;align-items:center;gap:6px;flex-wrap:wrap;border-top:1px solid #304156;padding:10px 13px}
+#analytics .an-leader-footer button{border:1px solid #455875;background:#172840;border-radius:5px;padding:7px 9px;color:#dbdee9;font-size:10px;font-weight:650;cursor:pointer}
+#analytics .an-leader-footer button:hover{border-color:#ffb7c3;background:#36253d}
+#analytics .an-disclaimer{font-size:11px;line-height:1.65;color:#96a9be;margin:16px 0;padding:13px;border-top:1px solid #3a5165}
+@media(max-width:1200px){#analytics .an-cards{grid-template-columns:1fr}}
+@media(max-width:650px){#analytics .an-leader-grid{grid-template-columns:1fr}#analytics .an-figure:first-child{border-right:0;border-bottom:1px solid #304158}#analytics .an-figure-body{flex-direction:row;align-items:center}#analytics .an-pie-wrap{max-width:155px}#analytics .an-legend-list{flex:1;min-width:0;max-height:190px}#analytics .an-header{padding:15px}}
+/* Accurate boundary labels: marker lines and expanded all-highlighted district directory */
+#omsCommandMap .cm-hot-label{font-size:8.3px;fill:#fff0ea;paint-order:stroke;stroke:#0b1628;stroke-width:2.3px;font-weight:750;pointer-events:none}
+#omsCommandMap .cm-hot-label.cm-selected-label{fill:#ffeab1;stroke-width:3px;font-size:10px}
+#omsCommandMap .cm-hot-label-line{stroke:#ffd2d7;stroke-width:.6;opacity:.78;pointer-events:none}
+#omsCommandMap .cm-state-directory{margin-top:9px;border-top:1px solid #394b67;padding-top:9px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;max-height:128px;overflow:auto}
+#omsCommandMap .cm-state-directory button{border:1px solid #445675;background:#172a41;color:#dfe8f3;font-size:9.5px;border-radius:5px;padding:5px 6px;min-width:0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;text-align:left;cursor:pointer}
+#omsCommandMap .cm-state-directory button:hover{background:#473047;color:#fff0ea;border-color:#dfa5b0}
+#omsCommandMap .cm-state-directory button b{color:#ffb5bd}
+#omsCommandMap .cm-district-heading{margin:8px 1px 2px;color:#b6c8dc;font-size:10px;letter-spacing:.6px;font-weight:750}
+#omsCommandMap .cm-unnamed-note{font-size:9px;color:#a9bdd0;margin-top:7px}
+@media(max-width:650px){#omsCommandMap .cm-state-directory{grid-template-columns:repeat(2,minmax(0,1fr));max-height:200px}}
