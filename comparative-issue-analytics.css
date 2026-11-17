@@ -53,3 +53,9 @@
 #omsCommandMap .cm-district-heading{margin:8px 1px 2px;color:#b6c8dc;font-size:10px;letter-spacing:.6px;font-weight:750}
 #omsCommandMap .cm-unnamed-note{font-size:9px;color:#a9bdd0;margin-top:7px}
 @media(max-width:650px){#omsCommandMap .cm-state-directory{grid-template-columns:repeat(2,minmax(0,1fr));max-height:200px}}
+
+/* Expanded CM comparison: distinct personal, official CMO and media pies. */
+#analytics .an-leader-grid.an-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+#analytics .an-leader-grid.an-three .an-figure:nth-child(2){border-right:1px solid #304158}
+#analytics .an-leader-grid.an-three .an-figure-title{min-height:38px}
+@media(max-width:850px){#analytics .an-leader-grid.an-three{grid-template-columns:1fr}#analytics .an-leader-grid.an-three .an-figure{border-right:0;border-bottom:1px solid #304158}#analytics .an-leader-grid.an-three .an-figure-body{flex-direction:row;align-items:center}#analytics .an-leader-grid.an-three .an-pie-wrap{max-width:160px}#analytics .an-leader-grid.an-three .an-legend-list{min-width:0;flex:1}}
