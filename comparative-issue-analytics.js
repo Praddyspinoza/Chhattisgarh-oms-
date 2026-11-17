@@ -11,6 +11,8 @@ const palette=["#ddbd73","#d89275","#8ec4a8","#8cb7db","#d5a6d6","#a2ca7c","#bfa
 const e=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 let active={state:"all",leader:"all",issue:"all"};
 const directX=data.posts.filter(p=>p.platform==="X"&&/^https:\/\/(?:x\.com|twitter\.com)\/[A-Za-z0-9_]+\/status\/\d+/.test(p.url));
+const personalX=directX.filter(p=>p.accountType!=="cmo");
+const officeX=directX.filter(p=>p.accountType==="cmo");
 const news=data.records.filter(r=>/^https:\/\//.test(r.url)&&r.issue);
 function counts(rows,id){
  const own=rows.filter(r=>r.leader===id);
@@ -45,15 +47,20 @@ function pie(rows,id,tag,caption){
 }
 function render(){
  const shown=leaders.map(l=>{
- const a=counts(directX,l.id),b=counts(news,l.id);
- const faded=active.leader!=="all"&&active.leader!==l.id||active.state!=="all"&&active.state!==l.state;
- return '<article class="an-leader'+(faded?' an-faded':'')+'" data-an-card="'+e(l.id)+'"><div class="an-leader-head"><div><strong>'+e(l.name)+'</strong><span>'+e(l.state)+' · '+e(l.role)+' · '+e(l.party||"")+'</span></div><div class="an-badges"><span>'+a.total+' X permalinks</span><span>'+b.total+' news entries</span></div></div>'+
- '<div class="an-leader-grid">'+pie(directX,l.id,"x","Original X permalinks · issue share")+pie(news,l.id,"news","News & broadcast entries · issue share")+'</div>'+
- '<div class="an-leader-footer"><button data-an-open="social" data-an-leader="'+e(l.id)+'">Open this leader’s X headlines ↗</button><button data-an-open="reports" data-an-leader="'+e(l.id)+'">Open this leader’s newspaper sources ↗</button></div></article>';
+  const personal=counts(personalX,l.id),official=counts(officeX,l.id),b=counts(news,l.id);
+  const faded=active.leader!=="all"&&active.leader!==l.id||active.state!=="all"&&active.state!==l.state;
+  const hasOffice=(data.cmoAccounts||[]).some(a=>a.leader===l.id);
+  const office=hasOffice?data.cmoAccounts.find(a=>a.leader===l.id):null;
+  return '<article class="an-leader'+(faded?' an-faded':'')+'" data-an-card="'+e(l.id)+'"><div class="an-leader-head"><div><strong>'+e(l.name)+'</strong><span>'+e(l.state)+' · '+e(l.role)+' · '+e(l.party||"")+(office?' · CMO @'+e(office.handle):"")+'</span></div><div class="an-badges"><span>'+personal.total+' individual X</span>'+(hasOffice?'<span>'+official.total+' official CMO X</span>':"")+'<span>'+b.total+' news entries</span></div></div>'+
+  '<div class="an-leader-grid'+(hasOffice?' an-three':'')+'">'+
+   pie(personalX,l.id,"x","Individual account X · issue share")+
+   (hasOffice?pie(officeX,l.id,"cmo-x","Official CM Office X · issue share"):"")+
+   pie(news,l.id,"news","News & broadcast coverage · issue share")+'</div>'+
+  '<div class="an-leader-footer"><button data-an-open="social" data-an-leader="'+e(l.id)+'">Open X headlines ↗</button><button data-an-open="reports" data-an-leader="'+e(l.id)+'">Open newspaper sources ↗</button></div></article>';
  }).join("");
- container.innerHTML='<div class="an-header"><div class="eyebrow">ANALYTICS · SINGLE-ISSUE PRIMARY CLASSIFICATION</div><h2>Six leaders · X versus news coverage by issue</h2><p>Each political leader has two independent, interactive charts. The first measures the <b>share of recovered individual X post links</b>; the second measures <b>share of news and broadcast entries indexed about that leader</b>. News reporting about someone is not necessarily a statement made by them. These charts do not estimate all their public activity.</p></div>'+
- '<div class="an-summary"><span><b>'+directX.length+'</b> source-linked X status URLs</span><span><b>'+news.length+'</b> news/broadcast records</span><span><b>6</b> leaders</span><span><b>10</b> primary issues</span></div><div class="an-cards">'+shown+'</div>'+
- '<p class="an-disclaimer">Coverage: 5 August–5 November 2026. Percentages are calculated separately for each leader and each source type, from this incomplete source collection only. An explicit Other / general and ceremonial slice prevents non-policy posts from being incorrectly forced into the ten issues. Direct public status pages were checked for author and date; issue labels for newly recovered posts were provisionally assigned from keyword-assisted reading and require further editorial review. Unverified searches, retweets not individually linked, inaccessible posts, and video-only records are not counted in X charts. Click any pie slice or legend issue to filter the rest of the terminal.</p>';
+ container.innerHTML='<div class="an-header"><div class="eyebrow">ANALYTICS · SOURCE ATTRIBUTION SEPARATED</div><h2>Six leaders · personal X vs CM Office X vs news</h2><p>Individual leader X accounts and official government CM Office accounts are counted <b>separately</b>; institutional posts are not attributed as the chief minister’s personal speech. Each Chief Minister has three interactive issue pies, while each opposition leader has two. Media coverage is news <b>about</b> a leader and is not assumed to be personally spoken by them.</p></div>'+
+ '<div class="an-summary"><span><b>'+directX.length+'</b> total X status links</span><span><b>'+personalX.length+'</b> individual leaders</span><span><b>'+officeX.length+'</b> official CMO posts</span><span><b>'+news.length+'</b> media links</span></div><div class="an-cards">'+shown+'</div>'+
+ '<p class="an-disclaimer">Coverage 5 August–5 November 2026. Denominators are unique indexed post URLs or separately indexed media reports, not the total output of these accounts. CMO author and date were checked on original public X pages; four original body captions are incomplete, and their chart labels are kept unclassified. Keyword-assisted issue categories are provisional and require editorial review. No news article is silently counted as a social post. Click a pie segment or its legend to filter the terminal; a CMO pie also selects the institutional account filter.</p>';
 }
 function clickFilter(selector,key,val){
  const target=[...document.querySelectorAll(selector+" [data-"+key+"]")].find(x=>x.getAttribute("data-"+key)===val);
@@ -67,7 +74,7 @@ function chooseLeader(id){
 }
 container.addEventListener("click",ev=>{
  const issue=ev.target.closest("[data-an-issue]"),open=ev.target.closest("[data-an-open]");
- if(issue){const key=issue.getAttribute("data-an-issue");chooseLeader(issue.getAttribute("data-an-leader"));if(key===EXTRA){clickFilter(".sidebar","issue","all");document.querySelector('.tabs [data-tab="social"]')?.click();const target=[...document.querySelectorAll("#postList [data-social-topic]")].find(x=>x.getAttribute("data-social-topic")===EXTRA);target?.scrollIntoView({behavior:"smooth",block:"start"});return}clickFilter("#issues","issue",key);document.querySelector("#omsCommandMap")?.scrollIntoView({behavior:"smooth",block:"start"});return}
+ if(issue){const key=issue.getAttribute("data-an-issue");chooseLeader(issue.getAttribute("data-an-leader"));const tag=issue.closest("[data-an-chart]")?.getAttribute("data-an-chart");const account=document.getElementById("accountSource");if(account&&(tag==="x"||tag==="cmo-x")){account.value=tag==="cmo-x"?"cmo":"personal";account.dispatchEvent(new Event("change",{bubbles:true}));}if(key===EXTRA){clickFilter(".sidebar","issue","all");document.querySelector('.tabs [data-tab="social"]')?.click();const target=[...document.querySelectorAll("#postList [data-social-topic]")].find(x=>x.getAttribute("data-social-topic")===EXTRA);target?.scrollIntoView({behavior:"smooth",block:"start"});return}clickFilter("#issues","issue",key);document.querySelector("#omsCommandMap")?.scrollIntoView({behavior:"smooth",block:"start"});return}
  if(open){chooseLeader(open.getAttribute("data-an-leader"));clickFilter(".sidebar","issue","all");
  const tab=open.getAttribute("data-an-open");document.querySelector('.tabs [data-tab="'+tab+'"]')?.click();document.querySelector(".tabs")?.scrollIntoView({behavior:"smooth",block:"start"})}
 });
