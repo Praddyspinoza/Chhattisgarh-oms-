@@ -54,7 +54,7 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.screenshot({path:"comparative-desktop-qa.png",fullPage:false});
   await page.locator('[data-dossier-topic="all"]').first().click();
   const all=await page.locator("#dossierList a.dossier-headline").count();
-  assert.equal(all,data.records.length+data.posts.length,"Not all original source links are rendered in combined dossiers");
+  assert.equal(all,data.records.length+data.posts.filter(p=>p.issue!=="Other / general and ceremonial").length,"Not all ten-issue original source links are rendered in combined dossiers");
   const institutional=await page.locator("#dossierList a.institution-headline").count();
   assert.equal(institutional,gov.officialRecords.length+gov.assemblyRecords.length,"Government and assembly links absent from combined issue dossiers");
   const actualSourceLinks=await page.locator("#dossierList a.dossier-headline").evaluateAll(as=>as.map(a=>a.getAttribute("href")));
