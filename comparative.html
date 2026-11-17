@@ -345,7 +345,7 @@ function renderSocial(){
  let html='<div class="archive-head"><div><strong>ORIGINAL X POST PERMALINKS — LINKED HEADLINES</strong><span>For publisher-embedded posts, headlines summarize newspaper coverage. For posts checked directly, short headlines are excerpts from the original public X status. Every link opens a specific post, not an account or search page. The Other / general and ceremonial category is kept separate from the ten policy issues.</span></div><div>'+realX+' X LINKS</div></div>';
  for(const topic of topics){
   let topicPosts=posts.filter(p=>p.issue===topic);
-  html+='<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+String(data.issues.indexOf(topic)+1).padStart(2,"0")+'</span><div><h3>'+e(topic)+'</h3><small>'+topicPosts.length+' individually linked posts / videos</small></div></div>';
+  html+='<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+(topic==="Other / general and ceremonial"?"EXTRA":String(data.issues.indexOf(topic)+1).padStart(2,"0"))+'</span><div><h3>'+e(topic)+'</h3><small>'+topicPosts.length+' individually linked posts / videos</small></div></div>';
   for(const l of leaders){
    const own=topicPosts.filter(p=>p.leader===l.id);
    html+='<details class="leader-group" '+(own.length?"open":"")+'><summary><span class="leader-name">'+e(l.name)+'</span><span>'+e(l.state)+' · @'+e(l.x)+'</span><b>'+own.length+' post'+(own.length===1?"":"s")+'</b></summary>';
@@ -397,13 +397,14 @@ function detailPost(r,l){
 }
 function renderDossiers(){
  const leaders=data.leaders.filter(filterLeader),r=data.records.filter(matching).sort((a,b)=>b.date.localeCompare(a.date)),p=data.posts.filter(matching).sort((a,b)=>b.date.localeCompare(a.date));
- const issues=issue==="all"?data.issues:[issue];
+ const issues=issue==="all"?[...data.issues,"Other / general and ceremonial"]:[issue];
  el("topicPicker").innerHTML='<button class="topic-choice '+(issue==="all"?"active":"")+'" data-dossier-topic="all" type="button"><span class="topic-choice-num">∞</span><span>All 10 issues</span><b>FULL ARCHIVE</b></button>'+data.issues.map((t,n)=>'<button type="button" data-dossier-topic="'+e(t)+'" class="topic-choice '+(issue===t?"active":"")+'"><span class="topic-choice-num">'+String(n+1).padStart(2,"0")+'</span><span>'+e(t)+'</span><b>'+data.records.filter(x=>x.issue===t&&filterLeader(person(x.leader))).length+' NEWS / '+data.posts.filter(x=>x.issue===t&&filterLeader(person(x.leader))&&x.platform==="X").length+' X</b></button>').join("");
+ el("topicPicker").innerHTML+='<button type="button" class="topic-choice '+(issue==="Other / general and ceremonial"?"active":"")+'" data-dossier-topic="Other / general and ceremonial"><span class="topic-choice-num">＋</span><span>Other / general and ceremonial</span><b>'+data.posts.filter(p=>p.issue==="Other / general and ceremonial").length+' X</b></button>';
  el("dossierStats").textContent=r.length+' newspaper/channel items · '+p.filter(x=>x.platform==="X").length+' original X status links · '+leaders.length+' leaders · '+(issue==="all"?"all ten issues":issue);
  let html="";
  for(const topic of issues){
   const tr=r.filter(x=>x.issue===topic),tp=p.filter(x=>x.issue===topic);
-  html+='<div class="dossier-topic-header"><div><span class="eyebrow">ISSUE '+String(data.issues.indexOf(topic)+1).padStart(2,"0")+' / 10</span><h3>'+e(topic)+'</h3></div><span class="dossier-count">'+tr.length+' NEWS · '+tp.filter(x=>x.platform==="X").length+' X LINKS</span></div>';
+  html+='<div class="dossier-topic-header"><div><span class="eyebrow">ISSUE '+(topic==="Other / general and ceremonial"?"EXTRA (NON-POLICY)":String(data.issues.indexOf(topic)+1).padStart(2,"0")+" / 10")</span><h3>'+e(topic)+'</h3></div><span class="dossier-count">'+tr.length+' NEWS · '+tp.filter(x=>x.platform==="X").length+' X LINKS</span></div>';
   for(const l of leaders){
    const nr=tr.filter(x=>x.leader===l.id),np=tp.filter(x=>x.leader===l.id);
    html+='<article class="dossier-leader"><header class="dossier-person"><div><strong>'+e(l.name)+'</strong><span>'+e(l.state)+' · '+e(l.role)+' · '+e(l.party)+'</span></div><b>'+nr.length+' NEWS / '+np.length+' POSTS</b></header><div class="dossier-columns"><section class="dossier-panel"><div class="dossier-panel-head">NEWSPAPER &amp; BROADCAST REPORTS <b>'+nr.length+'</b></div>'+(nr.length?nr.map(detailNews).join(""):'<p class="dossier-empty">No source collected in this research window for this leader and issue.</p>')+'</section><section class="dossier-panel"><div class="dossier-panel-head">ORIGINAL X / VIDEO PERMALINKS <b>'+np.length+'</b></div>'+(np.length?np.map(x=>detailPost(x,l)).join(""):'<p class="dossier-empty">No individual X/video permalink recovered. <a href="'+href(xsearch(l))+'" target="_blank" rel="noopener noreferrer">Search dated public posts ↗</a> (search only)</p>')+'</section></div></article>';
