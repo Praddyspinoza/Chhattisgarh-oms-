@@ -16,7 +16,7 @@ const records=d.records.slice().sort((a,b)=>b.date.localeCompare(a.date));
 const posts=d.posts.slice().sort((a,b)=>b.date.localeCompare(a.date));
 const bigHead=(label,count)=>'<div class="archive-head"><div><strong>'+esc(label)+'</strong><span>Click a headline to open its original source. Dates: 5 August–5 November 2026.</span></div><div>'+count+' DIRECT LINKS</div></div>';
 function groupHeader(topic,quantity){
- return '<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+String(d.issues.indexOf(topic)+1).padStart(2,"0")+'</span><div><h3>'+esc(topic)+'</h3><small>'+quantity+' sourced links</small></div></div>';
+ return '<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+(d.issues.includes(topic)?String(d.issues.indexOf(topic)+1).padStart(2,"0"):"EXTRA")+'</span><div><h3>'+esc(topic)+'</h3><small>'+quantity+' sourced links</small></div></div>';
 }
 function leaderStart(l,n){
  return '<details class="leader-group" '+(n?'open':'')+'><summary><span class="leader-name">'+esc(l.name)+'</span><span>'+esc(l.state)+' · '+esc(l.role)+'</span><b>'+n+' link'+(n===1?'':'s')+'</b></summary>';
@@ -40,7 +40,7 @@ for(const topic of d.issues){
  reports+='</section>';
 }
 let social=bigHead("RECOVERED INDIVIDUAL X POST PERMALINKS · VIDEO",posts.length);
-for(const topic of d.issues){
+for(const topic of [...d.issues,"Other / general and ceremonial"]){
  const topicPosts=posts.filter(r=>r.issue===topic);
  social+=groupHeader(topic,topicPosts.length);
  for(const l of d.leaders){
@@ -48,7 +48,7 @@ for(const topic of d.issues){
   social+=leaderStart(l,own.length);
   for(const p of own){
    const headline=p.sourceHeadline||p.detail||"Post referenced by public reporting";
-   social+='<article class="source-row"><div class="source-top"><span class="publisher-name">'+esc(p.platform)+' · @'+esc(l.x)+'</span><time>'+esc(p.date)+'</time><span class="source-type">PUBLISHER-REPORTED HEADING</span></div><a class="source-headline" href="'+link(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(headline)+' ↗</a><div class="source-bottom"><span>Reported by '+esc(p.publisher)+'</span><a href="'+link(p.publisherUrl)+'" target="_blank" rel="noopener noreferrer">Corroborating publisher ↗</a></div></article>';
+   social+='<article class="source-row"><div class="source-top"><span class="publisher-name">'+esc(p.platform)+' · @'+esc(l.x)+'</span><time>'+esc(p.date)+'</time><span class="source-type">'+(p.postTextConfirmed?"ORIGINAL X POST CHECKED":"PUBLISHER-REPORTED HEADING")+'</span></div><a class="source-headline" href="'+link(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(headline)+' ↗</a><div class="source-bottom"><span>Reported by '+esc(p.publisher)+'</span><a href="'+link(p.publisherUrl)+'" target="_blank" rel="noopener noreferrer">Corroborating publisher ↗</a></div></article>';
   }
   if(!own.length)social+='<div class="no-sources">No original post permalink recovered under this issue. Historical X searches are available in the interactive account directory.</div>';
   social+='</details>';
