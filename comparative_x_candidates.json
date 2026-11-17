@@ -1,6 +1,6 @@
 {
   "tested": 225,
-  "recoveredPages": 29,
+  "recoveredPages": 34,
   "captures": [
     {
       "recordId": "cmp-006",
@@ -49,6 +49,17 @@
       ]
     },
     {
+      "recordId": "cmp-039",
+      "publisher": "The New Indian Express",
+      "date": "2026-10-20",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "publisherUrl": "https://www.newindianexpress.com/states/odisha/2026/Oct/21/bjp-accuses-naveen-patnaik-of-backing-regime-change-campaign-over-support-for-cjp-leaders",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2112549591111569682"
+      ]
+    },
+    {
       "recordId": "cmp-029",
       "publisher": "Prameya",
       "date": "2026-10-19",
@@ -58,17 +69,6 @@
       "posts": [
         "https://x.com/MohanMOdisha/status/2111980649473081458",
         "https://x.com/MohanMOdisha/status/2111978133716861292"
-      ]
-    },
-    {
-      "recordId": "cmp-039",
-      "publisher": "The New Indian Express",
-      "date": "2026-10-20",
-      "leader": "od-lop",
-      "issue": "Governance",
-      "publisherUrl": "https://www.newindianexpress.com/states/odisha/2026/Oct/21/bjp-accuses-naveen-patnaik-of-backing-regime-change-campaign-over-support-for-cjp-leaders",
-      "posts": [
-        "https://x.com/Naveen_Odisha/status/2112549591111569682"
       ]
     },
     {
@@ -118,17 +118,6 @@
       ]
     },
     {
-      "recordId": "cmp-055",
-      "publisher": "Dainik Jagran",
-      "date": "2026-10-22",
-      "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2113121698308579575"
-      ]
-    },
-    {
       "recordId": "cmp-054",
       "publisher": "KohramLive",
       "date": "2026-10-20",
@@ -138,6 +127,17 @@
       "posts": [
         "https://x.com/HemantSorenJMM/status/2112381563132666116",
         "https://x.com/yourBabulal/status/2112407297125503051"
+      ]
+    },
+    {
+      "recordId": "cmp-055",
+      "publisher": "Dainik Jagran",
+      "date": "2026-10-22",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2113121698308579575"
       ]
     },
     {
@@ -254,17 +254,6 @@
       ]
     },
     {
-      "recordId": "cmp-207",
-      "publisher": "MP Breaking News",
-      "date": "2026-08-05",
-      "leader": "mp-lop",
-      "issue": "Infrastructure & Development",
-      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/after-vidisha-sagar-raises-fresh-school-safety-concerns-umang-singhar-targets-bjp-government-912980",
-      "posts": [
-        "https://x.com/UmangSinghar/status/2084884875149291599"
-      ]
-    },
-    {
       "recordId": "cmp-202",
       "publisher": "MP Breaking News",
       "date": "2026-10-21",
@@ -276,36 +265,14 @@
       ]
     },
     {
-      "recordId": "cmp-212",
-      "publisher": "Dainik Jagran",
-      "date": "2026-09-07",
-      "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://www.jagran.com/jharkhand/ranchi-jssc-cgl-paper-leak-confirmed-by-accused-in-jharkhand-40365112.html",
+      "recordId": "cmp-207",
+      "publisher": "MP Breaking News",
+      "date": "2026-08-05",
+      "leader": "mp-lop",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/after-vidisha-sagar-raises-fresh-school-safety-concerns-umang-singhar-targets-bjp-government-912980",
       "posts": [
-        "https://x.com/yourBabulal/status/2096838318176834025"
-      ]
-    },
-    {
-      "recordId": "cmp-213",
-      "publisher": "Dainik Jagran",
-      "date": "2026-09-28",
-      "leader": "jh-lop",
-      "issue": "Internal Security & Bastar",
-      "publisherUrl": "https://www.jagran.com/jharkhand/jamshedpur-babulal-marandi-questions-jamshedpur-police-lathi-charge-40387456.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2104145843016388664"
-      ]
-    },
-    {
-      "recordId": "cmp-219",
-      "publisher": "Odisha TV",
-      "date": "2026-10-21",
-      "leader": "od-lop",
-      "issue": "Governance",
-      "publisherUrl": "https://odishatv.in/odisha/bjd-chief-naveen-patnaik-calls-for-release-of-cjp-leaders-opposes-extension-of-judicial-custody-12693941",
-      "posts": [
-        "https://x.com/Naveen_Odisha/status/2112549591111569682"
+        "https://x.com/UmangSinghar/status/2084884875149291599"
       ]
     },
     {
@@ -320,6 +287,83 @@
       ]
     },
     {
+      "recordId": "cmp-212",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-07",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.jagran.com/jharkhand/ranchi-jssc-cgl-paper-leak-confirmed-by-accused-in-jharkhand-40365112.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2096838318176834025"
+      ]
+    },
+    {
+      "recordId": "cmp-219",
+      "publisher": "Odisha TV",
+      "date": "2026-10-21",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "publisherUrl": "https://odishatv.in/odisha/bjd-chief-naveen-patnaik-calls-for-release-of-cjp-leaders-opposes-extension-of-judicial-custody-12693941",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2112549591111569682"
+      ]
+    },
+    {
+      "recordId": "cmp-213",
+      "publisher": "Dainik Jagran",
+      "date": "2026-09-28",
+      "leader": "jh-lop",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://www.jagran.com/jharkhand/jamshedpur-babulal-marandi-questions-jamshedpur-police-lathi-charge-40387456.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2104145843016388664"
+      ]
+    },
+    {
+      "recordId": "cmp-242",
+      "publisher": "OrissaPOST",
+      "date": "2026-09-17",
+      "leader": "od-cm",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://www.orissapost.com/odisha-cm-launches-seva-sankalp-abhiyan/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2100478183170801732"
+      ]
+    },
+    {
+      "recordId": "cmp-241",
+      "publisher": "OrissaPOST",
+      "date": "2026-09-14",
+      "leader": "od-cm",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.orissapost.com/cm-majhi-urges-odisha-people-to-light-lamps-on-modis-birthday/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2099397042737238486"
+      ]
+    },
+    {
+      "recordId": "cmp-243",
+      "publisher": "OrissaPOST",
+      "date": "2026-09-18",
+      "leader": "od-cm",
+      "issue": "Infrastructure & Development",
+      "publisherUrl": "https://www.orissapost.com/majhi-hails-nit-rourkelas-chips-at-semicon-india/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2100791217932144656"
+      ]
+    },
+    {
+      "recordId": "cmp-255",
+      "publisher": "OrissaPOST",
+      "date": "2026-10-19",
+      "leader": "od-lop",
+      "issue": "Governance",
+      "publisherUrl": "https://www.orissapost.com/naveen-patnaik-writes-to-cm-majhi-over-andhra-polls-in-kotia/",
+      "posts": [
+        "https://x.com/Naveen_Odisha/status/2112163975408537977"
+      ]
+    },
+    {
       "recordId": "cmp-269",
       "publisher": "Prabhat Khabar",
       "date": "2026-08-26",
@@ -329,7 +373,19 @@
       "posts": [
         "https://x.com/yourBabulal/status/2092513218514317781"
       ]
+    },
+    {
+      "recordId": "cmp-258",
+      "publisher": "OrissaPOST",
+      "date": "2026-10-20",
+      "leader": "od-lop",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.orissapost.com/odisha-guv-cm-lop-greet-people-on-occasion-of-dussehra/",
+      "posts": [
+        "https://x.com/MohanMOdisha/status/2112340523059216488",
+        "https://x.com/Naveen_Odisha/status/2111683353682592223"
+      ]
     }
   ],
-  "generatedAt": "2026-11-17T09:48:38.336Z"
+  "generatedAt": "2026-11-17T12:48:49.240Z"
 }
