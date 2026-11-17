@@ -22,9 +22,10 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert.equal(await cartograms.count(),3,"Missing 3 geographic district maps in dashboard command center");
   assert.equal(await page.locator("#omsCommandMap path.cm-polygon").count(),109,"Expected 109 named district nodes");
   assert.equal(await page.locator("#comparisonAnalytics .an-leader").count(),6,"Missing leader-specific analytics cards");
-  assert.equal(await page.locator("#comparisonAnalytics .an-donut").count(),12,"Two issue pie charts required for each of the six leaders");
-  const xChartSum=await page.locator("#comparisonAnalytics .an-figure[data-an-chart='x'] .an-n").allTextContents();
-  assert.equal(xChartSum.reduce((sum,x)=>sum+Number(x),0),data.posts.filter(p=>p.platform==="X").length,"X pie denominators must equal original status archive");
+  assert.equal(await page.locator("#comparisonAnalytics .an-donut").count(),15,"Expect individual X and news pies for six leaders plus 3 institutional CMO pies");
+  const xChartSum=await page.locator("#comparisonAnalytics .an-figure[data-an-chart='x'] .an-n, #comparisonAnalytics .an-figure[data-an-chart='cmo-x'] .an-n").allTextContents();
+  assert.equal(xChartSum.reduce((sum,x)=>sum+Number(x),0),data.posts.filter(p=>p.platform==="X").length,"Personal and CMO X pies must sum to all unique original status links");
+  assert.equal(await page.locator("#accountSource option").count(),3,"Missing personal / official CM Office source filter");
 
   const hotInitial=await page.locator("#omsCommandMap path.cm-polygon.cm-hot").count();
   const labelsInitial=await page.locator("#omsCommandMap g.cm-hot-label").count();
