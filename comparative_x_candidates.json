@@ -1,18 +1,7 @@
 {
-  "tested": 184,
-  "recoveredPages": 28,
+  "tested": 189,
+  "recoveredPages": 25,
   "captures": [
-    {
-      "recordId": "cmp-008",
-      "publisher": "Free Press Journal",
-      "date": "2026-10-19",
-      "leader": "mp-cm",
-      "issue": "Religion / Hinduism",
-      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
-      "posts": [
-        "https://x.com/DrMohanYadav51/status/2112078621737398662"
-      ]
-    },
     {
       "recordId": "cmp-006",
       "publisher": "Free Press Journal",
@@ -26,17 +15,6 @@
       ]
     },
     {
-      "recordId": "cmp-009",
-      "publisher": "Free Press Journal",
-      "date": "2026-10-21",
-      "leader": "mp-cm",
-      "issue": "Internal Security & Bastar",
-      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-announces-1-crore-aid-for-families-of-martyred-police-personnel-amount-to-be-equally-divided-between-wife-parents-video",
-      "posts": [
-        "https://x.com/DrMohanYadav51/status/2112780082150514792"
-      ]
-    },
-    {
       "recordId": "cmp-010",
       "publisher": "Free Press Journal",
       "date": "2026-10-24",
@@ -46,6 +24,28 @@
       "posts": [
         "https://x.com/DrMohanYadav51/status/2113973725414707541",
         "https://x.com/DrMohanYadav51/status/2113978741265502432"
+      ]
+    },
+    {
+      "recordId": "cmp-008",
+      "publisher": "Free Press Journal",
+      "date": "2026-10-19",
+      "leader": "mp-cm",
+      "issue": "Religion / Hinduism",
+      "publisherUrl": "https://www.freepressjournal.in/indore/sharadiya-navratri-2026-mp-cm-mohan-yadav-offers-prayers-at-maa-kali-temple-in-ujjain-devotees-throng-baglamukhi-temple-video",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2112078621737398662"
+      ]
+    },
+    {
+      "recordId": "cmp-009",
+      "publisher": "Free Press Journal",
+      "date": "2026-10-21",
+      "leader": "mp-cm",
+      "issue": "Internal Security & Bastar",
+      "publisherUrl": "https://www.freepressjournal.in/bhopal/mp-cm-mohan-yadav-announces-1-crore-aid-for-families-of-martyred-police-personnel-amount-to-be-equally-divided-between-wife-parents-video",
+      "posts": [
+        "https://x.com/DrMohanYadav51/status/2112780082150514792"
       ]
     },
     {
@@ -118,6 +118,17 @@
       ]
     },
     {
+      "recordId": "cmp-055",
+      "publisher": "Dainik Jagran",
+      "date": "2026-10-22",
+      "leader": "jh-lop",
+      "issue": "Education, Healthcare & Employment",
+      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
+      "posts": [
+        "https://x.com/yourBabulal/status/2113121698308579575"
+      ]
+    },
+    {
       "recordId": "cmp-054",
       "publisher": "KohramLive",
       "date": "2026-10-20",
@@ -127,17 +138,6 @@
       "posts": [
         "https://x.com/HemantSorenJMM/status/2112381563132666116",
         "https://x.com/yourBabulal/status/2112407297125503051"
-      ]
-    },
-    {
-      "recordId": "cmp-055",
-      "publisher": "Dainik Jagran",
-      "date": "2026-10-22",
-      "leader": "jh-lop",
-      "issue": "Education, Healthcare & Employment",
-      "publisherUrl": "https://org374nextwww.jagran.com/jharkhand/latehar-manika-chc-driver-terminated-over-snakebite-victim-misbehavior-40413692.html",
-      "posts": [
-        "https://x.com/yourBabulal/status/2113121698308579575"
       ]
     },
     {
@@ -242,40 +242,6 @@
       ]
     },
     {
-      "recordId": "cmp-202",
-      "publisher": "MP Breaking News",
-      "date": "2026-10-21",
-      "leader": "mp-lop",
-      "issue": "Agriculture & Farmers",
-      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/mp-farmers-issues-umang-singhar-targets-bjp-government-06-934270",
-      "posts": [
-        "https://x.com/UmangSinghar/status/2112825339538030850"
-      ]
-    },
-    {
-      "recordId": "cmp-207",
-      "publisher": "MP Breaking News",
-      "date": "2026-08-05",
-      "leader": "mp-lop",
-      "issue": "Infrastructure & Development",
-      "publisherUrl": "https://www.mpbreakingnews.in/bhopal/after-vidisha-sagar-raises-fresh-school-safety-concerns-umang-singhar-targets-bjp-government-912980",
-      "posts": [
-        "https://x.com/UmangSinghar/status/2084884875149291599"
-      ]
-    },
-    {
-      "recordId": "cmp-203",
-      "publisher": "MP Breaking News",
-      "date": "2026-10-25",
-      "leader": "mp-lop",
-      "issue": "Environment & Forests",
-      "publisherUrl": "https://www.mpbreakingnews.in/rewa/rewa-nuclear-power-plant-protest-umang-singhar-government-last-days-935175",
-      "posts": [
-        "https://x.com/UmangSinghar/status/2114265094175809897",
-        "https://x.com/UmangSinghar/status/2114242584499634343"
-      ]
-    },
-    {
       "recordId": "cmp-211",
       "publisher": "Dainik Jagran",
       "date": "2026-09-04",
@@ -320,5 +286,5 @@
       ]
     }
   ],
-  "generatedAt": "2026-11-16T19:54:26.169Z"
+  "generatedAt": "2026-11-17T07:01:45.268Z"
 }
