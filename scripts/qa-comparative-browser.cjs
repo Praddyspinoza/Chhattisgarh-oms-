@@ -28,6 +28,8 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   const katni=page.locator('#omsCommandMap path[data-state="Madhya Pradesh"][data-district="Katni"]');
   assert(await katni.evaluate(el=>el.classList.contains("cm-hot")),"Katni source-linked MP LoP/environment record not highlighted");
   await katni.click();
+  assert.equal(await page.locator('#omsCommandMap .cm-issue-tile.active').count(),1,"Map district click must preserve the selected issue");
+  assert(await page.locator('#omsCommandMap .cm-issue-tile.active[data-issue="Environment & Forests"]').count()===1,"Selected issue should remain Environment & Forests");
   assert(await page.locator("#omsCommandMap .cm-detail a[href*='timesofindia.indiatimes.com']").count()>=1,"Click district must open original source headlines");
   assert((await page.locator("#omsCommandMap .cm-detail").innerText()).includes("Katni"),"District dossier must identify selected district");
   await page.locator('#omsCommandMap [data-action="reset"]').first().click();
