@@ -39,7 +39,7 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert(await page.locator("#omsCommandMap .cm-x-search").count()>=1,"Leader + district must provide date-scoped X discovery links");
   assert((await page.locator("#omsCommandMap .cm-x-search").first().getAttribute("href")).startsWith("https://x.com/search?"),"X discovery link must be identifiable as a search");
   await page.locator('#omsCommandMap [data-action="tab"][data-open-tab="official"]').click();
-  assert.equal(await page.locator("#officialList a.institution-headline").count(),gov.officialRecords.length,"Quick official tab must show all source records");
+  assert.equal(await page.locator("#officialList a.institution-headline").count(),gov.officialRecords.filter(r=>r.state==="Madhya Pradesh").length,"Quick official tab must honor selected state while preserving independent official records");
   await page.locator('button.tab[data-tab="dossiers"]').click();
   const boxBefore=await page.locator('#omsCommandMap .cm-map-card').first().locator("svg").getAttribute("viewBox");
   await page.locator('#omsCommandMap [data-action="zoom"][data-state="Madhya Pradesh"][data-zoom="in"]').click();
