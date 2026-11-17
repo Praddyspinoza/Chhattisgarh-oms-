@@ -28,7 +28,12 @@ for(const p of d.posts){
  if(p.platform==="X"){
   const m=p.url.match(/^https:\/\/x\.com\/([A-Za-z0-9_]+)\/status\/(\d+)$/);
   assert(m,"Non-permalink X link "+p.id);
-  assert.equal(m[1].toLowerCase(),byID[p.leader].x.toLowerCase(),"X account misattribution "+p.id);
+  const validHandles=[byID[p.leader].x.toLowerCase(),...(d.cmoAccounts||[]).filter(a=>a.leader===p.leader).map(a=>a.handle.toLowerCase())];
+  assert(validHandles.includes(m[1].toLowerCase()),"X account misattribution "+p.id);
+  if(p.accountType==="cmo"){
+   assert.equal(p.authorType,"government-institution","CMO must be institutional "+p.id);
+   assert.equal(p.posterHandle.toLowerCase(),m[1].toLowerCase(),"CMO poster handle mismatch "+p.id);
+  }else assert.equal(m[1].toLowerCase(),byID[p.leader].x.toLowerCase(),"Personal handle mismatch "+p.id);
   const date=new Date(Number((BigInt(m[2])>>22n)+1288834974657n)).toISOString().slice(0,10);
   assert.equal(date,p.date,"X snowflake timestamp mismatch "+p.id);
   assert(["embedded-post-url","original-page-fetched","original-post-fetched"].includes(p.status),"Unverified social item presented as direct X "+p.id);
