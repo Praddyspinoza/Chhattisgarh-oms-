@@ -14,7 +14,7 @@ permissions:
   contents: write
 jobs:
   sync:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/real-boundaries-district-dossiers-20261117' || github.ref == 'refs/heads/feature/comparative-district-motion-20261117'
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/comparative-issue-pies-district-labels-xaudit-20261117'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
