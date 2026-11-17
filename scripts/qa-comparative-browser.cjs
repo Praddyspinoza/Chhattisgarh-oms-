@@ -104,10 +104,11 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.screenshot({path:"comparative-analytics-qa.png",fullPage:false});
   const legend=page.locator('#comparisonAnalytics .an-leader[data-an-card="jh-lop"] .an-figure[data-an-chart="x"] button.an-legend').first();
   assert(await legend.count()>=1,"X issue chart must have interactive legend");
+  const clickedIssue=await legend.getAttribute("data-an-issue");
   await legend.click();
   assert.equal(await page.locator("#omsCommandMap .cm-map-grid.cm-focused").count(),1,"Pie legend click must filter to leader's state");
   await page.locator('button.tab[data-tab="social"]').click();
-  assert.equal(await page.locator("#postList a.source-headline").count(),data.posts.filter(p=>p.leader==="jh-lop"&&p.issue!=="Other / general and ceremonial"||p.leader==="jh-lop"&&p.issue==="Other / general and ceremonial").length,"Social archive should respond to leader drilldown");
+  assert.equal(await page.locator("#postList a.source-headline").count(),data.posts.filter(p=>p.leader==="jh-lop"&&(clickedIssue==="Other / general and ceremonial"||p.issue===clickedIssue)).length,"Social archive should respond to leader-and-issue drilldown");
   await page.locator('button[data-state="all"]').first().click();
   await page.locator('button[data-role="all"]').first().click();
   await page.locator('button[data-tab="analytics"]').click();
