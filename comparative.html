@@ -316,7 +316,7 @@ function renderReports(){
  let html='<div class="archive-head"><div><strong>NEWSPAPER + NEWS CHANNEL EVIDENCE</strong><span>Click each headline to open its original publisher page. Select any of the ten issues, then a leader.</span></div><div>'+matchingRecords.length+' RECORDS</div></div>';
  for(const topic of topics){
   const topicRows=matchingRecords.filter(r=>r.issue===topic);
-  html+='<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+String(data.issues.indexOf(topic)+1).padStart(2,"0")+'</span><div><h3>'+e(topic)+'</h3><small>'+topicRows.length+' indexed publisher links · 5 Aug–5 Nov 2026</small></div></div>';
+  html+='<section class="topic-frame" data-social-topic="'+e(topic)+'"><div class="topic-header"><span class="topic-number">'+(data.issues.includes(topic)?String(data.issues.indexOf(topic)+1).padStart(2,"0"):"EXTRA")+'</span><div><h3>'+e(topic)+'</h3><small>'+topicRows.length+' indexed publisher links · 5 Aug–5 Nov 2026</small></div></div>';
   for(const l of leaders){
    const group=topicRows.filter(r=>r.leader===l.id);
    html+='<details class="leader-group" '+(group.length>0?"open":"")+'><summary><span class="leader-name">'+e(l.name)+'</span><span>'+e(l.state)+' · '+e(l.role)+'</span><b>'+group.length+' source'+(group.length===1?"":"s")+'</b></summary>';
@@ -341,8 +341,8 @@ function renderSocial(){
  const posts=data.posts.filter(r=>matching(r)).sort((a,b)=>b.date.localeCompare(a.date));
  const realX=posts.filter(p=>p.platform==="X").length;
  el("socialCount").textContent=realX+" recovered X permalinks · "+(posts.length-realX)+" direct video/other links";
- const topics=issue==="all"?data.issues:[issue], leaders=activeLeaders();
- let html='<div class="archive-head"><div><strong>ORIGINAL X POST PERMALINKS — LINKED HEADLINES</strong><span>Headlines are derived from the linked newspaper report unless original post text was verified. Every X headline below opens an individual status, not an account or search page.</span></div><div>'+realX+' X LINKS</div></div>';
+ const topics=issue==="all"?data.issues.concat(["Other / general and ceremonial"]):[issue], leaders=activeLeaders();
+ let html='<div class="archive-head"><div><strong>ORIGINAL X POST PERMALINKS — LINKED HEADLINES</strong><span>For publisher-embedded posts, headlines summarize newspaper coverage. For posts checked directly, short headlines are excerpts from the original public X status. Every link opens a specific post, not an account or search page. 'Other / general and ceremonial' is kept separate from the ten policy issues.</span></div><div>'+realX+' X LINKS</div></div>';
  for(const topic of topics){
   let topicPosts=posts.filter(p=>p.issue===topic);
   html+='<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+String(data.issues.indexOf(topic)+1).padStart(2,"0")+'</span><div><h3>'+e(topic)+'</h3><small>'+topicPosts.length+' individually linked posts / videos</small></div></div>';
@@ -355,7 +355,7 @@ function renderSocial(){
      const verb=p.postTextConfirmed===true?"POST TEXT CHECKED":"PUBLISHER-DERIVED HEADLINE";
      html+='<article class="source-row"><div class="source-top"><span class="publisher-name">'+e(p.platform)+' · @'+e(l.x)+'</span><time>'+e(p.date)+'</time><span class="source-type">'+e(verb)+'</span></div>'+
      '<a class="source-headline" href="'+href(p.url)+'" target="_blank" rel="noopener noreferrer">'+e(headline)+' <span aria-hidden="true">↗</span></a>'+
-     '<div class="source-bottom"><span>Issue: '+e(p.issue)+'</span><span>Referenced by '+e(p.publisher||"public source")+'</span><a href="'+href(p.publisherUrl)+'" target="_blank" rel="noopener noreferrer">Corroborating source ↗</a></div></article>';
+     '<div class="source-bottom"><span>Issue: '+e(p.issue)+'</span><span>'+(p.postTextConfirmed?"Original public status checked":("Referenced by "+e(p.publisher||"public source")))+'</span><a href="'+href(p.publisherUrl)+'" target="_blank" rel="noopener noreferrer">'+(p.postTextConfirmed?"Open original status ↗":"Corroborating source ↗")+'</a></div></article>';
     }
    }else {
     html+='<div class="no-sources">No individually sourced post permalink has been recovered in this archive for this issue. <a href="'+href(xsearch(l))+'" target="_blank" rel="noopener noreferrer">Search this leader’s X posts, 5 Aug–5 Nov ↗</a> (search, not a verified post).</div>';
