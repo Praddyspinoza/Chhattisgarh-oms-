@@ -94,7 +94,7 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   assert.equal(await page.locator("#assemblyList a.institution-headline").count(),gov.assemblyRecords.length,"Every legislative original link must be in the assembly tab");
   assert.equal(await page.locator("#sessionList .panel").count(),3,"Missing three-state legislative session calendar");
   await page.locator('button[data-tab="analytics"]').click();
-  assert.equal(await page.locator("#analytics .an-figure").count(),12,"Analytics tab must expose 12 independent issue-share charts");
+  assert.equal(await page.locator("#analytics .an-figure").count(),15,"Analytics tab must expose 15 personal / office / media issue-share charts");
   assert((await page.locator("#analytics").innerText()).includes("Other / general and ceremonial"),"Unclassified ceremonial X posts must have explicit own slice");
   await page.locator('button[data-tab="social"]').click();
   const social=await page.locator("#postList a.source-headline").count();
@@ -108,13 +108,16 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.locator('button.tab[data-tab="analytics"]').click();
   await page.waitForSelector("#comparisonAnalytics .an-leader",{timeout:8000});
   assert.equal(await page.locator("#comparisonAnalytics .an-leader").count(),6,"Six leader pie-chart groups must render");
-  assert.equal(await page.locator("#comparisonAnalytics svg.an-donut").count(),12,"Each leader needs independent X and media issue pie charts");
+  assert.equal(await page.locator("#comparisonAnalytics svg.an-donut").count(),15,"Six personal X pies, six media pies and three separate CMO X pies required");
   for(const leader of data.leaders){
     const card=page.locator('#comparisonAnalytics .an-leader[data-an-card="'+leader.id+'"]');
     assert.equal(await card.count(),1,"Missing per-leader analytics chart for "+leader.name);
     const totals=await card.locator(".an-figure .an-n").allTextContents();
-    assert.equal(Number(totals[0]),data.posts.filter(p=>p.leader===leader.id&&p.platform==="X").length,"X sample total mismatch "+leader.name);
-    assert.equal(Number(totals[1]),data.records.filter(p=>p.leader===leader.id).length,"News sample total mismatch "+leader.name);
+    const personal=data.posts.filter(p=>p.leader===leader.id&&p.platform==="X"&&p.accountType!=="cmo").length;
+    const cmo=data.posts.filter(p=>p.leader===leader.id&&p.platform==="X"&&p.accountType==="cmo").length;
+    assert.equal(Number(totals[0]),personal,"Personal X sample total mismatch "+leader.name);
+    if(cmo)assert.equal(Number(totals[1]),cmo,"CMO X sample total mismatch "+leader.name);
+    assert.equal(Number(totals[cmo?2:1]),data.records.filter(p=>p.leader===leader.id).length,"News sample total mismatch "+leader.name);
   }
   await page.screenshot({path:"comparative-analytics-qa.png",fullPage:false});
   const legend=page.locator('#comparisonAnalytics .an-leader[data-an-card="jh-lop"] .an-figure[data-an-chart="x"] button.an-legend').first();
