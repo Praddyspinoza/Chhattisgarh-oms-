@@ -26,4 +26,6 @@ jobs:
           path: |
             comparative-desktop-qa.png
             comparative-issue-qa.png
+            comparative-analytics-qa.png
+            comparative-map-mobile-qa.png
           if-no-files-found: ignore
