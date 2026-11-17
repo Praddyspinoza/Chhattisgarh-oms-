@@ -232,7 +232,7 @@ body{background:radial-gradient(circle at 75% -5%,#172741 0,transparent 31%),rad
 <aside class="sidebar"><div class="cg-brand"><div class="cg-mark">CG</div><div><b>CHHATTISGARH</b><small>POLITICAL INTELLIGENCE<br>COMPARATIVE DOSSIER</small></div></div><p class="cg-navcap">WORKSPACE</p><a class="cg-navitem" href="./index.html">⌂ &nbsp; Main command centre</a><span class="cg-navitem active">⌘ &nbsp; Three-state intelligence</span><div class="cg-railrule"></div>
 <section class="group"><h2>01 / State</h2><div class="pillrow" id="states"></div><p class="hint">Selecting a state filters both government and opposition coverage.</p></section>
 <section class="group"><h2>02 / Office</h2><div class="pillrow" id="roles"></div><h2 style="margin-top:17px">03 / Individual leaders</h2><div id="leaders"></div></section>
-<section class="group"><h2>04 / Ten issue matrix</h2><button class="issue active" data-issue="all"><span class="dot"></span><label>All ten issues</label><i id="allCount"></i></button><div id="issues"></div><p class="hint">Numbers are captured source entries, not political ratings. One item may involve multiple issues but is assigned one primary issue.</p></section>
+<section class="group"><h2>03B / X account source</h2><select id="accountSource" class="select" aria-label="Choose X account author"><option value="all">All — individual and official CMO</option><option value="personal">Individual leader accounts</option><option value="cmo">Official CM Office accounts</option></select><p class="hint">CM Office posts are institutional communications, not personal tweets. This filter also affects linked map highlights.</p></section><section class="group"><h2>04 / Ten issue matrix</h2><button class="issue active" data-issue="all"><span class="dot"></span><label>All ten issues</label><i id="allCount"></i></button><div id="issues"></div><p class="hint">Numbers are captured source entries, not political ratings. One item may involve multiple issues but is assigned one primary issue.</p></section>
 <section class="group"><h2>05 / Research search</h2><input id="q" class="search" type="search" placeholder="Search title, leader, subject…" aria-label="Search indexed reporting"><h2 style="margin-top:17px">06 / Publication</h2><select id="publisher" class="select" aria-label="Filter publisher"><option value="all">All publishers</option></select></section>
 </aside>
 <main class="stage">
@@ -258,12 +258,12 @@ body{background:radial-gradient(circle at 75% -5%,#172741 0,transparent 31%),rad
 const e=s=>String(s??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 const href=s=>/^https:\/\//.test(s||"")?e(s):"#";
 const el=id=>document.getElementById(id);
-let gov=null, data=null, state="all",role="all",leader="all",issue="Governance",publisher="all",term="",tab="dossiers",visible=14;
+let gov=null, data=null, state="all",role="all",leader="all",issue="Governance",publisher="all",term="",accountSource="all",tab="dossiers",visible=14;
 const issuesShort={"Tribal Issues":"Tribal issues","Religion / Hinduism":"Religion / Hinduism","Governance":"Governance","Minerals":"Mineral policy","Mining":"Mining operations","Agriculture & Farmers":"Agriculture / farmers","Internal Security & Bastar":"Internal security","Infrastructure & Development":"Infrastructure","Education, Healthcare & Employment":"Education / health / jobs","Environment & Forests":"Environment / forests"};
 const keywords={"Tribal Issues":"tribal adivasi","Religion / Hinduism":"temple festival religion","Governance":"governance policy government","Minerals":"minerals royalties","Mining":"mining land","Agriculture & Farmers":"farmers agriculture irrigation","Internal Security & Bastar":"police security","Infrastructure & Development":"roads housing infrastructure","Education, Healthcare & Employment":"education jobs healthcare","Environment & Forests":"forest climate environment"};
 const filterLeader=l=>(state==="all"||l.state===state)&&(role==="all"||l.role===role)&&(leader==="all"||l.id===leader);
 const person=id=>data.leaders.find(l=>l.id===id);
-function matching(r,withIssue=true){const l=person(r.leader);return !!l&&filterLeader(l)&&(!withIssue||issue==="all"||r.issue===issue)&&(!term||(r.title||r.detail||"").toLowerCase().includes(term)||l.name.toLowerCase().includes(term)||(r.summary||"").toLowerCase().includes(term)||(r.sourceHeadline||"").toLowerCase().includes(term)||r.issue.toLowerCase().includes(term))&&(("platform" in r)||publisher==="all"||r.publisher===publisher)}
+function matching(r,withIssue=true){const l=person(r.leader);return !!l&&filterLeader(l)&&(!withIssue||issue==="all"||r.issue===issue)&&(!term||(r.title||r.detail||"").toLowerCase().includes(term)||l.name.toLowerCase().includes(term)||(r.summary||"").toLowerCase().includes(term)||(r.sourceHeadline||"").toLowerCase().includes(term)||r.issue.toLowerCase().includes(term))&&(accountSource==="all"||!("platform" in r)||(accountSource==="cmo"?r.accountType==="cmo":r.accountType!=="cmo"))&&(("platform" in r)||publisher==="all"||r.publisher===publisher)}
 function resetLimit(){visible=14;render()}
 function init(){
   el("nGov").textContent=gov.officialRecords.length;el("nAssembly").textContent=gov.assemblyRecords.length;el("nReports").textContent=data.records.length;el("nPosts").textContent=data.posts.length;el("nSources").textContent=new Set(data.records.filter(r=>!r.publisher.includes("YouTube")).map(r=>r.publisher)).size;
@@ -274,6 +274,7 @@ function init(){
   document.querySelector("[data-issue=all]").addEventListener("click",()=>{issue="all";resetLimit()});
   el("q").addEventListener("input",v=>{term=v.target.value.trim().toLowerCase();resetLimit()});
   el("publisher").addEventListener("change",v=>{publisher=v.target.value;resetLimit()});
+  el("accountSource").addEventListener("change",v=>{accountSource=v.target.value;resetLimit()});
   document.querySelector(".tabs").addEventListener("click",v=>{let b=v.target.closest("[data-tab]");if(!b)return;tab=b.dataset.tab;render()});
   el("more").addEventListener("click",()=>{visible+=14;renderReports()});
   el("topicPicker").addEventListener("click",ev=>{const b=ev.target.closest("[data-dossier-topic]");if(!b)return;issue=b.dataset.dossierTopic;resetLimit();});
@@ -340,20 +341,21 @@ function link(t,u){return '<a target="_blank" rel="noopener noreferrer" href="'+
 function renderSocial(){
  const posts=data.posts.filter(r=>matching(r)).sort((a,b)=>b.date.localeCompare(a.date));
  const realX=posts.filter(p=>p.platform==="X").length;
- el("socialCount").textContent=realX+" recovered X permalinks · "+(posts.length-realX)+" direct video/other links";
+ const cmOfficeCount=posts.filter(p=>p.accountType==="cmo").length;
+ el("socialCount").textContent=realX+" X permalinks ("+(realX-cmOfficeCount)+" personal + "+cmOfficeCount+" CM Office) · "+(posts.length-realX)+" video/other";
  const topics=issue==="all"?data.issues.concat(["Other / general and ceremonial"]):[issue], leaders=activeLeaders();
- let html='<div class="archive-head"><div><strong>ORIGINAL X POST PERMALINKS — LINKED HEADLINES</strong><span>For publisher-embedded posts, headlines summarize newspaper coverage. For posts checked directly, short headlines are excerpts from the original public X status. Every link opens a specific post, not an account or search page. The Other / general and ceremonial category is kept separate from the ten policy issues.</span></div><div>'+realX+' X LINKS</div></div>';
+ let html='<div class="archive-head"><div><strong>ORIGINAL X POST PERMALINKS — LINKED HEADLINES</strong><span>For publisher-embedded posts, headlines summarize newspaper coverage. For posts checked directly, short headlines are excerpts from the original public X status. Every link opens a specific post, not an account or search page. Official CM Office accounts are sourced separately from individual leader posts. The Other / general and ceremonial category is kept separate from the ten policy issues.</span></div><div>'+realX+' X LINKS</div></div>';
  for(const topic of topics){
   let topicPosts=posts.filter(p=>p.issue===topic);
   html+='<section class="topic-frame"><div class="topic-header"><span class="topic-number">'+(topic==="Other / general and ceremonial"?"EXTRA":String(data.issues.indexOf(topic)+1).padStart(2,"0"))+'</span><div><h3>'+e(topic)+'</h3><small>'+topicPosts.length+' individually linked posts / videos</small></div></div>';
   for(const l of leaders){
    const own=topicPosts.filter(p=>p.leader===l.id);
-   html+='<details class="leader-group" '+(own.length?"open":"")+'><summary><span class="leader-name">'+e(l.name)+'</span><span>'+e(l.state)+' · @'+e(l.x)+'</span><b>'+own.length+' post'+(own.length===1?"":"s")+'</b></summary>';
+   html+='<details class="leader-group" '+(own.length?"open":"")+'><summary><span class="leader-name">'+e(l.name)+'</span><span>'+e(l.state)+' · @'+e(l.x)+((data.cmoAccounts||[]).find(a=>a.leader===l.id)?' + @'+e(data.cmoAccounts.find(a=>a.leader===l.id).handle):'')+'</span><b>'+own.length+' post'+(own.length===1?"":"s")+'</b></summary>';
    if(own.length){
     for(const p of own){
      const headline=p.sourceHeadline||p.detail||"Referenced public post";
-     const verb=p.postTextConfirmed===true?"POST TEXT CHECKED":"PUBLISHER-DERIVED HEADLINE";
-     html+='<article class="source-row"><div class="source-top"><span class="publisher-name">'+e(p.platform)+' · @'+e(l.x)+'</span><time>'+e(p.date)+'</time><span class="source-type">'+e(verb)+'</span></div>'+
+     const verb=p.postTextConfirmed===true?(p.accountType==="cmo"?"OFFICIAL CMO · CHECKED":"POST TEXT CHECKED"):"CAPTION PARTIALLY VERIFIED";
+     html+='<article class="source-row"><div class="source-top"><span class="publisher-name">'+e(p.platform)+' · @'+e(p.posterHandle||l.x)+(p.accountType==="cmo"?" · CM OFFICE":" · LEADER")+'</span><time>'+e(p.date)+'</time><span class="source-type">'+e(verb)+'</span></div>'+
      '<a class="source-headline" href="'+href(p.url)+'" target="_blank" rel="noopener noreferrer">'+e(headline)+' <span aria-hidden="true">↗</span></a>'+
      '<div class="source-bottom"><span>Issue: '+e(p.issue)+'</span><span>'+(p.postTextConfirmed?"Original public status checked":("Referenced by "+e(p.publisher||"public source")))+'</span><a href="'+href(p.publisherUrl)+'" target="_blank" rel="noopener noreferrer">'+(p.postTextConfirmed?"Open original status ↗":"Corroborating source ↗")+'</a></div></article>';
     }
@@ -369,8 +371,10 @@ function renderSocial(){
  el("accountList").innerHTML='<div class="archive-head"><div><strong>PUBLIC ACCOUNT &amp; DATE-RESTRICTED DISCOVERY</strong><span>These are account links and search pages, NOT individually verified posts.</span></div></div>'+
  leadersChosen.map(l=>{
   const topicQuery=issue==="all"?"":keywords[issue]||issue;
+  const office=(data.cmoAccounts||[]).find(a=>a.leader===l.id);
+  const officeSearch=office?"https://x.com/search?q="+encodeURIComponent("from:"+office.handle+" since:2026-08-05 until:2026-11-06"+(topicQuery?" "+topicQuery:""))+"&src=typed_query":"";
   const metaQuery='"'+l.name+'" '+topicQuery+' 2026';
-  return '<div class="socialbox"><strong>'+e(l.name)+' · '+e(l.state)+' · '+e(l.role)+'</strong><div class="links">'+link("X profile","https://x.com/"+l.x)+link("Search X in requested period",xsearch(l))+(l.fb?link("Facebook profile",l.fb):"")+(l.ig?link("Instagram profile",l.ig):"")+link("Search indexed Facebook",gsearch("site:facebook.com "+metaQuery))+link("Search indexed Instagram",gsearch("site:instagram.com/p/ "+metaQuery))+'</div></div>';
+  return '<div class="socialbox"><strong>'+e(l.name)+' · '+e(l.state)+' · '+e(l.role)+'</strong><div class="links">'+link("Individual X account","https://x.com/"+l.x)+link("Search leader X posts",xsearch(l))+(office?link("Official CMO X account",office.x)+link("Search CMO X posts",officeSearch):"")+(l.fb?link("Facebook profile",l.fb):"")+(l.ig?link("Instagram profile",l.ig):"")+link("Search indexed Facebook",gsearch("site:facebook.com "+metaQuery))+link("Search indexed Instagram",gsearch("site:instagram.com/p/ "+metaQuery))+'</div></div>';
  }).join("");
 }
 function renderOverview(){
@@ -392,8 +396,10 @@ function detailNews(r){
  '<a class="dossier-headline" href="'+x+'" target="_blank" rel="noopener noreferrer">'+e(r.title)+' ↗</a><div class="dossier-subtitle">'+e(r.type||"News report")+'</div></article>';
 }
 function detailPost(r,l){
- return '<article class="dossier-link"><div class="dossier-byline"><b>'+e(r.platform)+' · @'+e(l.x)+'</b><time>'+e(r.date)+'</time><span>ORIGINAL POST URL</span></div>'+
- '<a class="dossier-headline" href="'+href(r.url)+'" target="_blank" rel="noopener noreferrer">'+e(r.sourceHeadline||r.detail||"Public post referenced by a publisher")+' ↗</a><div class="dossier-subtitle">Publisher-reported heading (not the verified X text) · <a class="dossier-corroboration" target="_blank" rel="noopener noreferrer" href="'+href(r.publisherUrl)+'">'+e(r.publisher||"Source")+' ↗</a></div></article>';
+ const office=r.accountType==="cmo",handle=r.posterHandle||l.x;
+ const note=office?"OFFICIAL CM OFFICE · INSTITUTIONAL":"INDIVIDUAL LEADER ACCOUNT";
+ return '<article class="dossier-link"><div class="dossier-byline"><b>'+e(r.platform)+' · @'+e(handle)+'</b><time>'+e(r.date)+'</time><span>'+e(note)+'</span></div>'+
+ '<a class="dossier-headline" href="'+href(r.url)+'" target="_blank" rel="noopener noreferrer">'+e(r.sourceHeadline||r.detail||"Original X post")+' ↗</a><div class="dossier-subtitle">'+e(r.postTextConfirmed?"Original public X status excerpt; issue coding provisional":"Original account/date checked; body or heading incomplete")+' · <a class="dossier-corroboration" target="_blank" rel="noopener noreferrer" href="'+href(r.publisherUrl)+'">'+e(r.postTextConfirmed?"Open original X post":"Open source")+' ↗</a></div></article>';
 }
 function renderDossiers(){
  const leaders=data.leaders.filter(filterLeader),r=data.records.filter(matching).sort((a,b)=>b.date.localeCompare(a.date)),p=data.posts.filter(matching).sort((a,b)=>b.date.localeCompare(a.date));
@@ -491,7 +497,7 @@ function render(){
  renderFilters();for(const s of document.querySelectorAll(".section"))s.hidden=s.id!==tab;
  for(const b of document.querySelectorAll("[data-tab]")){b.classList.toggle("active",b.dataset.tab===tab);b.setAttribute("aria-selected",b.dataset.tab===tab?"true":"false")}
  renderDossiers();renderReports();renderSocial();renderOfficial();renderAssembly();renderOverview();renderSources();renderDistrictMaps();
- if(typeof document.dispatchEvent==="function"&&typeof CustomEvent!=="undefined")document.dispatchEvent(new CustomEvent("comparative:render",{detail:{state,role,leader,issue,publisher,term,tab}}));
+ if(typeof document.dispatchEvent==="function"&&typeof CustomEvent!=="undefined")document.dispatchEvent(new CustomEvent("comparative:render",{detail:{state,role,leader,issue,publisher,term,accountSource,tab}}));
 }
 window.addEventListener("message",event=>{if(event.origin!==location.origin||event.data?.type!=="district-atlas-ready")return;renderDistrictMaps()});
 try{gov=JSON.parse(el("oms-comparative-government").textContent);data=JSON.parse(el("oms-comparative-embedded").textContent);init();}catch(err){el("reportList").innerHTML='<div class="empty"><strong>Embedded research could not be displayed.</strong>'+e(err.message)+'</div>';}
