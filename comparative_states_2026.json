@@ -1,5 +1,5 @@
 {
-  "build": "Comparative research expanded 17 November 2026",
+  "build": "Comparative district-linked research and newspaper expansion 17 November 2026",
   "window": {
     "start": "2026-08-05",
     "end": "2026-11-05"
@@ -13,7 +13,9 @@
     "When an issue/leader filter returns no records, that means not yet captured, not that no reporting or posts exist.",
     "Allegations, proposed schemes and projected outcomes must not be represented as established wrongdoing or completed results.",
     "Original research batch now augmented with date-checked reporting across all six leaders; some stories about the same event from different publishers are separate source entries.",
-    "Additional exact X status permalinks were recovered from HTML embeds on the public publisher pages. Tweet creation dates verified using X snowflake IDs; headlines are sourced from surrounding publisher reports and are not represented as verbatim original post text."
+    "Additional exact X status permalinks were recovered from HTML embeds on the public publisher pages. Tweet creation dates verified using X snowflake IDs; headlines are sourced from surrounding publisher reports and are not represented as verbatim original post text.",
+    "17 November expansion added individually dated publisher links and recovered original X status URLs from publisher embeds. New items have not been included in the earlier 16 November HTTP-link audit.",
+    "District links are either editorially tagged to a named location in the report or title/summary text matches; they represent reported geographic mentions, not precise incident coordinates or verified administrative attribution."
   ],
   "issues": [
     "Tribal Issues",
@@ -3546,6 +3548,560 @@
         "checkedAt": "2026-11-17",
         "method": "Search result and article text; not a fresh HTTP status audit"
       }
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-10",
+      "issue": "Infrastructure & Development",
+      "type": "Investment proposal",
+      "title": "UAE outreach yields reported investment proposals worth Rs 53,000 crore",
+      "summary": "Indian Express reports proposals from September 6–8 discussions; proposed investment is not realised expenditure.",
+      "publisher": "The Indian Express",
+      "url": "https://indianexpress.com/article/india/dubai-outreach-puts-madhya-pradesh-on-global-investment-map-gets-proposals-worth-rs-53000-crore-10870939/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-236"
+    },
+    {
+      "leader": "mp-cm",
+      "date": "2026-09-26",
+      "issue": "Infrastructure & Development",
+      "type": "Reported launch",
+      "title": "State-backed public bus service revived after 21 years",
+      "summary": "The Indian Express reports Mohan Yadav and Nitin Gadkari flagged off 351 buses, alongside safety and infrastructure issues.",
+      "publisher": "The Indian Express",
+      "url": "https://indianexpress.com/article/india/madhya-pradesh-public-bus-network-nitin-gadkari-10894376/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-237"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-10",
+      "issue": "Environment & Forests",
+      "type": "Opposition demand",
+      "title": "Umang Singhar seeks independent inquiry into alleged asbestos pollution in Katni",
+      "summary": "Following a visit to Kymore and Kalhara, the LoP called for environmental testing and medical screening; contamination extent is attributed to reports and allegations.",
+      "publisher": "The Times of India",
+      "url": "https://timesofindia.indiatimes.com/city/bhopal/congress-raises-asbestos-pollution-issue-in-mps-kymore-seeks-independent-probe/articleshow/134854604.cms",
+      "districts": [
+        "Katni"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-238"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-10-02",
+      "issue": "Governance",
+      "type": "Opposition demand",
+      "title": "Singhar seeks accountability over Indore contaminated-water tragedy",
+      "summary": "The LoP cited a judicial commission and demanded compensation and implementation of recommendations; reported death figures and attribution require reading the commission.",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/amp/indore/indores-bhagirathpura-water-tragedy-umang-singhar-seeks-10-lakh-compensation-action-over-civic-lapses",
+      "districts": [
+        "Indore"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-239"
+    },
+    {
+      "leader": "mp-lop",
+      "date": "2026-09-06",
+      "issue": "Internal Security & Bastar",
+      "type": "Opposition demand",
+      "title": "Singhar demands compensation after Sagar illicit-liquor deaths",
+      "summary": "The LoP demanded Rs 25 lakh compensation for bereaved families after the Sagar hooch tragedy; the report separately attributes calls for judicial inquiry to party colleagues.",
+      "publisher": "Free Press Journal",
+      "url": "https://www.freepressjournal.in/amp/bhopal/mps-sagar-hooch-tragedy-congress-demands-25-lakh-compensation-for-bereaved-families",
+      "districts": [
+        "Sagar"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-240"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-14",
+      "issue": "Religion / Hinduism",
+      "type": "Public statement",
+      "title": "Majhi asks residents to light lamps for Prime Minister's birthday",
+      "summary": "The Odisha CM issued a public appeal and outlined planned Seva Sankalp programmes; an archived original X post accompanies the newspaper report.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/cm-majhi-urges-odisha-people-to-light-lamps-on-modis-birthday/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-241"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-17",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Reported launch",
+      "title": "Majhi inaugurates Seva Sankalp blood-donation drive",
+      "summary": "The CM attended a Bhubaneswar donation programme, announcing blood-security ambitions and citing a Rs 50.54 crore budget allocation; targets are not actual collection totals.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/odisha-cm-launches-seva-sankalp-abhiyan/",
+      "districts": [
+        "Khordha"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-242"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-18",
+      "issue": "Infrastructure & Development",
+      "type": "Public statement",
+      "title": "Majhi praises NIT Rourkela semiconductor chip designs",
+      "summary": "Reported congratulatory statement concerns indigenous chip designs shown at SEMICON India 2026; it does not establish commercial production.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/majhi-hails-nit-rourkelas-chips-at-semicon-india/",
+      "districts": [
+        "Sundargarh"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-243"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-08",
+      "issue": "Infrastructure & Development",
+      "type": "Scheduled investment outreach",
+      "title": "Majhi travels to the UAE to solicit foreign investment",
+      "summary": "OrissaPOST reported a planned Abu Dhabi/Dubai investment roadshow and meetings; announcements are not evidence of final projects.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/cm-majhi-leaves-for-uae-to-hold-investment-roadshows-in-abu-dhabi-dubai/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-244"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-21",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Policy review",
+      "title": "Teacher-issues committee submits recommendations to Majhi",
+      "summary": "The CM said recommendations concerning multiple categories of teachers would be examined; the report is submission and review, not implementation.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/decision-on-teachers-issues-after-tripathy-panel-report-cm-majhi/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-245"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-27",
+      "issue": "Governance",
+      "type": "Official correspondence reported",
+      "title": "Majhi responds to Patnaik over Kotia territorial dispute",
+      "summary": "The CM called for constructive proposals on the Koraput border dispute while rejecting politicisation; positions are reported from his letter.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/in-letter-to-patnaik-cm-majhi-says-constructive-suggestions-on-kotia-welcome-not-politicisation/",
+      "districts": [
+        "Koraput"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-246"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-24",
+      "issue": "Environment & Forests",
+      "type": "Disaster preparation",
+      "title": "Majhi announces preparedness ahead of Cyclone Arnab",
+      "summary": "The CM stated the government aimed for zero casualties; this is a preparedness claim before landfall, not verified outcome.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/odisha-aims-for-zero-casualties-as-cyclone-threat-looms-cm-majhi/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-247"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-30",
+      "issue": "Environment & Forests",
+      "type": "Reported survey",
+      "title": "Majhi surveys floods in Ganjam and Gajapati and seeks faster relief",
+      "summary": "Following Cyclone Arnab, the CM reportedly surveyed flood-affected areas and directed relief and infrastructure restoration; impact figures are provisional.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/odisha-cm-conducts-aerial-survey-of-flood-hit-areas-directs-faster-relief/",
+      "districts": [
+        "Ganjam",
+        "Gajapati",
+        "Kandhamal"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-248"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-13",
+      "issue": "Infrastructure & Development",
+      "type": "Infrastructure review",
+      "title": "Majhi reviews Puri airport, temple-area and road projects",
+      "summary": "The CM directed timely completion of works and rehabilitation of affected street vendors; reported review is not confirmation of completion.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/odisha-cm-stresses-timely-completion-of-projects-in-puri/",
+      "districts": [
+        "Puri"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-249"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-01",
+      "issue": "Environment & Forests",
+      "type": "Interstate water negotiations",
+      "title": "Majhi says framework for Mahanadi water dispute expected soon",
+      "summary": "Following talks with Chhattisgarh officials and Union ministers, he expressed hope for a framework; it was not a signed settlement.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/mahanadi-water-dispute-expecting-final-framework-very-soon-says-cm-majhi/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-250"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-05",
+      "issue": "Infrastructure & Development",
+      "type": "Reported inauguration",
+      "title": "Majhi inaugurates redeveloped Kalinga Studio in Bhubaneswar",
+      "summary": "The CM opened modernised production facilities and a film archive; economic benefits remain anticipated.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/cm-unveils-redeveloped-kalinga-studio/",
+      "districts": [
+        "Khordha"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-251"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-13",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Cabinet decision reported",
+      "title": "Odisha cabinet approves Rs 450 crore Dakshyata Vikas Yojana",
+      "summary": "The cabinet chaired by Majhi approved a skills programme for 2026–29; budget outlay is not disbursement.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/odisha-clears-rs-450-crore-dakshyata-vikas-yojana/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-252"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-10",
+      "issue": "Governance",
+      "type": "Opposition statement",
+      "title": "Naveen Patnaik calls Odisha BJP administration incompetent at Bhubaneswar meeting",
+      "summary": "During the BJD's Jan Samparka outreach Patnaik criticised the state government's performance; this is an attributed political assessment.",
+      "publisher": "The Telegraph",
+      "url": "https://www.telegraphindia.com/india/biju-janata-dal-president-naveen-patnaik-calls-odisha-bjp-government-incompetent-prnt/cid/2183994",
+      "districts": [
+        "Khordha"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-253"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-01",
+      "issue": "Mining",
+      "type": "Opposition campaign announced",
+      "title": "BJD announces statewide marches against amended mining law",
+      "summary": "Patnaik was due to launch a Jana Samparka programme on October 2; this article is a campaign announcement, not evidence of all marches occurring.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/bjd-to-hold-statewide-marches-from-oct-2-against-amended-mining-law/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-254"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-19",
+      "issue": "Governance",
+      "type": "Opposition letter",
+      "title": "Patnaik questions government's response to Andhra elections in Kotia",
+      "summary": "The LoP wrote to Majhi about the disputed Kotia group of villages in Koraput district; his criticisms are attributed.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/naveen-patnaik-writes-to-cm-majhi-over-andhra-polls-in-kotia/",
+      "districts": [
+        "Koraput"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-255"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-11-04",
+      "issue": "Governance",
+      "type": "Opposition letter",
+      "title": "Patnaik urges intervention as Kotia border dispute escalates",
+      "summary": "The LoP called on the CM to coordinate with Andhra Pradesh and the Centre after a border standoff; this is a letter, not proof of resolution.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/naveen-patnaik-urges-majhi-to-intervene-as-kotia-tension-escalates-over-andhra-polls/",
+      "districts": [
+        "Koraput"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-256"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-30",
+      "issue": "Environment & Forests",
+      "type": "Opposition relief request",
+      "title": "Patnaik sends BJD delegation to Ganjam flood-hit areas",
+      "summary": "The LoP contacted the Ganjam Collector and asked for immediate relief, while announcing a party assessment team.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/ganjam-floods-naveen-patnaik-sends-bjd-team-to-assess-damage/",
+      "districts": [
+        "Ganjam"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-257"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-20",
+      "issue": "Religion / Hinduism",
+      "type": "Festival statement",
+      "title": "Patnaik offers Dussehra greetings in publicly embedded X post",
+      "summary": "The original post is embedded in the OrissaPOST report; it is a festival message, not a legislative or governing action.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/odisha-guv-cm-lop-greet-people-on-occasion-of-dussehra/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-258"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-09",
+      "issue": "Religion / Hinduism",
+      "type": "Public tribute",
+      "title": "Patnaik pays tribute to reformer Gopabandhu Das",
+      "summary": "Patnaik's statement is recorded alongside an original embedded X post on the reformer's birth anniversary.",
+      "publisher": "OrissaPOST",
+      "url": "https://www.orissapost.com/odisha-pays-tribute-to-utkalmani-gopabandhu-das/",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-259"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-01",
+      "issue": "Governance",
+      "type": "Court report",
+      "title": "Ranchi court frames money-laundering charges against Hemant Soren",
+      "summary": "Hindustan Times reports PMLA charges framed in an alleged land-transfer case; a criminal charge is not a conviction.",
+      "publisher": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/jharkhand-cm-hemant-soren-charged-in-pmla-case-over-alleged-8-86-acre-land-fraud-case-101790781828161-amp.html",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-260"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-11",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Assembly announcement",
+      "title": "Soren announces cancellation of JPSC exams and investigation",
+      "summary": "Prabhat Khabar reported the CM's remarks in the Assembly; an announcement can be subject to later judicial review.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/cm-hemant-sorens-big-announcement-in-assembly-14th-jpsc-and-two-backlog-exams-to-be-cancelled",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-261"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-11",
+      "issue": "Governance",
+      "type": "Assembly statement",
+      "title": "CM challenges opposition's role in JPSC-JSSC student agitation",
+      "summary": "Prabhat Khabar reports the CM criticised the opposition in the legislative chamber; all characterisations remain attributed.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/hemant-soren-attacks-opposition-in-assembly-says-politics-in-the-guise-of-students",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-262"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-10-09",
+      "issue": "Tribal Issues",
+      "type": "Reported police direction",
+      "title": "Soren calls for inquiry into Latehar woman's custodial assault allegations",
+      "summary": "After allegations of police misconduct at Bariatu station, the CM directed investigation; the allegation is not a judicial finding.",
+      "publisher": "Hindustan Times",
+      "url": "https://www.hindustantimes.com/india-news/jharkhand-tribal-woman-alleges-brutal-custodial-assault-101791540742669.html",
+      "districts": [
+        "Latehar"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-263"
+    },
+    {
+      "leader": "jh-cm",
+      "date": "2026-08-16",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Public protest",
+      "title": "Jharkhand students announce protest over recruitment examinations",
+      "summary": "Prabhat Khabar reports demonstrators criticising JPSC-JSSC processes and a planned march to the chief minister's residence; not an attributed CM statement.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/jpsc-jssc-protest-students-to-lay-siege-to-cms-residence-on-august-20-announcement-made-from-an-open-platform",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-264"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-10-02",
+      "issue": "Internal Security & Bastar",
+      "type": "Opposition question",
+      "title": "Marandi criticises law and order following Jamshedpur firing",
+      "summary": "He questioned the administration after shots were reportedly fired in the Sitaramdera area soon after a DGP review; allegation is attributed.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/babulal-marandi-questions-public-safety-after-firing",
+      "districts": [
+        "East Singhbhum"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-265"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-22",
+      "issue": "Infrastructure & Development",
+      "type": "Opposition statement",
+      "title": "Marandi alleges development work has stalled in Tisri",
+      "summary": "At a local event in Giridih district he criticised the state administration, making governance and corruption allegations.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/jharkhand-development-stalled-marandi",
+      "districts": [
+        "Giridih"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-266"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-10",
+      "issue": "Governance",
+      "type": "Opposition allegation",
+      "title": "Marandi raises concerns over Ranchi municipal administration",
+      "summary": "He criticised the municipal commissioner's conduct in relation to city tenders and civic matters; reported accusations are unproven.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/municipal-commissioner-acting-like-jmm-worker",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-267"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-30",
+      "issue": "Governance",
+      "type": "Opposition allegation",
+      "title": "Marandi demands scrutiny of liquor policy and alleged irregularities",
+      "summary": "The LoP raised claims about a purported Rs 55 crore deal; this is political allegation and not established loss.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/babulal-marandi-slams-liquor-policy-scam",
+      "districts": [],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-268"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-26",
+      "issue": "Governance",
+      "type": "Opposition statement",
+      "title": "Marandi challenges journalist-access restrictions at Ranchi hospitals",
+      "summary": "He criticised restrictions on journalists and linked them to public accountability; the report references his X statement.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/journalist-entry-banned-in-hospitals-babulal-marandis-sharp-attack-on-the-government",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-269"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-09-15",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Opposition allegation",
+      "title": "Marandi demands CBI inquiry into JPSC-JSSC recruitment controversy",
+      "summary": "The LoP questioned the handling of a confidential CID report and called for independent investigation; irregularity claims remain contested.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/ranchi/babulal-questions-government-avoiding-cbi-probe",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-270"
+    },
+    {
+      "leader": "jh-lop",
+      "date": "2026-08-25",
+      "issue": "Education, Healthcare & Employment",
+      "type": "Opposition engagement",
+      "title": "Marandi accompanies complainant as police file JPSC protest-related case",
+      "summary": "Prabhat Khabar reports the LoP joined a student complainant at a Ranchi police station; allegations against named others are not judicial findings.",
+      "publisher": "Prabhat Khabar",
+      "url": "https://www.prabhatkhabar.com/state/jharkhand/jpsc-jssc-reform-forum-student-reaches-kotwali-police-station-registers-case-against-8-including-jmm",
+      "districts": [
+        "Ranchi"
+      ],
+      "sourceReview": "Publisher article headline and dated excerpt checked against indexed source on 2026-11-17; added after earlier HTTP-link audit.",
+      "status": "publisher-report-reviewed",
+      "id": "cmp-271"
     }
   ],
   "posts": [
@@ -4393,6 +4949,118 @@
         "http": 200,
         "checkedAt": "2026-11-16T18:20:52.443Z"
       }
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-14",
+      "issue": "Religion / Hinduism",
+      "detail": "Majhi appeals for birthday lamp observances",
+      "url": "https://x.com/MohanMOdisha/status/2099397042737238486",
+      "publisherUrl": "https://www.orissapost.com/cm-majhi-urges-odisha-people-to-light-lamps-on-modis-birthday/",
+      "publisher": "OrissaPOST",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Publisher-embedded original X status; headline is researcher-authored, not a verbatim post transcript",
+      "postTextConfirmed": false,
+      "sourceHeadline": "Majhi appeals for birthday lamp observances",
+      "posterHandle": "mohanmodisha",
+      "id": "social-041"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-17",
+      "issue": "Education, Healthcare & Employment",
+      "detail": "Majhi attends Bhubaneswar blood donation programme",
+      "url": "https://x.com/MohanMOdisha/status/2100478183170801732",
+      "publisherUrl": "https://www.orissapost.com/odisha-cm-launches-seva-sankalp-abhiyan/",
+      "publisher": "OrissaPOST",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Publisher-embedded original X status; headline is researcher-authored, not a verbatim post transcript",
+      "postTextConfirmed": false,
+      "sourceHeadline": "Majhi attends Bhubaneswar blood donation programme",
+      "posterHandle": "mohanmodisha",
+      "id": "social-042"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-18",
+      "issue": "Infrastructure & Development",
+      "detail": "Majhi congratulates NIT Rourkela on indigenous chip designs",
+      "url": "https://x.com/MohanMOdisha/status/2100791217932144656",
+      "publisherUrl": "https://www.orissapost.com/majhi-hails-nit-rourkelas-chips-at-semicon-india/",
+      "publisher": "OrissaPOST",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Publisher-embedded original X status; headline is researcher-authored, not a verbatim post transcript",
+      "postTextConfirmed": false,
+      "sourceHeadline": "Majhi congratulates NIT Rourkela on indigenous chip designs",
+      "posterHandle": "mohanmodisha",
+      "id": "social-043"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-09-17",
+      "issue": "Religion / Hinduism",
+      "detail": "Majhi praises Prime Minister's public-service record",
+      "url": "https://x.com/MohanMOdisha/status/2100469889370821051",
+      "publisherUrl": "https://www.orissapost.com/odisha-cm-calls-modi-inspiration-guv-hails-25-years-of-service/",
+      "publisher": "OrissaPOST",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Publisher-embedded original X status; headline is researcher-authored, not a verbatim post transcript",
+      "postTextConfirmed": false,
+      "sourceHeadline": "Majhi praises Prime Minister's public-service record",
+      "posterHandle": "mohanmodisha",
+      "id": "social-044"
+    },
+    {
+      "leader": "od-cm",
+      "date": "2026-10-20",
+      "issue": "Religion / Hinduism",
+      "detail": "Majhi posts Vijaya Dashami greetings",
+      "url": "https://x.com/MohanMOdisha/status/2112340523059216488",
+      "publisherUrl": "https://www.orissapost.com/odisha-guv-cm-lop-greet-people-on-occasion-of-dussehra/",
+      "publisher": "OrissaPOST",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Publisher-embedded original X status; headline is researcher-authored, not a verbatim post transcript",
+      "postTextConfirmed": false,
+      "sourceHeadline": "Majhi posts Vijaya Dashami greetings",
+      "posterHandle": "mohanmodisha",
+      "id": "social-045"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-18",
+      "issue": "Religion / Hinduism",
+      "detail": "Patnaik posts Sharadiya festival greeting",
+      "url": "https://x.com/Naveen_Odisha/status/2111683353682592223",
+      "publisherUrl": "https://www.orissapost.com/odisha-guv-cm-lop-greet-people-on-occasion-of-dussehra/",
+      "publisher": "OrissaPOST",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Publisher-embedded original X status; headline is researcher-authored, not a verbatim post transcript",
+      "postTextConfirmed": false,
+      "sourceHeadline": "Patnaik posts Sharadiya festival greeting",
+      "posterHandle": "naveen_odisha",
+      "id": "social-046"
+    },
+    {
+      "leader": "od-lop",
+      "date": "2026-10-09",
+      "issue": "Religion / Hinduism",
+      "detail": "Patnaik honours Gopabandhu Das on birth anniversary",
+      "url": "https://x.com/Naveen_Odisha/status/2108403517182574677",
+      "publisherUrl": "https://www.orissapost.com/odisha-pays-tribute-to-utkalmani-gopabandhu-das/",
+      "publisher": "OrissaPOST",
+      "platform": "X",
+      "status": "embedded-post-url",
+      "headlineBasis": "Publisher-embedded original X status; headline is researcher-authored, not a verbatim post transcript",
+      "postTextConfirmed": false,
+      "sourceHeadline": "Patnaik honours Gopabandhu Das on birth anniversary",
+      "posterHandle": "naveen_odisha",
+      "id": "social-047"
     }
   ],
   "linkAudit": {

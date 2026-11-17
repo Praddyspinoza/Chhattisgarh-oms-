@@ -1,0 +1,67 @@
+/* Three-state comparative command-center map. Isolated styles: the main Chhattisgarh terminal is unchanged. */
+#omsCommandMap{--cm-bg:#040b1b;--cm-line:#314665;--cm-hot:#ff7186;--cm-gold:#dda7ac;margin:17px 0 22px;padding:18px 17px 15px;border:1px solid #435171;border-radius:12px;background:radial-gradient(ellipse at 68% -15%,#202340 0,transparent 50%),linear-gradient(145deg,#070e20,#050914 70%,#060d1c);box-shadow:0 19px 50px #0006;position:relative;overflow:hidden;color:#dde8f7;}
+#omsCommandMap:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 38%,#f1748609 51%,transparent 64%);animation:cmSweep 17s linear infinite;}
+#omsCommandMap .cm-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;position:relative;z-index:1;flex-wrap:wrap}
+#omsCommandMap .cm-overline{color:#f3a1ae;font-size:10px;letter-spacing:2px;font-weight:800;text-transform:uppercase;}
+#omsCommandMap h2{font-size:clamp(18px,2.2vw,26px);line-height:1.25;margin:6px 0;color:#f4f5fe;font-weight:780;letter-spacing:-.02em}
+#omsCommandMap .cm-summary{color:#a7b9d2;font-size:11px;max-width:760px;margin:7px 0}
+#omsCommandMap .cm-action-row{display:flex;flex-wrap:wrap;gap:7px;align-self:center}
+#omsCommandMap button{font:inherit;cursor:pointer}
+#omsCommandMap .cm-button,#omsCommandMap .cm-selector{border:1px solid #435677;background:#0b1b36;color:#dbe5f4;border-radius:7px;padding:8px 10px;font-size:11px;font-weight:650;transition:background .2s,border-color .2s,transform .2s}
+#omsCommandMap .cm-button:hover,#omsCommandMap .cm-selector:hover{border-color:#ff8598;background:#241c34;color:#fff}
+#omsCommandMap .cm-button:focus-visible,#omsCommandMap .cm-selector:focus-visible,#omsCommandMap .cm-district:focus-visible,#omsCommandMap .cm-state-target:focus-visible{outline:2px solid #ffc1cc;outline-offset:3px}
+#omsCommandMap .cm-button.active,#omsCommandMap .cm-selector.active{border-color:#f27085;color:#fff;background:linear-gradient(100deg,#432337,#22243a)}
+#omsCommandMap .cm-totals{display:flex;flex-wrap:wrap;gap:10px;color:#9badc6;font-size:10px;margin:16px 0 11px;position:relative;z-index:1}
+#omsCommandMap .cm-totals b{color:#ffb0bf;font-family:ui-monospace,monospace}
+#omsCommandMap .cm-totals span{background:#0d1a30;border:1px solid #2b3b54;border-radius:6px;padding:6px 8px}
+#omsCommandMap .cm-map-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;position:relative;z-index:1}
+#omsCommandMap .cm-map-card{min-width:0;border:1px solid #293f5f;border-radius:10px;background:linear-gradient(162deg,#0c1e3a,#071023 70%);padding:12px;transition:border-color .23s,background .23s,opacity .23s;position:relative;overflow:hidden}
+#omsCommandMap .cm-map-card.cm-selected{border-color:#ec7d90;box-shadow:inset 0 0 0 1px #db607733,0 0 26px #bd44611c}
+#omsCommandMap .cm-map-card.cm-dim{opacity:.54}
+#omsCommandMap .cm-map-card:after{content:"";position:absolute;left:-90%;bottom:0;width:65%;height:2px;background:linear-gradient(90deg,transparent,#f16e7d,transparent);animation:cmSweepLine 10s linear infinite}
+#omsCommandMap .cm-map-head{display:flex;align-items:center;justify-content:space-between;gap:6px}
+#omsCommandMap .cm-map-head button{color:#e7edfa;border:0;background:transparent;text-align:left;font-size:12px;font-weight:760;padding:3px 0}
+#omsCommandMap .cm-map-head button:hover{text-decoration:underline;color:#ffadbb}
+#omsCommandMap .cm-map-head small{font-size:9px;color:#9badc7;white-space:nowrap;font-family:ui-monospace,monospace}
+#omsCommandMap .cm-svg{display:block;width:100%;height:auto;max-height:272px;margin:7px auto 0;overflow:visible}
+#omsCommandMap .cm-outline{fill:#10233f;stroke:#476081;stroke-width:1.4;opacity:.9;stroke-linejoin:round}
+#omsCommandMap .cm-contour{fill:none;stroke:#7c4b6a;stroke-width:1;opacity:.3}
+#omsCommandMap .cm-gridline{stroke:#32415e;stroke-width:.6;opacity:.3}
+#omsCommandMap .cm-district{stroke:#526981;stroke-width:1;fill:#57708c;opacity:.57;cursor:pointer;transition:fill .18s,opacity .18s,stroke .18s,r .18s;pointer-events:all}
+#omsCommandMap .cm-district.cm-hot{fill:#ff758a;stroke:#ffd5df;stroke-width:1.5;opacity:1;filter:drop-shadow(0 0 5px #fa758d)}
+#omsCommandMap .cm-district.cm-target{fill:#ffe0ae;stroke:#fff;stroke-width:2;opacity:1;filter:drop-shadow(0 0 8px #ffc4bd)}
+#omsCommandMap .cm-district:hover,#omsCommandMap .cm-district:focus{fill:#fff1cc;stroke:#ffffff;stroke-width:2;opacity:1;filter:drop-shadow(0 0 7px #ff8195)}
+#omsCommandMap .cm-label{font:700 10px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;paint-order:stroke;stroke:#071120;stroke-width:2.8px;fill:#ffe1eb;pointer-events:none}
+#omsCommandMap .cm-map-foot{display:flex;gap:5px;flex-wrap:wrap;align-items:center;margin-top:6px;min-height:39px}
+#omsCommandMap .cm-chip{border:1px solid #674d64;background:#201b34;color:#ffcad4;border-radius:5px;padding:4px 6px;font-size:9px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#omsCommandMap .cm-chip:hover{background:#493046;border-color:#f49cae}
+#omsCommandMap .cm-chip.cm-quiet{color:#9fb2ce;border-color:#304461;background:#0c1b32}
+#omsCommandMap .cm-empty{font-size:10px;color:#8fa2bd}
+#omsCommandMap .cm-lineage{display:grid;grid-template-columns:minmax(0,1.25fr) 22px minmax(0,1.15fr) 22px minmax(0,1.45fr) 22px minmax(0,1fr);gap:5px;align-items:stretch;margin:13px 0;padding:12px;border:1px solid #344765;background:#09152a;border-radius:9px;position:relative;z-index:1}
+#omsCommandMap .cm-flow-col{min-width:0}
+#omsCommandMap .cm-flow-title{color:#f39dab;font-size:9px;font-weight:750;letter-spacing:1.1px;text-transform:uppercase;display:block;margin-bottom:7px}
+#omsCommandMap .cm-flow-choices{display:flex;flex-wrap:wrap;gap:5px;max-height:95px;overflow:auto}
+#omsCommandMap .cm-flow-choices button{border:1px solid #334965;border-radius:5px;color:#a9bdd6;background:#10203b;padding:5px 6px;text-align:left;font-size:10px}
+#omsCommandMap .cm-flow-choices button:hover{border-color:#f29dad;color:#fff}
+#omsCommandMap .cm-flow-choices button.active{border-color:#f07387;color:#ffe7ec;background:#3c233d}
+#omsCommandMap .cm-flow-arrow{position:relative;align-self:center;height:3px;background:linear-gradient(90deg,transparent,#f4778b,transparent);border-radius:8px}
+#omsCommandMap .cm-flow-arrow:after{content:"";position:absolute;inset:-1px 0;background:linear-gradient(90deg,transparent,#ffd3e0,transparent);animation:cmPulse 2.5s linear infinite}
+#omsCommandMap .cm-flow-stat{font-size:10px;color:#c2d0e3;line-height:1.35}
+#omsCommandMap .cm-flow-stat b{font-size:20px;color:#ff9bad;display:block}
+#omsCommandMap .cm-detail{position:relative;z-index:1;border:1px solid #334865;border-radius:9px;background:linear-gradient(100deg,#10162c,#0c1b32);padding:13px 14px;margin-top:9px}
+#omsCommandMap .cm-detail-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+#omsCommandMap .cm-detail-head strong{font-size:13px;color:#f4f5fc}
+#omsCommandMap .cm-detail-head small{color:#c4a8b7;font-size:10px}
+#omsCommandMap .cm-evidence{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:11px}
+#omsCommandMap .cm-evidence-item{border:1px solid #304560;background:#0b1b31;border-radius:6px;padding:10px;min-width:0}
+#omsCommandMap .cm-evidence-item .cm-meta{font-size:9px;color:#95a9c7;display:block;margin-bottom:5px}
+#omsCommandMap .cm-evidence-item a{color:#e7effc;font-size:11px;font-weight:650;line-height:1.45;display:block}
+#omsCommandMap .cm-evidence-item a:hover{color:#ffb4c0;text-decoration:underline}
+#omsCommandMap .cm-evidence-item p{font-size:10px;color:#93a9c5;margin:7px 0 0}
+#omsCommandMap .cm-footnote{font-size:9px;line-height:1.5;color:#92a8c4;margin:11px 0 0;position:relative;z-index:1}
+@keyframes cmSweep{from{transform:translateX(-150%)}to{transform:translateX(150%)}}
+@keyframes cmSweepLine{from{left:-90%}to{left:145%}}
+@keyframes cmPulse{from{transform:translateX(-50%);opacity:.15}50%{opacity:1}to{transform:translateX(50%);opacity:.15}}
+@media(max-width:1160px){#omsCommandMap .cm-map-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#omsCommandMap .cm-lineage{grid-template-columns:1fr 1fr;gap:13px}#omsCommandMap .cm-flow-arrow{display:none}}
+@media(max-width:760px){#omsCommandMap{margin:12px 0;padding:13px}#omsCommandMap .cm-map-grid{grid-template-columns:1fr}#omsCommandMap .cm-svg{max-height:300px}#omsCommandMap .cm-lineage{grid-template-columns:1fr 1fr}#omsCommandMap .cm-evidence{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){#omsCommandMap:before,#omsCommandMap .cm-map-card:after,#omsCommandMap .cm-flow-arrow:after{animation:none!important}}
