@@ -1,0 +1,16 @@
+{
+  "directUrls": [
+    "https://www.instagram.com/deepak_baij/",
+    "https://www.instagram.com/bhupeshbaghelinc/",
+    "https://www.instagram.com/devendra.yadav.official/",
+    "https://www.instagram.com/umeshnandkumarpatel/",
+    "https://www.instagram.com/vishnudeosai/",
+    "https://www.instagram.com/chhattisgarhcmo/",
+    "https://www.instagram.com/bjp4india/"
+  ],
+  "resultsType": "posts",
+  "resultsLimit": 450,
+  "onlyPostsNewerThan": "2026-08-05",
+  "onlyPostsOlderThan": "2026-11-06",
+  "skipPinnedPosts": true
+}
