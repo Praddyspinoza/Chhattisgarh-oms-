@@ -2247,7 +2247,7 @@ else install();
  "use strict";
  const el=id=>document.getElementById(id);
  const text=v=>String(v??"");
- const esc=v=>text(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;",'"':"&#39;"}[ch]));
+ const esc=v=>text(v).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
  const href=v=>{try{let u=new URL(text(v),location.href);return u.protocol==="https:"?u.href:"";}catch{return ""}};
  const parsed=id=>{try{return JSON.parse(el(id)?.textContent||"null")}catch{return null}};
  let social=parsed("cg26SocialJSON"),policy=parsed("cg26PolicyJSON");
@@ -2267,7 +2267,7 @@ else install();
   let at=0,stops=[];
   for(let t of keys){const to=at+100*out[t]/(total||1);stops.push(color(t)+" "+at.toFixed(2)+"% "+to.toFixed(2)+"%");at=to}
   const bg=stops.length?"conic-gradient("+stops.join(",")+")":"#253c4a";
-  const left='<div class="cg26-pie" style="background:'+esc(bg)+'"><div class="cg26-pie-center"><b>'+total+'</b><small>source-linked X<br>perm alinks</small></div></div>';
+  const left='<div class="cg26-pie" style="background:'+esc(bg)+'"><div class="cg26-pie-center"><b>'+total+'</b><small>source-linked X<br>permalinks</small></div></div>';
   const right='<div class="cg26-chart-legend">'+(keys.length?keys.map(t=>'<button data-cg26-chartissue="'+esc(t)+'" title="Filter X archive by '+esc(t)+'"><span class="cg26-dot" style="background:'+color(t)+'"></span><span>'+esc(t)+'</span><b>'+out[t]+' · '+(100*out[t]/total).toFixed(0)+'%</b></button>').join(""):'<p class="cg26-muted">No source-linked posts indexed for this account. Not a posting estimate.</p>')+'</div>';
   legend.innerHTML='<div class="cg26-chart-body">'+left+right+'</div><p class="cg26-foot">Issue-share of indexed source links only; not a share of all original posts.</p>';
   legend.querySelectorAll("[data-cg26-chartissue]").forEach(b=>b.addEventListener("click",()=>{st.issue=b.getAttribute("data-cg26-chartissue");el("cg26XIssue").value=st.issue;st.limit=36;renderX()}));
