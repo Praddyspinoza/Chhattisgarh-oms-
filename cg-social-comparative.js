@@ -188,6 +188,7 @@ if(p.platform==="Facebook")x.facebook=p.url;if(p.platform==="Instagram")x.instag
 if(x.facebook)list.push({name:a.name,kind:"Facebook",url:x.facebook});
 if(x.instagram)list.push({name:a.name,kind:"Instagram",url:x.instagram});
 }
+el("cgcmpMetaAccounts").setAttribute("data-confirmed-public-account-links",String(list.length));
 el("cgcmpMetaAccounts").innerHTML=list.length?list.map(x=>'<a href="'+e(safe(x.url))+'" class="cgcmp-account" style="text-decoration:none" target="_blank" rel="noopener noreferrer"><strong>'+e(x.name)+'</strong><small>'+e(x.kind)+' · public account reference ↗</small><small>Historical original posts not yet verified</small></a>').join(""):'<p>No validated public Meta account reference is available for this selection.</p>';
 }
 function render(){
@@ -260,7 +261,24 @@ el("cgcmpImport").addEventListener("change",ev=>importApify(ev.target.files?.[0]
 el("cgcmpImportClear").addEventListener("click",()=>{imports=[];el("cgcmpImportStatus").textContent="Browser-local imports cleared. Published source ledger remains untouched.";render()});
 }
 build();wire();render();
-fetch("./chhattisgarh_social_2026.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(data=>{if(data&&Array.isArray(data.accounts)&&Array.isArray(data.posts)){social=data;render();}}).catch(()=>{});
+Promise.allSettled([
+ fetch("./chhattisgarh_social_2026.json",{cache:"no-store"}).then(r=>r.ok?r.json():null),
+ fetch("./apify_meta_2026_accounts.json",{cache:"no-store"}).then(r=>r.ok?r.json():null)
+]).then(results=>{
+ const s=results[0].status==="fulfilled"?results[0].value:null;
+ const metaProfiles=results[1].status==="fulfilled"?results[1].value:null;
+ if(s&&Array.isArray(s.accounts)&&Array.isArray(s.posts))social=s;
+ if(metaProfiles&&Array.isArray(metaProfiles.accounts)){
+   for(const profile of metaProfiles.accounts){
+     if(!profile.name)continue;
+     const existing=metaMap.get(profile.name)||{};
+     if(profile.facebook)existing.facebook=profile.facebook;
+     if(profile.instagram)existing.instagram=profile.instagram;
+     metaMap.set(profile.name,existing);
+   }
+ }
+ render();
+}).catch(()=>{});
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
