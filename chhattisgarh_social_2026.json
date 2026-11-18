@@ -5,7 +5,7 @@
     "end": "2026-11-05"
   },
   "updated": "2026-11-18",
-  "methodology": "35 unique public X post permalinks previously recovered in publisher-linked archived research. Their snowflake-derived UTC dates fall within the study window; publisher descriptions require article-level corroboration and are not full X-API-authorised transcripts. Count 35 is NOT an estimate of total posts. Absence of indexed post never means no post exists.",
+  "methodology": "35 unique public X post permalinks previously recovered in publisher-linked archived research. Their snowflake-derived UTC dates fall within the study window; publisher descriptions require article-level corroboration and are not full X-API-authorised transcripts. Count 35 is NOT an estimate of total posts. Absence of indexed post never means no post exists. Three other ministers and three relevant departmental/official accounts are listed as supplementary profile directories, NOT included in the fixed 20-leader count or in X post totals. Their historical posts were not backfilled.",
   "evidenceCount": 35,
   "accounts": [
     {
@@ -718,20 +718,38 @@
   "additionalRelevantMinisters": [
     {
       "name": "Ramvichar Netam",
-      "portfolio": "Agriculture and Farmers Welfare",
-      "accountStatus": "X handle pending verification",
-      "evidence": "https://kisan.cg.nic.in/"
+      "role": "Minister of Tribal Affairs, Agriculture Development and Farmer Welfare",
+      "handle": "ramvicharnetam",
+      "accountUrl": "https://x.com/ramvicharnetam",
+      "issues": [
+        "Tribal Issues",
+        "Agriculture & Farmers"
+      ],
+      "evidenceStatus": "public X profile with stated cabinet portfolios",
+      "sourceUrl": "https://x.com/ramvicharnetam"
     },
     {
       "name": "Shyam Bihari Jaiswal",
-      "portfolio": "Health",
-      "accountStatus": "X handle pending verification",
-      "evidence": "https://cghealth.nic.in/"
+      "role": "Minister of Health, Family Welfare and Medical Education",
+      "handle": "ShyamBihariBjp",
+      "accountUrl": "https://x.com/ShyamBihariBjp",
+      "issues": [
+        "Education, Healthcare & Employment"
+      ],
+      "evidenceStatus": "public X profile with stated cabinet portfolios",
+      "sourceUrl": "https://x.com/ShyamBihariBjp"
     },
     {
-      "name": "Dayaldas Baghel",
-      "portfolio": "Food and Civil Supplies",
-      "accountStatus": "X handle pending verification"
+      "name": "Dayal Das Baghel",
+      "role": "Minister of Food, Civil Supplies and Consumer Protection",
+      "handle": "DayalDasBaghel",
+      "accountUrl": "https://x.com/DayalDasBaghel",
+      "issues": [
+        "Agriculture & Farmers",
+        "Governance"
+      ],
+      "evidenceStatus": "public X profile associated with named minister, cabinet portfolio from published reporting",
+      "sourceUrl": "https://x.com/DayalDasBaghel"
     }
   ],
   "sourceRegisters": [
@@ -754,5 +772,75 @@
     "liveItemsMerged": 0,
     "reason": "No connected Apify API token or dataset ID supplied; no paid actor execution initiated",
     "setup": "./apify_x_2026_input.json"
-  }
+  },
+  "supplementaryAccounts": [
+    {
+      "name": "Ramvichar Netam",
+      "role": "Minister of Tribal Affairs, Agriculture Development and Farmer Welfare",
+      "handle": "ramvicharnetam",
+      "accountUrl": "https://x.com/ramvicharnetam",
+      "issues": [
+        "Tribal Issues",
+        "Agriculture & Farmers"
+      ],
+      "evidenceStatus": "public X profile with stated cabinet portfolios",
+      "sourceUrl": "https://x.com/ramvicharnetam"
+    },
+    {
+      "name": "Shyam Bihari Jaiswal",
+      "role": "Minister of Health, Family Welfare and Medical Education",
+      "handle": "ShyamBihariBjp",
+      "accountUrl": "https://x.com/ShyamBihariBjp",
+      "issues": [
+        "Education, Healthcare & Employment"
+      ],
+      "evidenceStatus": "public X profile with stated cabinet portfolios",
+      "sourceUrl": "https://x.com/ShyamBihariBjp"
+    },
+    {
+      "name": "Dayal Das Baghel",
+      "role": "Minister of Food, Civil Supplies and Consumer Protection",
+      "handle": "DayalDasBaghel",
+      "accountUrl": "https://x.com/DayalDasBaghel",
+      "issues": [
+        "Agriculture & Farmers",
+        "Governance"
+      ],
+      "evidenceStatus": "public X profile associated with named minister, cabinet portfolio from published reporting",
+      "sourceUrl": "https://x.com/DayalDasBaghel"
+    },
+    {
+      "name": "Agriculture Department, Chhattisgarh",
+      "role": "Official state Agriculture Department account",
+      "handle": "AgriCgGov",
+      "accountUrl": "https://x.com/AgriCgGov",
+      "issues": [
+        "Agriculture & Farmers"
+      ],
+      "evidenceStatus": "profile explicitly identifies official Chhattisgarh Agriculture Department",
+      "sourceUrl": "https://x.com/AgriCgGov"
+    },
+    {
+      "name": "Chhattisgarh State Police",
+      "role": "Official state police department account",
+      "handle": "CGPoliceDept",
+      "accountUrl": "https://x.com/CGPoliceDept",
+      "issues": [
+        "Internal Security & Bastar"
+      ],
+      "evidenceStatus": "profile explicitly identifies official Chhattisgarh State Police Department",
+      "sourceUrl": "https://x.com/CGPoliceDept"
+    },
+    {
+      "name": "Chief Electoral Officer, Chhattisgarh",
+      "role": "Official state Chief Electoral Officer account",
+      "handle": "CEOChhattisgarh",
+      "accountUrl": "https://x.com/CEOChhattisgarh",
+      "issues": [
+        "Governance"
+      ],
+      "evidenceStatus": "profile explicitly identifies official Chief Electoral Officer Chhattisgarh",
+      "sourceUrl": "https://x.com/CEOChhattisgarh"
+    }
+  ]
 }
