@@ -1,0 +1,32 @@
+{
+  "startUrls": [
+    {
+      "url": "https://www.facebook.com/BhupeshBaghelCG/"
+    },
+    {
+      "url": "https://www.facebook.com/tssinghdeosurguja/"
+    },
+    {
+      "url": "https://www.facebook.com/MohanMarkamPCC"
+    },
+    {
+      "url": "https://www.facebook.com/dyadav.bhilai.official/"
+    },
+    {
+      "url": "https://www.facebook.com/umeshnandkumarpatel/"
+    },
+    {
+      "url": "https://www.facebook.com/vishnudeosai1"
+    },
+    {
+      "url": "https://www.facebook.com/ChhattisgarhCMO"
+    },
+    {
+      "url": "https://www.facebook.com/BJP4India"
+    }
+  ],
+  "resultsLimit": 450,
+  "onlyPostsNewerThan": "2026-08-05",
+  "onlyPostsOlderThan": "2026-11-06T00:00:00Z",
+  "captionText": false
+}
