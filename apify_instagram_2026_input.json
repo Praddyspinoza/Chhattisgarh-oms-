@@ -5,11 +5,16 @@
     "https://www.instagram.com/umeshnandkumarpatel/",
     "https://www.instagram.com/vishnudeosai/",
     "https://www.instagram.com/chhattisgarhcmo/",
-    "https://www.instagram.com/deepak_baij/"
+    "https://www.instagram.com/deepak_baij/",
+    "https://www.instagram.com/kirandeobjp/",
+    "https://www.instagram.com/arunsaobjpofficial/",
+    "https://www.instagram.com/opchoudhary.india/",
+    "https://www.instagram.com/drramansingh.official/",
+    "https://www.instagram.com/bhawnabohrabjp/"
   ],
   "resultsType": "posts",
   "resultsLimit": 450,
   "onlyPostsNewerThan": "2026-08-05",
   "onlyPostsOlderThan": "2026-11-06",
-  "skipPinnedPosts": true
+  "skipPinnedPosts": false
 }
