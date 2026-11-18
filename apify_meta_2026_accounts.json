@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "window": {
+    "from": "2026-08-05",
+    "through": "2026-11-05",
+    "timezone": "UTC"
+  },
+  "source": "Public account directories preserved from prior research; identities not reauthenticated by Meta API",
+  "accounts": [
+    {
+      "name": "Bhupesh Baghel",
+      "facebook": "https://www.facebook.com/BhupeshBaghelCG/",
+      "instagram": "https://www.instagram.com/bhupeshbaghelinc/"
+    },
+    {
+      "name": "T. S. Singh Deo",
+      "facebook": "https://www.facebook.com/tssinghdeosurguja/"
+    },
+    {
+      "name": "Mohan Markam",
+      "facebook": "https://www.facebook.com/MohanMarkamPCC"
+    },
+    {
+      "name": "Devendra Yadav",
+      "facebook": "https://www.facebook.com/dyadav.bhilai.official/",
+      "instagram": "https://www.instagram.com/devendra.yadav.official/"
+    },
+    {
+      "name": "Umesh Patel",
+      "facebook": "https://www.facebook.com/umeshnandkumarpatel/",
+      "instagram": "https://www.instagram.com/umeshnandkumarpatel/"
+    },
+    {
+      "name": "Vishnu Deo Sai",
+      "facebook": "https://www.facebook.com/vishnudeosai1",
+      "instagram": "https://www.instagram.com/vishnudeosai/"
+    },
+    {
+      "name": "Chhattisgarh CMO",
+      "facebook": "https://www.facebook.com/ChhattisgarhCMO",
+      "instagram": "https://www.instagram.com/chhattisgarhcmo/"
+    },
+    {
+      "name": "Deepak Baij",
+      "instagram": "https://www.instagram.com/deepak_baij/"
+    }
+  ],
+  "unresolved": "Only known mapped public page handles are ingestible. Other monitored leaders remain coverage gaps."
+}
