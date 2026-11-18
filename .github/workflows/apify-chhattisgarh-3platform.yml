@@ -1,0 +1,103 @@
+name: Chhattisgarh 2026 - Apify X + Facebook + Instagram
+on:
+  push:
+    paths:
+      - .github/workflows/apify-chhattisgarh-3platform.yml
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Test accounts and data contracts only; no actor charges"
+        type: boolean
+        default: false
+      max_cost_per_actor_usd:
+        description: "Maximum USD charge PER actor, at most three actors"
+        type: number
+        required: true
+        default: 2
+      max_items_per_actor:
+        description: "Maximum raw posts returned PER actor"
+        type: number
+        required: true
+        default: 6000
+permissions:
+  contents: write
+concurrency:
+  group: chhattisgarh-apify-historical-2026
+  cancel-in-progress: false
+jobs:
+  public-social-source-archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Audit collection configuration and source files
+        run: |
+          node --check scripts/apify_chhattisgarh_backfill.mjs
+          node --check scripts/apify_chhattisgarh_meta_backfill.mjs
+          test -f chhattisgarh_social_2026.json
+          test -f apify_meta_2026_accounts.json
+          test -f apify_facebook_2026_input.json
+          test -f apify_instagram_2026_input.json
+      - name: Collect historical X first-party statuses with Apify
+        id: x_collection
+        continue-on-error: true
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
+          MAX_ITEMS: ${{ github.event_name == 'workflow_dispatch' && inputs.max_items_per_actor || 6000 }}
+          MAX_CHARGE_USD: ${{ github.event_name == 'workflow_dispatch' && inputs.max_cost_per_actor_usd || 2 }}
+        run: node scripts/apify_chhattisgarh_backfill.mjs
+      - name: Collect historical Facebook and Instagram with Apify
+        id: meta_collection
+        continue-on-error: true
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
+          MAX_ITEMS: ${{ github.event_name == 'workflow_dispatch' && inputs.max_items_per_actor || 6000 }}
+          MAX_CHARGE_USD_PER_ACTOR: ${{ github.event_name == 'workflow_dispatch' && inputs.max_cost_per_actor_usd || 2 }}
+        run: node scripts/apify_chhattisgarh_meta_backfill.mjs
+      - name: Commit verified and window-filtered public source records
+        if: always()
+        run: |
+          if ! git diff --quiet -- chhattisgarh_social_2026.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add chhattisgarh_social_2026.json
+            git commit -m "Add Apify original public X and Meta post evidence 05 Aug-05 Nov 2026"
+            git push origin HEAD:main
+          fi
+      - name: Count verifiable original social posts by platform
+        if: always()
+        run: |
+          node --input-type=module -e '
+          import fs from "node:fs";
+          const d=JSON.parse(fs.readFileSync("chhattisgarh_social_2026.json","utf8"));
+          const c={X:0,Facebook:0,Instagram:0};
+          for(const p of d.posts||[]){if(p.date>="2026-08-05"&&p.date<="2026-11-05"){const k=p.platform||"X";if(k in c)c[k]++;}}
+          console.log("Verified-window public post records: "+JSON.stringify(c));
+          console.log("Apify recorded runs: "+JSON.stringify(d.metaCollection||[]).slice(0,2500));
+          '
+      - name: Report missing connection or failed actor
+        if: always()
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run && 'true' || 'false' }}
+          X_RESULT: ${{ steps.x_collection.outcome }}
+          META_RESULT: ${{ steps.meta_collection.outcome }}
+        run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "Dry-run only. No Apify API calls made."
+            exit 0
+          fi
+          if [ -z "$APIFY_TOKEN" ]; then
+            echo "::error::Missing secret APIFY_TOKEN. This was NOT an authenticated Apify scrape."
+            exit 2
+          fi
+          if [ "$X_RESULT" != "success" ] || [ "$META_RESULT" != "success" ]; then
+            echo "::error::At least one Actor failed. Only successfully sourced data, if any, were committed; check individual step logs."
+            exit 1
+          fi
+          echo "All three Actor collectors completed. Only author-matched and date-windowed links were accepted."
