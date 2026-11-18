@@ -5,7 +5,7 @@
     "through": "2026-11-05",
     "timezone": "UTC"
   },
-  "source": "Public account directories preserved from prior research; identities not reauthenticated by Meta API",
+  "source": "Identity candidates evaluated against original public politician posts, public Facebook Page headers and verified Instagram biographies. Nonverified accounts retain public-reference status; no personal/fan accounts guessed.",
   "accounts": [
     {
       "name": "Bhupesh Baghel",
@@ -42,8 +42,66 @@
     },
     {
       "name": "Deepak Baij",
-      "instagram": "https://www.instagram.com/deepak_baij/"
+      "instagram": "https://www.instagram.com/deepak_baij/",
+      "facebook": "https://www.facebook.com/deepakbaijinc/",
+      "evidence": "Public first-party posting URLs"
+    },
+    {
+      "name": "Charan Das Mahant",
+      "facebook": "https://www.facebook.com/Dr.CharanDasMahant/",
+      "evidence": "Verified Facebook profile name"
+    },
+    {
+      "name": "Jyotsna Charandas Mahant",
+      "facebook": "https://www.facebook.com/JyotsnaCharandasMahant/",
+      "evidence": "Verified Facebook politician profile"
+    },
+    {
+      "name": "Phulo Devi Netam",
+      "facebook": "https://www.facebook.com/NetamPhulodevi/",
+      "evidence": "Public first-party posts"
+    },
+    {
+      "name": "Kiran Singh Deo",
+      "facebook": "https://www.facebook.com/KiranDeoBJP/",
+      "instagram": "https://www.instagram.com/kirandeobjp/",
+      "evidence": "Verified Facebook and verified Instagram politician profiles"
+    },
+    {
+      "name": "Arun Sao",
+      "facebook": "https://www.facebook.com/arunsaobjp/",
+      "instagram": "https://www.instagram.com/arunsaobjpofficial/",
+      "evidence": "Public first-party Facebook/Instagram politician account"
+    },
+    {
+      "name": "O. P. Choudhary",
+      "facebook": "https://www.facebook.com/OPChoudhary.India/",
+      "instagram": "https://www.instagram.com/opchoudhary.india/",
+      "evidence": "Minister profile and verified Instagram biography"
+    },
+    {
+      "name": "Dr. Raman Singh",
+      "facebook": "https://www.facebook.com/drramansingh.official/",
+      "instagram": "https://www.instagram.com/drramansingh.official/",
+      "evidence": "Original first-party Facebook and verified Instagram Assembly Speaker bio"
+    },
+    {
+      "name": "Brijmohan Agrawal",
+      "facebook": "https://www.facebook.com/brijmohan.ag/",
+      "evidence": "Public first-party page"
+    },
+    {
+      "name": "Bhavna Bohra",
+      "facebook": "https://www.facebook.com/BohraBhawna/",
+      "instagram": "https://www.instagram.com/bhawnabohrabjp/",
+      "evidence": "Public Facebook and verified Instagram MLA biography"
+    },
+    {
+      "name": "Kedar Kashyap",
+      "facebook": "https://www.facebook.com/kedarkashyapofficial/",
+      "evidence": "Original public politician posts"
     }
   ],
-  "unresolved": "Only known mapped public page handles are ingestible. Other monitored leaders remain coverage gaps."
+  "unresolved": "No confirmed first-party Meta Page/profile yet for Vijay Sharma, Sandeep Sahu and Deepak Mhaskey; these are genuine gaps, not evidence of no activity.",
+  "updated": "2026-11-18"
 }
