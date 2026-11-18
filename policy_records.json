@@ -1,0 +1,375 @@
+{
+  "schemaVersion": "1.0",
+  "updated": "2026-11-18",
+  "window": {
+    "start": "2026-08-05",
+    "end": "2026-11-05"
+  },
+  "methodology": "Only state Finance Department and GAD entries evidenced by direct 2026 register pages. This is a verified register subset, not exhaustive departmental collection. Cabinet decisions and out-of-window statutes are not counted as circulars. Headline translation into English may be abbreviated.",
+  "assembly": {
+    "status": "NO_ASSEMBLY_SESSION_IN_WINDOW",
+    "sittings": 0,
+    "recordsForTenIssues": 0,
+    "previousSession": {
+      "title": "Sixth Assembly, 10th Session",
+      "from": "2026-07-13",
+      "to": "2026-07-17"
+    },
+    "nextSession": {
+      "title": "Sixth Assembly, 11th Session",
+      "from": "2026-12-14",
+      "to": "2026-12-17",
+      "label": "Reported schedule; final session record not yet published"
+    },
+    "primarySources": [
+      "https://cgvidhansabha.gov.in/hindi_new/satra/patrak-1.htm",
+      "https://cgvidhansabha.gov.in/hindi_new/satra/proceedings.htm",
+      "https://cgvidhansabha.gov.in/hindi_new/session.htm"
+    ],
+    "note": "Do not treat committee bulletins, departmental statements or earlier Assembly questions as plenary proceedings during 05 Aug–05 Nov 2026."
+  },
+  "circulars": [
+    {
+      "id": "FIN-2026-32",
+      "date": "2026-11-04",
+      "ref": "Finance Instruction 32/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "School Education civil-service time-scale pay",
+      "issue": "Education, Healthcare & Employment",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/32.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "FIN-2026-31",
+      "date": "2026-10-30",
+      "ref": "Finance Instruction 31/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Revised dearness relief rates for state pensioners",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/31.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "FIN-2026-30",
+      "date": "2026-10-30",
+      "ref": "Finance Instruction 30/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Revised dearness allowance for 2017 and 2009 pay scales",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/30.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "BUD-2026-2026-10-26",
+      "date": "2026-10-26",
+      "ref": "Budget Instruction 2026-10-26",
+      "type": "budget_instruction",
+      "department": "Finance Department",
+      "title": "Revised estimates FY2026–27 and FY2027–28 budget proposals",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circular.asp?subject=1",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circulars/2027-2028/26-10-2026.pdf",
+      "evidenceStatus": "official_index_and_direct_pdf_link",
+      "district": "Statewide",
+      "notes": "Finance budget-cycle instruction; not an actual allocation or scheme rollout"
+    },
+    {
+      "id": "FIN-2026-29",
+      "date": "2026-10-22",
+      "ref": "Finance Instruction 29/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Revised classification of government accounts and subheads",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/29.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "FIN-2026-28",
+      "date": "2026-10-21",
+      "ref": "Finance Instruction 28/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Revised interest rates for family welfare fund and government group-insurance savings fund",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/28.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "FIN-2026-27",
+      "date": "2026-10-21",
+      "ref": "Finance Instruction 27/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "State provident fund interest rates",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/27.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "FIN-2026-26",
+      "date": "2026-10-21",
+      "ref": "Finance Instruction 26/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Delegation of administrative approval authority for departmental buildings",
+      "issue": "Infrastructure & Development",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/26.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "FIN-2026-25",
+      "date": "2026-10-13",
+      "ref": "Finance Instruction 25/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Expedited disposal of pension cases",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/25.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "BUD-2026-2026-10-07",
+      "date": "2026-10-07",
+      "ref": "Budget Instruction 2026-10-07",
+      "type": "budget_instruction",
+      "department": "Finance Department",
+      "title": "IFMIS Next Gen budget planning/receipt proposal workshop",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circular.asp?subject=1",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circulars/2027-2028/07-10-2026.pdf",
+      "evidenceStatus": "official_index_and_direct_pdf_link",
+      "district": "Statewide",
+      "notes": "Finance budget-cycle instruction; not an actual allocation or scheme rollout"
+    },
+    {
+      "id": "FIN-2026-24",
+      "date": "2026-10-06",
+      "ref": "Finance Instruction 24/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Amendment of financial powers for Women and Child Development Department",
+      "issue": "Education, Healthcare & Employment",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/24.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "FIN-2026-23",
+      "date": "2026-09-30",
+      "ref": "Finance Instruction 23/2026",
+      "type": "finance_instruction",
+      "department": "Finance Department",
+      "title": "Notification in pursuance of Section 12(4) of PFRDA Act, 2013",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/year_wise/pdf_2026/23.pdf",
+      "evidenceStatus": "official_number_date_subject_and_document_link",
+      "district": "Statewide",
+      "notes": "Index subject translated into English; link opens original Hindi PDF"
+    },
+    {
+      "id": "BUD-2026-2026-09-30",
+      "date": "2026-09-30",
+      "ref": "Budget Instruction 2026-09-30",
+      "type": "budget_instruction",
+      "department": "Finance Department",
+      "title": "Revenue estimates and next-year budget proposals",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circular.asp?subject=1",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circulars/2027-2028/30-09-2026.pdf",
+      "evidenceStatus": "official_index_and_direct_pdf_link",
+      "district": "Statewide",
+      "notes": "Finance budget-cycle instruction; not an actual allocation or scheme rollout"
+    },
+    {
+      "id": "GAD-2026-04",
+      "date": "2026-09-21",
+      "ref": "PLGMJ-2601/729/2026-GAD-ACCOUNTI/645170/2026",
+      "type": "general_administration_register",
+      "department": "General Administration Department",
+      "title": "Chief Minister discretionary grants for FY2026–27",
+      "issue": "Governance",
+      "sourceUrl": "https://gad.cg.gov.in/Display_state_circular.aspx",
+      "documentUrl": null,
+      "evidenceStatus": "official_register_item_direct_pdf_not_extracted",
+      "district": "Statewide",
+      "notes": "Official online register provides a Download control; standalone direct PDF URL not recovered"
+    },
+    {
+      "id": "GAD-2026-05",
+      "date": "2026-09-21",
+      "ref": "PLGMJ-2601/507/2026-GAD-ACCOUNTI/645181/2026",
+      "type": "general_administration_register",
+      "department": "General Administration Department",
+      "title": "Ministers' discretionary grants for FY2026–27",
+      "issue": "Governance",
+      "sourceUrl": "https://gad.cg.gov.in/Display_state_circular.aspx",
+      "documentUrl": null,
+      "evidenceStatus": "official_register_item_direct_pdf_not_extracted",
+      "district": "Statewide",
+      "notes": "Official online register provides a Download control; standalone direct PDF URL not recovered"
+    },
+    {
+      "id": "BUD-2026-2026-09-17",
+      "date": "2026-09-17",
+      "ref": "Budget Instruction 2026-09-17",
+      "type": "budget_instruction",
+      "department": "Finance Department",
+      "title": "FY2027–28 department staffing, vehicles and asset data request",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circular.asp?subject=1",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circulars/2027-2028/17-09-2026.pdf",
+      "evidenceStatus": "official_index_and_direct_pdf_link",
+      "district": "Statewide",
+      "notes": "Finance budget-cycle instruction; not an actual allocation or scheme rollout"
+    },
+    {
+      "id": "GAD-2026-01",
+      "date": "2026-09-16",
+      "ref": "RULE/644/2025-GAD-3",
+      "type": "general_administration_register",
+      "department": "General Administration Department",
+      "title": "Maximum age for existing public employees applying to other services raised from 38 to 45",
+      "issue": "Education, Healthcare & Employment",
+      "sourceUrl": "https://gad.cg.gov.in/Display_state_circular.aspx",
+      "documentUrl": null,
+      "evidenceStatus": "official_register_item_direct_pdf_not_extracted",
+      "district": "Statewide",
+      "notes": "Official online register provides a Download control; standalone direct PDF URL not recovered"
+    },
+    {
+      "id": "BUD-2026-2026-09-14",
+      "date": "2026-09-14",
+      "ref": "Budget Instruction 2026-09-14",
+      "type": "budget_instruction",
+      "department": "Finance Department",
+      "title": "FY2027–28 budget preparation programme",
+      "issue": "Governance",
+      "sourceUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circular.asp?subject=1",
+      "documentUrl": "https://finance.cg.gov.in/vitt_nirdesh/budget_circulars/2027-2028/14-09-2026.pdf",
+      "evidenceStatus": "official_index_and_direct_pdf_link",
+      "district": "Statewide",
+      "notes": "Finance budget-cycle instruction; not an actual allocation or scheme rollout"
+    },
+    {
+      "id": "GAD-2026-02",
+      "date": "2026-09-14",
+      "ref": "RULE/297/2025-GAD-3",
+      "type": "general_administration_register",
+      "department": "General Administration Department",
+      "title": "Amendment to minimum qualifications for direct recruitment to Class III/IV posts",
+      "issue": "Education, Healthcare & Employment",
+      "sourceUrl": "https://gad.cg.gov.in/Display_state_circular.aspx",
+      "documentUrl": null,
+      "evidenceStatus": "official_register_item_direct_pdf_not_extracted",
+      "district": "Statewide",
+      "notes": "Official online register provides a Download control; standalone direct PDF URL not recovered"
+    },
+    {
+      "id": "GAD-2026-03",
+      "date": "2026-09-14",
+      "ref": "GENS/27752/2026-GAD-3",
+      "type": "general_administration_register",
+      "department": "General Administration Department",
+      "title": "Caste certificate denomination 'Rohidas' for specified Scheduled Caste communities",
+      "issue": "Governance",
+      "sourceUrl": "https://gad.cg.gov.in/Display_state_circular.aspx",
+      "documentUrl": null,
+      "evidenceStatus": "official_register_item_direct_pdf_not_extracted",
+      "district": "Statewide",
+      "notes": "Official online register provides a Download control; standalone direct PDF URL not recovered"
+    }
+  ],
+  "unresolvedIssueGaps": [
+    {
+      "issue": "Tribal Issues",
+      "status": "No official date-eligible circular independently indexed in this research pass; NOT zero government action"
+    },
+    {
+      "issue": "Religion / Hinduism",
+      "status": "No official date-eligible circular independently indexed in this research pass; NOT zero government action"
+    },
+    {
+      "issue": "Minerals",
+      "status": "No official date-eligible circular independently indexed in this research pass; NOT zero government action"
+    },
+    {
+      "issue": "Mining",
+      "status": "No official date-eligible circular independently indexed in this research pass; NOT zero government action"
+    },
+    {
+      "issue": "Agriculture & Farmers",
+      "status": "No official date-eligible circular independently indexed in this research pass; NOT zero government action"
+    },
+    {
+      "issue": "Internal Security & Bastar",
+      "status": "No official date-eligible circular independently indexed in this research pass; NOT zero government action"
+    },
+    {
+      "issue": "Environment & Forests",
+      "status": "No official date-eligible circular independently indexed in this research pass; NOT zero government action"
+    }
+  ],
+  "sourceDirectories": [
+    {
+      "name": "Finance Instructions 2026",
+      "url": "https://finance.cg.gov.in/vitt_nirdesh/subject.asp?subject=2026"
+    },
+    {
+      "name": "Budget Instructions",
+      "url": "https://finance.cg.gov.in/vitt_nirdesh/budget_circular.asp?subject=1"
+    },
+    {
+      "name": "GAD State Circulars",
+      "url": "https://gad.cg.gov.in/Display_state_circular.aspx"
+    },
+    {
+      "name": "GAD Rules and Circulars",
+      "url": "https://gad.cg.gov.in/Rules_and_Circular.aspx"
+    },
+    {
+      "name": "Chhattisgarh Assembly Proceedings",
+      "url": "https://cgvidhansabha.gov.in/hindi_new/satra/proceedings.htm"
+    }
+  ],
+  "nonCircularContext": [
+    {
+      "date": "2026-10-27",
+      "title": "Cabinet decisions on paddy procurement and Krishak Unnati Yojana",
+      "issue": "Agriculture & Farmers",
+      "url": "https://cgnh.in/?p=19379",
+      "sourceType": "secondary_reporting_of_cabinet_decision",
+      "caution": "Cabinet decision is not a departmental circular. Paddy purchase start on 15 Nov is OUTSIDE this review window."
+    }
+  ]
+}
