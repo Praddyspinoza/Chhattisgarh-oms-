@@ -9,7 +9,6 @@ const ACTOR = "winterlock~x-tweet-scraper";
 const START = "2026-08-05", END = "2026-11-05";
 const APIFY = "https://api.apify.com/v2";
 const token = process.env.APIFY_TOKEN?.trim();
-if (!token) { console.error("APIFY_TOKEN secret missing; no actor run attempted."); process.exit(2); }
 const cost = Math.min(Math.max(Number(process.env.MAX_CHARGE_USD||"5"),.1),10);
 const maxItems = Math.min(Math.max(Number(process.env.MAX_ITEMS||"8000"),1),12000);
 const dryRun = process.env.DRY_RUN === "true";
@@ -31,6 +30,7 @@ let searchTerms=[...new Set([...(config.searchTerms||[]),...(extraConfig.searchT
 if(!searchTerms.length)throw Error("No user-approved account searches configured");
 const input={searchTerms,sort:"Latest",start:START,end:"2026-11-06",maxItems};
 if(dryRun){console.log(JSON.stringify({dryRun:true,actor:ACTOR,accounts:roster.length,queries:searchTerms.length,costCapUsd:cost,maxItems},null,2));process.exit(0)}
+if (!token) { console.error("APIFY_TOKEN secret missing; no paid actor run attempted."); process.exit(2); }
 const launched=await rest(APIFY+"/actors/"+ACTOR+"/runs?maxTotalChargeUsd="+encodeURIComponent(String(cost))+"&maxItems="+encodeURIComponent(String(maxItems)),"POST",input);
 const runId=launched.data?.id;
 if(!runId)throw Error("Apify did not return an actor run ID");
