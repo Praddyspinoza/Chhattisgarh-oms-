@@ -1,0 +1,14 @@
+{
+  "searchTerms": [
+    "from:ramvicharnetam since:2026-08-05 until:2026-11-06 -filter:retweets",
+    "from:ShyamBihariBjp since:2026-08-05 until:2026-11-06 -filter:retweets",
+    "from:DayalDasBaghel since:2026-08-05 until:2026-11-06 -filter:retweets",
+    "from:AgriCgGov since:2026-08-05 until:2026-11-06 -filter:retweets",
+    "from:CGPoliceDept since:2026-08-05 until:2026-11-06 -filter:retweets",
+    "from:CEOChhattisgarh since:2026-08-05 until:2026-11-06 -filter:retweets"
+  ],
+  "sort": "Latest",
+  "start": "2026-08-05",
+  "end": "2026-11-06",
+  "maxItems": 3000
+}
