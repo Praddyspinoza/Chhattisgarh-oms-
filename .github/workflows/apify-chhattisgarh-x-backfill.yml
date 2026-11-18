@@ -1,0 +1,49 @@
+name: Apify Chhattisgarh X historical backfill
+on:
+  workflow_dispatch:
+    inputs:
+      max_items:
+        description: "Maximum paid public X posts to retrieve"
+        type: number
+        required: true
+        default: 8000
+      max_cost_usd:
+        description: "Hard maximum charge in USD for this run"
+        type: number
+        required: true
+        default: 5
+      dry_run:
+        description: "Only check configuration and account roster (no paid run)"
+        type: boolean
+        default: true
+permissions:
+  contents: write
+concurrency:
+  group: cg-x-apify-historical
+  cancel-in-progress: false
+jobs:
+  source-first-party-x:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate Apify credentials and run historical collection
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          MAX_ITEMS: ${{ inputs.max_items }}
+          MAX_CHARGE_USD: ${{ inputs.max_cost_usd }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: node scripts/apify_chhattisgarh_backfill.mjs
+      - name: Save audited source dataset without altering UI
+        if: ${{ !inputs.dry_run }}
+        run: |
+          if ! git diff --quiet -- chhattisgarh_social_2026.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add chhattisgarh_social_2026.json
+            git commit -m "Backfill Chhattisgarh public X posts from Apify with provenance"
+            git push origin HEAD:main
+          fi
