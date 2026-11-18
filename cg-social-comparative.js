@@ -282,3 +282,74 @@ Promise.allSettled([
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot,{once:true});else boot();
 })();
+
+
+/* CM in Focus: issue-only, user-supplied Apify Facebook source archive. No other view changed. */
+(function(){
+"use strict";
+const NAMES=["Tribal Issues","Religion / Hinduism","Governance","Minerals","Mining","Agriculture & Farmers","Internal Security & Bastar","Infrastructure & Development","Education, Healthcare & Employment","Environment & Forests"];
+const COLORS=["#47c3aa","#d4b06b","#6c9fe0","#98b3c8","#b78d82","#9ac66d","#dd8476","#a38ed3","#d5a2bf","#63a6a1"];
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safe=s=>{try{let u=new URL(s);return u.protocol==="https:"&&/(^|\.)facebook\.com$/.test(u.hostname)?u.href:""}catch{return""}};
+let posts=[],page=1,loading=true,err="",issue="all",query="",limit=30,manifest=null;
+function setup(){
+ const parent=document.getElementById("v12-cm");
+ const target=document.getElementById("v12CmPosts");
+ if(!parent||!target||document.getElementById("cmApifyFocused"))return;
+ const panel=document.createElement("section");panel.id="cmApifyFocused";panel.className="v12-panel";
+ panel.style.cssText="margin:16px 0 20px;grid-column:1/-1;border:1px solid #3b5b60;border-radius:12px;padding:18px;background:rgba(6,20,27,.72)";
+ panel.innerHTML='<div class="v12-cap">CM IN FOCUS / ORIGINAL FACEBOOK POST INTELLIGENCE</div><h3 style="margin:8px 0">Vishnu Deo Sai · Ten-issue Facebook archive</h3><p class="v12-hint">Source: user-supplied Apify public-page scraper export. Captions and dates are from the export; original Facebook URLs have not been independently live-checked. Classifications are provisional. Not Meta Graph API-verified. Archive coverage: 30 Sep–4 Nov 2026, not the entire requested 5 Aug–5 Nov period.</p><div id="cmApifySummary" class="v12-stats" style="margin:14px 0"></div><div class="v12-controls" style="margin:12px 0;display:flex;flex-wrap:wrap;gap:12px"><label>Issue<select id="cmApifyIssue"></select></label><label>Search captions<input id="cmApifySearch" type="search" placeholder="Keyword, scheme, district…" /></label><label>Rows<select id="cmApifyLimit"><option value="30">30 per page</option><option value="60">60 per page</option></select></label></div><div id="cmApifyDistribution"></div><div id="cmApifyRows" class="v12-evidence-list"></div><div id="cmApifyPagination" style="display:flex;gap:12px;align-items:center;margin-top:14px"></div>';
+ target.parentElement.insertBefore(panel,target);
+ const select=panel.querySelector("#cmApifyIssue");
+ select.innerHTML='<option value="all">All ten issues</option>'+NAMES.map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join("");
+ select.addEventListener("change",e=>{issue=e.target.value;page=1;render()});
+ panel.querySelector("#cmApifySearch").addEventListener("input",e=>{query=e.target.value.toLocaleLowerCase();page=1;render()});
+ panel.querySelector("#cmApifyLimit").addEventListener("change",e=>{limit=Number(e.target.value);page=1;render()});
+ const globalIssue=document.getElementById("v12CmIssue");
+ if(globalIssue)globalIssue.addEventListener("change",e=>{issue=e.target.value;select.value=NAMES.includes(issue)?issue:"all";page=1;render()});
+ render();
+ load();
+}
+async function load(){
+ try{
+  const response=await fetch("./cm_facebook_issues_manifest_2026.json",{cache:"no-store"});
+  if(!response.ok)throw Error("Issue-only manifest unavailable");
+  manifest=await response.json();
+  if(!manifest||manifest.posts_on_ten_issues!==339||!Array.isArray(manifest.files)||manifest.files.length!==9)throw Error("Unexpected archive manifest");
+  const chunks=await Promise.all(manifest.files.map(async name=>{
+    if(!/^cm_facebook_issues_2026_part\d{2}\.json$/.test(name))throw Error("Invalid part filename");
+    const res=await fetch("./"+name,{cache:"no-store"});if(!res.ok)throw Error("Missing "+name);
+    const body=await res.json();if(!body.issue_only||!Array.isArray(body.posts))throw Error("Invalid archive part");
+    return body.posts;
+  }));
+  const all=chunks.flat();
+  if(all.length!==339||new Set(all.map(p=>p.post_id)).size!==339)throw Error("Archive count or duplicate check failed");
+  if(all.some(p=>!NAMES.includes(p.issue)||!safe(p.url)||p.date<"2026-08-05"||p.date>"2026-11-05"))throw Error("Out-of-scope post detected");
+  posts=all.sort((a,b)=>String(b.published_utc).localeCompare(String(a.published_utc)));
+ }catch(e){err=e.message||"Archive load failed"}finally{loading=false;render()}
+}
+function render(){
+ const panel=document.getElementById("cmApifyFocused");if(!panel)return;
+ const summary=panel.querySelector("#cmApifySummary"),distribution=panel.querySelector("#cmApifyDistribution"),list=panel.querySelector("#cmApifyRows"),nav=panel.querySelector("#cmApifyPagination");
+ if(loading){list.textContent="Loading issue-matched original Facebook links…";return}
+ if(err){list.textContent="Archive unavailable: "+err;return}
+ const selected=posts.filter(p=>(issue==="all"||p.issue===issue)&&(!query||[p.text,p.title,p.issue,p.date].join(" ").toLocaleLowerCase().includes(query)));
+ const c=Object.fromEntries(NAMES.map(n=>[n,selected.filter(p=>p.issue===n).length]));
+ summary.innerHTML=[[posts.length,"Posts on the ten issues"],[manifest.posts_excluded_as_off_topic,"Off-topic posts excluded"],[selected.length,"Matching current filters"],[new Set(posts.map(p=>p.url)).size,"Distinct original Facebook URLs"]].map(([n,label])=>'<div class="v12-stat"><b>'+n+'</b><span>'+esc(label)+'</span></div>').join("");
+ distribution.innerHTML='<div style="display:flex;flex-wrap:wrap;gap:7px;margin:12px 0">'+NAMES.map((n,i)=>'<button type="button" data-cm-issue="'+i+'" style="cursor:pointer;background:#0c2030;border:1px solid '+COLORS[i]+';border-radius:20px;padding:7px 11px;color:#e3ebf1">'+esc(n)+' · '+c[n]+'</button>').join("")+'</div>';
+ distribution.querySelectorAll("[data-cm-issue]").forEach(b=>b.addEventListener("click",()=>{issue=NAMES[Number(b.dataset.cmIssue)];panel.querySelector("#cmApifyIssue").value=issue;page=1;render()}));
+ const pages=Math.max(1,Math.ceil(selected.length/limit));page=Math.min(page,pages);
+ const visible=selected.slice((page-1)*limit,page*limit);
+ list.innerHTML=visible.length?visible.map(p=>{
+   const link=safe(p.url);
+   const body=String(p.text||"").trim();
+   const excerpt=body.length>750?body.slice(0,750)+"…":body;
+   const engagement=["Likes: "+(p.likes??"—"),"Comments: "+(p.comments??"—"),"Shares: "+(p.shares??"—")].join(" · ");
+   return '<article class="v12-evidence"><div class="v12-evidence-meta">'+esc(p.date)+' · Facebook · Vishnu Deo Sai · Scraper-exported</div><b>'+esc(p.title||"Original Facebook post")+'</b><p style="white-space:pre-wrap">'+esc(excerpt)+'</p><div class="v12-chiprow"><span class="v12-chip">'+esc(p.issue)+'</span>'+(p.secondaryIssues||[]).filter(n=>NAMES.includes(n)).map(n=>'<span class="v12-chip">'+esc(n)+'</span>').join("")+'</div><p class="v12-hint">'+esc(engagement)+' · Issue label provisional · Original link not independently checked</p><a class="v12-link" href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Open original Facebook post ↗</a></article>';
+ }).join(""):'<div class="v12-blank">No posts match this issue and search.</div>';
+ nav.innerHTML='<button type="button" id="cmApifyPrev" '+(page===1?"disabled":"")+'>Previous</button><span>Page '+page+' of '+pages+' · '+selected.length+' posts</span><button type="button" id="cmApifyNext" '+(page===pages?"disabled":"")+'>Next</button>';
+ nav.querySelector("#cmApifyPrev").addEventListener("click",()=>{page=Math.max(1,page-1);render()});
+ nav.querySelector("#cmApifyNext").addEventListener("click",()=>{page=Math.min(pages,page+1);render()});
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",setup,{once:true});else setup();
+})();
