@@ -68,34 +68,6 @@
   ],
   "videos": [
     {
-      "id": "V9Xq-kIqjdk",
-      "date": "2026-09-18",
-      "state": "Odisha",
-      "leader": "od-lop",
-      "channel": "Kalinga TV",
-      "issue": "Governance",
-      "secondaryIssues": [],
-      "title": "Kalinga TV reports Naveen Patnaik's comments in UPI-payment discussion",
-      "summary": "Channel footage/headline concerns digital-payment issues and the Leader of Opposition; broader conclusions about policy are not independently verified.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "C59-B4g8OE0",
-      "date": "2026-09-17",
-      "state": "Jharkhand",
-      "leader": "jh-lop",
-      "channel": "News18 Bihar Jharkhand",
-      "issue": "Education, Healthcare & Employment",
-      "secondaryIssues": [
-        "Governance"
-      ],
-      "title": "Babulal Marandi seeks investigation of JPSC–JSSC recruitment irregularity allegations",
-      "summary": "News18 Bihar Jharkhand reports Marandi's criticism of recruitment examination handling and his call for an independent inquiry. Allegations are not established findings.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
       "id": "mGEMxrBLRS0",
       "date": "2026-09-17",
       "state": "Odisha",
@@ -108,22 +80,6 @@
       "title": "Mohan Charan Majhi announces Delhi roadshow and investor discussions",
       "summary": "OTV reports the chief minister's planned investor meetings and roadshow. Planned investment discussions are not completed projects.",
       "verification": "direct_youtube_page_with_channel_and_date"
-    },
-    {
-      "id": "SkskLwEThLM",
-      "date": "2026-09-08",
-      "state": "Odisha",
-      "leader": "od-cm",
-      "channel": "News18 Odia",
-      "issue": "Infrastructure & Development",
-      "secondaryIssues": [
-        "Agriculture & Farmers",
-        "Governance"
-      ],
-      "title": "News18 Odia covers Mohan Majhi's UAE investment outreach and Odisha farmer registration",
-      "summary": "Multi-story September bulletin: CM UAE investor outreach, farmer-registration deadline and opposition MMDR reactions; not an exclusive CM interview.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
     },
     {
       "id": "Q03S-ykwySM",
@@ -140,19 +96,6 @@
       "verification": "direct_youtube_page_with_channel_and_date"
     },
     {
-      "id": "FC_zDHXxOrs",
-      "date": "2026-09-04",
-      "state": "Odisha",
-      "leader": "od-cm",
-      "channel": "News18 Odia",
-      "issue": "Agriculture & Farmers",
-      "secondaryIssues": [],
-      "title": "News18 Odia discusses Mohan Majhi and CM-KISAN farmer assistance",
-      "summary": "Separate News18 Odia video on CM-KISAN scheme and direct farmer assistance; avoid inferring actual disbursement beyond reported information.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
       "id": "aMllN9oT-IQ",
       "date": "2026-09-03",
       "state": "Odisha",
@@ -165,107 +108,6 @@
       "title": "News18 Odia bulletin covers CM-Kisan fifth installment and farmer procurement",
       "summary": "The channel's video description reports the CM-Kisan fifth installment and says the Chief Minister is releasing over ₹833 crore for 41 lakh farmers. It is a multi-story bulletin, not an exclusive CM interview; the figures are publisher-reported.",
       "verification": "direct_youtube_page_with_channel_and_date"
-    },
-    {
-      "id": "lWcBobUKVQU",
-      "date": "2026-09-03",
-      "state": "Odisha",
-      "leader": "od-cm",
-      "channel": "News18 Odia",
-      "issue": "Governance",
-      "secondaryIssues": [
-        "Minerals",
-        "Infrastructure & Development"
-      ],
-      "title": "News18 Odia covers Mohan Majhi's Delhi meetings and MMDR political context",
-      "summary": "Multi-subject report covering the CM's central meetings, Jal Shakti summit and the MMDR dispute involving Naveen Patnaik; source describes political discussions, not a confirmed investment outcome.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "G4ZTpNqndZU",
-      "date": "2026-09-02",
-      "state": "Odisha",
-      "leader": "od-lop",
-      "channel": "Kanak News",
-      "issue": "Governance",
-      "secondaryIssues": [],
-      "title": "Kanak News covers political dispute over Naveen Patnaik government's commitments",
-      "summary": "Kanak News examines political statements concerning the previous government's commitments and the present opposition's position; claims are attributable to the broadcaster.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "W5zaNhs2qQ4",
-      "date": "2026-09-02",
-      "state": "Jharkhand",
-      "leader": "jh-cm",
-      "channel": "News18 Bihar Jharkhand",
-      "issue": "Governance",
-      "secondaryIssues": [
-        "Education, Healthcare & Employment"
-      ],
-      "title": "Jharkhand bulletin reports Hemant Soren's directive on assistance to struggling sportspersons",
-      "summary": "Multi-story News18 Bihar Jharkhand bulletin includes a report about the CM's instruction to address hardship facing sportspersons; not a standalone CM speech.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "asjrWK92uUs",
-      "date": "2026-09-01",
-      "state": "Madhya Pradesh",
-      "leader": "mp-cm",
-      "channel": "MP Tak",
-      "issue": "Education, Healthcare & Employment",
-      "secondaryIssues": [],
-      "title": "MP Tak reports Mohan Yadav's laptop support to high-scoring students",
-      "summary": "Reporting concerns a laptop-related educational assistance event for meritorious students; check official payment/distribution figures separately.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "1s-5EF6_OjQ",
-      "date": "2026-08-31",
-      "state": "Odisha",
-      "leader": "od-lop",
-      "channel": "News18 Odia",
-      "issue": "Minerals",
-      "secondaryIssues": [
-        "Mining",
-        "Governance"
-      ],
-      "title": "Naveen Patnaik renews criticism of MMDR Bill in letter to BJP MPs",
-      "summary": "Another dated News18 Odia report on the same MMDR policy dispute; counted as a distinct video, not a distinct event.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "BlQYC17sS-w",
-      "date": "2026-08-30",
-      "state": "Madhya Pradesh",
-      "leader": "mp-lop",
-      "channel": "IBC24",
-      "issue": "Governance",
-      "secondaryIssues": [],
-      "title": "Umang Singhar challenges BJP's Uniform Civil Code position",
-      "summary": "IBC24 reports the Leader of Opposition's comments on the proposed Uniform Civil Code; this is an attributed political position.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "kBZWNAKQA80",
-      "date": "2026-08-30",
-      "state": "Madhya Pradesh",
-      "leader": "mp-cm",
-      "channel": "News18 MP Chhattisgarh",
-      "issue": "Governance",
-      "secondaryIssues": [
-        "Infrastructure & Development"
-      ],
-      "title": "MP government and Mohan Yadav address monsoon flood situation",
-      "summary": "Channel reports the government's response to flooding; do not infer completed relief without official records.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
     },
     {
       "id": "pCV3-LVLz9Y",
@@ -281,22 +123,6 @@
       "title": "BJD raises ten questions over MMDR Amendment Bill after Naveen Patnaik's letter",
       "summary": "OTV describes the BJD press conference and cites Naveen Patnaik's preceding letter; this is party coverage, not a direct Patnaik statement.",
       "verification": "direct_youtube_page_with_channel_and_date"
-    },
-    {
-      "id": "aQ30Y8UeEAg",
-      "date": "2026-08-29",
-      "state": "Odisha",
-      "leader": "od-lop",
-      "channel": "News18 Odia",
-      "issue": "Minerals",
-      "secondaryIssues": [
-        "Mining",
-        "Governance"
-      ],
-      "title": "Naveen Patnaik asks Odisha MPs to reverse support for MMDR Amendment Bill",
-      "summary": "News18 Odia reports the opposition leader's objection to the MMDR amendment and warnings about mineral revenue and state autonomy. Revenue-loss estimates remain claims.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
     },
     {
       "id": "qSUbOfM8sg4",
@@ -326,78 +152,6 @@
       "verification": "direct_youtube_page_with_channel_and_date"
     },
     {
-      "id": "AzauMm6kkGk",
-      "date": "2026-08-21",
-      "state": "Odisha",
-      "leader": "od-lop",
-      "channel": "Kanak News",
-      "issue": "Minerals",
-      "secondaryIssues": [
-        "Mining",
-        "Governance"
-      ],
-      "title": "Kanak News examines Naveen Patnaik–BJP disagreement over MMDR changes",
-      "summary": "Channel special report addresses amendment controversy, including party positions; no claim about actual losses is independently established.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "S55MxYThCXI",
-      "date": "2026-08-21",
-      "state": "Madhya Pradesh",
-      "leader": "mp-cm",
-      "channel": "IBC24",
-      "issue": "Governance",
-      "secondaryIssues": [],
-      "title": "Mohan Yadav attends Tikamgarh public dialogue and outreach programme",
-      "summary": "IBC24 coverage of the chief minister's district outreach at Tikamgarh; headline-level source evidence only.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "t0lsvfyONFA",
-      "date": "2026-08-17",
-      "state": "Odisha",
-      "leader": "od-lop",
-      "channel": "News18 Odia",
-      "issue": "Governance",
-      "secondaryIssues": [
-        "Infrastructure & Development"
-      ],
-      "title": "Naveen Patnaik assigns party representatives to monitor flood relief in affected districts",
-      "summary": "News18 Odia reports BJD relief-coordination assignments in Jajpur, Bhadrak and Balasore; party response is distinct from government action.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "YtzmzRol8JU",
-      "date": "2026-08-15",
-      "state": "Odisha",
-      "leader": "od-cm",
-      "channel": "News18 Odia",
-      "issue": "Education, Healthcare & Employment",
-      "secondaryIssues": [
-        "Governance"
-      ],
-      "title": "Mohan Majhi outlines youth employment and teacher recruitment proposals",
-      "summary": "News18 Odia describes plans/announcements relating to employment and teacher recruitment; proposed posts are not counted as filled jobs.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
-      "id": "QZuE239xPRM",
-      "date": "2026-08-14",
-      "state": "Odisha",
-      "leader": "od-cm",
-      "channel": "News18 Odia",
-      "issue": "Education, Healthcare & Employment",
-      "secondaryIssues": [],
-      "title": "News18 Odia reports Mohan Majhi's teacher recruitment announcement",
-      "summary": "Channel reports announcement of teacher recruitment; announcement not treated as completed recruitment.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
-    },
-    {
       "id": "8Ra4o3XSw1A",
       "date": "2026-08-09",
       "state": "Jharkhand",
@@ -408,21 +162,6 @@
       "title": "Hemant Soren at Jharkhand Adivasi Mahotsav 2026",
       "summary": "Zee Bihar Jharkhand's dated coverage of the Chief Minister at the Adivasi festival. Cultural coverage is included under tribal issues; no policy delivery is inferred.",
       "verification": "direct_youtube_page_with_channel_and_date"
-    },
-    {
-      "id": "uUY2nTKeIIo",
-      "date": "2026-08-05",
-      "state": "Madhya Pradesh",
-      "leader": "mp-cm",
-      "channel": "News18 MP Chhattisgarh",
-      "issue": "Infrastructure & Development",
-      "secondaryIssues": [
-        "Governance"
-      ],
-      "title": "Mohan Yadav reviews rural roads, panchayat and development works",
-      "summary": "Channel description covers the Chief Minister's review of rural roads and Panchayat & Rural Development programmes, including reported use of drone monitoring.",
-      "verification": "publisher_and_upload_date_indexed",
-      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited."
     },
     {
       "id": "WZGnZC38Iqo",
@@ -437,17 +176,297 @@
       "verification": "direct_youtube_page_with_channel_and_date"
     }
   ],
-  "methodology": "Expanded indexed original-video sample. Videos have YouTube IDs, channel labels, and reported upload dates; issue coding from title and accessible publisher description, not a complete transcript review. All 15 channels and six leader profiles tracked with gaps displayed, 5 Aug–5 Nov 2026. Non-matching/undated/ambiguous results excluded. Counts are indexed videos, not exhaustive video corpus.",
+  "methodology": "Only eight previously indexed videos are counted in the verified-video section. Eighteen additional candidate links are isolated in a clearly unverified review queue, excluded from totals and analytics pending independent video-page metadata checks. Search alone cannot establish historical completeness.",
   "scopeNotes": {
-    "publicationWindow": "5 August–5 November 2026 inclusive",
     "indexedAsOf": "2026-11-19",
-    "selection": "Only individually linked, dated videos from the 15 named channels, with relevant leader and one primary tracked issue",
-    "limits": [
-      "The set is a selective source-backed sample, not an exhaustive historical channel harvest.",
-      "A video covering multiple headlines is labelled multi-story and must not be equated with an exclusive interview or directly quoted statement.",
-      "Multiple uploads about the same event count as distinct videos, not distinct events.",
-      "Some headline-based labels are provisional; original recording/transcript verification has not been completed.",
-      "A zero in the source matrix means no qualifying record yet indexed, not that no video exists."
+    "status": "Historical video collection incomplete; 15 channels, six leaders and ten issues are search targets, not evidence of comprehensive scraping.",
+    "blocker": "Connected TinyFish browser crawl could not start due to insufficient wallet balance.",
+    "reviewRequired": [
+      "Confirm original video exists and is publicly accessible",
+      "Confirm uploader channel identity and exact date",
+      "Confirm leader and ten-issue relevance from original video or transcript",
+      "Deduplicate video ID and distinguish repeated coverage from independent events"
     ]
-  }
+  },
+  "reviewQueue": [
+    {
+      "id": "V9Xq-kIqjdk",
+      "date": "2026-09-18",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "Kalinga TV",
+      "issue": "Governance",
+      "secondaryIssues": [],
+      "title": "Kalinga TV reports Naveen Patnaik's comments in UPI-payment discussion",
+      "summary": "Channel footage/headline concerns digital-payment issues and the Leader of Opposition; broader conclusions about policy are not independently verified.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "C59-B4g8OE0",
+      "date": "2026-09-17",
+      "state": "Jharkhand",
+      "leader": "jh-lop",
+      "channel": "News18 Bihar Jharkhand",
+      "issue": "Education, Healthcare & Employment",
+      "secondaryIssues": [
+        "Governance"
+      ],
+      "title": "Babulal Marandi seeks investigation of JPSC–JSSC recruitment irregularity allegations",
+      "summary": "News18 Bihar Jharkhand reports Marandi's criticism of recruitment examination handling and his call for an independent inquiry. Allegations are not established findings.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "SkskLwEThLM",
+      "date": "2026-09-08",
+      "state": "Odisha",
+      "leader": "od-cm",
+      "channel": "News18 Odia",
+      "issue": "Infrastructure & Development",
+      "secondaryIssues": [
+        "Agriculture & Farmers",
+        "Governance"
+      ],
+      "title": "News18 Odia covers Mohan Majhi's UAE investment outreach and Odisha farmer registration",
+      "summary": "Multi-story September bulletin: CM UAE investor outreach, farmer-registration deadline and opposition MMDR reactions; not an exclusive CM interview.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "FC_zDHXxOrs",
+      "date": "2026-09-04",
+      "state": "Odisha",
+      "leader": "od-cm",
+      "channel": "News18 Odia",
+      "issue": "Agriculture & Farmers",
+      "secondaryIssues": [],
+      "title": "News18 Odia discusses Mohan Majhi and CM-KISAN farmer assistance",
+      "summary": "Separate News18 Odia video on CM-KISAN scheme and direct farmer assistance; avoid inferring actual disbursement beyond reported information.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "lWcBobUKVQU",
+      "date": "2026-09-03",
+      "state": "Odisha",
+      "leader": "od-cm",
+      "channel": "News18 Odia",
+      "issue": "Governance",
+      "secondaryIssues": [
+        "Minerals",
+        "Infrastructure & Development"
+      ],
+      "title": "News18 Odia covers Mohan Majhi's Delhi meetings and MMDR political context",
+      "summary": "Multi-subject report covering the CM's central meetings, Jal Shakti summit and the MMDR dispute involving Naveen Patnaik; source describes political discussions, not a confirmed investment outcome.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "G4ZTpNqndZU",
+      "date": "2026-09-02",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "Kanak News",
+      "issue": "Governance",
+      "secondaryIssues": [],
+      "title": "Kanak News covers political dispute over Naveen Patnaik government's commitments",
+      "summary": "Kanak News examines political statements concerning the previous government's commitments and the present opposition's position; claims are attributable to the broadcaster.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "W5zaNhs2qQ4",
+      "date": "2026-09-02",
+      "state": "Jharkhand",
+      "leader": "jh-cm",
+      "channel": "News18 Bihar Jharkhand",
+      "issue": "Governance",
+      "secondaryIssues": [
+        "Education, Healthcare & Employment"
+      ],
+      "title": "Jharkhand bulletin reports Hemant Soren's directive on assistance to struggling sportspersons",
+      "summary": "Multi-story News18 Bihar Jharkhand bulletin includes a report about the CM's instruction to address hardship facing sportspersons; not a standalone CM speech.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "asjrWK92uUs",
+      "date": "2026-09-01",
+      "state": "Madhya Pradesh",
+      "leader": "mp-cm",
+      "channel": "MP Tak",
+      "issue": "Education, Healthcare & Employment",
+      "secondaryIssues": [],
+      "title": "MP Tak reports Mohan Yadav's laptop support to high-scoring students",
+      "summary": "Reporting concerns a laptop-related educational assistance event for meritorious students; check official payment/distribution figures separately.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "1s-5EF6_OjQ",
+      "date": "2026-08-31",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "News18 Odia",
+      "issue": "Minerals",
+      "secondaryIssues": [
+        "Mining",
+        "Governance"
+      ],
+      "title": "Naveen Patnaik renews criticism of MMDR Bill in letter to BJP MPs",
+      "summary": "Another dated News18 Odia report on the same MMDR policy dispute; counted as a distinct video, not a distinct event.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "BlQYC17sS-w",
+      "date": "2026-08-30",
+      "state": "Madhya Pradesh",
+      "leader": "mp-lop",
+      "channel": "IBC24",
+      "issue": "Governance",
+      "secondaryIssues": [],
+      "title": "Umang Singhar challenges BJP's Uniform Civil Code position",
+      "summary": "IBC24 reports the Leader of Opposition's comments on the proposed Uniform Civil Code; this is an attributed political position.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "kBZWNAKQA80",
+      "date": "2026-08-30",
+      "state": "Madhya Pradesh",
+      "leader": "mp-cm",
+      "channel": "News18 MP Chhattisgarh",
+      "issue": "Governance",
+      "secondaryIssues": [
+        "Infrastructure & Development"
+      ],
+      "title": "MP government and Mohan Yadav address monsoon flood situation",
+      "summary": "Channel reports the government's response to flooding; do not infer completed relief without official records.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "aQ30Y8UeEAg",
+      "date": "2026-08-29",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "News18 Odia",
+      "issue": "Minerals",
+      "secondaryIssues": [
+        "Mining",
+        "Governance"
+      ],
+      "title": "Naveen Patnaik asks Odisha MPs to reverse support for MMDR Amendment Bill",
+      "summary": "News18 Odia reports the opposition leader's objection to the MMDR amendment and warnings about mineral revenue and state autonomy. Revenue-loss estimates remain claims.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "AzauMm6kkGk",
+      "date": "2026-08-21",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "Kanak News",
+      "issue": "Minerals",
+      "secondaryIssues": [
+        "Mining",
+        "Governance"
+      ],
+      "title": "Kanak News examines Naveen Patnaik–BJP disagreement over MMDR changes",
+      "summary": "Channel special report addresses amendment controversy, including party positions; no claim about actual losses is independently established.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "S55MxYThCXI",
+      "date": "2026-08-21",
+      "state": "Madhya Pradesh",
+      "leader": "mp-cm",
+      "channel": "IBC24",
+      "issue": "Governance",
+      "secondaryIssues": [],
+      "title": "Mohan Yadav attends Tikamgarh public dialogue and outreach programme",
+      "summary": "IBC24 coverage of the chief minister's district outreach at Tikamgarh; headline-level source evidence only.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "t0lsvfyONFA",
+      "date": "2026-08-17",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "News18 Odia",
+      "issue": "Governance",
+      "secondaryIssues": [
+        "Infrastructure & Development"
+      ],
+      "title": "Naveen Patnaik assigns party representatives to monitor flood relief in affected districts",
+      "summary": "News18 Odia reports BJD relief-coordination assignments in Jajpur, Bhadrak and Balasore; party response is distinct from government action.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "YtzmzRol8JU",
+      "date": "2026-08-15",
+      "state": "Odisha",
+      "leader": "od-cm",
+      "channel": "News18 Odia",
+      "issue": "Education, Healthcare & Employment",
+      "secondaryIssues": [
+        "Governance"
+      ],
+      "title": "Mohan Majhi outlines youth employment and teacher recruitment proposals",
+      "summary": "News18 Odia describes plans/announcements relating to employment and teacher recruitment; proposed posts are not counted as filled jobs.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "QZuE239xPRM",
+      "date": "2026-08-14",
+      "state": "Odisha",
+      "leader": "od-cm",
+      "channel": "News18 Odia",
+      "issue": "Education, Healthcare & Employment",
+      "secondaryIssues": [],
+      "title": "News18 Odia reports Mohan Majhi's teacher recruitment announcement",
+      "summary": "Channel reports announcement of teacher recruitment; announcement not treated as completed recruitment.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    },
+    {
+      "id": "uUY2nTKeIIo",
+      "date": "2026-08-05",
+      "state": "Madhya Pradesh",
+      "leader": "mp-cm",
+      "channel": "News18 MP Chhattisgarh",
+      "issue": "Infrastructure & Development",
+      "secondaryIssues": [
+        "Governance"
+      ],
+      "title": "Mohan Yadav reviews rural roads, panchayat and development works",
+      "summary": "Channel description covers the Chief Minister's review of rural roads and Panchayat & Rural Development programmes, including reported use of drone monitoring.",
+      "verification": "unverified_candidate",
+      "reviewBasis": "Original YouTube upload metadata, title and publisher description; recording/transcript not individually audited.",
+      "caution": "Source attribution, upload date and watch-page content have NOT been independently validated; exclude from evidence counts and leader/issue conclusions."
+    }
+  ]
 }
