@@ -4,6 +4,9 @@ on:
     paths:
       - '.github/workflows/qa-comparative-browser.yml'
       - 'comparative.html'
+      - 'comparative-command-map.js'
+      - 'comparative-command-map.css'
+      - 'comparative-motion.css'
       - 'scripts/qa-comparative-browser.cjs'
   workflow_dispatch:
 permissions:
