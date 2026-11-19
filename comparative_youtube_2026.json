@@ -110,6 +110,42 @@
       "title": "Mohan Charan Majhi announces Delhi roadshow and investor discussions",
       "summary": "OTV reports the chief minister's planned investor meetings and roadshow. Planned investment discussions are not completed projects.",
       "verification": "direct_youtube_page_with_channel_and_date"
+    },
+    {
+      "id": "8Ra4o3XSw1A",
+      "date": "2026-08-09",
+      "state": "Jharkhand",
+      "leader": "jh-cm",
+      "channel": "Zee Bihar Jharkhand",
+      "issue": "Tribal Issues",
+      "secondaryIssues": [],
+      "title": "Hemant Soren at Jharkhand Adivasi Mahotsav 2026",
+      "summary": "Zee Bihar Jharkhand's dated coverage of the Chief Minister at the Adivasi festival. Cultural coverage is included under tribal issues; no policy delivery is inferred.",
+      "verification": "direct_youtube_page_with_channel_and_date"
+    },
+    {
+      "id": "m_9pQedoxFQ",
+      "date": "2026-08-26",
+      "state": "Jharkhand",
+      "leader": "jh-lop",
+      "channel": "News11 Bharat Digital",
+      "issue": "Governance",
+      "secondaryIssues": [],
+      "title": "Babulal Marandi interview on Jairam Mahto and police controversy",
+      "summary": "News11 Bharat Digital interviews the Leader of Opposition about Jairam Mahto, political support and a police-related controversy. The description does not establish misconduct.",
+      "verification": "direct_youtube_page_with_channel_and_date"
+    },
+    {
+      "id": "WZGnZC38Iqo",
+      "date": "2026-08-05",
+      "state": "Madhya Pradesh",
+      "leader": "mp-cm",
+      "channel": "News18 MP Chhattisgarh",
+      "issue": "Governance",
+      "secondaryIssues": [],
+      "title": "Mohan Yadav comments on BJP defeat in Datia by-election at News18 summit",
+      "summary": "News18 MP Chhattisgarh covers the Chief Minister's response to the Datia by-election result and political strategy; electoral discussion is indexed under Governance as a broad category.",
+      "verification": "direct_youtube_page_with_channel_and_date"
     }
   ],
   "methodology": "Only individual YouTube watch URLs with direct channel, exact upload date, leader relevance and issue context verified are counted. Other named channels are monitored but no unverified videos are counted. Search candidate lists are retained separately for audit, not counted. Incomplete sample; not a census."
