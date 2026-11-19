@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "period": {
+    "start": "2026-08-05",
+    "end": "2026-11-05"
+  },
+  "channels": [
+    {
+      "state": "Madhya Pradesh",
+      "name": "News18 MP Chhattisgarh"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "IBC24"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "MP Tak"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "Zee Madhya Pradesh Chhattisgarh"
+    },
+    {
+      "state": "Madhya Pradesh",
+      "name": "Bansal News"
+    },
+    {
+      "state": "Jharkhand",
+      "name": "News18 Bihar Jharkhand"
+    },
+    {
+      "state": "Jharkhand",
+      "name": "Zee Bihar Jharkhand"
+    },
+    {
+      "state": "Jharkhand",
+      "name": "NEWS JHARKHAND"
+    },
+    {
+      "state": "Jharkhand",
+      "name": "Jharkhandi News"
+    },
+    {
+      "state": "Jharkhand",
+      "name": "News11 Bharat Digital"
+    },
+    {
+      "state": "Odisha",
+      "name": "OTV"
+    },
+    {
+      "state": "Odisha",
+      "name": "Kanak News"
+    },
+    {
+      "state": "Odisha",
+      "name": "News18 Odia"
+    },
+    {
+      "state": "Odisha",
+      "name": "Kalinga TV"
+    },
+    {
+      "state": "Odisha",
+      "name": "Nandighosha TV"
+    }
+  ],
+  "videos": [
+    {
+      "id": "qSUbOfM8sg4",
+      "date": "2026-08-29",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "OTV",
+      "issue": "Minerals",
+      "secondaryIssues": [
+        "Mining",
+        "Governance"
+      ],
+      "title": "Naveen Patnaik targets BJP over MMDR Amendment and warns of potential state revenue loss",
+      "summary": "OTV reports Patnaik's objections to the MMDR amendment and his estimate of possible annual revenue losses. Figures are attributed claims, not independently verified losses.",
+      "verification": "direct_youtube_page_with_channel_and_date"
+    },
+    {
+      "id": "pCV3-LVLz9Y",
+      "date": "2026-08-30",
+      "state": "Odisha",
+      "leader": "od-lop",
+      "channel": "OTV",
+      "issue": "Mining",
+      "secondaryIssues": [
+        "Minerals",
+        "Governance"
+      ],
+      "title": "BJD raises ten questions over MMDR Amendment Bill after Naveen Patnaik's letter",
+      "summary": "OTV describes the BJD press conference and cites Naveen Patnaik's preceding letter; this is party coverage, not a direct Patnaik statement.",
+      "verification": "direct_youtube_page_with_channel_and_date"
+    },
+    {
+      "id": "mGEMxrBLRS0",
+      "date": "2026-09-17",
+      "state": "Odisha",
+      "leader": "od-cm",
+      "channel": "OTV",
+      "issue": "Infrastructure & Development",
+      "secondaryIssues": [
+        "Governance"
+      ],
+      "title": "Mohan Charan Majhi announces Delhi roadshow and investor discussions",
+      "summary": "OTV reports the chief minister's planned investor meetings and roadshow. Planned investment discussions are not completed projects.",
+      "verification": "direct_youtube_page_with_channel_and_date"
+    }
+  ],
+  "methodology": "Only individual YouTube watch URLs with direct channel, exact upload date, leader relevance and issue context verified are counted. Other named channels are monitored but no unverified videos are counted. Search candidate lists are retained separately for audit, not counted. Incomplete sample; not a census."
+}
