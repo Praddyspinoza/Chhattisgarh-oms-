@@ -17,6 +17,17 @@ if(!chrome){try{chrome=exec("which google-chrome || which chromium || which chro
   await page.waitForSelector("#dossierList .dossier-leader",{timeout:8000});
   assert.equal(await page.locator("#dossierList .dossier-leader").count(),6,"Initial dossier missing leaders");
   assert(await page.locator("#dossierList a.dossier-headline").count()>=15,"Initial report links not visible");
+  // Motion graphics must be present without disrupting the comparative source ledger.
+  await page.waitForSelector("html.oms-motion-ready",{timeout:5000});
+  const metricAnimation=await page.locator(".metrics .metric").first().evaluate(el=>getComputedStyle(el).animationName);
+  assert(metricAnimation.includes("oms-metric-arrive"),"Presentation metric animation stylesheet not loaded");
+  const mapFlowAnimation=await page.locator("#omsCommandMap .cm-flow-arrow").first().evaluate(el=>getComputedStyle(el,"::before").animationName);
+  assert(mapFlowAnimation.includes("oms-signal-travel"),"Flow connector signal animation not loaded");
+  await page.emulateMedia({reducedMotion:"reduce"});
+  const reduced=await page.locator(".metrics .metric").first().evaluate(el=>getComputedStyle(el).animationName);
+  assert.equal(reduced,"none","Reduced-motion users must not see metric animation");
+  await page.emulateMedia({reducedMotion:"no-preference"});
+
   const cartograms=page.locator("#omsCommandMap .cm-map-card");
   await page.waitForSelector("#omsCommandMap .cm-district",{timeout:9000});
   assert.equal(await cartograms.count(),3,"Missing 3 geographic district maps in dashboard command center");
