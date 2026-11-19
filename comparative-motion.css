@@ -1,0 +1,221 @@
+/*
+  Comparative intelligence / presentation motion layer
+  19 Nov 2026. Scoped additions only: no geometry, data, colours, layout,
+  navigation handlers, or underlying research structures are replaced.
+*/
+html.oms-motion-ready .metrics .metric{
+  animation:oms-metric-arrive 540ms cubic-bezier(.2,.75,.24,1) both;
+  animation-delay:calc(var(--oms-metric-order,0) * 75ms);
+  transition:transform 220ms ease,border-color 220ms ease,box-shadow 220ms ease;
+}
+html.oms-motion-ready .metrics .metric::before{
+  content:"";
+  position:absolute;
+  top:0;left:0;bottom:0;width:100%;
+  pointer-events:none;
+  border-radius:inherit;
+  opacity:0;
+  background:linear-gradient(111deg,transparent 36%,rgba(250,205,185,.075) 52%,transparent 68%);
+  background-size:200% 100%;
+  transition:opacity 240ms ease;
+}
+html.oms-motion-ready .tabs .tab{
+  position:relative;
+  overflow:hidden;
+  transition:color 180ms ease,border-color 180ms ease,background 180ms ease,box-shadow 180ms ease;
+}
+html.oms-motion-ready .tabs .tab.active::after{
+  content:"";
+  position:absolute;
+  height:2px;
+  bottom:0;
+  left:11%;
+  width:78%;
+  pointer-events:none;
+  border-radius:10px;
+  background:currentColor;
+  opacity:.85;
+  transform-origin:left center;
+  animation:oms-tab-trace 390ms ease-out both;
+}
+html.oms-motion-ready .stage .section.oms-motion-enter:not([hidden]){
+  animation:oms-view-arrive 420ms cubic-bezier(.2,.73,.3,1) both;
+}
+html.oms-motion-ready #omsCommandMap{
+  transition:border-color 260ms ease,box-shadow 300ms ease;
+}
+html.oms-motion-ready #omsCommandMap .cm-lineage{
+  isolation:isolate;
+}
+html.oms-motion-ready #omsCommandMap .cm-lineage::before{
+  content:"";
+  position:absolute;
+  top:0;left:1px;right:1px;height:2px;
+  pointer-events:none;z-index:0;
+  background:linear-gradient(90deg,transparent,rgba(255,183,198,.15),rgba(255,222,220,.72),rgba(255,183,198,.15),transparent);
+  background-size:240% 100%;
+  animation:oms-data-current 8s linear infinite;
+}
+html.oms-motion-ready #omsCommandMap .cm-flow-arrow{
+  overflow:visible;
+}
+html.oms-motion-ready #omsCommandMap .cm-flow-arrow::before{
+  content:"";
+  position:absolute;
+  z-index:2;
+  top:50%;left:0;
+  width:5px;height:5px;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:#ffe5de;
+  box-shadow:0 0 7px rgba(255,181,200,.75);
+  opacity:.75;
+  pointer-events:none;
+  animation:oms-signal-travel 3.6s linear infinite;
+}
+html.oms-motion-ready #omsCommandMap .cm-flow-arrow:nth-of-type(4n)::before{
+  animation-delay:-1.35s;
+}
+html.oms-motion-ready #omsCommandMap .cm-map-card{
+  transition:transform 220ms ease,border-color 200ms ease,box-shadow 230ms ease,opacity 220ms ease;
+}
+html.oms-motion-ready #omsCommandMap .cm-map-card.cm-selected{
+  animation:oms-map-selection 720ms ease-out 1;
+}
+html.oms-motion-ready #omsCommandMap .cm-district.cm-target:not(:hover):not(:focus){
+  animation:oms-district-breathe 3.1s ease-in-out infinite;
+}
+html.oms-motion-ready #omsCommandMap .cm-evidence-item,
+html.oms-motion-ready #omsCommandMap .cm-issue-tile,
+html.oms-motion-ready #omsCommandMap .cm-flow-choices button,
+html.oms-motion-ready #analytics .an-leader,
+html.oms-motion-ready .stage .directory .panel,
+html.oms-motion-ready .stage .entry{
+  transition:transform 200ms ease,border-color 210ms ease,box-shadow 210ms ease,opacity 200ms ease;
+}
+html.oms-motion-ready #analytics .an-slice{
+  transition:filter 160ms ease,transform 180ms ease;
+  transform-box:fill-box;
+  transform-origin:center;
+  cursor:pointer;
+}
+html.oms-motion-ready #omsCommandMap.oms-motion-update{
+  animation:oms-frame-signal 700ms ease-out 1;
+}
+html.oms-motion-ready #omsCommandMap.oms-motion-update .cm-flow-stat b,
+html.oms-motion-ready #omsCommandMap.oms-motion-update .cm-totals b{
+  animation:oms-number-flash 650ms ease-out 1;
+}
+html.oms-motion-ready #omsCommandMap.oms-motion-update .cm-lineage{
+  animation:oms-lineage-flash 700ms ease-out 1;
+}
+html.oms-motion-ready #omsCommandMap.oms-motion-update .cm-hot:not(.cm-target){
+  animation:oms-district-update 750ms ease-out 1;
+}
+html.oms-motion-ready.oms-motion-filter .sidebar .pill.active,
+html.oms-motion-ready.oms-motion-filter .sidebar .leader.active,
+html.oms-motion-ready.oms-motion-filter .sidebar .issue.active,
+html.oms-motion-ready.oms-motion-filter #omsCommandMap .cm-flow-choices button.active,
+html.oms-motion-ready.oms-motion-filter #omsCommandMap .cm-issue-tile.active{
+  animation:oms-choice-signal 650ms ease-out 1;
+}
+@media(hover:hover) and (pointer:fine){
+  html.oms-motion-ready .metrics .metric:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.28);
+  }
+  html.oms-motion-ready .metrics .metric:hover::before{opacity:1}
+  html.oms-motion-ready #omsCommandMap .cm-map-card:not(.cm-dim):hover,
+  html.oms-motion-ready #omsCommandMap .cm-map-card:not(.cm-dim):focus-within{
+    transform:translateY(-2px);
+    box-shadow:0 9px 28px rgba(0,0,0,.22);
+  }
+  html.oms-motion-ready #omsCommandMap .cm-evidence-item:hover,
+  html.oms-motion-ready #omsCommandMap .cm-evidence-item:focus-within,
+  html.oms-motion-ready #omsCommandMap .cm-issue-tile:hover,
+  html.oms-motion-ready #omsCommandMap .cm-flow-choices button:hover,
+  html.oms-motion-ready #analytics .an-leader:not(.an-faded):hover,
+  html.oms-motion-ready .stage .directory .panel:hover,
+  html.oms-motion-ready .stage .entry:hover{
+    transform:translateY(-2px);
+  }
+  html.oms-motion-ready #analytics .an-slice:hover,
+  html.oms-motion-ready #analytics .an-slice:focus-visible{
+    transform:scale(1.045);
+    filter:brightness(1.15) drop-shadow(0 1px 3px rgba(255,205,210,.32));
+  }
+}
+@keyframes oms-metric-arrive{
+  from{opacity:.35;transform:translateY(11px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes oms-tab-trace{
+  from{transform:scaleX(0);opacity:.25}
+  to{transform:scaleX(1);opacity:.85}
+}
+@keyframes oms-view-arrive{
+  from{opacity:.55;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes oms-data-current{
+  from{background-position:220% 0}
+  to{background-position:-120% 0}
+}
+@keyframes oms-signal-travel{
+  0%{left:0;opacity:0}
+  12%{opacity:.75}
+  85%{opacity:.85}
+  100%{left:100%;opacity:0}
+}
+@keyframes oms-district-breathe{
+  0%,100%{filter:drop-shadow(0 0 5px rgba(255,186,185,.48))}
+  50%{filter:drop-shadow(0 0 10px rgba(255,215,193,.82))}
+}
+@keyframes oms-map-selection{
+  from{box-shadow:inset 0 0 0 1px rgba(219,96,119,.25),0 0 0 rgba(255,176,192,0)}
+  45%{box-shadow:inset 0 0 0 1px rgba(219,96,119,.35),0 0 22px rgba(255,176,192,.23)}
+  to{box-shadow:inset 0 0 0 1px rgba(219,96,119,.20),0 0 26px rgba(189,68,97,.11)}
+}
+@keyframes oms-frame-signal{
+  from{box-shadow:0 19px 50px rgba(0,0,0,.4)}
+  42%{box-shadow:0 19px 50px rgba(0,0,0,.4),0 0 0 2px rgba(250,165,185,.42)}
+  to{box-shadow:0 19px 50px rgba(0,0,0,.4),0 0 0 1px rgba(250,165,185,0)}
+}
+@keyframes oms-number-flash{
+  0%,100%{filter:brightness(1)}
+  45%{filter:brightness(1.5)}
+}
+@keyframes oms-lineage-flash{
+  from{border-color:#344765}
+  45%{border-color:#b87b8d}
+  to{border-color:#344765}
+}
+@keyframes oms-district-update{
+  0%,100%{opacity:1}
+  40%{opacity:.73}
+}
+@keyframes oms-choice-signal{
+  from{box-shadow:0 0 0 0 rgba(255,183,198,.32)}
+  to{box-shadow:0 0 0 6px rgba(255,183,198,0)}
+}
+@media(prefers-reduced-motion:reduce){
+  html.oms-motion-ready .metric,
+  html.oms-motion-ready .metric::before,
+  html.oms-motion-ready .tab.active::after,
+  html.oms-motion-ready .stage .section.oms-motion-enter:not([hidden]),
+  html.oms-motion-ready #omsCommandMap,
+  html.oms-motion-ready #omsCommandMap *,
+  html.oms-motion-ready #omsCommandMap *::before,
+  html.oms-motion-ready #omsCommandMap *::after,
+  html.oms-motion-ready #analytics .an-slice,
+  html.oms-motion-ready #analytics .an-leader,
+  html.oms-motion-ready .stage .directory .panel,
+  html.oms-motion-ready .stage .entry{
+    animation:none!important;
+    transition:none!important;
+  }
+  html.oms-motion-ready #omsCommandMap .cm-flow-arrow::before,
+  html.oms-motion-ready #omsCommandMap .cm-lineage::before{
+    display:none!important;
+  }
+}
