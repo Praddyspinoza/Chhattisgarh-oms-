@@ -1,6 +1,14 @@
 "use strict";
 const fs=require("node:fs"),assert=require("node:assert/strict"),vm=require("node:vm");
-const html=fs.readFileSync("index.html","utf8");
+const landing=fs.readFileSync("index.html","utf8");
+const corePath=fs.existsSync("oms-core.html")?"oms-core.html":"index.html";
+const html=fs.readFileSync(corePath,"utf8");
+// Check the public entry point after the permanent SaaS-theme promotion.
+if(corePath==="oms-core.html"){
+  assert(landing.includes('src="./oms-core.html#command"'),"Public root does not load OMS core");
+  assert(landing.includes("const TRIAL_CSS"),"Public root is missing approved light theme");
+  assert(landing.includes("#status{display:none!important"),"Permanent root still shows trial badge");
+}
 const d=JSON.parse(fs.readFileSync("v12_data.json","utf8"));
 const s=JSON.parse(fs.readFileSync("social_discovery.json","utf8"));
 function embed(id){
